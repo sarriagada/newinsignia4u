@@ -1,0 +1,77 @@
+// Place all the styles related to the home controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+
+a{
+	text-decoration:none;
+}
+
+.container, nav ul {
+  @include outer-container;
+}
+
+header{
+	text-align:center;
+	
+	.container{
+		height:119px;
+		position:relative;
+	}
+
+	h1{
+		width:242px;
+		margin:37px auto 0;
+
+		a{
+			@include hide-text;
+	  		background: url(asset-path("insignia.jpg", image)) no-repeat 0 0;
+	  		display:block;
+	  		width:242px;
+	  		height:58px;
+	  	}
+	}
+	a.lang{
+		background: #326bb0;
+		position: absolute;
+		top: 51px;
+		right: 105px;
+		border: 1px solid #1a3757;
+		border-radius: 4px;
+		width: 128px;
+		height: 24px;
+		line-height: 24px;
+		color: white;
+		text-transform: uppercase;
+		font-weight: bold;
+	}
+	nav{  
+		background: #383435;
+		
+		ul{
+			margin-top:0;
+			margin-bottom:0;
+			padding:0;
+			text-align:center;
+
+			li{
+				display:inline;
+
+				a{
+					color:#fff;
+					font-weight:bold;
+					height:55px;
+					line-height:55px;
+					text-transform:uppercase;
+					padding:1px 25px 0;
+					display:inline-block;
+				}
+			}
+		}
+	}
+
+}
+
+aside { @include span-columns(3); }
+article { @include span-columns(9); }
