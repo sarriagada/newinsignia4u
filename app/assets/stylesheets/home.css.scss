@@ -84,7 +84,7 @@ header{
 	background:#efefef;
 	min-height:300px;
 }
-
+// footer style
 footer{
 	background:#19375b;
 	border-top:#3469af solid 4px;
@@ -95,20 +95,65 @@ footer{
 
 		ul.footer-contact{
 			font-size:12px;
-
+			height: 111px;
+			line-height: 111px;
 			li{
 				display:inline-block;
 				padding: 0 0 0 30px;
-				
+				font-size: 14px;
 				a{
 					color:#6390d4;
 					text-decoration:underline;
 				} 
 			}
 		}
+	}
+	
+	hr {
+		border: 0;
+		border-bottom: 1.5px dashed #3469AF;
+		background: #19375B;
+		margin: 0;
+	}
 
-		form{
-			font-size:12px;
+	.footer-subscribe{  
+		font-size:12px;  
+		height: 194px;
+		margin: 0;
+		padding-top: 55px;
+		label {
+			font-size: 22px;
+			color: white;
+			font-weight: bold;
+			vertical-align: middle;
+			text-transform: uppercase;
+		}
+		input {
+			line-height: normal;
+			height: 42px;
+			border-radius: 8px;
+			margin: 0 10px;
+			@include box-shadow( 2px 2px 16px -5px black );
+		}
+		.email{  
+			width: 430px;
+			padding: 10px 30px;
+		}
+		.btn-subscribe{	 
+			width: 149px;
+			background: #F30893;
+			border: 2px solid #A80465;
+			color: white;
+			font-weight: bold;
+			font-size: 16px;
+			text-transform: uppercase;
+			line-height: 43px;
+			height: 47px;
+		}
+		p{
+			margin: 0;
+			margin-top: 25px;
+			font-size: 14px;
 		}
 	}
 
@@ -158,6 +203,6 @@ footer{
 		}
 	}
 }
-
+// fin footer style
 aside { @include span-columns(3); }
 article { @include span-columns(9); }
