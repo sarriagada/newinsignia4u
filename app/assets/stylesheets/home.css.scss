@@ -99,13 +99,25 @@ footer{
 			line-height: 111px;
 			li{
 				display:inline-block;
-				padding: 0 0 0 30px;
+				margin-right: 18px;
 				font-size: 14px;
 				a{
 					color:#6390d4;
 					text-decoration:underline;
 				} 
 			}
+			span{
+				height: 28px;
+				width: 28px;
+				position: relative;
+				top: 8px;
+				display: inline-block;
+				margin-right: 10px;
+			}
+			.footer-contact-street span{  background:url(asset-path("contact-icon.png", image)) no-repeat -3px 2px;  }
+			.footer-contact-phone span{  background:url(asset-path("contact-icon.png", image)) no-repeat -28px 2px;  }
+			.footer-contact-email span{  background:url(asset-path("contact-icon.png", image)) no-repeat -56px 2px;  }
+			.footer-contact-email {  margin-right: 0;  }
 		}
 	}
 	
@@ -147,7 +159,7 @@ footer{
 			font-weight: bold;
 			font-size: 16px;
 			text-transform: uppercase;
-			line-height: 43px;
+			line-height: 40px;
 			height: 47px;
 		}
 		p{
