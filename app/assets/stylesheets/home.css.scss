@@ -17,9 +17,7 @@ ul{
 	}
 }
 
-.container, nav ul {
-  @include outer-container;
-}
+.container, nav ul {  @include outer-container;  }
 
 header{
 	text-align:center;
@@ -35,11 +33,11 @@ header{
 
 		a{
 			@include hide-text;
-	  		background: url(asset-path("insignia.jpg", image)) no-repeat 0 0;
-	  		display:block;
-	  		height:58px;
-	  		width:242px;
-	  	}
+			background: url(asset-path("insignia.jpg", image)) no-repeat 0 0;
+			display:block;
+			height:58px;
+			width:242px;
+		}
 	}
 	a.lang{
 		background: #326bb0;
@@ -56,9 +54,9 @@ header{
 		top: 51px;
 		width: 128px;
 	}
-	nav{  
+	nav{
 		background: #383435;
-		
+
 		ul{
 			text-align:center;
 
@@ -79,11 +77,30 @@ header{
 	}
 
 }
-
+// content style
 .content{
 	background:#efefef;
 	min-height:300px;
+	h1 {
+		font-size: 33px; //corregir el tamaño cuando tengamos la fuente correspondiente
+		font-weight: bold;
+		text-align: center;
+		margin-top: 85px;
+		text-transform: uppercase;
+		b{  color:#f10993;  }
+	}
+	p.portada{
+		float: right;
+		position: relative;
+		top: -272px;
+		left: -50px;
+		font-size: 18px; // corregir el tamaño cuando tengamos la fuente correspondiente
+		line-height: 30px;
+		width: 395px;
+	}
 }
+// fin content style
+
 // footer style
 footer{
 	background:#19375b;
@@ -104,7 +121,7 @@ footer{
 				a{
 					color:#6390d4;
 					text-decoration:underline;
-				} 
+				}
 			}
 			span{
 				height: 28px;
@@ -128,8 +145,8 @@ footer{
 		margin: 0;
 	}
 
-	.footer-subscribe{  
-		font-size:12px;  
+	.footer-subscribe{
+		font-size:12px;
 		height: 194px;
 		margin: 0;
 		padding-top: 55px;
@@ -147,11 +164,11 @@ footer{
 			margin: 0 10px;
 			@include box-shadow( 2px 2px 16px -5px black );
 		}
-		.email{  
+		.email{
 			width: 430px;
 			padding: 10px 30px;
 		}
-		.btn-subscribe{	 
+		.btn-subscribe{
 			width: 149px;
 			background: #F30893;
 			border: 2px solid #A80465;
@@ -187,14 +204,14 @@ footer{
 						display:inline-block;
 						font-size:22px;
 						text-transform:uppercase;
-						
+
 						i{
 							display:inline-block;
 							height: 39px;
-						    margin: 0 6px;
-						    position: relative;
-						    top: 12px;
-						    width: 39px;
+							margin: 0 6px;
+							position: relative;
+							top: 12px;
+							width: 39px;
 						}
 					}
 				}
