@@ -110,6 +110,23 @@ header{
 			padding: 0px 5px;
 		}
 	}
+	hr{
+		border: 2px dashed #B8B8B8;
+		margin-top: 85px;
+		width: 100%;
+	}
+	h1.title{
+		position: relative;
+		top: -30px;
+		@include background( #efefef url(asset-path("backgr-title.png", image)) 0px -1px no-repeat);
+		width: 315px;
+		height: 37px;
+		line-height: 37px;
+		color: #343233;
+		font-size: 22px;
+		margin: auto;
+	}
+
 }
 // fin content style
 
