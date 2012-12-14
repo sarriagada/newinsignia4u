@@ -72,6 +72,10 @@ header{
 					padding:1px 25px 0;
 					text-transform:uppercase;
 				}
+				a:hover{
+					background: url("/assets/link-hover.png") 0px -1px no-repeat;
+						background-size: 100% 55px;
+				}
 			}
 		}
 	}
@@ -85,14 +89,16 @@ header{
 		font-size: 33px; //corregir el tamaño cuando tengamos la fuente correspondiente
 		font-weight: bold;
 		text-align: center;
+		margin: 0;
 		margin-top: 85px;
+		margin-bottom: 75px;
 		text-transform: uppercase;
 		b{  color:#f10993;  }
 	}
 	p.portada{
 		float: right;
 		position: relative;
-		top: -272px;
+		top: 32px;
 		left: -50px;
 		font-size: 18px; // corregir el tamaño cuando tengamos la fuente correspondiente
 		line-height: 30px;
