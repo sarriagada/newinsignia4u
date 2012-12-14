@@ -13,3 +13,18 @@
 //= require jquery
 //= require jquery_ujs
 //= require_tree .
+
+
+$(document).ready(function() {
+  $('#slideshow').rhinoslider({
+    controlsPlayPause: false,
+    autoPlay: true,
+    pauseOnHover: true,
+    showCaptions: 'always',
+    showBullets: 'never',
+    showControls: 'always',
+    slidePrevDirection: 'toRight',
+    slideNextDirection: 'toLeft',
+    styles: 'position,top,right,bottom,left,margin-top,margin-right,margin-bottom,margin-left,width,height'
+  });
+});
