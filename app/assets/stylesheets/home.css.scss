@@ -129,7 +129,7 @@ header{
 		height: 37px;
 		line-height: 37px;
 		color: #343233;
-		font-size: 22px;
+		font-size: 60px;
 		margin: auto;
 	}
 
@@ -351,4 +351,56 @@ article { @include span-columns(9); }
 	top: 290px;
 	color: #383435;
 	border: 1px solid #383435;
+}
+
+.technologies, .tools{
+	overflow:hidden;
+	padding-bottom:50px;
+
+	ul{
+		margin-left: -20px;
+
+		li{
+			@include border-radius(10px);
+			background:url(asset-path("px-white.png", image)) repeat 0 0;
+			border: #373435 dashed 1px;
+			float:left;
+			height:184px;
+			margin-left:20px;
+			text-align:center;
+			width:218px;
+
+			.circle{
+				@include border-radius(35px);
+				background:#f20892;
+				border:#a60563 solid 5px;
+				height:70px;
+				width:70px;
+				margin:19px auto 10px;
+			}
+
+			h3{
+				display:table-cell;
+				font-family: Enriqueta, Arial;
+				font-size:15px;
+				font-weight:normal;
+				height:50px;
+				line-height:21px;
+				padding:0 22px;
+				vertical-align:middle;
+				width:216px;
+			}
+		}
+	}
+}
+
+.tools{
+	ul{
+		li{
+			.circle{
+				background:#316baf;
+				border:#224a79 solid 5px;
+			}
+		}
+	}	
 }
