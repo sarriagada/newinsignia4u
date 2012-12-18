@@ -38,8 +38,7 @@ header
 				| manera integral incluyendo consultoria, frontend development y diseño.
 
 		.container-title
-			h2.title
-				| Casos de éxito 
+			h2 Casos de éxito 
 
 		#page
 		  ul#slideshow
@@ -56,7 +55,8 @@ header
 		      = image_tag(asset_path("img/slider/05.jpg"))
 
 		.technologies
-			h2 TECHNOLOGIES
+			.container-title
+				h2 TECHNOLOGIES
 			ul
 				li
 					.circle
@@ -67,90 +67,97 @@ header
 				li
 					.circle
 					h3 
-						' Front-end development:
+						| Front-end development:
 						br
-						' HTML. CSS and Javascript
+						| HTML. CSS and Javascript
 				li
 					.circle
 					h3 
-						' Mobile applications development for IOS and Android plataforms
+						| Mobile applications development for IOS and Android plataforms
 
 		.tools
-			h2 TOOLS
+			.container-title
+				h2 TOOLS
 			ul
 				li
 					.circle
-					h3 Agile Methodologies
+					h3
+						| Agile Methodologies
 				li
 					.circle
 					h3 
-						' Version control system: GIT, SVN and Others.
+						| Version control system: GIT, SVN and Others.
 				li
 					.circle
 					h3 
-						' Behaviour Driven Development
+						| Behaviour Driven Development
 				li
 					.circle
 					h3 
-						' Pair Programming
+						| Pair Programming
 
+		.container-title
+			h2 News
 
-
-		h1.title
-			| News 
 		.container
-			article.news-item
-				.published-at
-					i.icon-calendar
-					| 23 de Marzo 2012
-				.title
-					| Del Freelancing a la Empresa
-				.highlighted
-					| La Historia de Insignia
-				.description
-					p
-						| El día 15 de noviembre participamos de la jornada de cierre anual del Tucumán Valley con una presentación en el marco de la serie de charlas denominadas "Como vender servicios tecnológicos al mundo (y no morir en el intento)".
-				a.more href="http://www.insignia4u-blog.com/" target="_blank"
-					| Read more
+				article.news-item
+					.published-at
+						i.icon-calendar
+						| 23 de Marzo 2012
+					.title
+						| Del Freelancing a la Empresa
+					.highlighted
+						| La Historia de Insignia
+					.description
+						p
+							| El día 15 de noviembre participamos de la jornada de cierre anual del Tucumán Valley con una presentación en el marco de la serie de charlas denominadas "Como vender servicios tecnológicos al mundo (y no morir en el intento)".
+					a.more href="http://www.insignia4u-blog.com/" target="_blank"
+						| Read more
 
-			article.news-item
-				.published-at
-					i.icon-calendar
-					| 23 de Marzo 2012
-				.title
-					| Del Freelancing a la Empresa
-				.highlighted
-					| La Historia de Insignia
-				.description
-					p
-						| El día 15 de noviembre participamos de la jornada de cierre anual del Tucumán Valley con una presentación en el marco de la serie de charlas denominadas "Como vender servicios tecnológicos al mundo (y no morir en el intento)".
-				a.more href="http://www.insignia4u-blog.com/" target="_blank"
-					| Read more
+				article.news-item
+					.published-at
+						i.icon-calendar
+						| 23 de Marzo 2012
+					.title
+						| Del Freelancing a la Empresa
+					.highlighted
+						| La Historia de Insignia
+					.description
+						p
+							| El día 15 de noviembre participamos de la jornada de cierre anual del Tucumán Valley con una presentación en el marco de la serie de charlas denominadas "Como vender servicios tecnológicos al mundo (y no morir en el intento)".
+					a.more href="http://www.insignia4u-blog.com/" target="_blank"
+						| Read more
 
-			article.news-item
-				.published-at
-					i.icon-calendar
-					| 23 de Marzo 2012
-				.title
-					| Del Freelancing a la Empresa
-				.highlighted
-					| La Historia de Insignia
-				.description
-					p
-						| El día 15 de noviembre participamos de la jornada de cierre anual del Tucumán Valley con una presentación en el marco de la serie de charlas denominadas "Como vender servicios tecnológicos al mundo (y no morir en el intento)".
-				a.more href="http://www.insignia4u-blog.com/" target="_blank"
-					| Read more
+				article.news-item
+					.published-at
+						i.icon-calendar
+						| 23 de Marzo 2012
+					.title
+						| Del Freelancing a la Empresa
+					.highlighted
+						| La Historia de Insignia
+					.description
+						p
+							| El día 15 de noviembre participamos de la jornada de cierre anual del Tucumán Valley con una presentación en el marco de la serie de charlas denominadas "Como vender servicios tecnológicos al mundo (y no morir en el intento)".
+					a.more href="http://www.insignia4u-blog.com/" target="_blank"
+						| Read more
+
+		.non-semantic-protector
+			.ribbon
+				strong.ribbon-content
+					| El sistena de gesti&oacute;n de la calidad de la Empresa Insignia ha sido certificado según la norma 
+					span IRAM-ISO 9001:2008
 
 footer
 	.container
 		ul.footer-contact
 			li.footer-contact-street
 				i.icon-map-marker 
-				|Lamadrid 318, Piso 4 - Depto. A San Miguel de Tucumán, Tucumán, Argentina
+				| Lamadrid 318, Piso 4 - Depto. A San Miguel de Tucumán, Tucumán, Argentina
 
 			li.footer-contact-phone
 				i.icon-phone 
-				'+54 (318) 420-7387
+				| +54 (318) 420-7387
 
 			li.footer-contact-email
 				i.icon-envelope-alt 
@@ -167,9 +174,9 @@ footer
 			ul
 				li.tw
 					a href="" 
-						'Seguinos
+						| Seguinos
 						i
 				li.fb
 					a href=""
 						i
-						'Conectate
+						| Conectate

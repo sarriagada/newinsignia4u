@@ -117,20 +117,22 @@ header{
 		}
 	}
 	.container-title{
-		border-top: 2px dashed #B8B8B8;
+		border-top: 3px dashed #B8B8B8;
 		margin-top: 85px;
 		width: 100%;
-	}
-	h2.title{
-		position: relative;
-		top: -30px;
-		@include background-image( url(asset-path("background-pattern.gif", image)), url(asset-path("backgr-title.png", image)));
-		width: 315px;
-		height: 37px;
-		line-height: 37px;
-		color: #343233;
-		font-size: 60px;
-		margin: auto;
+		text-align:center;
+
+		h2{
+			position: relative;
+			top: -42px;
+			@include background-image( url(asset-path("background-pattern.gif", image)), url(asset-path("backgr-title.png", image)));
+			color: #343233;
+			font-size: 60px;
+			margin: auto;
+			display:inline-block;
+			padding:0 10px;
+
+		}
 	}
 
 }
@@ -233,6 +235,9 @@ footer{
 					color:#6390d4;
 					text-decoration:underline;
 				}
+			}
+			li.footer-contact-street{
+			
 			}
 			.icon-envelope-alt {
 				font-size: 20px;
@@ -413,6 +418,7 @@ article { @include span-columns(9); }
 				height:70px;
 				width:70px;
 				margin:19px auto 10px;
+				background:url(asset-path("sprite.png", image)) no-repeat -9px -8px;
 			}
 
 			h3{
@@ -439,4 +445,66 @@ article { @include span-columns(9); }
 			}
 		}
 	}	
+}
+
+.non-semantic-protector { 
+	position: relative; 
+	z-index: 1; 
+}
+.ribbon {
+	font-size: 16px !important;
+	font-family: Enriqueta, Arial;
+	/* This ribbon is based on a 16px font side and a 24px vertical rhythm. I've used em's to position each element for scalability. If you want to use a different font size you may have to play with the position of the ribbon elements */
+
+	width: 100%;
+
+	position: relative;
+	background: #2d63a1;
+	color: #fff;
+	text-align: center;
+	padding: 1em 2em; /* Adjust to suit */
+	margin: 2em auto 3em; /* Based on 24px vertical rhythm. 48px bottom margin - normally 24 but the ribbon 'graphics' take up 24px themselves so we double it. */
+
+	span{
+		color:#5e99dd;
+	}
+}
+
+.ribbon:before, .ribbon:after {
+ content: "";
+ position: absolute;
+ display: block;
+ bottom: -1em;
+ border: 1.5em solid #245995;
+ z-index: -1;
+}
+.ribbon:before {
+ left: -2em;
+ border-right-width: 1.5em;
+ border-left-color: transparent;
+}
+.ribbon:after {
+ right: -2em;
+ border-left-width: 1.5em;
+ border-right-color: transparent;
+}
+.ribbon .ribbon-content:before, .ribbon .ribbon-content:after {
+ content: "";
+ position: absolute;
+ display: block;
+ border-style: solid;
+ border-color: #132a45 transparent transparent transparent;
+ bottom: -1em;
+}
+.ribbon .ribbon-content:before {
+ left: 0;
+ border-width: 1em 0 0 1em;
+}
+.ribbon .ribbon-content:after {
+ right: 0;
+ border-width: 1em 1em 0 0;
+}
+
+.ribbon .ribbon-content{
+	text-shadow:1px 1px 2px rgba(48, 48, 48, .5);
 }
