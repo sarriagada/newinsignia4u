@@ -217,28 +217,27 @@ footer{
 		ul.footer-contact{
 			font-size:12px;
 			height: 111px;
-			line-height: 111px;
+			line-height: 106px;
 			li{
-				display:inline-block;
-				margin-right: 15px;
 				font-size: 14px;
+				float: left;
+				text-align: left;
+				width: auto;
+				margin-right: 17px;
+				i {
+					font-size: 27px;
+					line-height: 4px;
+					margin-left: -3px;
+				}
 				a{
 					color:#6390d4;
 					text-decoration:underline;
 				}
 			}
-			span{
-				height: 28px;
-				width: 28px;
-				position: relative;
-				top: 8px;
-				display: inline-block;
+			.icon-envelope-alt {
+				font-size: 20px;
 				margin-right: 10px;
 			}
-			.footer-contact-street span{  background:url(asset-path("contact-icon.png", image)) no-repeat -3px 2px;  }
-			.footer-contact-phone span{  background:url(asset-path("contact-icon.png", image)) no-repeat -28px 2px;  }
-			.footer-contact-email span{  background:url(asset-path("contact-icon.png", image)) no-repeat -56px 2px;  }
-			.footer-contact-email {  margin-right: 0;  }
 		}
 	}
 	
