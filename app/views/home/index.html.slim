@@ -1,7 +1,9 @@
 header
 	.container
 		h1
-			a href="" logo
+			a href=""
+				= image_tag(asset_path("insignia.svg"))
+
 		a.lang href="" English Please
 	nav
 		ul
@@ -34,11 +36,12 @@ header
 			p.portada
 				| Nos especializamos en backend development utilizando 
 				b Ruby on Rails
-				| y otras tecnologias web aunque, atravez de alianzas estrategicas, tenemos la capacidad de abordar trabajos de 
+				|  y otras tecnologias web aunque, atravez de alianzas estrategicas, tenemos la capacidad de abordar trabajos de 
 				| manera integral incluyendo consultoria, frontend development y diseño.
 
 		.container-title
-			h2 Casos de éxito 
+			h2 
+				span Casos de éxito 
 
 		#page
 		  ul#slideshow
@@ -56,34 +59,9 @@ header
 
 		.technologies
 			.container-title
-				h2 TECHNOLOGIES
-			ul
-				li
-					.circle
-						i.ico-rails
+				h2 
+					span TECHNOLOGIES
 
-					h3 Ruby on rails
-				li
-					.circle
-						i.ico-php
-
-					h3 Kohana (PHP)
-				li
-					.circle
-						i.ico-frontend
-					h3 
-						| Front-end development:
-						br
-						| HTML. CSS and Javascript
-				li
-					.circle
-						i.ico-mobile
-					h3 
-						| Mobile applications development for IOS and Android plataforms
-
-		.technologies.tech2
-			.container-title
-				h2 TECHNOLOGIES
 			ul
 				li
 					.circle
@@ -110,40 +88,69 @@ header
 
 		.tools
 			.container-title
-				h2 TOOLS
+				h2 
+					span TOOLS
+
 			ul
 				li
 					.circle
+						i.ico-agile
+
 					h3
 						| Agile Methodologies
 				li
 					.circle
+						i.ico-git
+
 					h3 
 						| Version control system: GIT, SVN and Others.
 				li
 					.circle
+						i.ico-driven
+
 					h3 
 						| Behaviour Driven Development
 				li
 					.circle
+						i.ico-rails
+
 					h3 
 						| Pair Programming
 
 		.container-title
-			h2 News
+			h2 
+				span News
 
 		.container
 				article.news-item
 					.published-at
 						i.icon-calendar
-						| 23 de Marzo 2012
+						| 14 de Diciembre 2012
 					.title
-						| Del Freelancing a la Empresa
-					.highlighted
-						| La Historia de Insignia
+						| La Historia de Insignia, la historia de Insignia
+					h3
+						| Los Tanfaun entre los ganadores en BA Apps
 					.description
 						p
-							| El día 15 de noviembre participamos de la jornada de cierre anual del Tucumán Valley con una presentación en el marco de la serie de charlas denominadas "Como vender servicios tecnológicos al mundo (y no morir en el intento)".
+							| Con la aplicación Los Tanfaun salimos ganadores de la categoría Urbanismo en el concurso de Buenos Aires Apps. Nuestros amigos de Indicius con quién realizamos este proyecto en conjunto recibien el premio en Buenos Aires en representación...
+
+					a.more href="http://www.insignia4u-blog.com/" target="_blank"
+						| Read more
+
+				article.news-item
+					.published-at
+						i.icon-calendar
+						| 17 de Noviembre 2012
+					.title
+						| La Historia de Insignia
+					h3
+						| Los Tanfaun: Nuestra participación en B.A. Apps
+					.description
+						p
+							| Los Tanfaun es una aplicación del tipo “Lost & Found”, y sirve para conectar a las personas que encontraron y perdieron cosas en la ciudad.
+						p
+							| En nuestro primer emprendimiento en conjunto con el estudio de diseño...
+
 					a.more href="http://www.insignia4u-blog.com/" target="_blank"
 						| Read more
 
@@ -153,21 +160,7 @@ header
 						| 23 de Marzo 2012
 					.title
 						| Del Freelancing a la Empresa
-					.highlighted
-						| La Historia de Insignia
-					.description
-						p
-							| El día 15 de noviembre participamos de la jornada de cierre anual del Tucumán Valley con una presentación en el marco de la serie de charlas denominadas "Como vender servicios tecnológicos al mundo (y no morir en el intento)".
-					a.more href="http://www.insignia4u-blog.com/" target="_blank"
-						| Read more
-
-				article.news-item
-					.published-at
-						i.icon-calendar
-						| 23 de Marzo 2012
-					.title
-						| Del Freelancing a la Empresa
-					.highlighted
+					h3
 						| La Historia de Insignia
 					.description
 						p
@@ -208,11 +201,17 @@ footer
 	.social
 		.container
 			ul
+				li.gh
+					| Seguinos 
+					a href=""
+						i.icon-github
+
 				li.tw
 					a href="" 
-						| Seguinos
-						i
+						i.icon-twitter
+
 				li.fb
 					a href=""
-						i
-						| Conectate
+						i.icon-facebook
+					
+					| Conectate
