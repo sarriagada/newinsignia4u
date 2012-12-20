@@ -16,15 +16,23 @@
 
 
 $(document).ready(function() {
-  $('#slideshow').rhinoslider({
-    controlsPlayPause: false,
-    autoPlay: true,
-    pauseOnHover: true,
-    showCaptions: 'always',
-    showBullets: 'never',
-    showControls: 'always',
-    slidePrevDirection: 'toRight',
-    slideNextDirection: 'toLeft',
-    styles: 'position,top,right,bottom,left,margin-top,margin-right,margin-bottom,margin-left,width,height'
-  });
+    $('#slideshow').rhinoslider({
+        controlsPlayPause: false,
+        autoPlay: true,
+        pauseOnHover: true,
+        showCaptions: 'always',
+        showBullets: 'never',
+        showControls: 'always',
+        slidePrevDirection: 'toRight',
+        slideNextDirection: 'toLeft',
+        styles: 'position,top,right,bottom,left,margin-top,margin-right,margin-bottom,margin-left,width,height'
+    });
+
+    var biggestHeight = 0;  
+    $('.news-item').each(function(){  
+        if($(this).height() > biggestHeight){  
+            biggestHeight = $(this).height();  
+        }  
+    });  
+    $('.news-item').height(biggestHeight);
 });
