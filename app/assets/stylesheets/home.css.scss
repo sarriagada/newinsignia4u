@@ -138,6 +138,14 @@ header{
 			display:inline-block;
 			padding:0 20px 0 0;
 		}
+		h2:before{
+			content: url(asset-path("flecha.gif", image));
+		}
+		h2:after{
+			content: url(asset-path("flecha.gif", image));
+			display: inline-block;
+			@include transform(rotateY(180deg));
+		}
 	}
 
 }
