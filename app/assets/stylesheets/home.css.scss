@@ -77,16 +77,28 @@ header{
 					color:#fff;
 					display:inline-block;
 					height:55px;
+					width: 134px;
 					font-weight:bold;
 					line-height:55px;
-					padding:1px 25px 0;
 					text-transform:uppercase;
 					font-family: 'Enriqueta', serif;
 				}
-
-				a:hover{
-					background: url("/assets/link-hover.png") 0px -1px no-repeat;
-						background-size: 100% 55px;
+				a:hover:before{
+					vertical-align: middle;
+					content: url("/assets/flecha.gif");
+					display: inline-block;
+					width: 22px;
+					position: relative;
+					top: 6px;
+				}
+				a:hover:after{
+					vertical-align: middle;
+					content: url("/assets/flecha.gif");
+					display: inline-block;
+					width: 22px;
+					position: relative;
+					top: 6px;
+					@include transform(rotateY(180deg));
 				}
 			}
 		}
@@ -138,7 +150,7 @@ section.content{
 		text-align:center;
 
 		h2{
-			background:url(asset-path("sprite.png", image)) no-repeat 230px -29px, url(asset-path("background-pattern.gif", image)); 
+			background: url(asset-path("background-pattern.gif", image)); 
 			position: relative;
 			top: -36px;
 			color: #343233;
@@ -147,6 +159,17 @@ section.content{
 			margin: auto;
 			display:inline-block;
 			padding:0 20px 0 0;
+		}
+		h2:before{
+			content: url("/assets/flecha.gif");
+			display: inline-block;
+			width: 35px;
+		}
+		h2:after{
+			content: url("/assets/flecha.gif");
+			display: inline-block;
+			margin-left: 5px;
+			@include transform(rotateY(180deg));
 		}
 	}
 
