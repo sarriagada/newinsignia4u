@@ -42,52 +42,26 @@ section.content
 
 	.projects
 		.container-title
-			h2 
-				span Casos de éxito 
+			h2 Casos de éxito
 
-		ul#slideshow
-			li
-			  = image_tag(asset_path("img/slider/01.jpg"))
-			  .rhino-caption Esto es una prueba
-			li
-			  = image_tag(asset_path("img/slider/02.jpg"))
-			li
-			  = image_tag(asset_path("img/slider/03.jpg"))
-			li
-			  = image_tag(asset_path("img/slider/04.jpg"))
-			li
-			  = image_tag(asset_path("img/slider/05.jpg"))
-
-		#myCarousel.carousel.slide
-			input#slide1 type="radio" name="slider" checked
-			input#slide2 type="radio" name="slider"
-			input#slide3 type="radio" name="slider"
-
+		.carousel.slide
 			.carousel-inner
-				.item
+				.item.active
 					= image_tag(asset_path("img/slider/01.jpg"))
+					h4 First Thumbnail label
+					p Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.
+
 				.item
 					= image_tag(asset_path("img/slider/02.jpg"))
 				.item
 					= image_tag(asset_path("img/slider/03.jpg"))
 
-			#controls
-				label.carousel-control for="slide1"
-					span &lsaquo;
-					span &rsaquo;
-
-				label.carousel-control for="slide2"
-					span &lsaquo;
-					span &rsaquo;
-
-				label.carousel-control for="slide3"
-					span &lsaquo;
-					span &rsaquo;
+			a.left.carousel-control href="#myCarousel" data-slide="prev" &lsaquo;
+            a.right.carousel-control href="#myCarousel" data-slide="next" &rsaquo;
 
 	.technologies
 		.container-title
-			h2 
-				span TECHNOLOGIES
+			h2 TECHNOLOGIES
 
 		ul
 			li
@@ -115,8 +89,7 @@ section.content
 
 	.tools
 		.container-title
-			h2 
-				span TOOLS
+			h2 TOOLS
 
 		ul
 			li
@@ -146,8 +119,7 @@ section.content
 
 	.news
 		.container-title
-			h2 
-				span News
+			h2 News
 
 		article.news-item
 			.published-at
