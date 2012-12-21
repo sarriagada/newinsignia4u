@@ -2,8 +2,6 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-
-
 a{
 	text-decoration: none;
 }
@@ -27,7 +25,7 @@ body{
 	background:url(asset-path("background-pattern.gif", image)) repeat 0 0;
 }
 
-.container, nav ul {  @include outer-container;  }
+.container, nav ul, section {  @include outer-container;  }
 
 header{
 	background:#fff;
@@ -48,6 +46,7 @@ header{
 			width:242px;
 		}
 	}
+
 	a.lang{
 		background: #326bb0;
 		border: 1px solid #1a3757;
@@ -64,6 +63,7 @@ header{
 		width: 128px;
 		font-family: 'Enriqueta', serif;
 	}
+
 	nav{
 		background: #383435;
 
@@ -71,7 +71,7 @@ header{
 			text-align:center;
 
 			li{
-				display:inline;
+				display:inline-block;
 
 				a{
 					color:#fff;
@@ -83,6 +83,7 @@ header{
 					text-transform:uppercase;
 					font-family: 'Enriqueta', serif;
 				}
+
 				a:hover{
 					background: url("/assets/link-hover.png") 0px -1px no-repeat;
 						background-size: 100% 55px;
@@ -92,35 +93,45 @@ header{
 	}
 
 }
+
 // content style
-.content{
-	min-height:300px;
-	h1 {
-		font-size: 50px;
-		font-weight: bold;
-		text-align: center;
-		margin: 0;
-		margin-top: 85px;
-		margin-bottom: 75px;
-		text-transform: uppercase;
-		b{  color:#f10993;  }
-	}
-	p.portada{
-		float: right;
-		position: relative;
-		top: 32px;
-		left: -50px;
-		font-size: 18px; // corregir el tamaño cuando tengamos la fuente correspondiente
-		line-height: 30px;
-		width: 395px;
-		font-family: 'Enriqueta', serif;
-		b{
-			background: #F10993;
-			color: white;
-			font-weight: normal;
-			padding: 0px 5px;
+section.content{
+
+	.introduction{
+
+		h2{
+			font-size: 50px;
+			font-weight: bold;
+			text-align: center;
+			margin: 0;
+			margin-top: 85px;
+			margin-bottom: 75px;
+			text-transform: uppercase;
+
+			strong{
+				color:#f10993;
+			}
+		}
+
+		p{
+			float: right;
+			position: relative;
+			top: 32px;
+			left: -50px;
+			font-size: 18px;
+			line-height: 30px;
+			width: 395px;
+			font-family: 'Enriqueta', serif;
+
+			mark{
+				background: #F10993;
+				color: white;
+				font-weight: normal;
+				padding: 0px 5px;
+			}
 		}
 	}
+
 	.container-title{
 		border-top: 3px dashed #B8B8B8;
 		margin-top: 85px;
@@ -232,6 +243,7 @@ header{
 .ribbon-border{
 	border:#19375a solid 1px;
 	margin: 2em 45px 3em;
+	clear:both;
 
 	.ribbon {
 		@include box-shadow( 0 4px 10px #777 );

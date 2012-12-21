@@ -21,161 +21,163 @@ header
 				a href="" Empleo
 			li 
 				a href="" Blog
-.content
-	.container
-		section
-			h1 
-				| En 
-				b Insignia 
-				| desarrollamos aplicaciones web altamente interactivas utilizando 
-				b metodologias ágiles 
-				| y 
-				b tecnologia 
-				|	avanzadas.
-			= image_tag(asset_path("portada.png"))
-			p.portada
-				| Nos especializamos en backend development utilizando 
-				b Ruby on Rails
-				|  y otras tecnologias web aunque, atravez de alianzas estrategicas, tenemos la capacidad de abordar trabajos de 
-				| manera integral incluyendo consultoria, frontend development y diseño.
 
+section.content
+	.introduction
+		h2
+			| En 
+			strong Insignia 
+			| desarrollamos aplicaciones web altamente interactivas utilizando 
+			strong metodologias ágiles 
+			| y 
+			strong tecnologia 
+			|	avanzadas.
+
+		= image_tag(asset_path("macbook.png"))
+		p
+			| Nos especializamos en backend development utilizando 
+			mark Ruby on Rails
+			|  y otras tecnologias web aunque, atravez de alianzas estrategicas, tenemos la capacidad de abordar trabajos de 
+			| manera integral incluyendo consultoria, frontend development y diseño.
+
+	.projects
 		.container-title
 			h2 
 				span Casos de éxito 
 
-		#page
-		  ul#slideshow
-		    li
-		      = image_tag(asset_path("img/slider/01.jpg"))
-		      .rhino-caption Esto es una prueba
-		    li
-		      = image_tag(asset_path("img/slider/02.jpg"))
-		    li
-		      = image_tag(asset_path("img/slider/03.jpg"))
-		    li
-		      = image_tag(asset_path("img/slider/04.jpg"))
-		    li
-		      = image_tag(asset_path("img/slider/05.jpg"))
 
-		.technologies
-			.container-title
-				h2 
-					span TECHNOLOGIES
+		ul#slideshow
+			li
+			  = image_tag(asset_path("img/slider/01.jpg"))
+			  .rhino-caption Esto es una prueba
+			li
+			  = image_tag(asset_path("img/slider/02.jpg"))
+			li
+			  = image_tag(asset_path("img/slider/03.jpg"))
+			li
+			  = image_tag(asset_path("img/slider/04.jpg"))
+			li
+			  = image_tag(asset_path("img/slider/05.jpg"))
 
-			ul
-				li
-					.circle
-						i.ico-rails
+	.technologies
+		.container-title
+			h2 
+				span TECHNOLOGIES
 
-					h3 Ruby on rails
-				li
-					.circle
-						i.ico-php
+		ul
+			li
+				.circle
+					i.ico-rails
 
-					h3 Kohana (PHP)
-				li
-					.circle
-						i.ico-frontend
-					h3 
-						| Front-end development:
-						br
-						| HTML. CSS and Javascript
-				li
-					.circle
-						i.ico-mobile
-					h3 
-						| Mobile applications development for IOS and Android plataforms
+				h3 Ruby on rails
+			li
+				.circle
+					i.ico-php
 
-		.tools
-			.container-title
-				h2 
-					span TOOLS
+				h3 Kohana (PHP)
+			li
+				.circle
+					i.ico-frontend
+				h3 
+					| Front-end development:
+					br
+					| HTML. CSS and Javascript
+			li
+				.circle
+					i.ico-mobile
+				h3 
+					| Mobile applications development for IOS and Android plataforms
 
-			ul
-				li
-					.circle
-						i.ico-agile
+	.tools
+		.container-title
+			h2 
+				span TOOLS
 
-					h3
-						| Agile Methodologies
-				li
-					.circle
-						i.ico-git
+		ul
+			li
+				.circle
+					i.ico-agile
 
-					h3 
-						| Version control system: GIT, SVN and Others.
-				li
-					.circle
-						i.ico-driven
+				h3
+					| Agile Methodologies
+			li
+				.circle
+					i.ico-git
 
-					h3 
-						| Behaviour Driven Development
-				li
-					.circle
-						i.ico-rails
+				h3 
+					| Version control system: GIT, SVN and Others.
+			li
+				.circle
+					i.ico-driven
 
-					h3 
-						| Pair Programming
+				h3 
+					| Behaviour Driven Development
+			li
+				.circle
+					i.ico-rails
 
+				h3 
+					| Pair Programming
+
+	.news
 		.container-title
 			h2 
 				span News
 
-		.container
-				article.news-item
-					.published-at
-						i.icon-calendar
-						| 14 de Diciembre 2012
-					.title
-						| La Historia de Insignia, la historia de Insignia
-					h3
-						| Los Tanfaun entre los ganadores en BA Apps
-					.description
-						p
-							| Con la aplicación Los Tanfaun salimos ganadores de la categoría Urbanismo en el concurso de Buenos Aires Apps. Nuestros amigos de Indicius con quién realizamos este proyecto en conjunto recibien el premio en Buenos Aires en representación...
+		article.news-item
+			.published-at
+				i.icon-calendar
+				| 14 de Diciembre 2012
+			.title
+				| La Historia de Insignia, la historia de Insignia
+			h3
+				| Los Tanfaun entre los ganadores en BA Apps
+			.description
+				p
+					| Con la aplicación Los Tanfaun salimos ganadores de la categoría Urbanismo en el concurso de Buenos Aires Apps. Nuestros amigos de Indicius con quién realizamos este proyecto en conjunto recibien el premio en Buenos Aires en representación...
 
-					a.more href="http://www.insignia4u-blog.com/" target="_blank"
-						| Read more
+			a.more href="http://www.insignia4u-blog.com/" target="_blank"
+				| Read more
 
-				article.news-item
-					.published-at
-						i.icon-calendar
-						| 17 de Noviembre 2012
-					.title
-						| La Historia de Insignia
-					h3
-						| Los Tanfaun: Nuestra participación en B.A. Apps
-					.description
-						p
-							| Los Tanfaun es una aplicación del tipo “Lost & Found”, y sirve para conectar a las personas que encontraron y perdieron cosas en la ciudad.
-						p
-							| En nuestro primer emprendimiento en conjunto con el estudio de diseño...
+		article.news-item
+			.published-at
+				i.icon-calendar
+				| 17 de Noviembre 2012
+			.title
+				| La Historia de Insignia
+			h3
+				| Los Tanfaun: Nuestra participación en B.A. Apps
+			.description
+				p
+					| Los Tanfaun es una aplicación del tipo “Lost & Found”, y sirve para conectar a las personas que encontraron y perdieron cosas en la ciudad.
+				p
+					| En nuestro primer emprendimiento en conjunto con el estudio de diseño...
 
-					a.more href="http://www.insignia4u-blog.com/" target="_blank"
-						| Read more
+			a.more href="http://www.insignia4u-blog.com/" target="_blank"
+				| Read more
 
-				article.news-item
-					.published-at
-						i.icon-calendar
-						| 23 de Marzo 2012
-					.title
-						| Del Freelancing a la Empresa
-					h3
-						| La Historia de Insignia
-					.description
-						p
-							| El día 15 de noviembre participamos de la jornada de cierre anual del Tucumán Valley con una presentación en el marco de la serie de charlas denominadas "Como vender servicios tecnológicos al mundo (y no morir en el intento)".
-					a.more href="http://www.insignia4u-blog.com/" target="_blank"
-						| Read more
+		article.news-item
+			.published-at
+				i.icon-calendar
+				| 23 de Marzo 2012
+			.title
+				| Del Freelancing a la Empresa
+			h3
+				| La Historia de Insignia
+			.description
+				p
+					| El día 15 de noviembre participamos de la jornada de cierre anual del Tucumán Valley con una presentación en el marco de la serie de charlas denominadas "Como vender servicios tecnológicos al mundo (y no morir en el intento)".
+			a.more href="http://www.insignia4u-blog.com/" target="_blank"
+				| Read more
 
-		.ribbon-border
-			.ribbon
-				strong.ribbon-content
-					| El sistena de gesti&oacute;n de la calidad de la Empresa Insignia ha sido certificado según la norma 
-					span IRAM-ISO 9001:2008
+	.ribbon-border
+		.ribbon
+			strong.ribbon-content
+				| El sistena de gesti&oacute;n de la calidad de la Empresa Insignia ha sido certificado según la norma 
+				span IRAM-ISO 9001:2008
 
-				.ribbon-left
-				.ribbon-right
+			.ribbon-left
+			.ribbon-right
 
 footer
 	.container
@@ -212,6 +214,5 @@ footer
 
 				li.fb
 					a href=""
-						i.icon-facebook
-					
+						i.icon-facebook	
 					| Conectate
