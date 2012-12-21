@@ -91,7 +91,6 @@ header{
 			}
 		}
 	}
-
 }
 
 // content style
@@ -493,6 +492,7 @@ article { @include span-columns(9); }
 }
 
 .technologies, .tools{
+	clear:both;
 	overflow:hidden;
 	padding-bottom:50px;
 

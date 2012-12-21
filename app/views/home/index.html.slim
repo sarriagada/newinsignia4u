@@ -45,7 +45,6 @@ section.content
 			h2 
 				span Casos de éxito 
 
-
 		ul#slideshow
 			li
 			  = image_tag(asset_path("img/slider/01.jpg"))
@@ -58,6 +57,32 @@ section.content
 			  = image_tag(asset_path("img/slider/04.jpg"))
 			li
 			  = image_tag(asset_path("img/slider/05.jpg"))
+
+		#myCarousel.carousel.slide
+			input#slide1 type="radio" name="slider" checked
+			input#slide2 type="radio" name="slider"
+			input#slide3 type="radio" name="slider"
+
+			.carousel-inner
+				.item
+					= image_tag(asset_path("img/slider/01.jpg"))
+				.item
+					= image_tag(asset_path("img/slider/02.jpg"))
+				.item
+					= image_tag(asset_path("img/slider/03.jpg"))
+
+			#controls
+				label.carousel-control for="slide1"
+					span &lsaquo;
+					span &rsaquo;
+
+				label.carousel-control for="slide2"
+					span &lsaquo;
+					span &rsaquo;
+
+				label.carousel-control for="slide3"
+					span &lsaquo;
+					span &rsaquo;
 
 	.technologies
 		.container-title
