@@ -47,14 +47,15 @@ section.content
 			#myCarousel.carousel.slide
 			  .carousel-inner
 			    .active.item
-						= image_tag(asset_path("img/slider/01.jpg"))
+						= image_tag(asset_path("slider/01.jpg"))
 						.carousel-caption
 							h4 First Thumbnail label
 							p Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.
+						a.link-info href="#myCarousel" Link
 			    .item
-						= image_tag(asset_path("img/slider/02.jpg"))
+						= image_tag(asset_path("slider/02.jpg"))
 			    .item
-						= image_tag(asset_path("img/slider/03.jpg"))
+						= image_tag(asset_path("slider/03.jpg"))
 			  /! Carousel nav
 			  a.carousel-control.left data-slide="prev" href="#myCarousel"
 			  a.carousel-control.right data-slide="next" href="#myCarousel"
