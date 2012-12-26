@@ -43,22 +43,38 @@ section.content
 	.projects
 		.container-title
 			h2 Casos de éxito
-
-			#myCarousel.carousel.slide
-			  .carousel-inner
-			    .active.item
-						= image_tag(asset_path("slider/01.jpg"))
+			#cases.carousel.slide
+				.carousel-inner
+					.active.item
+						= image_tag(asset_path("slider/craftfoxes.jpg"))
 						.carousel-caption
-							h4 First Thumbnail label
-							p Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.
-						a.link-info href="#myCarousel" Link
-			    .item
-						= image_tag(asset_path("slider/02.jpg"))
-			    .item
-						= image_tag(asset_path("slider/03.jpg"))
-			  /! Carousel nav
-			  a.carousel-control.left data-slide="prev" href="#myCarousel"
-			  a.carousel-control.right data-slide="next" href="#myCarousel"
+							h4 Craftfoxes.com
+							p
+								| Desarrollo de backend sobre Rails 3 de una Red Social + Desarrollo de Frontend + Integración Google Maps API + Built for American Overloaded Inc.
+
+							a.more href="www.craftfoxes.com" Visit Site
+					.item
+						= image_tag(asset_path("slider/tablehopping.jpg"))
+						.carousel-caption
+							h4 Table Hopping NY
+							p
+								| TableHoppingNY is NYC’s culinary life served to you on a platter! It’s a community around gourmet events in New York City.
+
+							a.more href="www.tablehopping.com" Visit Site
+					.item
+						= image_tag(asset_path("slider/area17.jpg"))
+						.carousel-caption
+							h4 Area 17
+							p
+								| We have a long term relationship with AREA17 providing them with backend development services for most of their Ruby on Rails projects. For more than 5 year we have worked together developing successfull projects.
+
+							a.more href="www.area17.com" Visit Site
+
+							a.more href="" Visit Site
+
+				/! Carousel nav
+				a.carousel-control.left data-slide="prev" href="#myCarousel"
+				a.carousel-control.right data-slide="next" href="#myCarousel"
 
 	.technologies
 		.container-title
