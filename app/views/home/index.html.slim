@@ -33,7 +33,15 @@ section.content
 			strong tecnologia 
 			|	avanzadas.
 
-		= image_tag(asset_path("macbook.png"))
+		#IntroCarousel.carousel.slide
+			.carousel-inner
+				.active.item
+					= image_tag(asset_path("macbook.png"))
+				.item
+					= image_tag(asset_path("ipad.png"))
+				.item
+					= image_tag(asset_path("cel.png"))
+
 		p
 			| Nos especializamos en backend development utilizando 
 			mark Ruby on Rails
@@ -44,7 +52,7 @@ section.content
 		.container-title
 			h2 Casos de éxito
 
-			#myCarousel.carousel.slide
+			#ProjectCarousel.carousel.slide
 			  .carousel-inner
 			    .active.item
 						= image_tag(asset_path("slider/01.jpg"))
@@ -59,8 +67,8 @@ section.content
 						= image_tag(asset_path("slider/03.jpg"))
 						a.link-info href="#myCarousel" Link
 			  /! Carousel nav
-			  a.carousel-control.left data-slide="prev" href="#myCarousel"
-			  a.carousel-control.right data-slide="next" href="#myCarousel"
+			  a.carousel-control.left data-slide="prev" href="#ProjectCarousel"
+			  a.carousel-control.right data-slide="next" href="#ProjectCarousel"
 
 	.technologies
 		.container-title
