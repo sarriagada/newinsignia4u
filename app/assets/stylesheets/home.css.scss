@@ -258,10 +258,6 @@ section.content{
 }
 // fin news
 
-
-
-
-
 .ribbon-border{
 	border:#19375a solid 1px;
 	margin: 2em 45px 3em;
@@ -306,6 +302,128 @@ section.content{
 	}
 }
 
+
+aside { @include span-columns(3); }
+article { @include span-columns(9); }
+
+.technologies, .tools{
+	clear:both;
+	overflow:hidden;
+	padding-bottom:50px;
+
+	ul{
+		margin-left: -20px;
+
+		li{
+			@include border-radius(10px);
+			background: repeat 0 0 rgba(255, 255, 255, 0.4);
+			border: #373435 dashed 1px;
+			float:left;
+			height:184px;
+			margin-left:20px;
+			text-align:center;
+			width:218px;
+
+			.circle{
+				@include border-radius(35px);
+				background:#f20892;
+				border:#a60563 solid 5px;
+				height:70px;
+				width:70px;
+				margin:19px auto 10px;
+				
+				i.ico-rails{
+					background-position: 0 0;
+				    display: block;
+				    height: 34px;
+				    margin: 15px auto 0;
+				    width: 40px;
+				}
+
+				i.ico-php{
+					background-position: -44px 0;
+					display: block;
+					height: 22px;
+					margin: 21px auto 0;
+					width: 48px;
+				}
+
+				i.ico-frontend{
+					background-position: -97px 0;
+				    display: block;
+				    height: 34px;
+				    margin: 13px auto 0;
+				    width: 48px;
+				}
+
+				i.ico-mobile{
+					background-position: -147px 0;
+				    display: block;
+				    height: 43px;
+				    margin: 8px auto 0;
+				    width: 31px;
+				}
+
+				i.ico-agile{
+					background-position: -185px 0;
+				    display: block;
+				    height: 38px;
+				    margin: 12px auto 0;
+				    width: 36px;
+				}
+
+				i.ico-git{
+					background-position: -225px 0;
+				    display: block;
+				    height: 39px;
+				    margin: 10px auto 0;
+				    width: 48px;
+				}
+
+				i.ico-driven{
+					background-position: -277px 0;
+				    display: block;
+				    height: 41px;
+				    margin: 8px auto 0;
+				    width: 25px;
+				}
+
+				i.ico-pair{
+					background-position: -311px 0;
+				    display: block;
+				    height: 43px;
+				    margin: 16px auto 0;
+				    width: 35px;
+				}
+			}
+
+			h3{
+				display:table-cell;
+				font-family: Enriqueta, Arial;
+				font-size:15px;
+				font-weight:normal;
+				height:50px;
+				line-height:21px;
+				padding:0 22px;
+				vertical-align:middle;
+				width:216px;
+			}
+		}
+	}
+}
+
+.tools{
+	ul{
+		li{
+			.circle{
+				background:#316baf;
+				border:#224a79 solid 5px;
+				
+
+			}
+		}
+	}	
+}
 
 
 // footer style
@@ -477,251 +595,3 @@ footer{
 	}
 }
 // fin footer style
-aside { @include span-columns(3); }
-article { @include span-columns(9); }
-
-.technologies, .tools{
-	clear:both;
-	overflow:hidden;
-	padding-bottom:50px;
-
-	ul{
-		margin-left: -20px;
-
-		li{
-			@include border-radius(10px);
-			background: repeat 0 0 rgba(255, 255, 255, 0.4);
-			border: #373435 dashed 1px;
-			float:left;
-			height:184px;
-			margin-left:20px;
-			text-align:center;
-			width:218px;
-
-			.circle{
-				@include border-radius(35px);
-				background:#f20892;
-				border:#a60563 solid 5px;
-				height:70px;
-				width:70px;
-				margin:19px auto 10px;
-				
-				i.ico-rails{
-					background-position: 0 0;
-				    display: block;
-				    height: 34px;
-				    margin: 15px auto 0;
-				    width: 40px;
-				}
-
-				i.ico-php{
-					background-position: -44px 0;
-					display: block;
-					height: 22px;
-					margin: 21px auto 0;
-					width: 48px;
-				}
-
-				i.ico-frontend{
-					background-position: -97px 0;
-				    display: block;
-				    height: 34px;
-				    margin: 13px auto 0;
-				    width: 48px;
-				}
-
-				i.ico-mobile{
-					background-position: -147px 0;
-				    display: block;
-				    height: 43px;
-				    margin: 8px auto 0;
-				    width: 31px;
-				}
-
-				i.ico-agile{
-					background-position: -185px 0;
-				    display: block;
-				    height: 38px;
-				    margin: 12px auto 0;
-				    width: 36px;
-				}
-
-				i.ico-git{
-					background-position: -225px 0;
-				    display: block;
-				    height: 39px;
-				    margin: 10px auto 0;
-				    width: 48px;
-				}
-
-				i.ico-driven{
-					background-position: -277px 0;
-				    display: block;
-				    height: 41px;
-				    margin: 8px auto 0;
-				    width: 25px;
-				}
-
-				i.ico-pair{
-					background-position: -311px 0;
-				    display: block;
-				    height: 43px;
-				    margin: 16px auto 0;
-				    width: 35px;
-				}
-			}
-
-			h3{
-				display:table-cell;
-				font-family: Enriqueta, Arial;
-				font-size:15px;
-				font-weight:normal;
-				height:50px;
-				line-height:21px;
-				padding:0 22px;
-				vertical-align:middle;
-				width:216px;
-			}
-		}
-	}
-}
-
-.tools{
-	ul{
-		li{
-			.circle{
-				background:#316baf;
-				border:#224a79 solid 5px;
-				
-
-			}
-		}
-	}	
-}
-
-.carousel {
-  position: relative;
-  margin-bottom: 20px;
-  line-height: 1;
-}
-
-.carousel-inner {
-  position: relative;
-  width: 100%;
-  overflow: hidden;
-}
-
-.carousel-inner > .item {
-  position: relative;
-  display: none;
-  -webkit-transition: 0.6s ease-in-out left;
-     -moz-transition: 0.6s ease-in-out left;
-       -o-transition: 0.6s ease-in-out left;
-          transition: 0.6s ease-in-out left;
-}
-
-.carousel-inner > .item > img {
-  width: auto\9;
-  height: auto;
-  max-width: 100%;
-  vertical-align: middle;
-  border: 0;
-  -ms-interpolation-mode: bicubic;
-  display: block;
-  line-height: 1;
-}
-
-.carousel-inner > .active,
-.carousel-inner > .next,
-.carousel-inner > .prev {
-  display: block;
-}
-
-.carousel-inner > .active {
-  left: 0;
-}
-
-.carousel-inner > .next,
-.carousel-inner > .prev {
-  position: absolute;
-  top: 0;
-  width: 100%;
-}
-
-.carousel-inner > .next {
-  left: 100%;
-}
-
-.carousel-inner > .prev {
-  left: -100%;
-}
-
-.carousel-inner > .next.left,
-.carousel-inner > .prev.right {
-  left: 0;
-}
-
-.carousel-inner > .active.left {
-  left: -100%;
-}
-
-.carousel-inner > .active.right {
-  left: 100%;
-}
-
-.carousel-control {
-  position: absolute;
-  top: 40%;
-  left: 15px;
-  width: 40px;
-  height: 40px;
-  margin-top: -20px;
-  font-size: 60px;
-  font-weight: 100;
-  line-height: 30px;
-  color: #ffffff;
-  text-align: center;
-  background: #222222;
-  border: 3px solid #ffffff;
-  -webkit-border-radius: 23px;
-     -moz-border-radius: 23px;
-          border-radius: 23px;
-  opacity: 0.5;
-  filter: alpha(opacity=50);
-}
-
-.carousel-control.right {
-  right: 15px;
-  left: auto;
-}
-
-.carousel-control:hover {
-  color: #ffffff;
-  text-decoration: none;
-  opacity: 0.9;
-  filter: alpha(opacity=90);
-}
-
-.carousel-caption {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  padding: 15px;
-  background: #333333;
-  background: rgba(0, 0, 0, 0.75);
-}
-
-.carousel-caption h4,
-.carousel-caption p {
-  line-height: 20px;
-  color: #ffffff;
-}
-
-.carousel-caption h4 {
-  margin: 0 0 5px;
-}
-
-.carousel-caption p {
-  margin-bottom: 0;
-}
