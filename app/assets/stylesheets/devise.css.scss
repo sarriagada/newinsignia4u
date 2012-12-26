@@ -1,0 +1,98 @@
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 480px) {
+/* Styles */
+}
+ 
+/* Smartphones (landscape) ----------- */
+@media only screen
+and (min-width : 321px) {
+/* Styles */
+}
+ 
+/* Smartphones (portrait) ----------- */
+@media only screen
+and (max-width : 320px) {
+/* Styles */
+}
+ 
+/* iPads (portrait and landscape) ----------- */
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px) {
+/* Styles */
+}
+ 
+/* iPads (landscape) ----------- */
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
+and (orientation : landscape) {
+/* Styles */
+}
+ 
+/* iPads (portrait) ----------- */
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
+and (orientation : portrait) {
+/* Styles */
+// content style
+  header{
+    nav ul li a{  width: 109px;  }
+  }
+  section.content{
+    h2{  padding: 0px 27px;  }
+  }
+  .introduction{
+    /* IntroCarousel  style */
+    #IntroCarousel{
+      .carousel.slide, .carousel-inner > .item > img, .carousel-inner{
+        float: none!important;
+        position: static;
+        margin: auto;
+      }
+    }
+    p{
+      float: none;
+      position: static;
+      margin: auto;
+      width: 80%;
+    }
+  }
+  .technologies ul li, .tools ul li {
+    margin-left: 3.5%;
+    margin-bottom: 3.5%;
+    width: 45%;
+   }
+   .news-item {
+    width: 89%;
+    height: auto;
+    margin-bottom: 4%;
+    margin-left: 5%;
+    margin-right: 0px;
+    .more{
+      left: 40%;
+    }
+  }
+}
+ 
+/* Desktops and laptops ----------- */
+@media only screen
+and (min-width : 1224px) {
+/* Styles */
+}
+ 
+/* Large screens ----------- */
+@media only screen
+and (min-width : 1824px) {
+/* Styles */
+}
+ 
+/* iPhone 4 ----------- */
+@media
+only screen and (-webkit-min-device-pixel-ratio : 1.5),
+only screen and (min-device-pixel-ratio : 1.5) {
+/* Styles */
+}
