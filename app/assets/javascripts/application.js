@@ -23,6 +23,8 @@ $(document).ready(function() {
 
     $('#cases, #IntroCarousel').carousel();
 
+    $().UItoTop({ easingType: 'easeOutQuart' });
+
     var biggestHeight = 0;  
     $('.news-item').each(function(){  
         if($(this).height() > biggestHeight){  
