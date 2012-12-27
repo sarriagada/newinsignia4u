@@ -69,10 +69,9 @@ header{
 
 		ul{
 			text-align:center;
-
+			padding-left: 20px;
 			li{
 				display:inline-block;
-
 				a{
 					color:#fff;
 					display:inline-block;
@@ -89,7 +88,7 @@ header{
 					vertical-align: middle;
 					content: url("/assets/arrow-left.png");
 					display: inline-block;
-					width: 22px;
+					width: 18px;
 					position: absolute;
 					top: 5px;
 					left:-5px;
@@ -98,7 +97,7 @@ header{
 					vertical-align: middle;
 					content: url("/assets/arrow-right.png");
 					display: inline-block;
-					width: 22px;
+					width: 31px;
 					position: absolute;
 					top: 5px;
 				}
@@ -137,8 +136,9 @@ section.content{
 			line-height:50px;
 			text-align: center;
 			margin:76px 0;
-			padding: 0px 80px;
+			padding: 0px 50px;
 			font-family: 'Amatic SC', cursive;
+			letter-spacing: 1px;
 
 			strong{
 				color:#f10993;
@@ -148,10 +148,10 @@ section.content{
 		p{
 			float: right;
 			position: absolute;
-			bottom: 50px;
-			left: 486px;
+			bottom: 72px;
+			left: 480px;
 			font-size: 18px;
-			line-height: 30px;
+			line-height: 27px;
 			width: 395px;
 			min-height: 200px;
 			font-family: 'Enriqueta', serif;
@@ -166,8 +166,8 @@ section.content{
 	}
 
 	.container-title{
-		border-top: 3px dashed #B8B8B8;
-		margin-top: 85px;
+		border-top: 2px dashed #B8B8B8;
+		margin-top: 60px;
 		width: 100%;
 		text-align:center;
 
@@ -193,7 +193,7 @@ section.content{
 			@include transform(rotateY(180deg));
 		}
 	}
-
+	.projects {  margin-bottom: 68px;  }
 	.technologies, .tools{
 		clear:both;
 		overflow:hidden;
@@ -201,7 +201,7 @@ section.content{
 
 		ul{
 			margin-left: -20px;
-
+			margin-top: 7px;
 			li{
 				@include border-radius(10px);
 				background: repeat 0 0 rgba(255, 255, 255, 0.4);
@@ -219,6 +219,7 @@ section.content{
 					height:70px;
 					width:70px;
 					margin:19px auto 10px;
+					margin-bottom: 22px;
 					
 					i.ico-rails{
 						background-position: 0 0;
@@ -301,14 +302,16 @@ section.content{
 	}
 
 	.tools{
+		margin-top: 18px;
 		.container-title{
 			h2:after {
 					content: url("/assets/arrow-left-blue.png");
-margin-left: 25px;
+					margin-left: 5px;
 				}
 				h2:before {
 					content: url("/assets/arrow-left-blue.png");
-					margin-right: 25px;
+					margin-left: -11px;
+					margin-right: -3px;
 				}
 			}
 	}
@@ -434,7 +437,11 @@ margin-left: 25px;
 	}
 
 	.news{
-		ul{  margin-left: -20px;  }
+		margin-top: 92px;
+		ul{
+			margin-left: -20px;
+			margin-top: 15px;
+		}
 		.news-item {
 			background: white;
 			width: 300px;
