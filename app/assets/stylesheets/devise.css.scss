@@ -33,15 +33,10 @@ and (orientation : landscape) {
 }
  
 /* iPads (portrait) ----------- */
-@media only screen
-and (min-device-width : 768px)
-and (max-device-width : 1024px)
-and (orientation : portrait) {
+@media (max-width : 1024px)
+and (orientation : portrait){
 /* Styles */
 // content style
-  header{
-    nav ul li a{  width: 109px;  }
-  }
   section.content{
     h2{  padding: 0px 27px;  }
   }
@@ -50,30 +45,36 @@ and (orientation : portrait) {
     #IntroCarousel{
       .carousel.slide, .carousel-inner > .item > img, .carousel-inner{
         float: none!important;
-        position: static;
+        position: static!important;
         margin: auto;
       }
     }
     p{
-      float: none;
-      position: static;
+      float: none!important;
+      position: static!important;
       margin: auto;
       width: 80%;
     }
   }
   .technologies ul li, .tools ul li {
-    margin-left: 3.5%;
+    margin-left: 3.5%!important;
     margin-bottom: 3.5%;
-    width: 45%;
-   }
-   .news-item {
-    width: 89%;
-    height: auto;
-    margin-bottom: 4%;
-    margin-left: 5%;
-    margin-right: 0px;
+    width: 45%!important;
+    h3{
+      width: 100%!important;
+      margin: auto;
+      display: block!important;
+    }
+  }
+  .news-item {
+    width: 87%!important;
+    height: auto!important;
+    margin-bottom: 4%!important;
+    margin-left: 8%!important;
+    margin-right: 0px!important;
+    padding-right: 4%!important;
     .more{
-      left: 40%;
+      left: 40%!important;
     }
   }
 }
