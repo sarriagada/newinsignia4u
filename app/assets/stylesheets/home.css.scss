@@ -26,7 +26,7 @@ body{
 }
 
 .container, nav ul, section {  @include outer-container;  }
-
+//header style
 header{
 	background:#fff;
 	text-align:center;
@@ -123,7 +123,7 @@ header{
 		}
 	}
 }
-
+// fin header style
 // content style
 section.content{
 
@@ -310,6 +310,127 @@ section.content{
 	    	}
 	    }
 	}
+
+
+	.technologies, .tools{
+		clear:both;
+		overflow:hidden;
+		padding-bottom:20px;
+
+		ul{
+			margin-left: -20px;
+
+			li{
+				@include border-radius(10px);
+				background: repeat 0 0 rgba(255, 255, 255, 0.4);
+				border: #373435 dashed 1px;
+				float:left;
+				height:184px;
+				margin-left:20px;
+				text-align:center;
+				width:218px;
+
+				.circle{
+					@include border-radius(35px);
+					background:#f20892;
+					border:#a60563 solid 5px;
+					height:70px;
+					width:70px;
+					margin:19px auto 10px;
+					
+					i.ico-rails{
+						background-position: 0 0;
+					    display: block;
+					    height: 34px;
+					    margin: 15px auto 0;
+					    width: 40px;
+					}
+
+					i.ico-php{
+						background-position: -44px 0;
+						display: block;
+						height: 22px;
+						margin: 21px auto 0;
+						width: 48px;
+					}
+
+					i.ico-frontend{
+						background-position: -97px 0;
+					    display: block;
+					    height: 34px;
+					    margin: 13px auto 0;
+					    width: 48px;
+					}
+
+					i.ico-mobile{
+						background-position: -147px 0;
+					    display: block;
+					    height: 43px;
+					    margin: 8px auto 0;
+					    width: 31px;
+					}
+
+					i.ico-agile{
+						background-position: -185px 0;
+					    display: block;
+					    height: 38px;
+					    margin: 12px auto 0;
+					    width: 36px;
+					}
+
+					i.ico-git{
+						background-position: -225px 0;
+					    display: block;
+					    height: 39px;
+					    margin: 10px auto 0;
+					    width: 48px;
+					}
+
+					i.ico-driven{
+						background-position: -277px 0;
+					    display: block;
+					    height: 41px;
+					    margin: 8px auto 0;
+					    width: 25px;
+					}
+
+					i.ico-pair{
+						background-position: -311px 0;
+					    display: block;
+					    height: 43px;
+					    margin: 16px auto 0;
+					    width: 35px;
+					}
+				}
+
+				h3{
+					display:table-cell;
+					font-family: Enriqueta, Arial;
+					font-size:15px;
+					font-weight:normal;
+					height:50px;
+					line-height:21px;
+					padding:0 22px;
+					vertical-align:middle;
+					width:216px;
+				}
+			}
+		}
+	}
+
+	.tools{
+		ul{
+			li{
+				.circle{
+					background:#316baf;
+					border:#224a79 solid 5px;
+					
+
+				}
+			}
+		}	
+	}
+
 
 	.news-item {
 		background: white;
@@ -604,166 +725,9 @@ footer{
 }
 // fin footer style
 
+
+
 //slider style
-#slideshow {
-	width:600px;
-	height:250px;
-
-	/*IE bugfix*/
-	padding:0;
-	margin:0;
-}
-
-#slideshow li { list-style:none; }
-
-#page {
-	width:600px;
-	margin:50px auto;
-}
-
-.rhino-container{
-	position: relative;
-	margin: auto;
-	width: 820px!important;
-	height: 405px!important;
-	border: 1px solid #BEBABB;
-	left: -105px!important;
-}
-
-.rhino-next{
-	right: 0;
-}
-
-.rhino-caption{
-	display: block;
-	opacity: 0.9;
-	background-color: white;
-	width: 100%;
-	height: 113px;
-	position: absolute;
-	top: 290px;
-	color: #383435;
-	border: 1px solid #383435;
-}
-
-.technologies, .tools{
-	clear:both;
-	overflow:hidden;
-	padding-bottom:20px;
-
-	ul{
-		margin-left: -20px;
-
-		li{
-			@include border-radius(10px);
-			background: repeat 0 0 rgba(255, 255, 255, 0.4);
-			border: #373435 dashed 1px;
-			float:left;
-			height:184px;
-			margin-left:20px;
-			text-align:center;
-			width:218px;
-
-			.circle{
-				@include border-radius(35px);
-				background:#f20892;
-				border:#a60563 solid 5px;
-				height:70px;
-				width:70px;
-				margin:19px auto 10px;
-				
-				i.ico-rails{
-					background-position: 0 0;
-				    display: block;
-				    height: 34px;
-				    margin: 15px auto 0;
-				    width: 40px;
-				}
-
-				i.ico-php{
-					background-position: -44px 0;
-					display: block;
-					height: 22px;
-					margin: 21px auto 0;
-					width: 48px;
-				}
-
-				i.ico-frontend{
-					background-position: -97px 0;
-				    display: block;
-				    height: 34px;
-				    margin: 13px auto 0;
-				    width: 48px;
-				}
-
-				i.ico-mobile{
-					background-position: -147px 0;
-				    display: block;
-				    height: 43px;
-				    margin: 8px auto 0;
-				    width: 31px;
-				}
-
-				i.ico-agile{
-					background-position: -185px 0;
-				    display: block;
-				    height: 38px;
-				    margin: 12px auto 0;
-				    width: 36px;
-				}
-
-				i.ico-git{
-					background-position: -225px 0;
-				    display: block;
-				    height: 39px;
-				    margin: 10px auto 0;
-				    width: 48px;
-				}
-
-				i.ico-driven{
-					background-position: -277px 0;
-				    display: block;
-				    height: 41px;
-				    margin: 8px auto 0;
-				    width: 25px;
-				}
-
-				i.ico-pair{
-					background-position: -311px 0;
-				    display: block;
-				    height: 43px;
-				    margin: 16px auto 0;
-				    width: 35px;
-				}
-			}
-
-			h3{
-				display:table-cell;
-				font-family: Enriqueta, Arial;
-				font-size:15px;
-				font-weight:normal;
-				height:50px;
-				line-height:21px;
-				padding:0 22px;
-				vertical-align:middle;
-				width:216px;
-			}
-		}
-	}
-}
-
-.tools{
-	ul{
-		li{
-			.circle{
-				background:#316baf;
-				border:#224a79 solid 5px;
-				
-
-			}
-		}
-	}	
-}
 
 .carousel {
   position: relative;
@@ -955,3 +919,4 @@ footer{
 .carousel.carousel-fade .carousel-control{
 	z-index:3;
 }
+//fin slider style
