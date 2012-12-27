@@ -21,7 +21,7 @@
 
 $(document).ready(function() {
 
-    $('#cases').carousel();
+    $('#cases, #IntroCarousel').carousel();
 
     var biggestHeight = 0;  
     $('.news-item').each(function(){  

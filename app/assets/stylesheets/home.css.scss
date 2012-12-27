@@ -77,28 +77,47 @@ header{
 					color:#fff;
 					display:inline-block;
 					height:55px;
-					width: 134px;
+					width: auto;
+					padding: 0 16px;
 					font-weight:bold;
 					line-height:55px;
 					text-transform:uppercase;
 					font-family: 'Enriqueta', serif;
+					position:relative;
 				}
 				a:hover:before{
 					vertical-align: middle;
-					content: url("/assets/flecha.gif");
+					content: url("/assets/arrow-left.png");
 					display: inline-block;
 					width: 22px;
-					position: relative;
-					top: 6px;
+					position: absolute;
+					top: 5px;
+					left:-5px;
 				}
 				a:hover:after{
 					vertical-align: middle;
-					content: url("/assets/flecha.gif");
+					content: url("/assets/arrow-right.png");
 					display: inline-block;
 					width: 22px;
-					position: relative;
-					top: 6px;
-					@include transform(rotateY(180deg));
+					position: absolute;
+					top: 5px;
+				}
+				a.active:before{
+					vertical-align: middle;
+					content: url("/assets/arrow-left.png");
+					display: inline-block;
+					width: 22px;
+					position: absolute;
+					top: 5px;
+					left:-5px;
+				}
+				a.active:after{
+					vertical-align: middle;
+					content: url("/assets/arrow-right.png");
+					display: inline-block;
+					width: 22px;
+					position: absolute;
+					top: 5px;
 				}
 			}
 		}
@@ -110,15 +129,16 @@ section.content{
 
 	.introduction{
 		overflow:hidden;
+		position:relative;
+		min-height: 565px;
 
 		h2{
 			font-size: 50px;
-			font-weight: bold;
+			line-height:50px;
 			text-align: center;
-			margin: 0;
-			margin-top: 85px;
-			margin-bottom: 75px;
-			text-transform: uppercase;
+			margin:76px 0;
+			padding: 0px 80px;
+			font-family: 'Amatic SC', cursive;
 
 			strong{
 				color:#f10993;
@@ -127,12 +147,13 @@ section.content{
 
 		p{
 			float: right;
-			position: relative;
-			top: 32px;
-			left: -50px;
+			position: absolute;
+			bottom: 50px;
+			left: 486px;
 			font-size: 18px;
 			line-height: 30px;
 			width: 395px;
+			min-height: 200px;
 			font-family: 'Enriqueta', serif;
 
 			mark{
@@ -258,10 +279,6 @@ section.content{
 }
 // fin news
 
-
-
-
-
 .ribbon-border{
 	border:#19375a solid 1px;
 	margin: 2em 45px 3em;
@@ -307,6 +324,127 @@ section.content{
 }
 
 
+aside { @include span-columns(3); }
+article { @include span-columns(9); }
+
+.technologies, .tools{
+	clear:both;
+	overflow:hidden;
+	padding-bottom:50px;
+
+	ul{
+		margin-left: -20px;
+
+		li{
+			@include border-radius(10px);
+			background: repeat 0 0 rgba(255, 255, 255, 0.4);
+			border: #373435 dashed 1px;
+			float:left;
+			height:184px;
+			margin-left:20px;
+			text-align:center;
+			width:218px;
+
+			.circle{
+				@include border-radius(35px);
+				background:#f20892;
+				border:#a60563 solid 5px;
+				height:70px;
+				width:70px;
+				margin:19px auto 10px;
+				
+				i.ico-rails{
+					background-position: 0 0;
+				    display: block;
+				    height: 34px;
+				    margin: 15px auto 0;
+				    width: 40px;
+				}
+
+				i.ico-php{
+					background-position: -44px 0;
+					display: block;
+					height: 22px;
+					margin: 21px auto 0;
+					width: 48px;
+				}
+
+				i.ico-frontend{
+					background-position: -97px 0;
+				    display: block;
+				    height: 34px;
+				    margin: 13px auto 0;
+				    width: 48px;
+				}
+
+				i.ico-mobile{
+					background-position: -147px 0;
+				    display: block;
+				    height: 43px;
+				    margin: 8px auto 0;
+				    width: 31px;
+				}
+
+				i.ico-agile{
+					background-position: -185px 0;
+				    display: block;
+				    height: 38px;
+				    margin: 12px auto 0;
+				    width: 36px;
+				}
+
+				i.ico-git{
+					background-position: -225px 0;
+				    display: block;
+				    height: 39px;
+				    margin: 10px auto 0;
+				    width: 48px;
+				}
+
+				i.ico-driven{
+					background-position: -277px 0;
+				    display: block;
+				    height: 41px;
+				    margin: 8px auto 0;
+				    width: 25px;
+				}
+
+				i.ico-pair{
+					background-position: -311px 0;
+				    display: block;
+				    height: 43px;
+				    margin: 16px auto 0;
+				    width: 35px;
+				}
+			}
+
+			h3{
+				display:table-cell;
+				font-family: Enriqueta, Arial;
+				font-size:15px;
+				font-weight:normal;
+				height:50px;
+				line-height:21px;
+				padding:0 22px;
+				vertical-align:middle;
+				width:216px;
+			}
+		}
+	}
+}
+
+section.content{
+	.tools{
+		.container-title{
+			h2:after {
+	    		content: url("/assets/arrow-left-blue.png");
+	    	}
+	    	h2:before {
+	    		content: url("/assets/arrow-left-blue.png");
+	    	}
+	    }
+	}
+}
 
 // footer style
 footer{
@@ -476,6 +614,7 @@ footer{
 		}
 	}
 }
+
 // fin footer style
 aside { @include span-columns(3); }
 article { @include span-columns(9); }
@@ -662,13 +801,14 @@ article { @include span-columns(9); }
 .carousel-inner > .item {
   position: relative;
   display: none;
-  border:#c2b7bb solid 1px;
   -webkit-transition: 0.6s ease-in-out left;
      -moz-transition: 0.6s ease-in-out left;
        -o-transition: 0.6s ease-in-out left;
           transition: 0.6s ease-in-out left;
 }
-
+#cases .carousel-inner > .item {
+	border:#c2b7bb solid 1px;
+}
 .carousel-inner > .item > img {
   width: auto\9;
   height: auto;
@@ -678,6 +818,9 @@ article { @include span-columns(9); }
   -ms-interpolation-mode: bicubic;
   display: block;
   line-height: 1;
+}
+#IntroCarousel .carousel-inner > .item > img {
+	max-height:297px;
 }
 
 .carousel-inner > .active,
@@ -734,6 +877,7 @@ article { @include span-columns(9); }
   -webkit-border-radius: 23px;
      -moz-border-radius: 23px;
           border-radius: 23px;
+ 	z-index:999;
 }
 
 .carousel-control.right {
@@ -751,6 +895,16 @@ article { @include span-columns(9); }
 }
 
 .carousel-caption {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 15px;
+  background: rgba(255, 255, 255, 0.9);
+  font-family: 'Enriqueta', Arial;
+}
+
+#cases .carousel-caption {
   position: absolute;
   right: 0;
   bottom: 0;
@@ -782,7 +936,6 @@ article { @include span-columns(9); }
     border: 2px solid #A60563;
     border-radius: 5px 5px 5px 5px;
     bottom: -21px;
-    box-shadow: 2px 2px 16px -5px black;
     color: white;
     font-family: 'Amatic SC',cursive;
     font-size: 34px;
@@ -794,4 +947,27 @@ article { @include span-columns(9); }
     position: absolute;
     width: 130px;
     display:block;
+}
+
+.carousel.carousel-fade .item{
+  -webkit-transition: opacity 2s ease-in-out;
+  -moz-transition: opacity 2s ease-in-out;
+  -ms-transition: opacity 2s ease-in-out;
+  -o-transition: opacity 2s ease-in-out;
+  transition: opacity 2s ease-in-out;
+}
+.carousel.carousel-fade .active.left,
+.carousel.carousel-fade .active.right{
+  left: 0;
+  z-index: 2;
+  opacity: 0;
+  filter: alpha(opacity=0);
+}
+.carousel.carousel-fade .next,
+.carousel.carousel-fade .prev{
+  left: 0;
+  z-index: 1;
+}​
+.carousel.carousel-fade .carousel-control{
+	z-index:3;
 }

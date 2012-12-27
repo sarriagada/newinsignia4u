@@ -8,42 +8,49 @@ header
 	nav
 		ul
 			li 
-				a href="" Home
+				a.active href="" Home
 			li 
-				a href="" Nosotros
+				a href="" Staff
 			li 
-				a href="" Servicios
+				a href="" Services
 			li 
-				a href="" Portfolio
+				a href="" Projects
 			li 
-				a href="" Contacto
+				a href="" Contact
 			li 
-				a href="" Empleo
+				a href="" Job
 			li 
 				a href="" Blog
 
 section.content
 	.introduction
 		h2
-			| En 
+			| At 
 			strong Insignia 
-			| desarrollamos aplicaciones web altamente interactivas utilizando 
-			strong metodologias ágiles 
-			| y 
-			strong tecnologia 
-			|	avanzadas.
+			| we build highly interactive web applications using 
+			strong agile methodologies 
+			| and 
+			strong cutting edge technologies 
 
-		= image_tag(asset_path("macbook.png"))
+		#IntroCarousel.carousel.slide
+			.carousel-inner
+				.active.item
+					= image_tag(asset_path("macbook.png"))
+				.item
+					= image_tag(asset_path("ipad.png"))
+				.item
+					= image_tag(asset_path("cel.png"))
+
 		p
-			| Nos especializamos en backend development utilizando 
+			| We specialize in backend development with 
 			mark Ruby on Rails
-			|  y otras tecnologias web aunque, atravez de alianzas estrategicas, tenemos la capacidad de abordar trabajos de 
-			| manera integral incluyendo consultoria, frontend development y diseño.
+			|  and other web based technologies and, thanks to partnerships with different studios, we are able to carry out projects all the way, including consulting, design, and frontend development services.
 
 	.projects
 		.container-title
+
 			h2 Casos de éxito
-			#cases.carousel.slide
+			#cases.carousel.slide.carousel-fade
 				.carousel-inner
 					.active.item
 						= image_tag(asset_path("slider/craftfoxes.jpg"))
@@ -106,7 +113,7 @@ section.content
 
 	.tools
 		.container-title
-			h2 TOOLS
+			h2 Tools
 
 		ul
 			li
@@ -218,7 +225,7 @@ footer
 		.container
 			ul
 				li.gh
-					| Seguinos 
+					| Follow Us 
 					a href=""
 						i.icon-github
 
@@ -229,4 +236,4 @@ footer
 				li.fb
 					a href=""
 						i.icon-facebook	
-					| Conectate
+					| Connect
