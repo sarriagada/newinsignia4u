@@ -39,6 +39,9 @@ and (orientation : portrait){
 // content style
   section.content{
     h2{  padding: 0px 27px;  }
+    .ribbon-border .ribbon {
+      padding: 10px 100px;
+    }
   }
   .introduction{
     /* IntroCarousel  style */
