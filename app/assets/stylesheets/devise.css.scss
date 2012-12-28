@@ -77,6 +77,64 @@ and (orientation : portrait){
       left: 40%!important;
     }
   }
+  footer{
+    .container-contact{
+      float: left;
+      width: 50%;
+    }
+    ul.footer-contact:before {
+      content:"Contant Us";
+      font-size: 60px;
+      color: white;
+      font-weight: 700;
+      vertical-align: middle;
+      font-family: 'Amatic SC', cursive;
+      line-height: 68px;
+      margin-left: -4px;
+      border: 1px dashed;
+      padding: 3px 30px;
+      margin-bottom: 24px;
+      display: inline-block;
+    }
+    ul.footer-contact {
+      text-align: center;
+      width: auto;
+      margin: auto;
+      float: left;
+      line-height: 40px;
+      padding-top: 31px;
+    }
+    ul.footer-contact li {
+      width: 215px;
+      display: inline-block;
+      line-height: 20px;
+      text-align: center;
+      margin: auto;
+      float: none;
+    }
+    ul.footer-contact li i {
+      display: block;
+      margin: 14px auto!important;
+    }
+    .footer-subscribe .email {
+      width: 35%;
+      margin-top: 115px;
+    }
+    .footer-subscribe p {
+      margin: 0;
+      margin-top: 12px;
+      font-size: 14px;
+      margin-left: -8px;
+      position: relative;
+      top: -240px;
+      width: 35%;
+      left: 58%;
+    }
+    .footer-subscribe label {
+      border: 1px dashed;
+      padding: 0px 30px;
+    }
+  }
 }
  
 /* Desktops and laptops ----------- */

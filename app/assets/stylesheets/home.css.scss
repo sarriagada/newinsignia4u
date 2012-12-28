@@ -25,7 +25,7 @@ body{
 	background:url(asset-path("background-pattern.gif", image)) repeat 0 0;
 }
 
-.container, nav ul, section {  @include outer-container;  }
+.container, .container-contact, nav ul, section {  @include outer-container;  }
 //header style
 header{
 	background:#fff;
@@ -932,3 +932,8 @@ footer{
 	z-index:3;
 }
 //fin slider style
+//style toTop
+/* iPads (portrait) ----------- */
+@media (max-width : 1024px)
+and (orientation : portrait){
+}
