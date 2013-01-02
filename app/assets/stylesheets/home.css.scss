@@ -57,7 +57,7 @@ header{
 		height: 25px;
 		line-height: 23px;
 		position: absolute;
-		right: 105px;
+		right: 11%;
 		text-transform: uppercase;
 		top: 51px;
 		width: 128px;
@@ -152,7 +152,7 @@ section.content{
 			left: 480px;
 			font-size: 18px;
 			line-height: 27px;
-			width: 395px;
+			width: 40%;
 			min-height: 200px;
 			font-family: 'Enriqueta', serif;
 
@@ -190,7 +190,9 @@ section.content{
 			content: url("/assets/flecha.gif");
 			display: inline-block;
 			margin-left: 5px;
-			@include transform(rotateY(180deg));
+			@include transform(rotate(180deg));
+			position: relative;
+			bottom: -10px;
 		}
 	}
 	.projects {  margin-bottom: 68px;  }
@@ -593,9 +595,10 @@ footer{
 			margin-right: 17px;
 
 			i {
+				display: inline;
 				font-size: 27px;
 				line-height: 4px;
-				margin-left: -3px;
+				margin-right: 1px;
 			}
 
 			a{
@@ -607,7 +610,6 @@ footer{
 		li.footer-contact-email{  margin-right: 0px;  }
 		.icon-envelope-alt {
 			font-size: 20px;
-			margin-left: 13px;
 			margin-right: 5px;
 		}
 	}
@@ -682,13 +684,12 @@ footer{
 		
 		.container{
 			text-align:center;
-			
+
 			ul{
 				li{
 					display:inline-block;
 					padding: 9px 0 0;
 					color:#747474;
-					display:inline-block;
 					font-size:44px;
 					text-transform:uppercase;
 

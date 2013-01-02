@@ -1,5 +1,5 @@
 /* Smartphones (portrait and landscape) ----------- */
-@media screen and (max-width : 760px) {
+@media only screen and (max-width : 600px) {
 /* Styles */
   section.content {
     .introduction h2 {
@@ -25,17 +25,110 @@
       font-size: 228%;
       margin: auto;
       padding: 0;
-      display: block;
       height: 100px;
     }
   }
 }
- 
+
+/* tablet (portrait) ----------- */
+@media (max-width : 640px)
+and (orientation : portrait){
+  header nav ul li a {
+    font-size: 12px;
+    padding: 0px 10px;
+  }
+  header a.lang {
+    font-size: 10px;
+    right: 10px;
+    top: 10px;
+  }
+  section.content{
+    .introduction p {
+      margin: auto;
+    }
+  }
+  #cases.carousel { 
+    margin: 0px;
+  }
+  #cases .carousel-caption {
+    padding: 5px 5px 30px;
+  }
+  .carousel-caption p { 
+    font-size: 12px;
+  }
+  .carousel-caption h4 { 
+    font-size: 15px;
+  }
+  .carousel .more {
+    left: 35%;
+  }
+  section.content .technologies ul li, section.content .tools ul li {
+    margin: 7px;
+  }
+  section.content .technologies ul, section.content .tools ul { 
+    margin-left: 7px;
+  }
+  section.content .news .news-item {
+    width: 100%;
+    margin-bottom: 10%;
+  }
+  section.content .news .news-item .more {
+    left: 35%;
+  }
+
+  footer {
+    ul.footer-contact li{ 
+      font-size: 12px;
+      i{
+        margin-left: 10px;
+        font-size: 12px!important;
+      }
+    }
+  }
+}
+/* tablet (landscape) ----------- */
+@media (min-width : 600px) and (max-width : 1020px)
+and (orientation : landscape){
+  section.content{
+    .technologies ul, .tools ul {
+      margin: auto auto auto 20%;
+      width: 80%;
+      li {
+        margin: 10px;
+      }
+    }
+    .news ul { 
+      margin-left: 0px;
+    }
+    .news .news-item {
+      margin-left: 2%;
+      margin-bottom: 5%;
+      min-height: 100%;
+      padding: 2%;
+      width: 31%;
+    }
+  }
+  footer {
+    ul.footer-contact li{ 
+      font-size: 12px;
+      i{
+        margin-left: 10px;
+        font-size: 12px!important;
+      }
+    }
+  }
+}
 /* iPads (portrait) ----------- */
-@media screen and (max-width : 1024px)
+@media (min-width : 600px) and (max-width : 1280px)
 and (orientation : portrait){
 /* Styles */
 // content style
+  header nav ul {
+    padding-left: 0px;
+  }
+  header a.lang {
+    right: 5%;
+  }
   section.content{
     h2{  padding: 0px 27px;  }
     .ribbon-border .ribbon {
