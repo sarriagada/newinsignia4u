@@ -1,7 +1,5 @@
 /* Smartphones (portrait and landscape) ----------- */
-@media only screen
-and (min-width : 320px)
-and (max-width : 480px) {
+@media screen and (max-width : 760px) {
 /* Styles */
   section.content {
     .introduction h2 {
@@ -34,7 +32,7 @@ and (max-width : 480px) {
 }
  
 /* iPads (portrait) ----------- */
-@media (max-width : 1024px)
+@media screen and (max-width : 1024px)
 and (orientation : portrait){
 /* Styles */
 // content style
