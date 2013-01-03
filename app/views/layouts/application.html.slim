@@ -1,12 +1,13 @@
 doctype html
 html
-  head
-      title Insignia
-      meta content="width=device-width, initial-scale=1,maximum-scale=1" name="viewport"
-      = stylesheet_link_tag    "application", :media => "all"
+	head
+		title Insignia
+		= stylesheet_link_tag    "application", :media => "all"
 
-      = javascript_include_tag "application"
-      = csrf_meta_tags
+		= javascript_include_tag "application"
+		= csrf_meta_tags
 
-  body
-    = yield
+	body
+		= render partial: '/shared/header'
+		= yield
+		= render partial: '/shared/footer'
