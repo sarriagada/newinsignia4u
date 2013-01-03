@@ -1,0 +1,239 @@
+header
+	.container
+		h1
+			a href=""
+				= image_tag(asset_path("insignia.svg"))
+
+		a.lang href="" English Please
+	nav
+		ul
+			li 
+				a.active href="" Home
+			li 
+				a href="" Staff
+			li 
+				a href="" Services
+			li 
+				a href="" Projects
+			li 
+				a href="" Contact
+			li 
+				a href="" Job
+			li 
+				a href="" Blog
+
+section.content
+	.introduction
+		h2
+			| At 
+			strong Insignia 
+			| we build highly interactive web applications using 
+			strong agile methodologies 
+			| and 
+			strong cutting edge technologies 
+
+		#IntroCarousel.carousel.slide
+			.carousel-inner
+				.active.item
+					= image_tag(asset_path("macbook.png"))
+				.item
+					= image_tag(asset_path("ipad.png"))
+				.item
+					= image_tag(asset_path("cel.png"))
+
+		p
+			| We specialize in backend development with 
+			mark Ruby on Rails
+			|  and other web based technologies and, thanks to partnerships with different studios, we are able to carry out projects all the way, including consulting, design, and frontend development services.
+
+	.projects
+		.container-title
+
+			h2 SUCCESSFUL PROJECTS
+			#cases.carousel.slide.carousel-fade
+				.carousel-inner
+					.active.item
+						= image_tag(asset_path("slider/craftfoxes.jpg"))
+						.carousel-caption
+							h4 Craftfoxes.com
+							p
+								| Desarrollo de backend sobre Rails 3 de una Red Social + Desarrollo de Frontend + Integración Google Maps API + Built for American Overloaded Inc.
+
+							a.more href="www.craftfoxes.com" Visit Site
+					.item
+						= image_tag(asset_path("slider/tablehopping.jpg"))
+						.carousel-caption
+							h4 Table Hopping NY
+							p
+								| TableHoppingNY is NYC’s culinary life served to you on a platter! It’s a community around gourmet events in New York City.
+
+							a.more href="www.tablehopping.com" Visit Site
+					.item
+						= image_tag(asset_path("slider/area17.jpg"))
+						.carousel-caption
+							h4 Area 17
+							p
+								| We have a long term relationship with AREA17 providing them with backend development services for most of their Ruby on Rails projects. For more than 5 year we have worked together developing successfull projects.
+
+							a.more href="www.area17.com" Visit Site
+
+							a.more href="" Visit Site
+
+				/! Carousel nav
+				a.carousel-control.left data-slide="prev" href="#cases"
+				a.carousel-control.right data-slide="next" href="#cases"
+
+	.technologies
+		.container-title
+			h2 TECHNOLOGIES
+
+		ul
+			li
+				.circle
+					i.ico-rails
+
+				h3 Ruby on rails
+			li
+				.circle
+					i.ico-php
+
+				h3 Kohana (PHP)
+			li
+				.circle
+					i.ico-frontend
+				h3 
+					| Front-end development:
+					br
+					| HTML. CSS and Javascript
+			li
+				.circle
+					i.ico-mobile
+				h3 
+					| Mobile applications development for IOS and Android plataforms
+
+	.tools
+		.container-title
+			h2 Tools
+
+		ul
+			li
+				.circle
+					i.ico-agile
+
+				h3
+					| Agile Methodologies
+			li
+				.circle
+					i.ico-git
+
+				h3 
+					| Version control system: GIT, SVN and Others.
+			li
+				.circle
+					i.ico-driven
+
+				h3 
+					| Behaviour Driven Development
+			li
+				.circle
+					i.ico-rails
+
+				h3 
+					| Pair Programming
+
+	.news
+		.container-title
+			h2 News
+		ul
+			li.news-item
+				.published-at
+					i.icon-calendar
+					| 14 de Diciembre 2012
+				.title
+					| La Historia de Insignia, la historia de Insignia
+				h3
+					| Los Tanfaun entre los ganadores en BA Apps
+				.description
+					p
+						| Con la aplicación Los Tanfaun salimos ganadores de la categoría Urbanismo en el concurso de Buenos Aires Apps. Nuestros amigos de Indicius con quién realizamos este proyecto en conjunto recibien el premio en Buenos Aires en representación...
+
+				a.more href="http://www.insignia4u-blog.com/" target="_blank"
+					| Read more
+
+			li.news-item
+				.published-at
+					i.icon-calendar
+					| 17 de Noviembre 2012
+				.title
+					| La Historia de Insignia
+				h3
+					| Los Tanfaun: Nuestra participación en B.A. Apps
+				.description
+					p
+						| Los Tanfaun es una aplicación del tipo “Lost & Found”, y sirve para conectar a las personas que encontraron y perdieron cosas en la ciudad.
+					p
+						| En nuestro primer emprendimiento en conjunto con el estudio de diseño...
+
+				a.more href="http://www.insignia4u-blog.com/" target="_blank"
+					| Read more
+
+			li.news-item
+				.published-at
+					i.icon-calendar
+					| 23 de Marzo 2012
+				.title
+					| Del Freelancing a la Empresa
+				h3
+					| La Historia de Insignia
+				.description
+					p
+						| El día 15 de noviembre participamos de la jornada de cierre anual del Tucumán Valley con una presentación en el marco de la serie de charlas denominadas "Como vender servicios tecnológicos al mundo (y no morir en el intento)".
+				a.more href="http://www.insignia4u-blog.com/" target="_blank"
+					| Read more
+
+	.ribbon-border
+		.ribbon
+			strong.ribbon-content
+				| El sistena de gesti&oacute;n de la calidad de la Empresa Insignia ha sido certificado según la norma 
+				span IRAM-ISO 9001:2008
+
+			.ribbon-left
+			.ribbon-right
+
+footer
+	.container
+		ul.footer-contact
+			li.footer-contact-street
+				i.icon-map-marker 
+				| Lamadrid 318, Piso 4 - Depto. A San Miguel de Tucumán, Tucumán, Argentina
+
+			li.footer-contact-phone
+				i.icon-phone 
+				| +54 (318) 420-7387
+
+			li.footer-contact-email
+				i.icon-envelope-alt 
+				a href="mailto:contacto@insignia4u.com" contacto@insignia4u.com
+
+	form.footer-subscribe
+		label Newsletter
+		input.email type="text" placeholder="type in your email"
+		input.btn-subscribe type="submit" value="Subscribe"
+		p Subscribe to our Newsletter and frequent updates about our company in your inbox.
+
+	.social
+		.container
+			ul
+				li.gh
+					| Follow Us 
+					a href=""
+						i.icon-github
+
+				li.tw
+					a href="" 
+						i.icon-twitter
+
+				li.fb
+					a href=""
+						i.icon-facebook	
+					| Connect
