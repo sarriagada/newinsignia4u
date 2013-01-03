@@ -10,7 +10,7 @@
  *
  *= require_self
  */
- @import "normalize.css";
+ @import "normalize";
  @import "bourbon";
  @import "grid-settings";
  @import "neat";
@@ -20,4 +20,5 @@
  @import url(http://fonts.googleapis.com/css?family=Enriqueta:400,700);
  @import "home";
  @import "services";
- @import "devise";
+ @import "device";
+

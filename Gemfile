@@ -12,18 +12,11 @@ gem "heroku", "~> 2.33.5"
 group :development, :test do
   gem 'sqlite3'
 end
+
 group :production do
   gem 'pg'
   gem 'thin'
 end
-
-gem 'slim', '1.3.4'
-
-gem 'bourbon', '2.1.2'
-
-gem 'neat', '1.0.2'
-
-
 
 
 # Gems used only for assets and not required
@@ -39,6 +32,9 @@ group :assets do
 end
 
 gem 'jquery-rails'
+gem 'slim', '1.3.4'
+gem 'bourbon', '2.1.2'
+gem 'neat', '1.0.2'
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
