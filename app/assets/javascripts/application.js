@@ -26,10 +26,10 @@ $(document).ready(function() {
     $().UItoTop({ easingType: 'easeOutQuart' });
 
     var biggestHeight = 0;  
-    $('.news-item').each(function(){  
+    $('.equal').each(function(){  
         if($(this).height() > biggestHeight){  
             biggestHeight = $(this).height();  
         }  
     });  
-    $('.news-item').height(biggestHeight);
+    $('.equal').height(biggestHeight);
 });
