@@ -18,19 +18,39 @@
       margin: auto;
       margin-top: -5%;
     }
+    .container-title {
+      width: 90%;
+      margin: auto;
+    }
     .container-title h2 {
-      font-size: 228%;
+      font-size: 2.9em;
       margin: auto;
       padding: 0;
       height: 100px;
+      top: 29px;
+      width: 100%;
+    }
+    .container-title h2::before { 
+      position: absolute;
+      left: 0px;
     }
     .container-title h2::after { 
-      bottom: 5px;
+      position: absolute;
+      bottom: 40%;
+      right: 0px;
+    }
+    .carousel-inner { 
+      margin: auto;
+      width: 90%;
+    }
+    #cases .carousel-inner .item img {  
+      height: 344px;
+      max-width: 200%;
     }
     .carousel .more { 
-      left: 25%;
-      font-size: 1.5em;
-      width: 41%;
+      left: 31%;
+      font-size: 1.8em;
+      width: 44%;
     }
     ul.box-dashed.four li { 
       background: none;
@@ -56,6 +76,9 @@
       margin: auto auto 15%;
       padding: 5%;
       width: 80%!important;
+    }
+    .news .news-item .more { 
+      left: 25%!important;
     }
   }
   .ribbon .ribbon-right, .ribbon .ribbon-left {
