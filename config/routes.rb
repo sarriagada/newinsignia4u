@@ -2,6 +2,7 @@ Insignia::Application.routes.draw do
   root :to => 'home#index'
 
   resources :services
+  resources :projects
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
