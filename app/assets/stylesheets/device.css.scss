@@ -89,9 +89,6 @@ and (orientation : portrait){
 /* tablet (landscape) ----------- */
 @media (min-width : 600px) and (max-width : 1020px)
 and (orientation : landscape){
-  header nav{
-    background: red;
-  }
   section.content{
     .introduction p {
       font-size: 14px;
@@ -127,9 +124,7 @@ and (orientation : landscape){
 
   footer {
     ul.footer-contact li{
-      clear: both;
-      line-height: 35px;
-      font-size: 14px;
+      font-size: 12px;
       i{
         margin-left: 10px;
         font-size: 16px!important;
