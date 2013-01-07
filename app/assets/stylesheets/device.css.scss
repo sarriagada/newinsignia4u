@@ -1,7 +1,7 @@
 /* Smartphones (portrait and landscape) ----------- */
-@media only screen and (max-width : 600px) {
+@media only screen and (max-width : 599px) {
 /* Styles */
-  section.content {
+  .content {
     .introduction h2 {
       font-size: 215%;
       line-height: 115%;
@@ -16,10 +16,6 @@
       width: 80%;
       text-align: center;
       margin-top: -5%;
-    }
-    .container-title {
-      width: 80%;
-      margin: auto;
     }
     .container-title h2 {
       font-size: 228%;
@@ -42,7 +38,7 @@ and (orientation : portrait){
     right: 10px;
     top: 10px;
   }
-  section.content{
+  .content{
     .introduction p {
       margin: auto;
     }
@@ -62,17 +58,17 @@ and (orientation : portrait){
   .carousel .more {
     left: 35%;
   }
-  section.content .technologies ul li, section.content .tools ul li {
+  .content .technologies ul li, .content .tools ul li {
     margin: 7px;
   }
-  section.content .technologies ul, section.content .tools ul { 
+  .content .technologies ul, .content .tools ul { 
     margin-left: 7px;
   }
-  section.content .news .news-item {
+  .content .news .news-item {
     width: 100%;
     margin-bottom: 10%;
   }
-  section.content .news .news-item .more {
+  .content .news .news-item .more {
     left: 35%;
   }
 
@@ -87,15 +83,15 @@ and (orientation : portrait){
   }
 }
 /* tablet (landscape) ----------- */
-@media (min-width : 600px) and (max-width : 1020px)
-and (orientation : landscape){
-  section.content{
+@media (min-width : 600px) and (max-width : 1020px){
+  .content{
     .introduction p {
       font-size: 14px;
       line-height: 20px;
       right: 1%;
       width: 30%;
     }
+
     .technologies ul, .tools ul {
       margin: auto auto auto 20%;
       width: 80%;
@@ -103,15 +99,35 @@ and (orientation : landscape){
         margin: 10px;
       }
     }
+
     .news ul { 
       margin-left: 0px;
     }
+
     .news .news-item {
       margin-left: 2%;
       margin-bottom: 5%;
       min-height: 100%;
       padding: 2%;
       width: 31%;
+    }
+
+    .services{
+      ul.box-dashed{
+        li{
+          width:auto;
+        }
+      }
+    }
+
+    .howdowedoit, .our-offering{
+      float:none;
+      width:100%;
+      border:none;
+      
+      .container-title{
+        border-top:2px dashed #B8B8B8;
+      }
     }
   }
   .carousel .more {
@@ -133,8 +149,7 @@ and (orientation : landscape){
   }
 }
 /* iPads (portrait) ----------- */
-@media (min-width : 600px) and (max-width : 1280px)
-and (orientation : portrait){
+@media (min-width : 600px) and (max-width : 1280px){
 /* Styles */
 // content style
   header nav ul {
@@ -143,7 +158,7 @@ and (orientation : portrait){
   header a.lang {
     right: 5%;
   }
-  section.content{
+  .content{
     h2{  padding: 0px 27px;  }
     .ribbon-border .ribbon {
       padding: 10px 100px;
