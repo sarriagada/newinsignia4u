@@ -1,6 +1,11 @@
 /* Smartphones (portrait and landscape) ----------- */
-@media (min-device-width : 320px) and (max-device-width : 480px)  {
+@media (min-device-width : 320px) and (max-device-width : 480px), (max-device-height : 480px) and (max-device-width : 600px) and (orientation: landscape)  {
 /* Styles */
+  header a.lang {
+    font-size: 10px;
+    right: 5%;
+    top: 5%;
+  }
   .content {
     .introduction h2 {
       font-size: 240%;
@@ -163,8 +168,8 @@ and (orientation : portrait){
   }
   header a.lang {
     font-size: 10px;
-    right: 10px;
-    top: 10px;
+    right: 5%;
+    top: 5%;
   }
   .content{
     .introduction p {
