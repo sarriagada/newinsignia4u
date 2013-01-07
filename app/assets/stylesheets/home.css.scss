@@ -17,6 +17,7 @@ ul{
 
 	li{
 		list-style:none;
+		position:relative;
 	}
 }
 
@@ -148,6 +149,11 @@ ul.box-dashed.four{
 	}
 }
 
+section{
+	font-size:15px;
+	margin-bottom:70px;
+}
+
 .content{
 	a{
 		color:#316baf;
@@ -165,7 +171,7 @@ ul.box-dashed.four{
 	clear:both;
 
 	h2{
-		background: url(asset-path("background-pattern.gif", image)); 
+		background: url(asset-path("background-pattern.gif", image));
 		position: relative;
 		top: -36px;
 		color: #343233;
@@ -347,7 +353,6 @@ ul.box-dashed.four{
 }
 
 .tools{
-	margin-top: 18px;
 
 	.container-title{
 		h2:after {
@@ -430,7 +435,6 @@ ul.box-dashed.four{
 		.description {
 			height: auto;
 			margin-bottom: 15px;
-			font-size: 13px;
 			line-height: 20px;
 		}
 
@@ -450,6 +454,7 @@ ul.box-dashed.four{
 			padding: 0px 20px 2px 17px;
 			position: absolute;
 			width: auto;
+			text-decoration:none;
 		}
 	}
 }
@@ -506,27 +511,30 @@ ul.box-dashed.four{
 	}
 
 	ul.box-dashed{
-		
-		h3, p{
-			margin:15px 30px;
-		}
+		li{
+			margin-top:0;
+			margin-bottom:24px;
 
-		h3{
-			color:#316baf;
-			font-size:16px;
-			text-transform:uppercase;
-			margin-top:34px;
-		}
+			h3, p{
+				margin:15px 30px 22px;
+			}
 
-		p{
-			font-size:13px;
-			line-height:23px;
+			h3{
+				color:#316baf;
+				font-size:16px;
+				text-transform:uppercase;
+				margin-top:34px;
+			}
+
+			p{
+				font-size:13px;
+				line-height:23px;
+			}
 		}
 	}
 }// fin content style
 
 .process{
-	font-size:15px;
 	line-height:23px;
 	
 	.container-title{
@@ -536,9 +544,13 @@ ul.box-dashed.four{
 	ul{
 		li{
 			border-bottom:#b3c4d9 solid 1px;
+			padding:0 0 15px;
+			margin:0 0 30px;
 
 			h3{
 				font-size:20px;
+				margin-top:0;
+				font-weight:300;
 				
 				span{
 					font-size:35px;
@@ -546,8 +558,13 @@ ul.box-dashed.four{
 				}
 			}
 
+			p{
+				width:73%;
+			}
+
 			i{
 				float:right;
+				margin:54px 7% 0 0;
 			}
 
 			i.icon-planning{
@@ -594,6 +611,7 @@ ul.box-dashed.four{
 
 	.container-title{
 		border:none;
+		margin-top:40px;
 	}
 
 }
@@ -602,10 +620,34 @@ ul.box-dashed.four{
 	border-right: 2px dashed #B8B8B8;
 	float:left;
 	width:50%;
+	
+	ul{
+		padding:0 40px 0 60px;
+
+		li{
+			line-height:23px;
+			padding:0 0 23px;
+
+			.icon-bullet-blue{
+				background-position:-352px -192px;
+				width:23px;
+				height:23px;
+				position:absolute;
+				display:block;
+				left:-34px;
+			}
+		}
+	}
 }
 
 .our-offering{
 	width:49%;
+	
+	p{
+		line-height:27px;
+		margin: 0 0 10px;
+		padding: 9px 10px 10px 25px;
+	}
 }
 
 // footer style
@@ -951,6 +993,7 @@ footer{
     position: absolute;
     width: 130px;
     display:block;
+    text-decoration:none;
 }
 
 .carousel.carousel-fade .item{

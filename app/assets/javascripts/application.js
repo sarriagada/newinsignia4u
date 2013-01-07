@@ -32,4 +32,20 @@ $(document).ready(function() {
         }  
     });  
     $('.equal').height(biggestHeight);
+
+    var biggestHeight = 0;  
+    $('.equal2').each(function(){  
+        if($(this).height() > biggestHeight){  
+            biggestHeight = $(this).height();  
+        }  
+    });  
+    $('.equal2').height(biggestHeight);
+
+    var biggestHeight = 0;  
+    $('.equal3').each(function(){  
+        if($(this).height() > biggestHeight){  
+            biggestHeight = $(this).height();  
+        }  
+    });  
+    $('.equal3').height(biggestHeight);
 });
