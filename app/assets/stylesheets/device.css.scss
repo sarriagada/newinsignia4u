@@ -1,9 +1,9 @@
 /* Smartphones (portrait and landscape) ----------- */
-@media only screen and (max-width : 599px) {
+@media (min-device-width : 320px) and (max-device-width : 480px)  {
 /* Styles */
-  .content {
+  article.content {
     .introduction h2 {
-      font-size: 215%;
+      font-size: 240%;
       line-height: 115%;
       margin: 13% 11%;
       padding: 0px 0%;
@@ -15,6 +15,7 @@
       line-height: 150%;
       width: 80%;
       text-align: center;
+      margin: auto;
       margin-top: -5%;
     }
     .container-title h2 {
@@ -22,6 +23,103 @@
       margin: auto;
       padding: 0;
       height: 100px;
+    }
+    .container-title h2::after { 
+      bottom: 5px;
+    }
+    .carousel .more { 
+      left: 35%;
+      font-size: 1.5em;
+      width: 41%;
+    }
+    ul.box-dashed.four li { 
+      background: transparent;
+      border: 0px none currentColor;
+      display: block;
+      float: none !important;
+      margin: auto;
+      width: 218px;
+      height: 130px;
+    }
+    .news ul { 
+      margin: auto;
+    }
+    .news .news-item {
+      float: none;
+      margin: auto auto 15%;
+      padding: 5%;
+      width: 80%;
+    }
+  }
+  .ribbon .ribbon-right, .ribbon .ribbon-left {
+    display: none;
+  }
+  footer{
+    ul.footer-contact {
+      margin: 10%;
+    }
+    ul.footer-contact:before {
+      content:"Contant Us";
+      font-size: 60px;
+      color: white;
+      font-weight: 700;
+      vertical-align: middle;
+      font-family: 'Amatic SC', cursive;
+      line-height: 68px;
+      margin-left: -4px;
+      border: 1px dashed;
+      padding: 3px 30px;
+      margin-bottom: 24px;
+      display: inline-block;
+    }
+    ul.footer-contact li { 
+      float: none;
+      font-size: 1.2em;
+      line-height: 1.4em;
+      margin: auto auto 5%;
+      text-align: center;
+      width: 70%;
+    }
+    ul.footer-contact li i { 
+      display: block;
+      font-size: 20px !important;
+      line-height: 20px;
+      margin: auto!important;
+    }
+    ul.footer-contact li.footer-contact-email { 
+      margin-right: auto;
+    }
+    .footer-subscribe {
+      height: 65%;
+      padding-top: 7%;
+      padding-bottom: 11%;
+    }
+    .footer-subscribe .email { 
+      left: 0%;
+      padding: 10px 24px;
+      position: relative;
+      top: 36%;
+      width: 70%;
+    }
+    .footer-subscribe p { 
+      font-size: 14px;
+      left: 11%;
+      margin: 12px 0px 0px -8px;
+      position: relative;
+      top: -64%;
+      width: 81%;
+    }
+    .footer-subscribe label {
+      border: 1px dashed;
+      padding: 0px 30px;
+    }
+    .footer-subscribe .btn-subscribe {
+      top: 40%;
+      left: 0;
+      width: 149px;
+    }
+    .social .container ul li.sh, .social .container ul li.fb {
+      font-size: 0px;
     }
   }
 }
