@@ -1,7 +1,7 @@
 /* Smartphones (portrait and landscape) ----------- */
 @media (min-device-width : 320px) and (max-device-width : 480px)  {
 /* Styles */
-  article.content {
+  .content {
     .introduction h2 {
       font-size: 240%;
       line-height: 115%;
@@ -28,27 +28,34 @@
       bottom: 5px;
     }
     .carousel .more { 
-      left: 35%;
+      left: 25%;
       font-size: 1.5em;
       width: 41%;
     }
     ul.box-dashed.four li { 
-      background: transparent;
-      border: 0px none currentColor;
+      background: none;
+      border: 0px;
       display: block;
       float: none !important;
       margin: auto;
       width: 218px;
       height: 130px;
     }
-    .news ul { 
+    .technologies ul li, .tools ul li { 
+      background: transparent;
+      border: 0px none currentColor;
+      float: none;
+      height: auto;
       margin: auto;
     }
-    .news .news-item {
+    .news ul {
+      margin: auto;
+    }
+    .news .news-item { 
       float: none;
       margin: auto auto 15%;
       padding: 5%;
-      width: 80%;
+      width: 80%!important;
     }
   }
   .ribbon .ribbon-right, .ribbon .ribbon-left {
