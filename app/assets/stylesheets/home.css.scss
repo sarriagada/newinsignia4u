@@ -26,6 +26,24 @@ body{
 	background:url(asset-path("background-pattern.gif", image)) repeat 0 0;
 }
 
+ul.bullets-blue{
+	padding:0 40px 0 60px;
+
+	li{
+		line-height:23px;
+		padding:0 0 23px;
+
+		.icon-bullet-blue{
+			background-position:-352px -192px;
+			width:23px;
+			height:23px;
+			position:absolute;
+			display:block;
+			left:-34px;
+		}
+	}
+}
+
 .container, .container-contact, nav ul, .content {  @include outer-container;  }
 
 /* ----------------------------
@@ -630,24 +648,6 @@ section{
 	border-right: 2px dashed #B8B8B8;
 	float:left;
 	width:50%;
-	
-	ul{
-		padding:0 40px 0 60px;
-
-		li{
-			line-height:23px;
-			padding:0 0 23px;
-
-			.icon-bullet-blue{
-				background-position:-352px -192px;
-				width:23px;
-				height:23px;
-				position:absolute;
-				display:block;
-				left:-34px;
-			}
-		}
-	}
 }
 
 .our-offering{
@@ -667,6 +667,8 @@ section{
 ---------------------------- */
 .projects-page{
 	.container-title{
+		margin-top: 90px;
+
 		h2{
 			font-size:54px;
 		}
@@ -698,7 +700,7 @@ section{
 			.project-info{
 				@include border-radius(0 0 5px 5px);
 				background: repeat 0 0 rgba(255, 255, 255, 0.4);
-				border: #373435 dashed 1px;
+				border: #7e7c7d dashed 1px;
 				border-top:0;
 				text-align:left;
 				padding:25px 18px 22px;
@@ -959,6 +961,24 @@ footer{
 				  font-size:14px;
 				}
 
+				ul.bullets-blue{
+					padding:0 40px 0 30px;
+
+					li{
+						line-height:23px;
+						padding:0 0 3px;
+
+						.icon-bullet-blue{
+							background-position:-352px -192px;
+							width:23px;
+							height:23px;
+							position:absolute;
+							display:block;
+							left:-30px;
+						}
+					}
+				}
+
 				.more{
 					background:#E50892;
 					border: 2px solid #A60563;
@@ -1069,6 +1089,58 @@ footer{
 				max-height:297px;
 			}
 		}
+	}
+}
+
+#projects-page.carousel{
+	.carousel-inner{
+		background:url(asset_path("macbook.png", image)) no-repeat 0 10px;
+		width:880px;
+		height:307px;
+		
+		.item{
+			margin:30px 0 0 99px;
+
+			h4{
+				a{
+					color:#316baf;
+				}
+			}
+
+			.carousel-caption{
+				background:url(asset_path("background-pattern.gif", image)) repeat 0 0;
+				left:384px;
+				width:430px;
+				padding:0;
+				top:-31px;
+				
+				p, ul{
+					color:#7e7c7d;
+				}
+				
+				p{
+					margin:0 0 22px;
+				}
+
+				ul{
+					font-size:14px;
+				}
+
+				.more{
+					left: -4px;
+					bottom: -6px;
+				}
+			}
+		}
+	}
+	.carousel-control{
+		top: 123px;
+	}
+	.carousel-control.left{
+		left: 6px;
+	}
+	.carousel-control.right{
+		right: 6px;
 	}
 }
 
