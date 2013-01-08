@@ -1,12 +1,15 @@
-@media (max-width : 320px){
-  body{
-    width: 320px;
-  }
-}
+@media (max-width : 240px){
+  .container, header, .content, footer{  width: 481px!important; }
+  header {
+    .container h1 a img{
+      width: 80%;
+      height: auto;
+    }
+    nav ul li a{
+      font-size: 0.7em!important;
 
-/* Smartphones (portrait and landscape) ----------- */
-@media (min-device-width : 320px) and (max-device-width : 480px), (max-device-height : 480px) and (max-device-width : 600px) and (orientation: landscape)  {
-/* Styles */
+    }
+  }
   header a.lang {
     font-size: 10px;
     right: 5%;
@@ -34,7 +37,7 @@
       margin: auto;
     }
     .container-title h2 {
-      font-size: 2.9em;
+      font-size: 2em;
       margin: auto;
       padding: 0;
       height: 100px;
@@ -47,7 +50,7 @@
     }
     .container-title h2::after { 
       position: absolute;
-      bottom: 40%;
+      bottom: 50%;
       right: 0px;
     }
     .carousel-inner { 
@@ -56,12 +59,13 @@
     }
     #cases .carousel-inner .item img {  
       height: 344px;
-      max-width: 200%;
+      max-width: 400%;
     }
     .carousel .more { 
       left: 31%;
-      font-size: 100%;
+      font-size: 1.1em;
       width: 44%;
+      text-align: center;
     }
     ul.box-dashed.four li { 
       background: none;
@@ -158,6 +162,181 @@
     }
     .footer-subscribe .btn-subscribe {
       top: 40%;
+      left: 0;
+      width: 149px;
+    }
+    .social .container ul li.sh, .social .container ul li.fb {
+      font-size: 0px!important;
+      color: transparent;
+    }
+  }
+  #toTop{ display: none!important; }
+}
+/* Smartphones (portrait and landscape) ----------- */
+@media (min-device-width : 320px) and (max-device-width : 480px), (max-device-height : 480px) and (max-device-width : 600px) and (orientation: landscape) {
+/* Styles */
+  header a.lang {
+    font-size: 10px;
+    right: 5%;
+    top: 5%;
+  }
+  .content {
+    overflow: hidden;
+    .introduction h2 {
+      font-size: 240%;
+      line-height: 115%;
+      margin: 13% 11%;
+      padding: 0px 0%;
+    }
+    .introduction p {
+      float: none!important;
+      position: static!important;
+      font-size: 115%;
+      line-height: 150%;
+      width: 80%;
+      text-align: center;
+      margin: auto;
+      margin-top: -5%;
+    }
+    .container-title {
+      width: 90%;
+      margin: auto;
+    }
+    .container-title h2 {
+      font-size: 2.9em;
+      margin: auto;
+      padding: 0;
+      height: 100px;
+      top: 29px;
+      width: 100%;
+    }
+    .container-title h2::before { 
+      position: absolute;
+      left: 0px;
+    }
+    .container-title h2::after { 
+      position: absolute;
+      bottom: 40%;
+      right: 0px;
+    }
+    .carousel-inner { 
+      margin: auto;
+      width: 90%;
+    }
+    #cases.carousel {
+      margin: auto!important;
+    }
+    #cases .carousel-inner .item img {  
+      height: 340px;
+      max-width: 200%;
+    }
+    .carousel .more { 
+      left: 31%;
+      font-size: 100%;
+      width: 44%;
+      text-align: center;
+    }
+    ul.box-dashed.four li { 
+      background: none;
+      border: 0px;
+      display: block;
+      float: none !important;
+      margin: auto;
+      width: 100%;
+      height: 130px;
+    }
+    .technologies ul li, .tools ul li { 
+      background: transparent;
+      float: none;
+      height: auto!important;
+      width: 100%!important;
+      margin: auto;
+      border: none;
+      h3{
+        height: auto;
+        width: 80%;
+        display: block;
+        margin: auto;
+      }
+    }
+    .news ul {
+      margin: auto;
+    }
+    .news .news-item { 
+      float: none;
+      margin: auto auto 15%;
+      padding: 5%;
+      width: 80%!important;
+      height: auto!important;
+    }
+    .news .news-item .more { 
+      left: 25%!important;
+    }
+  }
+  .ribbon .ribbon-right, .ribbon .ribbon-left {
+    display: none;
+  }
+  footer{
+    ul.footer-contact {
+      margin: 10%;
+    }
+    ul.footer-contact:before {
+      content:"Contant Us";
+      font-size: 60px;
+      color: white;
+      font-weight: 700;
+      vertical-align: middle;
+      font-family: 'Amatic SC', cursive;
+      line-height: 68px;
+      margin-left: -4px;
+      border: 1px dashed;
+      padding: 3px 30px;
+      margin-bottom: 24px;
+      display: inline-block;
+    }
+    ul.footer-contact li { 
+      float: none;
+      font-size: 1.2em;
+      line-height: 1.4em;
+      margin: auto auto 5%;
+      text-align: center;
+      width: 70%;
+    }
+    ul.footer-contact li i { 
+      display: block;
+      font-size: 20px !important;
+      line-height: 20px;
+      margin: auto!important;
+    }
+    ul.footer-contact li.footer-contact-email { 
+      margin-right: auto;
+    }
+    .footer-subscribe {
+      height: 65%;
+      padding-top: 7%;
+      padding-bottom: 11%;
+    }
+    .footer-subscribe .email { 
+      left: 0%;
+      padding: 10px 24px;
+      position: relative;
+      top: 5em;
+      width: 70%;
+    }
+    .footer-subscribe p { 
+      font-size: 14px;
+      left: 11%;
+      margin: 12px 0px 10px -8px;
+      position: relative;
+      top: -6em;
+      width: 81%;
+    }
+    .footer-subscribe label {
+      border: 1px dashed;
+      padding: 0px 30px;
+    }
+    .footer-subscribe .btn-subscribe {
+      top: 3em;
       left: 0;
       width: 149px;
     }
@@ -286,7 +465,7 @@ and (orientation : portrait){
       font-size: 450%;
       line-height: 135%;
       display: block;
-      width: 44%;
+      width: 50%;
       margin: auto;
     }
     .container-contact ul.footer-contact li{

@@ -1,5 +1,7 @@
 @import "neat-helpers";
-
+@media (max-width : 300px){
+	$max-width: px(480);
+}
 /* iPads (landscape) ----------- */
 @media only screen
 and (min-device-width : 768px)
