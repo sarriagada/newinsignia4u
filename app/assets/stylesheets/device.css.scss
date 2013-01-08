@@ -405,6 +405,8 @@ and (orientation : portrait){
 }
 /* tablet (landscape) ----------- */
 @media (min-width : 600px) and (max-width : 1020px){
+
+  header nav{ background: red; }
   .content{
     .introduction p {
       font-size: 14px;
@@ -480,6 +482,15 @@ and (orientation : portrait){
       top: -15em!important;
     }
   }
+}
+@media (min-width : 600px) and (max-width : 1024px){
+  .container-contact ul.footer-contact::before {
+      font-size: 440%;
+      line-height: 135%;
+      display: block;
+      width: 55%;
+      margin: auto;
+    }
 }
 /* iPads (portrait) ----------- */
 @media (min-width : 600px) and (max-width : 1280px){
