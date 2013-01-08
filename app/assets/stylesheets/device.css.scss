@@ -226,7 +226,7 @@ and (orientation : portrait){
     }
 
     .technologies ul, .tools ul {
-      margin: auto auto auto 20%;
+      margin: auto;
       width: 80%;
       li {
         margin: 10px;
@@ -272,12 +272,23 @@ and (orientation : portrait){
   }
 
   footer {
-    ul.footer-contact li{
+    .container-contact ul.footer-contact::before {
+      font-size: 450%;
+      line-height: 135%;
+      display: block;
+      width: 40%;
+      margin: auto;
+    }
+    .container-contact ul.footer-contact li{
+      width: 51%;
       font-size: 12px;
       i{
         margin-left: 10px;
         font-size: 16px!important;
       }
+    }
+    .footer-subscribe p {
+      top: -13em!important;
     }
   }
 }
