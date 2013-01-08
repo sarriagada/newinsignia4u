@@ -602,3 +602,57 @@ and (orientation : portrait){
     }
   }
 }
+
+
+/* ----------------------------
+:: PORTFOLIO
+---------------------------- */
+
+// responsive projects page
+@media (max-width : 940px){
+  #projects-page.carousel{
+    .carousel-inner{
+      height:auto;
+      width:532px;
+      margin:0 auto;
+      
+      .item{
+        .carousel-caption{
+          position:static;
+        }
+      }
+    }
+  }
+}
+
+// responsive more projects
+@media (max-width : 837px){
+  .more-projects{
+    ul{
+      margin-left:-20px;
+      width:auto;
+
+      li{
+        float:none;
+        display:inline-block;
+        margin:0 0 20px 20px;
+        width:47%;
+
+        img{
+          display:block;
+          border:#000 solid 1px;
+        }
+      }
+    }
+  }
+}
+@media (max-width : 599px){
+  .more-projects{
+    ul{
+      li{
+        width:265px;
+      }
+    }
+  }
+}
+// end portfolio

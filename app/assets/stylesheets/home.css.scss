@@ -695,6 +695,7 @@ section{
 			img{
 				display:block;
 				border:#000 solid 1px;
+				max-width:100%;
 			}
 
 			.project-info{
@@ -1133,12 +1134,15 @@ footer{
 			}
 		}
 	}
+
 	.carousel-control{
 		top: 123px;
 	}
+
 	.carousel-control.left{
 		left: 6px;
 	}
+	
 	.carousel-control.right{
 		right: 6px;
 	}
