@@ -104,39 +104,22 @@ header{
 					text-transform:uppercase;
 					position:relative;
 				}
-				a:hover:before{
-					vertical-align: middle;
-					content: url("/assets/arrow-left.png");
-					display: inline-block;
-					width: 18px;
-					position: absolute;
-					top: 5px;
-					left:-5px;
-				}
-				a:hover:after{
-					vertical-align: middle;
-					content: url("/assets/arrow-right.png");
-					display: inline-block;
-					width: 31px;
-					position: absolute;
-					top: 5px;
-				}
-				a.active:before{
+				a:hover:before, a.active:before{
 					vertical-align: middle;
 					content: url("/assets/arrow-left.png");
 					display: inline-block;
 					width: 22px;
 					position: absolute;
-					top: 5px;
-					left:-5px;
+					top: 9%;
+					left:-2px;
 				}
-				a.active:after{
+				a:hover:after, a.active:after{
 					vertical-align: middle;
 					content: url("/assets/arrow-right.png");
 					display: inline-block;
-					width: 22px;
+					width: 15px;
 					position: absolute;
-					top: 5px;
+					top: 9%;
 				}
 			}
 		}
@@ -209,18 +192,15 @@ section{
 	}
 
 	h2:before{
-		content: url("/assets/flecha.gif");
+		content: url("/assets/arrow-left.gif");
 		display: inline-block;
-		width: 35px;
+		width: 30px;
 	}
 
 	h2:after{
-		content: url("/assets/flecha.gif");
+		content: url("/assets/arrow-right.gif");
 		display: inline-block;
-		margin-left: 5px;
-		@include transform(rotate(180deg));
-		position: relative;
-		bottom: -10px;
+		width:30px;
 	}
 }
 
@@ -382,13 +362,14 @@ section{
 
 	.container-title{
 		h2:after {
-				content: url("/assets/arrow-left-blue.png");
-				margin-left: 5px;
+				content: url("/assets/arrow-right-blue.png");
+				display: inline-block;
+				width: 30px;
 			}
 		h2:before {
 			content: url("/assets/arrow-left-blue.png");
-			margin-left: -11px;
-			margin-right: -3px;
+			display: inline-block;
+			width: 30px;
 		}
 	}
 
@@ -1136,7 +1117,7 @@ footer{
 				}
 
 			}
-			
+
 			.more{
 				left: -4px;
 				bottom: -6px;
