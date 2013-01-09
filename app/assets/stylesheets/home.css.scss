@@ -765,7 +765,10 @@ footer{
 			}
 		}
 
-		li.footer-contact-email{  margin-right: 0px;  }
+		li.footer-contact-email{
+			margin-right: 0px;
+		}
+
 		.icon-envelope-alt {
 			font-size: 20px;
 			margin-right: 5px;
@@ -871,6 +874,7 @@ footer{
 						i{
 							background:#00a7a9 url(asset-path("sprite.png", image)) no-repeat -344px 9px;
 							top:4px;
+							@include box-shadow(0 0 1px #00A7A9);
 						}
 					}
 				}
@@ -879,6 +883,7 @@ footer{
 					a{
 						i{
 							background:#387ebe;
+							@include box-shadow(0 0 1px #387EBE);
 						}
 					}
 				}
@@ -887,6 +892,7 @@ footer{
 					a{
 						i{
 							background:#2daae1;
+							@include box-shadow(0 0 1px #2DAAE1);
 						}
 					}
 				}
@@ -895,6 +901,7 @@ footer{
 					a{
 						i{
 							background:#3b5998;
+							@include box-shadow(0 0 1px #3B5998);
 						}
 					}
 				}
@@ -980,24 +987,25 @@ footer{
 					}
 				}
 
-				.more{
-					background:#E50892;
-					border: 2px solid #A60563;
-					border-radius: 5px 5px 5px 5px;
-					bottom: -21px;
-					color: white;
-					font-family: 'Amatic SC',cursive;
-					font-size: 34px;
-					font-weight: bold;
-					height: 47px;
-					left: 42%;
-					line-height: 40px;
-					padding: 0 20px 2px 17px;
-					position: absolute;
-					width: 130px;
-					display:block;
-					text-decoration:none;
-				}
+			}
+
+			.more{
+				background:#E50892;
+				border: 2px solid #A60563;
+				border-radius: 5px 5px 5px 5px;
+				bottom: -21px;
+				color: white;
+				font-family: 'Amatic SC',cursive;
+				font-size: 34px;
+				font-weight: bold;
+				height: 47px;
+				left: 42%;
+				line-height: 40px;
+				padding: 0 20px 2px 17px;
+				position: absolute;
+				width: 130px;
+				display:block;
+				text-decoration:none;
 			}
 		}
 
@@ -1127,10 +1135,11 @@ footer{
 					font-size:14px;
 				}
 
-				.more{
-					left: -4px;
-					bottom: -6px;
-				}
+			}
+			
+			.more{
+				left: -4px;
+				bottom: -6px;
 			}
 		}
 	}
@@ -1142,7 +1151,7 @@ footer{
 	.carousel-control.left{
 		left: 6px;
 	}
-	
+
 	.carousel-control.right{
 		right: 6px;
 	}
@@ -1156,16 +1165,19 @@ footer{
 		-o-transition: opacity 2s ease-in-out;
 		transition: opacity 2s ease-in-out;
 	}
+
 	.active.left, .active.right{
 	  left: 0;
 	  z-index: 2;
 	  opacity: 0;
 	  filter: alpha(opacity=0);
 	}
+
 	.next, .prev{
 	  left: 0;
 	  z-index: 1;
 	}
+
 	.carousel-control{
 		z-index:3;
 	}
@@ -1176,4 +1188,7 @@ footer{
 /* iPads (portrait) ----------- */
 @media (max-width : 1024px)
 and (orientation : portrait){
+}
+#toTop{
+	z-index:9999;
 }

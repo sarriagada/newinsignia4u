@@ -618,12 +618,72 @@ and (orientation : portrait){
   #projects-page.carousel{
     .carousel-inner{
       height:auto;
-      width:532px;
+      width:85%;
       margin:0 auto;
+      background-position:center 10px;
       
       .item{
+        margin:0;
+
+        .macbook{
+          height: 300px;
+          margin: 30px auto 0;
+          padding:0 0 0 6px;
+          width:346px;
+        }
         .carousel-caption{
           position:static;
+          background:#fff;
+          border:#494647 solid 1px;
+          width:100%;
+          min-height:238px;
+          
+          h4{
+            padding:29px 20px 2px;
+          }
+
+          p, ul{
+            margin-left:20px;
+            margin-right:20px;
+          }
+
+          ul{
+            margin-bottom:20px;
+          }
+          
+        }
+
+        .more{
+          position:relative;
+          bottom:27px;
+          margin:0 auto;
+        }
+      }
+    }
+
+    a.carousel-control.left{
+      top: auto;
+      bottom: 42px;
+      left: 16%;
+    }
+
+    a.carousel-control.right{
+      top: auto;
+      bottom: 42px;
+      right: 16%;
+    }
+  }
+}
+@media (max-width : 630px){
+  #projects-page.carousel{
+    .carousel-inner{
+      background:url(asset_path("macbook-mobile.png", image)) no-repeat center 0;
+      
+      .item{
+        .macbook{
+          margin:12px auto 0;
+          width:208px;
+          height:180px;
         }
       }
     }

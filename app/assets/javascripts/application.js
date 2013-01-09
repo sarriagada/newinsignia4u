@@ -48,4 +48,12 @@ $(document).ready(function() {
         }  
     });  
     $('.equal3').height(biggestHeight);
+
+    var biggestHeight = 0;  
+    $('.equal4').each(function(){  
+        if($(this).height() > biggestHeight){  
+            biggestHeight = $(this).height();  
+        }  
+    });  
+    $('.equal4').css("min-height", biggestHeight);
 });
