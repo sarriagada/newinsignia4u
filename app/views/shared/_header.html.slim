@@ -1,5 +1,5 @@
 header
-	.container
+	.container#logo
 		h1
 			a href=""
 				= image_tag(asset_path("insignia.svg"))
@@ -7,6 +7,7 @@ header
 		a.lang href="" English Please
 
 	nav
+		i#menu-btn.icon-reorder
 		ul
 			li
 				a class="#{(controller_name == "home")? 'active': ''}" href="/" Home
@@ -22,3 +23,4 @@ header
 				a class="#{(controller_name == "job")? 'active': ''}" href="/job" Job
 			li
 				a class="#{(controller_name == "blog")? 'active': ''}" href="/blog" Blog
+		span X
