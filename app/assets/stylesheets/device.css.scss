@@ -61,10 +61,12 @@
       height: 344px;
       max-width: 400%;
     }
-    .carousel .more { 
-      left: 31%;
-      font-size: 1.1em;
+    .carousel .more {
+      left: 1px!important;
+      right: 1px!important;
+      font-size: 2.2em!important;
       width: 44%;
+      margin:auto;
       text-align: center;
     }
     ul.box-dashed.four li { 
@@ -231,10 +233,12 @@
       height: 340px;
       max-width: 200%;
     }
-    .carousel .more { 
-      left: 31%;
-      font-size: 100%;
+    .carousel .more {
+      left: 1px!important;
+      right: 1px!important;
+      font-size: 2.2em!important;
       width: 44%;
+      margin:auto;
       text-align: center;
     }
     ul.box-dashed.four li { 
@@ -379,7 +383,12 @@ and (orientation : portrait){
     font-size: 15px;
   }
   .carousel .more {
-    left: 35%;
+      left: 1px!important;
+      right: 1px!important;
+      font-size: 2.2em!important;
+      width: 44%;
+      margin:auto;
+      text-align: center;
   }
   .content .technologies ul li, .content .tools ul li {
     margin: 7px;
@@ -455,7 +464,12 @@ and (orientation : portrait){
     }
   }
   .carousel .more {
-    font-size: 32px;
+      left: 1px!important;
+      right: 1px!important;
+      font-size: 2.2em!important;
+      width: 44%;
+      margin:auto;
+      text-align: center;
   }
   .news .news-item .more {
     font-size: 31px;
