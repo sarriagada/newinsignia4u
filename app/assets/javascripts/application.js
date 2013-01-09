@@ -49,6 +49,7 @@ $(document).ready(function() {
     });  
     $('.equal3').height(biggestHeight);
 
+
     var biggestHeight = 0;  
     $('.equal4').each(function(){  
         if($(this).height() > biggestHeight){  
@@ -60,5 +61,25 @@ $(document).ready(function() {
     if (Modernizr.svg){
         $('header h1 a').html('<img src="/assets/insignia.svg" alt="Insignia"/>');
     }
+
+//js menu
+    if( document.documentElement.clientWidth < 480){
+        $('#logo').insertAfter('nav');
+    }else{
+        $('nav').insertAfter('#logo');
+    }
+
+    $(window).resize(function() {
+        if( document.documentElement.clientWidth < 480){
+            $('#logo').insertAfter('nav');
+        }else{
+            $('nav').insertAfter('#logo');
+        }
+    });
+    $('#menu-btn, header nav span').click(function() {
+        $('header nav ul').toggle('slow');
+        $('header nav span').toggle('slow');
+        $('#menu-btn').toggle('slow')
+    });
 });
 
