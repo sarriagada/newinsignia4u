@@ -61,10 +61,12 @@
       height: 344px;
       max-width: 400%;
     }
-    .carousel .more { 
-      left: 31%;
-      font-size: 1.1em;
+    .carousel .more {
+      left: 1px!important;
+      right: 1px!important;
+      font-size: 2.2em!important;
       width: 44%;
+      margin:auto;
       text-align: center;
     }
     ul.box-dashed.four li { 
@@ -95,7 +97,13 @@
       height: auto!important;
     }
     .news .news-item .more { 
-      left: 25%!important;
+      font-size: 2.2em;
+      left: 1px!important;
+      right: 1px!important;
+      margin: auto;
+      display: inline-block;
+      width: 130px;
+      text-align: center;
     }
   }
   .ribbon .ribbon-right, .ribbon .ribbon-left {
@@ -115,7 +123,7 @@
       line-height: 68px;
       margin-left: -4px;
       border: 1px dashed;
-      padding: 1% 10%;
+      padding: 0.5% 10%;
       margin-bottom: 24px;
       display: inline-block;
       width: auto;
@@ -231,10 +239,12 @@
       height: 340px;
       max-width: 200%;
     }
-    .carousel .more { 
-      left: 31%;
-      font-size: 100%;
+    .carousel .more {
+      left: 1px!important;
+      right: 1px!important;
+      font-size: 2.2em!important;
       width: 44%;
+      margin:auto;
       text-align: center;
     }
     ul.box-dashed.four li { 
@@ -271,7 +281,13 @@
       height: auto!important;
     }
     .news .news-item .more { 
-      left: 25%!important;
+      font-size: 2.2em;
+      left: 1px!important;
+      right: 1px!important;
+      margin: auto;
+      display: inline-block;
+      width: 130px;
+      text-align: center;
     }
   }
   .ribbon .ribbon-right, .ribbon .ribbon-left {
@@ -291,7 +307,7 @@
       line-height: 68px;
       margin-left: -4px;
       border: 1px dashed;
-      padding: 1% 10%;
+      padding: 0.5% 10%;
       margin-bottom: 24px;
       display: inline-block;
       width: auto;
@@ -379,7 +395,12 @@ and (orientation : portrait){
     font-size: 15px;
   }
   .carousel .more {
-    left: 35%;
+      left: 1px!important;
+      right: 1px!important;
+      font-size: 2.2em!important;
+      width: 44%;
+      margin:auto;
+      text-align: center;
   }
   .content .technologies ul li, .content .tools ul li {
     margin: 7px;
@@ -392,7 +413,13 @@ and (orientation : portrait){
     margin-bottom: 10%;
   }
   .content .news .news-item .more {
-    left: 35%;
+    font-size: 2.2em;
+    left: 1px!important;
+    right: 1px!important;
+    margin: auto;
+    display: inline-block;
+    width: 130px;
+    text-align: center;
   }
 
   footer {
@@ -455,11 +482,21 @@ and (orientation : portrait){
     }
   }
   .carousel .more {
-    font-size: 32px;
+      left: 1px!important;
+      right: 1px!important;
+      font-size: 2.2em!important;
+      width: 44%;
+      margin:auto;
+      text-align: center;
   }
   .news .news-item .more {
-    font-size: 31px;
-    left: 22%;
+    font-size: 2.2em;
+    left: 1px!important;
+    right: 1px!important;
+    margin: auto;
+    display: inline-block;
+    width: 130px;
+    text-align: center;
   }
 
   footer {
@@ -469,7 +506,7 @@ and (orientation : portrait){
       display: inline-block;
       width: auto;
       margin: auto;
-      padding: 1% 10%;
+      padding: 0.5% 10%;
     }
     .container-contact ul.footer-contact li{
       width: 51%;
@@ -491,7 +528,7 @@ and (orientation : portrait){
       display: inline-block;
       width: auto;
       margin: auto;
-      padding: 1% 10%;
+      padding: 0.5% 10%;
     }
 }
 /* iPads (portrait) ----------- */
@@ -544,7 +581,13 @@ and (orientation : portrait){
     margin-right: 0px!important;
     padding-right: 4%!important;
     .more{
-      left: 40%!important;
+      font-size: 2.2em;
+      left: 1px!important;
+      right: 1px!important;
+      margin: auto;
+      display: inline-block;
+      width: 130px;
+      text-align: center;
     }
   }
   footer{
@@ -562,7 +605,7 @@ and (orientation : portrait){
       line-height: 68px;
       margin-left: -4px;
       border: 1px dashed;
-      padding: 1% 10%;
+      padding: 0.5% 10%;
       margin-bottom: 24px;
       display: inline-block;
       width: auto;
