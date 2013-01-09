@@ -107,7 +107,7 @@
     }
     ul.footer-contact:before {
       content:"Contant Us";
-      font-size: 60px;
+      font-size: 4.5em;
       color: white;
       font-weight: 700;
       vertical-align: middle;
@@ -115,13 +115,14 @@
       line-height: 68px;
       margin-left: -4px;
       border: 1px dashed;
-      padding: 3px 30px;
+      padding: 1% 10%;
       margin-bottom: 24px;
       display: inline-block;
+      width: auto;
     }
     ul.footer-contact li { 
       float: none;
-      font-size: 1.2em;
+      font-size: 1.2em!important;
       line-height: 1.4em;
       margin: auto auto 5%;
       text-align: center;
@@ -129,7 +130,7 @@
     }
     ul.footer-contact li i { 
       display: block;
-      font-size: 20px !important;
+      font-size: 1.4em!important;
       line-height: 20px;
       margin: auto!important;
     }
@@ -282,7 +283,7 @@
     }
     ul.footer-contact:before {
       content:"Contant Us";
-      font-size: 60px;
+      font-size: 4.5em;
       color: white;
       font-weight: 700;
       vertical-align: middle;
@@ -290,13 +291,14 @@
       line-height: 68px;
       margin-left: -4px;
       border: 1px dashed;
-      padding: 3px 30px;
+      padding: 1% 10%;
       margin-bottom: 24px;
       display: inline-block;
+      width: auto;
     }
     ul.footer-contact li { 
       float: none;
-      font-size: 1.2em;
+      font-size: 1.2em!important;
       line-height: 1.4em;
       margin: auto auto 5%;
       text-align: center;
@@ -304,7 +306,7 @@
     }
     ul.footer-contact li i { 
       display: block;
-      font-size: 20px !important;
+      font-size: 1.4em!important;
       line-height: 20px;
       margin: auto!important;
     }
@@ -395,10 +397,10 @@ and (orientation : portrait){
 
   footer {
     ul.footer-contact li{ 
-      font-size: 12px;
+      font-size: 1.2em;
       i{
         margin-left: 10px;
-        font-size: 12px!important;
+        font-size: 1.4em!important;
       }
     }
   }
@@ -462,18 +464,19 @@ and (orientation : portrait){
 
   footer {
     .container-contact ul.footer-contact::before {
-      font-size: 450%;
+      font-size: 4.5em;
       line-height: 135%;
-      display: block;
-      width: 50%;
+      display: inline-block;
+      width: auto;
       margin: auto;
+      padding: 1% 10%;
     }
     .container-contact ul.footer-contact li{
       width: 51%;
-      font-size: 12px;
+      font-size: 1.2em;
       i{
         margin-left: 10px;
-        font-size: 16px!important;
+        font-size: 1.4em!important;
       }
     }
     .footer-subscribe p {
@@ -483,11 +486,12 @@ and (orientation : portrait){
 }
 @media (min-width : 600px) and (max-width : 1024px){
   .container-contact ul.footer-contact::before {
-      font-size: 440%;
+      font-size: 4.5em;
       line-height: 135%;
-      display: block;
-      width: 55%;
+      display: inline-block;
+      width: auto;
       margin: auto;
+      padding: 1% 10%;
     }
 }
 /* iPads (portrait) ----------- */
@@ -550,7 +554,7 @@ and (orientation : portrait){
     }
     ul.footer-contact:before {
       content:"Contant Us";
-      font-size: 60px;
+      font-size: 4.5em;
       color: white;
       font-weight: 700;
       vertical-align: middle;
@@ -558,9 +562,10 @@ and (orientation : portrait){
       line-height: 68px;
       margin-left: -4px;
       border: 1px dashed;
-      padding: 3px 30px;
+      padding: 1% 10%;
       margin-bottom: 24px;
       display: inline-block;
+      width: auto;
     }
     ul.footer-contact {
       text-align: center;
@@ -571,7 +576,7 @@ and (orientation : portrait){
       padding-top: 31px;
     }
     ul.footer-contact li {
-      width: 215px;
+      width: 70%;
       display: inline-block;
       line-height: 20px;
       text-align: center;
@@ -592,7 +597,7 @@ and (orientation : portrait){
       font-size: 14px;
       margin-left: -8px;
       position: relative;
-      top: -240px;
+      top: -13em;
       width: 35%;
       left: 58%;
     }
