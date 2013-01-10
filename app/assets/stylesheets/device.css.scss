@@ -371,8 +371,14 @@
 and (orientation : portrait){
   header nav ul li a {
     font-size: 12px;
-    padding: 0px 10px;
   }
+  header nav ul li a:hover:after,
+  header nav ul li a.active:after,
+  header nav ul li a:hover:before,
+  header nav ul li a.active:before{
+    top:12%;
+  }
+
   header a.lang {
     font-size: 10px;
     right: 5%;
