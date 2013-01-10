@@ -58,8 +58,11 @@ $(document).ready(function() {
     });  
     $('.equal4').css("min-height", biggestHeight);
 
-    if !(Modernizr.svg){
+    if (Modernizr.svg){
         $('header h1 a').html('<img src="/assets/insignia.svg" alt="Insignia"/>');
+    }
+    else{
+        $('header h1 a').html('<img src="/assets/insignia.jpg" alt="Insignia"/>');
     }
 
 //js menu
