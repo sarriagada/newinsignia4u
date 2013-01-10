@@ -15,97 +15,97 @@
     right: 5%;
     top: 5%;
   }
-  .content {
-    .introduction h2 {
-      font-size: 240%;
-      line-height: 115%;
-      margin: 13% 11%;
-      padding: 0px 0%;
-    }
-    .introduction p {
-      float: none!important;
-      position: static!important;
-      font-size: 115%;
-      line-height: 150%;
-      width: 80%;
-      text-align: center;
-      margin: auto;
-      margin-top: -5%;
-    }
-    .container-title {
-      width: 90%;
-      margin: auto;
-    }
-    .container-title h2 {
-      font-size: 2em;
-      margin: auto;
-      padding: 0;
-      height: 100px;
-      top: 29px;
-      width: 100%;
-    }
-    .container-title h2::before { 
-      position: absolute;
-      left: 0px;
-    }
-    .container-title h2::after { 
-      position: absolute;
-      bottom: 50%;
-      right: 0px;
-    }
-    .carousel-inner { 
-      margin: auto;
-      width: 90%;
-    }
-    #cases .carousel-inner .item img {  
-      height: 344px;
-      max-width: 400%;
-    }
-    .carousel .more {
-      left: 1px!important;
-      right: 1px!important;
-      font-size: 2.2em!important;
-      width: 44%;
-      margin:auto;
-      text-align: center;
-    }
-    ul.box-dashed.four li { 
-      background: none;
-      border: 0px;
-      display: block;
-      float: none !important;
-      margin: auto;
-      width: 218px;
-      height: 130px;
-    }
-    .technologies ul li, .tools ul li { 
-      background: transparent;
-      border: 0px none currentColor;
-      float: none;
-      height: auto!important;
-      margin: auto;
-      h3{  height: auto;  }
-    }
-    .news ul {
-      margin: auto;
-    }
-    .news .news-item { 
-      float: none;
-      margin: auto auto 15%;
-      padding: 5%;
-      width: 80%!important;
-      height: auto!important;
-    }
-    .news .news-item .more { 
-      font-size: 2.2em;
-      left: 1px!important;
-      right: 1px!important;
-      margin: auto;
-      display: inline-block;
-      width: 130px;
-      text-align: center;
-    }
+
+  .introduction h2 {
+    font-size: 240%;
+    line-height: 115%;
+    margin: 13% 11%;
+    padding: 0px 0%;
   }
+  .introduction p {
+    float: none!important;
+    position: static!important;
+    font-size: 115%;
+    line-height: 150%;
+    width: 80%;
+    text-align: center;
+    margin: auto;
+    margin-top: -5%;
+  }
+  .container-title {
+    width: 90%;
+    margin: auto;
+  }
+  .container-title h2 {
+    font-size: 2em;
+    margin: auto;
+    padding: 0;
+    height: 100px;
+    top: 29px;
+    width: 100%;
+  }
+  .container-title h2::before { 
+    position: absolute;
+    left: 0px;
+  }
+  .container-title h2::after { 
+    position: absolute;
+    bottom: 50%;
+    right: 0px;
+  }
+  .carousel-inner { 
+    margin: auto;
+    width: 90%;
+  }
+  #cases .carousel-inner .item img {  
+    height: 344px;
+    max-width: 400%;
+  }
+  .carousel .more {
+    left: 1px!important;
+    right: 1px!important;
+    font-size: 2.2em!important;
+    width: 44%;
+    margin:auto;
+    text-align: center;
+  }
+  ul.box-dashed.four li { 
+    background: none;
+    border: 0px;
+    display: block;
+    float: none !important;
+    margin: auto;
+    width: 218px;
+    height: 130px;
+  }
+  .technologies ul li, .tools ul li { 
+    background: transparent;
+    border: 0px none currentColor;
+    float: none;
+    height: auto!important;
+    margin: auto;
+    h3{  height: auto;  }
+  }
+  .news ul {
+    margin: auto;
+  }
+  .news .news-item { 
+    float: none;
+    margin: auto auto 15%;
+    padding: 5%;
+    width: 80%!important;
+    height: auto!important;
+  }
+  .news .news-item .more { 
+    font-size: 2.2em;
+    left: 1px!important;
+    right: 1px!important;
+    margin: auto;
+    display: inline-block;
+    width: 130px;
+    text-align: center;
+  }
+
   .ribbon .ribbon-right, .ribbon .ribbon-left {
     display: none;
   }
@@ -191,105 +191,106 @@
   }
   .content {
     overflow: hidden;
-    .introduction h2 {
-      font-size: 240%;
-      line-height: 115%;
-      margin: 13% 11%;
-      padding: 0px 0%;
-    }
-    .introduction p {
-      float: none!important;
-      position: static!important;
-      font-size: 115%;
-      line-height: 150%;
+  }
+  .introduction h2 {
+    font-size: 240%;
+    line-height: 115%;
+    margin: 13% 11%;
+    padding: 0px 0%;
+  }
+  .introduction p {
+    float: none!important;
+    position: static!important;
+    font-size: 115%;
+    line-height: 150%;
+    width: 80%;
+    text-align: center;
+    margin: auto;
+    margin-top: -5%;
+  }
+  .container-title {
+    width: 90%;
+    margin: auto;
+  }
+  .container-title h2 {
+    font-size: 2.9em;
+    margin: auto;
+    padding: 0;
+    height: 100px;
+    top: 29px;
+    width: 100%;
+  }
+  .container-title h2::before { 
+    position: absolute;
+    left: 0px;
+  }
+  .container-title h2::after { 
+    position: absolute;
+    bottom: 40%;
+    right: 0px;
+  }
+  .carousel-inner { 
+    margin: auto;
+    width: 90%;
+  }
+  #cases.carousel {
+    margin: auto!important;
+  }
+  #cases .carousel-inner .item img {  
+    height: 340px;
+    max-width: 200%;
+  }
+  .carousel .more {
+    left: 1px!important;
+    right: 1px!important;
+    font-size: 2.2em!important;
+    width: 44%;
+    margin:auto;
+    text-align: center;
+  }
+  ul.box-dashed.four li { 
+    background: none;
+    border: 0px;
+    display: block;
+    float: none !important;
+    margin: auto;
+    width: 100%;
+    height: 130px;
+  }
+  .technologies ul li, .tools ul li { 
+    background: transparent;
+    float: none;
+    height: auto!important;
+    width: 100%!important;
+    margin: auto;
+    border: none;
+    h3{
+      height: auto;
       width: 80%;
-      text-align: center;
-      margin: auto;
-      margin-top: -5%;
-    }
-    .container-title {
-      width: 90%;
-      margin: auto;
-    }
-    .container-title h2 {
-      font-size: 2.9em;
-      margin: auto;
-      padding: 0;
-      height: 100px;
-      top: 29px;
-      width: 100%;
-    }
-    .container-title h2::before { 
-      position: absolute;
-      left: 0px;
-    }
-    .container-title h2::after { 
-      position: absolute;
-      bottom: 40%;
-      right: 0px;
-    }
-    .carousel-inner { 
-      margin: auto;
-      width: 90%;
-    }
-    #cases.carousel {
-      margin: auto!important;
-    }
-    #cases .carousel-inner .item img {  
-      height: 340px;
-      max-width: 200%;
-    }
-    .carousel .more {
-      left: 1px!important;
-      right: 1px!important;
-      font-size: 2.2em!important;
-      width: 44%;
-      margin:auto;
-      text-align: center;
-    }
-    ul.box-dashed.four li { 
-      background: none;
-      border: 0px;
       display: block;
-      float: none !important;
       margin: auto;
-      width: 100%;
-      height: 130px;
-    }
-    .technologies ul li, .tools ul li { 
-      background: transparent;
-      float: none;
-      height: auto!important;
-      width: 100%!important;
-      margin: auto;
-      border: none;
-      h3{
-        height: auto;
-        width: 80%;
-        display: block;
-        margin: auto;
-      }
-    }
-    .news ul {
-      margin: auto;
-    }
-    .news .news-item { 
-      float: none;
-      margin: auto auto 15%;
-      padding: 5%;
-      width: 80%!important;
-      height: auto!important;
-    }
-    .news .news-item .more { 
-      font-size: 2.2em;
-      left: 1px!important;
-      right: 1px!important;
-      margin: auto;
-      display: inline-block;
-      width: 130px;
-      text-align: center;
     }
   }
+  .news ul {
+    margin: auto;
+  }
+  .news .news-item { 
+    float: none;
+    margin: auto auto 15%;
+    padding: 5%;
+    width: 80%!important;
+    height: auto!important;
+  }
+  .news .news-item .more { 
+    font-size: 2.2em;
+    left: 1px!important;
+    right: 1px!important;
+    margin: auto;
+    display: inline-block;
+    width: 130px;
+    text-align: center;
+  }
+
   .ribbon .ribbon-right, .ribbon .ribbon-left {
     display: none;
   }
@@ -377,11 +378,10 @@ and (orientation : portrait){
     right: 5%;
     top: 5%;
   }
-  .content{
-    .introduction p {
-      margin: auto;
-    }
+  .introduction p {
+    margin: auto;
   }
+
   #cases.carousel { 
     margin: 0px;
   }
@@ -402,17 +402,17 @@ and (orientation : portrait){
       margin:auto;
       text-align: center;
   }
-  .content .technologies ul li, .content .tools ul li {
+  .technologies ul li, .tools ul li {
     margin: 7px;
   }
-  .content .technologies ul, .content .tools ul { 
+  .technologies ul, .tools ul { 
     margin-left: 7px;
   }
-  .content .news .news-item {
+  .news .news-item {
     width: 100%;
     margin-bottom: 10%;
   }
-  .content .news .news-item .more {
+  .news .news-item .more {
     font-size: 2.2em;
     left: 1px!important;
     right: 1px!important;
@@ -434,51 +434,49 @@ and (orientation : portrait){
 }
 /* tablet (landscape) ----------- */
 @media (min-width : 600px) and (max-width : 1020px){
-  .content{
-    .introduction p {
-      font-size: 14px;
-      line-height: 20px;
-      right: 1%;
-      width: 30%;
-    }
+  .introduction p {
+    font-size: 14px;
+    line-height: 20px;
+    right: 1%;
+    width: 30%;
+  }
 
-    .technologies ul, .tools ul {
-      margin: auto;
-      width: 80%;
-      li {
-        margin: 10px;
-        width: 44%!important;
+  .technologies ul, .tools ul {
+    margin: auto;
+    width: 80%;
+    li {
+      margin: 10px;
+      width: 44%!important;
+    }
+  }
+
+  .news ul { 
+    margin-left: 0px;
+  }
+
+  .news .news-item {
+    margin-left: 2%;
+    margin-bottom: 5%;
+    min-height: 100%;
+    padding: 2%;
+    width: 31%;
+  }
+
+  .services{
+    ul.box-dashed{
+      li{
+        width:auto;
       }
     }
+  }
 
-    .news ul { 
-      margin-left: 0px;
-    }
-
-    .news .news-item {
-      margin-left: 2%;
-      margin-bottom: 5%;
-      min-height: 100%;
-      padding: 2%;
-      width: 31%;
-    }
-
-    .services{
-      ul.box-dashed{
-        li{
-          width:auto;
-        }
-      }
-    }
-
-    .howdowedoit, .our-offering{
-      float:none;
-      width:100%;
-      border:none;
-      
-      .container-title{
-        border-top:2px dashed #B8B8B8;
-      }
+  .howdowedoit, .our-offering{
+    float:none;
+    width:100%;
+    border:none;
+    
+    .container-title{
+      border-top:2px dashed #B8B8B8;
     }
   }
   .carousel .more {
