@@ -1191,7 +1191,7 @@ header{
 		font-size: 1.5em;
 	}
 	nav ul li a {
-		font-size: 1.2em;
+		font-size: 0.8em!important;
 		line-height: 2.2em;
 		vertical-align: middle;
 	}
@@ -1202,7 +1202,6 @@ header{
 		display: inline-block;
 		border: 1px solid #383435;
 		padding: 0 4px;
-		font-size: 1.5em;
 		font-weight: bold;
 		border-radius: 0.2em;
 		background:none;
@@ -1214,7 +1213,7 @@ header{
 		color: #f10993;
 	}
 	nav span{
-		font-size: 0.8em!important;
+		font-size: 1.2em!important;
 		display: none;
 		border-radius: 0 0 0.2em 0.2em;
 		background: #383435;
