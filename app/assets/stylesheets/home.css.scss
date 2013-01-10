@@ -1188,14 +1188,22 @@ header{
 	nav ul li{
 		display: block;
 		text-align: center;
+		font-size: 1.5em;
+	}
+	nav ul li a {
+		font-size: 1.2em;
+		line-height: 2.2em;
+		vertical-align: middle;
 	}
 	nav span, nav i {
+		font-family: 'Enriqueta', cursive;
 		position: absolute;
-		right: 0.8em;
+		right: 0.7em;
 		display: inline-block;
 		border: 1px solid #383435;
 		padding: 0 4px;
-		font-size: 1.5em;
+		font-size: 1.2em;
+		font-weight: bold;
 		border-radius: 0.2em;
 		background:none;
 		color: #383435;
@@ -1229,9 +1237,9 @@ header{
 		background: none;
 		color: #f10993;
 		border: none;
-		font-size: 0.8em;
+		font-size: 0.8em!important;
 		font-weight: normal;
-		top: 15px;
+		top: 1.3em!important;
 		float: none;
 		text-decoration: underline;
 	}
