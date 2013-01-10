@@ -1203,6 +1203,7 @@ header{
 	}
 	nav i {
 		top: 0.8em;
+		color: #f10993;
 	}
 	nav span{
 		display: none;
@@ -1210,6 +1211,29 @@ header{
 		background: #383435;
 		padding: 1% 2%;
 		color: #f10993;
+	}
+	.container {
+		height: auto;
+		position: relative;
+		padding-bottom: 30px;
+		background: white;
+	}
+	.introduction{
+		border-top: 2px solid;
+	}
+	a.lang {
+		position: relative;
+		margin: auto;
+		right: 1px;
+		left: 1px;
+		background: none;
+		color: #f10993;
+		border: none;
+		font-size: 0.8em;
+		font-weight: normal;
+		top: 15px;
+		float: none;
+		text-decoration: underline;
 	}
 }
 @media (min-width: 480px){
