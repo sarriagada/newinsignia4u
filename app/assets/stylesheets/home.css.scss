@@ -1227,9 +1227,6 @@ header{
 		padding-bottom: 30px;
 		background: white;
 	}
-	.introduction{
-		border-top: 2px solid;
-	}
 	a.lang {
 		position: relative;
 		margin: auto;
@@ -1245,15 +1242,28 @@ header{
 		text-decoration: underline;
 	}
 }
-@media (min-width: 480px){
+.content{
+	border-top: 2px solid;
+}
+@media (min-width: 799px){
+	.content{
+		border-top: 0;
+	}
 	header nav{
 		ul{ 
 		 	display: block;
 			li {
 				margin: auto;
 				display: inline-block;
+				line-height: 1.5em;
+				font-size: 1em;
+				a {
+					font-size: 1em!important;
+					line-height: 3.4em;
+					vertical-align: middle;
+				}
 			}
 		}
-		nav span, nav i { display: none; }
 	}
+	header nav span, header nav i { display: none; }
 }

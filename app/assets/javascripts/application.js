@@ -66,14 +66,14 @@ $(document).ready(function() {
     }
 
 //js menu
-    if( document.documentElement.clientWidth < 480){
+    if( document.documentElement.clientWidth < 800){
         $('#logo').insertAfter('nav');
     }else{
         $('nav').insertAfter('#logo');
     }
 
     $(window).resize(function() {
-        if( document.documentElement.clientWidth < 480){
+        if( document.documentElement.clientWidth < 800){
             $('#logo').insertAfter('nav');
         }else{
             $('nav').insertAfter('#logo');

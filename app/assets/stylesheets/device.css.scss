@@ -768,3 +768,104 @@ and (orientation : portrait){
   }
 }
 // end portfolio
+// service
+@media (max-width: 799px){
+  .content .services {
+    .container-title { 
+      margin-top: 0px;
+    }
+    ul.box-dashed {
+      margin: auto!important;
+      li { 
+        margin: 10% auto!important;
+        width: 80%!important;
+        height: auto!important;
+        float: none;
+        display: block;
+      }
+    }
+  }
+  .container-title {
+    border-top: none;
+    margin-top: 0;
+  }
+  .services ul.box-dashed li{
+    h3{
+      text-align: center;
+    }
+    h3, p{
+      margin: 7%;
+    }
+  }
+  section {
+    margin-bottom: 10%;
+  }
+  .process{
+    .container-title {
+      margin-top: 0;
+      h2{
+        top: 0;
+      }
+    }
+    ul{
+      border-top: 2px solid #B3C4D9;
+      width: 90%;
+      padding-top: 10%;
+      margin: auto;
+      li{
+          border-bottom: 2px solid #B3C4D9;
+          margin: auto;
+          padding: 10% 0px;
+        i{
+          margin:auto;
+          background-size: 500%;
+          height: 2.5em!important;
+          width: 2.5em!important;
+        }
+        i.icon-planning { 
+          background-position: 33% 33%;
+        }
+        i.icon-coding { 
+          background-position: 60% 32%;
+        }
+        i.icon-codereview { 
+          background-position: 89% 33%;
+        }
+        i.icon-quality_assurance { 
+          background-position: 9% 75%;
+        }
+        i.icon-deployment { 
+          background-position: 34% 75%;
+        }
+        i.icon-maintenance { 
+          background-position: 60% 75%;
+        }
+        h3{
+          font-size: 1.2em;
+        }
+        p{
+          width: 100%;
+        }
+        span {
+          font-size: 1.5em;
+          font-weight: 700;
+        }
+      }
+    }
+  }
+  .howdowedoit, .our-offering { 
+    border: none;
+    float: none;
+    margin: auto;
+    width: 90%;
+  }
+  .howdowedoit{
+    ul.bullets-blue { 
+      padding: 0px 5% 0px 60px;
+    }
+  }
+  .our-offering p {
+    padding-top: 7%;
+  }
+//end service
+}
