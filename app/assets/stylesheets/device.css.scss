@@ -736,7 +736,64 @@ and (orientation : portrait){
     }
   }
 }
-
+@media (min-width:320px) and (max-width:480px){
+  .introduction h2 {
+    font-size: 2em;
+    line-height: 1.3em;
+  }
+  .container-title h2 {  font-size: 3em;  }
+  footer{
+    .footer-subscribe .email {
+      width: 70%;
+      padding: 10px 24px;
+      position: static;
+      top: 4px;
+      left: 1px;
+      right: 1px;
+      margin: auto;
+    }
+    .footer-subscribe .btn-subscribe {
+      position: static;
+      margin-top: 12px;
+    }
+    .footer-subscribe {  padding-bottom: 20px;  }
+    .social .container ul li {  font-size: 0;  }
+    ul.footer-contact:before {
+      content:"Contant Us";
+      font-size: 4.5em;
+      color: white;
+      font-weight: 700;
+      vertical-align: middle;
+      font-family: 'Amatic SC', cursive;
+      line-height: 68px;
+      margin-left: -4px;
+      border: 1px dashed;
+      padding: 0.5% 10%;
+      margin-bottom: 24px;
+      display: inline-block;
+      width: auto;
+    }
+    ul.footer-contact {
+      text-align: center;
+      width: auto;
+      margin: auto;
+      float: left;
+      line-height: 40px;
+      padding-top: 31px;
+    }
+    ul.footer-contact li {
+      width: 70%;
+      display: inline-block;
+      line-height: 20px;
+      text-align: center;
+      margin: auto;
+      float: none;
+    }
+    ul.footer-contact li i {
+      display: block;
+      margin: 14px auto!important;
+  }
+}
 // responsive more projects
 @media (max-width : 837px){
   .more-projects{
