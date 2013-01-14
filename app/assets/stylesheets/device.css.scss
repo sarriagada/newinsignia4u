@@ -184,6 +184,7 @@
 /* Smartphones (portrait and landscape) ----------- */
 @media (min-device-width : 320px) and (max-device-width : 480px), (max-device-height : 480px) and (max-device-width : 600px) and (orientation: landscape) {
   /* Styles */
+
   header a.lang {
     font-size: 10px;
     right: 5%;
@@ -756,7 +757,16 @@ and (orientation : portrait){
       position: static;
       margin-top: 12px;
     }
+    .footer-subscribe p {
+      top: 0em;
+    }
     .footer-subscribe {  padding-bottom: 20px;  }
+    .footer-subscribe label {
+      border: 1px dashed;
+      padding: 0px 30px;
+      display: inline-block;
+      margin-bottom: 25px;
+    }
     .social .container ul li {  font-size: 0;  }
     ul.footer-contact:before {
       content:"Contant Us";
