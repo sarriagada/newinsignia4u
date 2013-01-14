@@ -756,6 +756,9 @@ and (orientation : portrait){
       position: static;
       margin-top: 12px;
     }
+    .footer-subscribe p {
+      top: 0em;
+    }
     .footer-subscribe {  padding-bottom: 20px;  }
     .footer-subscribe label {
       border: 1px dashed;
