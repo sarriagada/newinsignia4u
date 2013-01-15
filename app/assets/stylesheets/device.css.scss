@@ -865,9 +865,10 @@ and (orientation : portrait){
   }
   #projects-page.carousel .carousel-inner .item .macbook { 
     height: auto;
-    min-height: 125px;
+    display: block;
     margin: auto;
     margin-top: 4%;
+    margin-bottom: 17%;
     width: 67%;
   }
   #projects-page.carousel a.carousel-control.left {  left: 10%;  }
