@@ -1,0 +1,70 @@
+section.project-page
+	.container-title
+		h2 TableHopping NY
+
+	#project-page.carousel.slide.carousel-fade
+			.carousel-inner
+				.active.item
+					.macbook
+						= image_tag(asset_path("slider/craftfoxes_medium.jpg"))
+
+
+
+				.item
+					.macbook
+						= image_tag(asset_path("slider/tablehopping_medium.jpg"))
+
+				.item
+					.macbook
+						= image_tag(asset_path("slider/area17_medium.jpg"))
+
+			/! Carousel nav
+			a.carousel-control.left data-slide="prev" href="#projects-page"
+			a.carousel-control.right data-slide="next" href="#projects-page"
+
+	.carousel-caption
+		h4 
+			a href="#{project_path(1)}" Craftfoxes.com
+		p
+			| A social network and marketplace for crafty people who love knitting, scrapbooking, paper projects, baking, jewelry, sewing, vintage finds, home decor & more!
+
+		ul.bullets-blue
+			li
+				i.icon-bullet-blue
+				| Frontend and Backend development with Ruby on Rails
+			li
+				i.icon-bullet-blue
+				| Social Network integrated with Google Maps API
+			li
+				i.icon-bullet-blue
+				| Built for American Overloaded Inc.
+
+	a.more href="http://www.craftfoxes.com" Visit Site
+
+section.more-info
+	.container-title
+		h2 More Info
+
+	ul.box-dashed.three
+		li
+			.circle
+				i.ico-agile
+
+			h3 Duration
+			p Los Tanfaun is a lost and found application to connect people in Buenos Aires city.
+
+		li
+			.circle
+				i.ico-agile
+
+			h3 
+				a href="#{project_path(1)}" Los Tanfaun
+			p Los Tanfaun is a lost and found application to connect people in Buenos Aires city.
+
+		li
+			.circle
+				i.ico-agile
+
+			h3 
+				a href="#{project_path(1)}" Los Tanfaun
+			p Los Tanfaun is a lost and found application to connect people in Buenos Aires city.
