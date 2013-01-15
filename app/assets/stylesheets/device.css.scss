@@ -182,7 +182,7 @@
   #toTop{ display: none!important; }
 }
 /* Smartphones (portrait and landscape) ----------- */
-@media (min-device-width : 320px) and (max-device-width : 480px), (max-device-height : 480px) and (max-device-width : 600px) and (orientation: landscape) {
+@media (min-width:0) and (max-width:320px),(min-device-width : 320px) and (max-device-width : 480px), (max-device-height : 480px) and (max-device-width : 600px) and (orientation: landscape) {
   /* Styles */
 
   header a.lang {
@@ -737,12 +737,19 @@ and (orientation : portrait){
     }
   }
 }
-@media (min-width:320px) and (max-width:480px){
+@media (min-width:0) and (max-width:320px){
   .introduction h2 {
     font-size: 2em;
     line-height: 1.3em;
   }
-  .container-title h2 {  font-size: 3em;  }
+  .container-title h2 {
+    font-size: 2em;
+    line-height: 2em;
+  }
+  .carousel .more { 
+    font-size: 2em !important;
+    padding: 0px 7px 2px;
+  }
   footer{
     .footer-subscribe .email {
       width: 70%;
