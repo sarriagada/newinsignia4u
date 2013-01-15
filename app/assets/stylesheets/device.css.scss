@@ -594,6 +594,12 @@ and (orientation : portrait){
       text-align: center;
     }
   }
+  .more-projects ul li { 
+    display: inline-block;
+    float: none;
+    margin: 0px 0px 20px 20px;
+    width: 44%;
+  }
   footer{
     .container-contact{
       float: left;
