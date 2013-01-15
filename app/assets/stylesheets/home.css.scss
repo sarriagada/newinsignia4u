@@ -137,6 +137,17 @@ ul.box-dashed{
 		border: #373435 dashed 1px;
 		float:left;
 		margin:12px 0 12px 20px;
+		
+		h3{
+			display:table-cell;
+			font-size:15px;
+			font-weight:normal;
+			height:50px;
+			line-height:21px;
+			padding:0 22px;
+			vertical-align:middle;
+			width:216px;
+		}
 	}
 }
 
@@ -247,16 +258,7 @@ ul.box-dashed.four{
 	border:#224a79 solid 5px;
 }
 
-h3{
-	display:table-cell;
-	font-size:15px;
-	font-weight:normal;
-	height:50px;
-	line-height:21px;
-	padding:0 22px;
-	vertical-align:middle;
-	width:216px;
-}
+
 
 section{
 	font-size:15px;
@@ -1107,6 +1109,7 @@ a.more{
 			margin:30px 0 0 99px;
 
 			h4{
+				padding:0;
 				a{
 					color:#316baf;
 				}
@@ -1118,9 +1121,13 @@ a.more{
 				width:430px;
 				padding:0;
 				top:-31px;
+				position:absolute;
+				border:0;
 				
 				p, ul{
 					color:#7e7c7d;
+					margin-left:0;
+					margin-right:0;
 				}
 				
 				p{
