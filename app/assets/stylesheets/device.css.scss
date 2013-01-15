@@ -598,7 +598,7 @@ and (orientation : portrait){
     display: inline-block;
     float: none;
     margin: 0px 0px 20px 20px;
-    width: 44%;
+    width: 44%!important;
   }
   footer{
     .container-contact{
@@ -650,7 +650,7 @@ and (orientation : portrait){
       font-size: 14px;
       margin-left: -8px;
       position: relative;
-      top: -13em;
+      top: -17em !important;
       width: 35%;
       left: 58%;
     }
