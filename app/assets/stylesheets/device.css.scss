@@ -855,7 +855,6 @@ and (orientation : portrait){
   }
   .container-title {
     border-top: none;
-    margin-top: 0;
   }
   .services ul.box-dashed li{
     h3{
@@ -936,4 +935,42 @@ and (orientation : portrait){
     padding-top: 7%;
   }
 //end service
+}
+
+
+/* ----------------------------
+:: PROJECT
+---------------------------- */
+
+// tablet
+@media (max-width : 768px){
+  #project-page.carousel{ 
+    a.carousel-control.left {
+      top: 43%;
+      bottom: auto;
+      left: 7%;
+    }
+
+    a.carousel-control.right {
+      top: 43%;
+      bottom: auto;
+      right: 7%;
+    }
+  }
+
+  .more-info{
+    ul.box-dashed{
+      margin:0;
+      padding:0;
+      text-align:center;
+
+      li{
+        float:none;
+        display:inline-block;
+        vertical-align:top;
+        width:30%;
+        margin:0 8px;
+      }
+    }
+  }
 }

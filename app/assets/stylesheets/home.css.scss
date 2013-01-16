@@ -32,6 +32,7 @@ ul.bullets-blue{
 	li{
 		line-height:23px;
 		padding:0 0 23px;
+		color:#373435;
 
 		.icon-bullet-blue{
 			background-position:-352px -192px;
@@ -137,56 +138,41 @@ ul.box-dashed{
 		border: #373435 dashed 1px;
 		float:left;
 		margin:12px 0 12px 20px;
-		
-		h3{
-			display:table-cell;
-			font-size:15px;
-			font-weight:normal;
-			height:50px;
-			line-height:21px;
-			padding:0 22px;
-			vertical-align:middle;
-			width:216px;
-		}
 	}
 }
 
 ul.box-dashed.two{
 
 	li{
-		width:460px;
+		width: 460px;
 	}
 }
 
 ul.box-dashed.three{
+	margin-left: -35px;
+	padding-left: 7%;
 
 	li{
-		width:300px;
+		width: 248px;
+		margin-left: 35px;
 	}
 }
 
 ul.box-dashed.four{
 
 	li{
-		width:218px;
+		width: 218px;
 	}
 }
 
 .circle{
-	@include border-radius(35px);
+	@include border-radius(39px);
 	background:#f20892;
 	border:#a60563 solid 5px;
-	height:70px;
-	width:70px;
+	height:78px;
+	width:78px;
 	margin:19px auto 10px;
-	margin-bottom: 22px;
-
-	@include border-radius(35px);
-	background:#f20892;
-	border:#a60563 solid 5px;
-	height:70px;
-	width:70px;
-	margin:19px auto 10px;
+	margin-bottom: 7px;
 	
 	i.ico-rails{
 		background-position: 0 0;
@@ -276,7 +262,7 @@ section{
 
 .container-title{
 	border-top: 2px dashed #B8B8B8;
-	margin-top: 60px;
+	margin-top: 90px;
 	width: 100%;
 	text-align:center;
 	clear:both;
@@ -353,10 +339,6 @@ section{
 	}
 }
 
-.projects {
-	margin-bottom: 68px;
-}
-
 .technologies, .tools{
 	clear:both;
 	overflow:hidden;
@@ -368,6 +350,17 @@ section{
 		li{
 			height:184px;
 			text-align:center;
+			
+			h3{
+				display:table-cell;
+				font-size:15px;
+				font-weight:normal;
+				height:50px;
+				line-height:21px;
+				padding:0 22px;
+				vertical-align:middle;
+				width:216px;
+			}
 		}
 	}
 }
@@ -389,7 +382,6 @@ section{
 }
 
 .news{
-	margin-top: 92px;
 	ul{
 		margin-left: -20px;
 		margin-top: 15px;
@@ -520,9 +512,6 @@ section{
 :: SERVICES
 ---------------------------- */
 .services{
-	.container-title{
-		margin-top:90px;
-	}
 
 	ul.box-dashed{
 		li{
@@ -551,10 +540,6 @@ section{
 
 .process{
 	line-height:23px;
-	
-	.container-title{
-		margin-top:90px;
-	}
 	
 	ul{
 		li{
@@ -653,7 +638,6 @@ section{
 ---------------------------- */
 .projects-page{
 	.container-title{
-		margin-top: 90px;
 
 		h2{
 			font-size:54px;
@@ -714,6 +698,36 @@ section{
 /* ----------------------------
 :: PROJECT
 ---------------------------- */
+.project-page{
+	.carousel-caption{
+		position:static;
+		background:#fff;
+		border:#494647 solid 1px;
+		min-height:238px;
+		margin: 0 60px;
+		padding-bottom:45px;
+
+		h4{
+			padding:14px 13px 0px;
+		}
+
+		p, ul{
+			margin-left:13px;
+			margin-right:13px;
+		}
+		p{
+			margin-bottom: 19px;
+		}
+	}
+	.more{
+		position:relative;
+		bottom:27px;
+		margin:0 auto;
+		left:0;
+	}
+
+}
+
 .more-info{
 	.container-title{ 
 		h2:after {
@@ -723,6 +737,25 @@ section{
     	h2:before {
     		content: url("/assets/arrow-left-blue.png");
     	}
+	}
+
+	ul.box-dashed{
+		li{
+			text-align: center;
+			min-height: 230px;
+			
+			h3{
+				font-weight: normal;
+				color: #316baf;
+				text-transform: uppercase;
+				font-size: 15px;
+				margin: 0 25px;
+			}
+			p{
+				font-size: 14px;
+				margin: 2px 25px 12px;
+			}
+		}
     }
 }
 // end portfolio
@@ -1084,6 +1117,7 @@ a.more{
 				background: rgba(255, 255, 255, 0.9);
 				border:#000 solid 1px;
 				text-align:left;
+				min-height:auto;
 			}
 		}
 	}
@@ -1106,7 +1140,7 @@ a.more{
 		height:307px;
 		
 		.item{
-			margin:30px 0 0 99px;
+			margin:51px 0 0 100px;
 
 			h4{
 				padding:0;
@@ -1120,7 +1154,7 @@ a.more{
 				left:384px;
 				width:430px;
 				padding:0;
-				top:-31px;
+				top:-51px;
 				position:absolute;
 				border:0;
 				
@@ -1172,8 +1206,8 @@ a.more{
 			margin:0;
 
 	        .macbook{
-	          height: 300px;
-	          margin: 30px auto 0;
+	          height: 263px;
+	          margin: 51px auto 0;
 	          padding:0 0 0 6px;
 	          width:346px;
 	        }
@@ -1187,42 +1221,16 @@ a.more{
 	}
 
     a.carousel-control.left{
-      top: auto;
-      bottom: 42px;
-      left: 16%;
+		top: 40%;
+		bottom: auto;
+		left: 1%;
     }
 
     a.carousel-control.right{
-      top: auto;
-      bottom: 42px;
-      right: 16%;
+		top: 40%;
+		bottom: auto;
+		right: 1%;
     }
-}
-.carousel-caption{
-	position:static;
-	background:#fff;
-	border:#494647 solid 1px;
-	width:100%;
-	min-height:238px;
-
-	h4{
-		padding:29px 20px 2px;
-	}
-
-	p, ul{
-		margin-left:20px;
-		margin-right:20px;
-	}
-
-	ul{
-		margin-bottom:20px;
-	}
-}
-
-.more{
-	position:relative;
-	bottom:27px;
-	margin:0 auto;
 }
 
 .carousel.carousel-fade{
