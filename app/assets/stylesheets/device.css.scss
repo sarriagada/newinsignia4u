@@ -536,8 +536,28 @@ and (orientation : portrait){
     padding: 0.5% 10%;
   }
 }
-/* iPads (portrait) ----------- */
-@media (min-width : 600px) and (max-width : 1280px), (min-width : 720px) and (max-width : 1280px), only screen and (-webkit-device-pixel-ratio: 2){
+/* iPads (landscape) ----------- */
+@media (max-device-width: 1024px) and (orientation: landscape) {
+  header a.lang {
+    float: right;
+    right: 5%;
+    top:-2.3em!important;
+  }
+  .introduction{
+    p{  min-height: 0;  }
+  }
+  ul.box-dashed {  margin-left: 0;  }
+  .news-item {
+    min-height: 0;
+    height: auto!important;
+    .more{
+      width: 130px!important;
+    }
+  }
+  footer .footer-subscribe p {  top: -13em!important;  }
+}
+/* iPads (portrait) and galaxy s3----------- */
+@media (min-width : 600px) and (max-width : 1280px), (max-device-width: 768px) and (orientation: portrait), (-webkit-device-pixel-ratio: 2){
   // content style
   header nav ul {
     padding-left: 0px;
@@ -549,6 +569,19 @@ and (orientation : portrait){
     h2{  padding: 0px 27px;  }
     .ribbon-border .ribbon {
       padding: 10px 100px;
+    }
+  }
+  .container-title {
+    border-top: 2px dashed rgb(184, 184, 184)!important;
+    top: 2em;
+    margin-top: 2em;
+    position:relative;
+    h2 {
+      position: relative;
+      top: -0.6em;
+      font-size: 60px;
+      line-height: 60px;
+      display: inline-block;
     }
   }
   .introduction{
@@ -600,6 +633,10 @@ and (orientation : portrait){
     margin: 0px 0px 20px 20px;
     width: 44%!important;
   }
+  .certify {
+    position:relative;
+    top: 3em;
+  }
   footer{
     .container-contact{
       float: left;
@@ -643,6 +680,7 @@ and (orientation : portrait){
     .footer-subscribe .email {
       width: 35%;
       margin-top: 115px;
+      left: 0;
     }
     .footer-subscribe p {
       margin: 0;
@@ -650,13 +688,17 @@ and (orientation : portrait){
       font-size: 14px;
       margin-left: -8px;
       position: relative;
-      top: -17em !important;
+      top: -15em!important;
       width: 35%;
       left: 58%;
     }
     .footer-subscribe label {
       border: 1px dashed;
       padding: 0px 30px;
+    }
+    .footer-subscribe .btn-subscribe {
+      top: 1em;
+      left: 0;
     }
   }
 }
@@ -742,6 +784,7 @@ and (orientation : portrait){
     }
   }
 }
+// media query htc
 @media (min-width:0) and (max-width:320px){
   .introduction h2 {
     font-size: 2em;

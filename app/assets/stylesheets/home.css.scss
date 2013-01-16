@@ -1332,7 +1332,8 @@ header{
 .content{
 	border-top: 2px solid;
 }
-@media (min-width: 799px){
+//menu style
+@media (min-device-width: 768px){
 	.content{
 		border-top: 0;
 	}
