@@ -788,13 +788,7 @@ and (orientation : portrait){
     padding-top: 7%;
   }
   // projects
-  .projects-page{
-    .container-title {
-      top:1em;
-      h2 {
-      }
-    }
-  }
+  .projects-page .container-title h2, .more-projects .container-title h2 {  margin-bottom: 2em;  }
 }
 
 
