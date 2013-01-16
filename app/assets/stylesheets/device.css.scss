@@ -843,11 +843,22 @@ and (orientation : portrait){
     width: 130px;
     text-align: center;
   }
-  .ribbon .ribbon-right, .ribbon .ribbon-left {
-    display: none;
-  }
+  .ribbon .ribbon-right, .ribbon .ribbon-left {  display: none;  }
   footer{
     .container-contact{  width: 100%;  }
+    ul.footer-contact {
+      margin: auto!important;
+      width: 100%;
+    }
+    ul.footer-contact li { 
+      float: none;
+      font-size: 1.2em!important;
+      line-height: 1.4em;
+      margin: auto auto 5%;
+      text-align: center;
+      width: 70%;
+      display: block;
+    }
     .footer-subscribe .email { 
       left: 0%;
       padding: 10px 24px;
@@ -877,6 +888,10 @@ and (orientation : portrait){
       color: transparent;
     }
   }
+  // projects
+  .projects-page .container-title, .more-projects .container-title{  border-top:0!important;  }
+  .more-projects ul li {  width: 80%!important;  }
+  .more-projects ul li img {  width: 100%;  }
 }
 
 /* ----------------------------
