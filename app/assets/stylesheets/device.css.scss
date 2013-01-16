@@ -790,7 +790,94 @@ and (orientation : portrait){
   // projects
   .projects-page .container-title h2, .more-projects .container-title h2 {  margin-bottom: 2em;  }
 }
-
+// galaxy s3
+@media (-webkit-device-pixel-ratio: 2){
+  .introduction h2{  font-size: 2em;  }
+  .container-title {
+    h2 {
+      top:0;
+      margin-top: 1em;
+      font-size: 3em;
+    }
+  }
+  ul.box-dashed.four li {
+    background: none;
+    border: 0px;
+    display: block;
+    float: none !important;
+    margin: auto;
+    width: 100%;
+    height: 130px;
+  }
+  .technologies ul li, .tools ul li {
+    background: transparent;
+    float: none;
+    height: auto!important;
+    width: 100%!important;
+    margin: auto!important;
+    border: none;
+    h3{
+      height: auto;
+      width: 80%;
+      display: block;
+      margin: auto;
+    }
+  }
+  .news ul {
+    margin: auto;
+    margin-top: 1em;
+  }
+  .news .news-item {
+    float: none;
+    margin: auto auto 15%!important;
+    padding: 5%;
+    width: 80%!important;
+    height: auto!important;
+  }
+  .news .news-item .more {
+    font-size: 2.2em;
+    left: 1px!important;
+    right: 1px!important;
+    margin: auto;
+    display: inline-block;
+    width: 130px;
+    text-align: center;
+  }
+  .ribbon .ribbon-right, .ribbon .ribbon-left {
+    display: none;
+  }
+  footer{
+    .container-contact{  width: 100%;  }
+    .footer-subscribe .email { 
+      left: 0%;
+      padding: 10px 24px;
+      position: relative;
+      top: 5em;
+      width: 70%;
+    }
+    .footer-subscribe p { 
+      font-size: 14px;
+      left: 11%;
+      margin: 12px 0px 10px -8px;
+      position: relative;
+      top: -11em!important;
+      width: 81%;
+    }
+    .footer-subscribe label {
+      border: 1px dashed;
+      padding: 0px 30px;
+    }
+    .footer-subscribe .btn-subscribe {
+      top: 3em;
+      left: 0;
+      width: 149px;
+    }
+    .social .container ul li.sh, .social .container ul li.fb {
+      font-size: 0px!important;
+      color: transparent;
+    }
+  }
+}
 
 /* ----------------------------
 :: PORTFOLIO
