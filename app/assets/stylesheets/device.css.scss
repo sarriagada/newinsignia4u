@@ -554,7 +554,15 @@ and (orientation : portrait){
       width: 130px!important;
     }
   }
-  footer .footer-subscribe p {  top: -13em!important;  }
+  footer .footer-subscribe p {
+      position: relative;
+      top: -13em!important;
+  }
+  //services
+  .services ul.box-dashed li h3{
+    text-align: left;
+    margin-left: 0;
+  }
 }
 /* iPads (portrait) and galaxy s3----------- */
 @media (min-width : 600px) and (max-width : 1280px), (max-device-width: 768px) and (orientation: portrait), (-webkit-device-pixel-ratio: 2){
@@ -573,7 +581,7 @@ and (orientation : portrait){
   }
   .container-title {
     border-top: 2px dashed rgb(184, 184, 184)!important;
-    top: 2em;
+    top: 3em;
     margin-top: 2em;
     position:relative;
     h2 {
@@ -598,6 +606,7 @@ and (orientation : portrait){
       position: static!important;
       margin: auto;
       width: 80%;
+      min-height: 0;
     }
   }
   .technologies ul li, .tools ul li {
@@ -699,6 +708,91 @@ and (orientation : portrait){
     .footer-subscribe .btn-subscribe {
       top: 1em;
       left: 0;
+    }
+  }
+  //services
+  .content .services {
+    .container-title { 
+      margin-top: 1em;
+    }
+    ul.box-dashed {
+      margin: auto!important;
+      li { 
+        margin: 5% auto!important;
+        width: 80%!important;
+        height: auto!important;
+        float: none;
+        display: block;
+      }
+    }
+  }
+  .container-title {
+    border-top: none;
+    margin-top: 0;
+  }
+  .services ul.box-dashed li{
+    h3, p{
+      display: block;
+    }
+    h3{
+      margin: 0;
+      margin-left: 3%;
+      margin-top: 7%;
+      width: auto;
+    }
+    p{
+      margin: 7%;
+      margin-top: 0;
+    }
+  }
+  section {
+    margin-bottom: 10%;
+  }
+  .process{
+    ul{
+      border-top: 0px;
+      width: 90%;
+      margin: auto;
+      li{
+          border-bottom: 1px solid #B3C4D9;
+          margin: auto;
+          padding: 10% 0px;
+        h3{
+          font-size: 1.5em;
+        }
+        p{
+          width: 90%;
+        }
+        i{
+          margin-left:5%;
+        }
+        span {
+          font-size: 1.5em;
+          font-weight: 700;
+        }
+      }
+    }
+  }
+  .howdowedoit, .our-offering { 
+    border: none;
+    float: none;
+    margin: auto;
+    width: 90%;
+  }
+  .howdowedoit{
+    ul.bullets-blue { 
+      padding: 5% 5% 0px 60px;
+    }
+  }
+  .our-offering p {
+    padding-top: 7%;
+  }
+  // projects
+  .projects-page{
+    .container-title {
+      top:1em;
+      h2 {
+      }
     }
   }
 }
@@ -957,7 +1051,7 @@ and (orientation : portrait){
 //end projects mobile
 // end portfolio
 // service
-@media (max-width: 799px){
+@media (max-width: 767px){
   .content .services {
     .container-title { 
       margin-top: 0px;
