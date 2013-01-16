@@ -537,7 +537,7 @@ and (orientation : portrait){
   }
 }
 /* iPads (portrait) ----------- */
-@media (min-width : 600px) and (max-width : 1280px), (min-width : 720px) and (max-width : 1280px){
+@media (min-width : 600px) and (max-width : 1280px), (min-width : 720px) and (max-width : 1280px), only screen and (-webkit-device-pixel-ratio: 2){
   // content style
   header nav ul {
     padding-left: 0px;
