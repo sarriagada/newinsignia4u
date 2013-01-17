@@ -184,7 +184,6 @@
 /* Smartphones (portrait and landscape) ----------- */
 @media (min-width:0) and (max-width:320px),(min-device-width : 320px) and (max-device-width : 480px), (max-device-height : 480px) and (max-device-width : 600px) and (orientation: landscape) {
   /* Styles */
-
   header a.lang {
     font-size: 10px;
     right: 5%;
@@ -335,6 +334,7 @@
       height: 65%;
       padding-top: 7%;
       padding-bottom: 11%;
+      padding-left: 0;
     }
     .footer-subscribe .email { 
       left: 0%;
@@ -345,8 +345,8 @@
     }
     .footer-subscribe p { 
       font-size: 14px;
-      left: 11%;
-      margin: 12px 0px 10px -8px;
+      left: auto;
+      margin: auto;
       position: relative;
       top: -6em;
       width: 81%;
@@ -366,7 +366,6 @@
     }
   }
 }
-
 /* tablet (portrait) ----------- */
 @media (max-width : 640px)
 and (orientation : portrait){
@@ -974,90 +973,6 @@ and (orientation : portrait){
     }
   }
 }
-// media query htc
-@media (min-width:0) and (max-width:320px){
-  .introduction h2 {
-    font-size: 2em;
-    line-height: 1.3em;
-  }
-  .container-title h2 {
-    font-size: 2em;
-    line-height: 1em;
-  }
-  .container-title h2::after {
-    bottom: 63%;
-  }
-  .carousel .more {
-    font-size: 2em !important;
-    padding: 0px 7px 2px;
-  }
-  .news .news-item {
-    margin-bottom: 15%;
-  }
-  footer{
-    .footer-subscribe .email {
-      width: 70%;
-      padding: 5px 10px;
-      position: static;
-      top: 4px;
-      left: 1px;
-      right: 1px;
-      margin: auto;
-      font-size: 1.2em;
-    }
-    .footer-subscribe .btn-subscribe {
-      position: static;
-      margin-top: 12px;
-    }
-    .footer-subscribe p {
-      top: 0em;
-    }
-    .footer-subscribe {  padding-bottom: 20px;  }
-    .footer-subscribe label {
-      border: 1px dashed;
-      padding: 0px 30px;
-      display: inline-block;
-      margin-bottom: 25px;
-    }
-    .social .container ul li {  font-size: 0;  }
-    ul.footer-contact:before {
-      content:"Contact Us";
-      font-size: 4.5em;
-      color: white;
-      font-weight: 700;
-      vertical-align: middle;
-      font-family: 'Amatic SC', cursive;
-      line-height: 68px;
-      margin-left: -4px;
-      border: 1px dashed;
-      padding: 0.5% 10%;
-      margin-bottom: 24px;
-      display: inline-block;
-      width: auto;
-    }
-    ul.footer-contact {
-      text-align: center;
-      width: auto;
-      margin: auto;
-      float: left;
-      line-height: 40px;
-      padding-top: 31px;
-    }
-    ul.footer-contact li {
-      width: 70%;
-      display: inline-block;
-      line-height: 1.4em;
-      text-align: center;
-      margin: auto;
-      float: none;
-    }
-    ul.footer-contact li i {
-      display: block;
-      line-height: 1.4em;
-      margin: 5px auto!important;
-    }
-  }
-}
 // responsive more projects
 @media (max-width : 837px){
   .more-projects{
@@ -1147,6 +1062,119 @@ and (orientation : portrait){
 //end projects mobile
 // end portfolio
 // service
+// media query htc
+@media (min-width:0) and (max-width:320px){
+  header h1 img{
+    width: 80%;
+  }
+  .introduction h2 {
+    font-size: 1.5em;
+    line-height: 1.3em;
+    margin: 7% 0px;
+  }
+  .introduction p {
+    float: none !important;
+    font-size: 1em;
+    line-height: 1.4em;
+    margin: auto;
+    min-height: 0px;
+    position: static !important;
+    width: 80%;
+  }
+  .container-title h2 {
+    font-size: 2em;
+    line-height: 1em;
+  }
+  .container-title h2::after {
+    bottom: 63%;
+  }
+  .carousel .more {
+    font-size: 2em !important;
+    padding: 0px 7px 2px;
+  }
+  .technologies ul li, .tools ul li {
+    margin: auto!important;
+    width: 100%!important;
+  }
+  .circle {  border: 0.3em solid #A60563;  }
+  .news{  margin-top: 3%  }
+  .news .news-item {
+    margin-bottom: 15%!important;
+    width: 85%!important;
+  }
+  footer{
+    .container-contact { 
+      float: none;
+      width: 100%;
+    }
+    .footer-subscribe .email {
+      width: 70%;
+      padding: 5px 10px;
+      position: static;
+      top: 4px;
+      left: 1px;
+      right: 1px;
+      margin: auto;
+      font-size: 1.2em;
+    }
+    .footer-subscribe .btn-subscribe {
+      position: static;
+      margin-top: 12px;
+    }
+    .footer-subscribe p { 
+      font-size: 1.2em;
+      left: auto;
+      margin: auto;
+      position: relative;
+      top: 1em !important;
+      width: 100%;
+    }
+    .footer-subscribe {  padding-bottom: 20px;  }
+    .footer-subscribe label {
+      border: 1px dashed;
+      padding: 0px 30px;
+      display: inline-block;
+      margin-bottom: 25px;
+    }
+    .social .container ul li {  font-size: 0;  }
+    ul.footer-contact:before {
+      content:"Contact Us";
+      font-size: 4.5em;
+      color: white;
+      font-weight: 700;
+      vertical-align: middle;
+      font-family: 'Amatic SC', cursive;
+      line-height: 68px;
+      margin-left: -4px;
+      border: 1px dashed;
+      padding: 0.5% 10%;
+      margin-bottom: 24px;
+      display: inline-block;
+      width: auto;
+    }
+    ul.footer-contact {
+      text-align: center;
+      width: auto;
+      margin: auto;
+      float: left;
+      line-height: 40px;
+      padding-top: 31px;
+    }
+    ul.footer-contact li {
+      width: 70%;
+      display: inline-block;
+      line-height: 1.4em;
+      text-align: center;
+      margin: auto;
+      float: none;
+    }
+    ul.footer-contact li i {
+      display: block;
+      line-height: 1.4em;
+      margin: 5px auto!important;
+    }
+  }
+}
 @media (max-width: 767px){
   .content .services {
     .container-title { 
@@ -1250,4 +1278,60 @@ and (orientation : portrait){
     padding-top: 7%;
   }
 //end service
+//project show
+  .project-page{
+    .carousel-caption {
+      margin: auto;
+      width: 90%;
+      h4 {
+        font-size: 1.3em;
+        margin: 0px;
+        padding: 5% 2% 0%;
+      }
+      p {
+        font-size: 0.9em;
+        font-weight: 700;
+        line-height: 1.5em;
+        margin: 2% 2% 7%;
+      }
+    }
+    a.more {
+      position: relative;
+      margin: auto;
+      left: 1px;
+      right: 1px;
+      top: -0.7em;
+    }
+  }
+  .more-info{
+    ul.box-dashed.three li h3, ul.box-dashed.three li p{
+      display: block;
+      margin: auto;
+      text-align: center;
+      vertical-align: middle;
+      width: 100%;
+    }
+    ul.box-dashed li h3{
+      color: #316BAF;
+      line-height: 1.3em;
+      font-size: 1.1em;
+    }
+  }
+  #project-page.carousel .carousel-inner {
+    background-size: 100%;
+    min-height: 189px;
+    width: 100%;
+    z-index: 999;
+  }
+  #project-page.carousel .carousel-inner .item .macbook {
+    margin-top: 7.2%;
+    width: 66%;
+    height: auto!important;
+  }
+  #project-page.carousel a.carousel-control {
+    bottom: 35%!important;
+    z-index: 0;
+  }
+  #project-page.carousel a.carousel-control.right {  right: 4%;  }
+  #project-page.carousel a.carousel-control.left {  left: 4%;  }
 }
