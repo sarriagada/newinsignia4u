@@ -1102,6 +1102,10 @@ and (orientation : portrait){
     margin-bottom: 15%!important;
     width: 85%!important;
   }
+  //projects
+  .projects-page .container-title h2 , .more-projects .container-title h2 {  height: auto;  }
+  .more-projects ul li .project-info {  height: auto !important;  }
+  .more-projects ul li {  width: 85% !important;  }
   footer{
     .container-contact { 
       float: none;
