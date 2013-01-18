@@ -441,9 +441,52 @@
       width: 130px!important;
     }
   }
-  footer .footer-subscribe p {
-      position: relative;
-      top: -13em!important;
+  //footer
+  footer {
+    .container-contact {
+      display: block;
+      width: 50%;
+      height: 100%;
+      float: left;
+    }
+    .footer-subscribe {
+      background: initial;
+      font-size: 12px;
+      height: auto;
+      min-height: 364px;
+      margin: 0;
+      padding-top: 37px;
+      padding-left: 20px;
+      border-top: 1px solid rgb(19, 39, 66);
+      margin-top: -3px;
+      width: 50%;
+      display: inline-block;
+      margin: auto;
+      padding: 0;
+      margin: 0;
+      padding-top: 3%;
+      .email {
+        width: 53%;
+        left: auto;
+        display: block;
+        margin: auto;
+        margin-top: 5%;
+        position: static;
+      }
+      .btn-subscribe {
+        top: 1em;
+        left: 0;
+        position: static;
+        margin: auto;
+        margin-top: 4%;
+      }
+      p {
+        width: 57%;
+        margin: auto;
+        margin-top: 4%;
+        position: static;
+      }
+    }
   }
   //services
   .services ul.box-dashed li h3{
