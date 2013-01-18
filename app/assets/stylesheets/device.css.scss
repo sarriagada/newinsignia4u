@@ -519,7 +519,7 @@
       right: 1px!important;
       margin: auto;
       display: inline-block;
-      width: 130px;
+      width: 140px!important;
       text-align: center;
     }
   }
@@ -584,7 +584,7 @@
       font-size: 14px;
       margin-left: -8px;
       position: relative;
-      top: -15em!important;
+      top: -17em!important;
       width: 35%;
       left: 58%;
     }
@@ -674,6 +674,20 @@
     padding-top: 7%;
   }
   //end service
+  //projects
+  #projects-page.carousel .carousel-inner {  width: 100%;  }
+  .more-projects ul {  width: 100%;  }
+  .more-info{
+    ul.box-dashed.three {
+      margin-left: 0;
+      padding-left: 0;
+      margin: auto;
+      li {
+        width: 248px;
+        margin-left: 1%;
+      }
+    }
+  }
 }
 // galaxy s3
 @media (-webkit-device-pixel-ratio: 2){
