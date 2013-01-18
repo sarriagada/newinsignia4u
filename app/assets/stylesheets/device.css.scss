@@ -1,224 +1,36 @@
-@media (max-width : 240px){
-  .container, header, .content, footer{  width: 481px!important; }
-  header {
-    .container h1 a img{
-      width: 80%;
-      height: auto;
-    }
-    nav ul li a{
-      font-size: 0.7em!important;
-
-    }
+// style mobile general
+@media screen and (min-width:0px) and (max-width: 767px), (-webkit-device-pixel-ratio: 2){
+  //header
+  header h1 img{
+    width: 80%;
   }
-  header a.lang {
-    font-size: 10px;
-    right: 5%;
-    top: 5%;
-  }
-
+  //home
   .introduction h2 {
-    font-size: 240%;
-    line-height: 115%;
-    margin: 13% 11%;
-    padding: 0px 0%;
+    font-size: 1.5em;
+    line-height: 1.3em;
+    margin: 7% 0px;
   }
   .introduction p {
-    float: none!important;
-    position: static!important;
-    font-size: 115%;
-    line-height: 150%;
-    width: 80%;
-    text-align: center;
-    margin: auto;
-    margin-top: -5%;
-  }
-  .container-title {
-    width: 90%;
-    margin: auto;
-  }
-  .container-title h2 {
-    font-size: 2em;
-    margin: auto;
-    padding: 0;
-    height: 100px;
-    top: 29px;
-    width: 100%;
-  }
-  .container-title h2::before { 
-    position: absolute;
-    left: 0px;
-  }
-  .container-title h2::after { 
-    position: absolute;
-    bottom: 50%;
-    right: 0px;
-  }
-  .carousel-inner { 
-    margin: auto;
-    width: 90%;
-  }
-  #cases .carousel-inner .item img {  
-    height: 344px;
-    max-width: 400%;
-  }
-  .carousel .more {
-    left: 1px!important;
-    right: 1px!important;
-    font-size: 2.2em!important;
-    width: 44%;
-    margin:auto;
-    text-align: center;
-  }
-  ul.box-dashed.four li { 
-    background: none;
-    border: 0px;
-    display: block;
     float: none !important;
+    font-size: 1em;
+    line-height: 1.4em;
     margin: auto;
-    width: 218px;
-    height: 130px;
-  }
-  .technologies ul li, .tools ul li { 
-    background: transparent;
-    border: 0px none currentColor;
-    float: none;
-    height: auto!important;
-    margin: auto;
-    h3{  height: auto;  }
-  }
-  .news ul {
-    margin: auto;
-  }
-  .news .news-item { 
-    float: none;
-    margin: auto auto 15%;
-    padding: 5%;
-    width: 80%!important;
-    height: auto!important;
-  }
-  .news .news-item .more { 
-    font-size: 2.2em;
-    left: 1px!important;
-    right: 1px!important;
-    margin: auto;
-    display: inline-block;
-    width: 130px;
-    text-align: center;
-  }
-
-  .ribbon .ribbon-right, .ribbon .ribbon-left {
-    display: none;
-  }
-  footer{
-    ul.footer-contact {
-      margin: 10%;
-    }
-    ul.footer-contact:before {
-      content:"Contact Us";
-      font-size: 4.5em;
-      color: white;
-      font-weight: 700;
-      vertical-align: middle;
-      font-family: 'Amatic SC', cursive;
-      line-height: 68px;
-      margin-left: -4px;
-      border: 1px dashed;
-      padding: 0.5% 10%;
-      margin-bottom: 24px;
-      display: inline-block;
-      width: auto;
-    }
-    ul.footer-contact li { 
-      float: none;
-      font-size: 1.2em!important;
-      line-height: 1.4em;
-      margin: auto auto 5%;
-      text-align: center;
-      width: 70%;
-    }
-    ul.footer-contact li i { 
-      display: block;
-      font-size: 1.4em!important;
-      line-height: 20px;
-      margin: auto!important;
-    }
-    ul.footer-contact li.footer-contact-email { 
-      margin-right: auto;
-    }
-    .footer-subscribe {
-      height: 65%;
-      padding-top: 7%;
-      padding-bottom: 11%;
-    }
-    .footer-subscribe .email { 
-      left: 0%;
-      padding: 10px 24px;
-      position: relative;
-      top: 36%;
-      width: 70%;
-    }
-    .footer-subscribe p { 
-      font-size: 14px;
-      left: 11%;
-      margin: 12px 0px 10px -8px;
-      position: relative;
-      top: -6em;
-      width: 81%;
-    }
-    .footer-subscribe label {
-      border: 1px dashed;
-      padding: 0px 30px;
-    }
-    .footer-subscribe .btn-subscribe {
-      top: 40%;
-      left: 0;
-      width: 149px;
-    }
-    .social .container ul li.sh, .social .container ul li.fb {
-      font-size: 0px!important;
-      color: transparent;
-    }
-  }
-  #toTop{ display: none!important; }
-}
-/* Smartphones (portrait and landscape) ----------- */
-@media (min-width:0) and (max-width:320px),(min-device-width : 320px) and (max-device-width : 480px), (max-device-height : 480px) and (max-device-width : 600px) and (orientation: landscape) {
-  /* Styles */
-  header a.lang {
-    font-size: 10px;
-    right: 5%;
-    top: 5%;
-  }
-  .content {
-    overflow: hidden;
-  }
-  .introduction h2 {
-    font-size: 240%;
-    line-height: 115%;
-    margin: 13% 11%;
-    padding: 0px 0%;
-  }
-  .introduction p {
-    float: none!important;
-    position: static!important;
-    font-size: 115%;
-    line-height: 150%;
+    min-height: 0px;
+    position: static !important;
     width: 80%;
-    text-align: center;
-    margin: auto;
-    margin-top: -5%;
   }
   .container-title {
     width: 90%;
     margin: auto;
   }
   .container-title h2 {
-    font-size: 2.9em;
     margin: auto;
     padding: 0;
-    height: 100px;
+    min-height: 100px;
     top: 29px;
     width: 100%;
+    font-size: 2em;
+    line-height: 1em;
   }
   .container-title h2::before { 
     position: absolute;
@@ -226,7 +38,7 @@
   }
   .container-title h2::after { 
     position: absolute;
-    bottom: 40%;
+    bottom: 63%;
     right: 0px;
   }
   .carousel-inner { 
@@ -240,30 +52,27 @@
     height: 340px;
     max-width: 200%;
   }
+  .carousel-caption{
+    height: auto;
+    min-height: 200px;
+    padding: 0px 0px 7%!important;
+  }
   .carousel .more {
     left: 1px!important;
     right: 1px!important;
-    font-size: 2.2em!important;
+    font-size: 2em !important;
     width: 44%;
     margin:auto;
     text-align: center;
   }
-  ul.box-dashed.four li { 
-    background: none;
-    border: 0px;
-    display: block;
-    float: none !important;
-    margin: auto;
-    width: 100%;
-    height: 130px;
-  }
-  .technologies ul li, .tools ul li { 
-    background: transparent;
+  ul.box-dashed {  margin: auto!important  }
+  .technologies ul li, .tools ul li {
     float: none;
+    background: none;
+    border: none;
+    margin: auto!important;
     height: auto!important;
     width: 100%!important;
-    margin: auto;
-    border: none;
     h3{
       height: auto;
       width: 80%;
@@ -271,33 +80,311 @@
       margin: auto;
     }
   }
-  .news ul {
-    margin: auto;
+  .circle {  border: 0.3em solid #A60563;  }
+  .news{
+    ul{  margin: auto!important  }
+    .news-item {
+      margin: auto!important;
+      margin-bottom: 15%!important;
+      padding: 7%!important;
+      width: 85%!important;
+      float: none!important;
+      .more { 
+        font-size: 2.2em;
+        left: 1px!important;
+        right: 1px!important;
+        margin: auto;
+        display: inline-block;
+        width: 130px;
+        text-align: center;
+      }
+    }
   }
-  .news .news-item { 
-    float: none;
-    margin: auto auto 15%;
-    padding: 5%;
-    width: 80%!important;
-    height: auto!important;
-  }
-  .news .news-item .more { 
-    font-size: 2.2em;
-    left: 1px!important;
-    right: 1px!important;
-    margin: auto;
-    display: inline-block;
-    width: 130px;
-    text-align: center;
-  }
-
   .ribbon .ribbon-right, .ribbon .ribbon-left {
     display: none;
   }
-  footer{
-    ul.footer-contact {
-      margin: 10%;
+  //services
+  .content .services {
+    .container-title { 
+      border-top: none;
+      margin-top: 0px;
     }
+    ul.box-dashed {
+      margin: auto!important;
+      li { 
+        margin: 10% auto!important;
+        width: 80%!important;
+        height: auto!important;
+        float: none;
+        display: block;
+      }
+    }
+  }
+  .services ul.box-dashed li{
+    h3{
+      text-align: center;
+      width: 100%;
+    }
+    h3, p{
+      display: block;
+      margin: 7% auto;
+    }
+    p{
+      margin: 7%;
+    }
+  }
+  .process{
+    .container-title {
+      margin-top: 0;
+      h2{
+        top: 0;
+      }
+    }
+    ul{
+      border-top: 2px solid #B3C4D9;
+      width: 90%;
+      padding-top: 10%;
+      margin: auto;
+      li{
+          border-bottom: 2px solid #B3C4D9;
+          margin: auto;
+          padding: 10% 0px;
+        i{
+          margin:auto;
+          background-size: 500%;
+          height: 2.5em!important;
+          width: 2.5em!important;
+        }
+        i.icon-planning { 
+          background-position: 33% 33%;
+        }
+        i.icon-coding { 
+          background-position: 60% 32%;
+        }
+        i.icon-codereview { 
+          background-position: 89% 33%;
+        }
+        i.icon-quality_assurance { 
+          background-position: 9% 75%;
+        }
+        i.icon-deployment { 
+          background-position: 34% 75%;
+        }
+        i.icon-maintenance { 
+          background-position: 60% 75%;
+        }
+        h3{
+          font-size: 1.2em;
+        }
+        p{
+          width: 100%;
+        }
+        span {
+          font-size: 1.5em;
+          font-weight: 700;
+        }
+      }
+    }
+  }
+  .howdowedoit, .our-offering {
+    border: none;
+    float: none;
+    margin: auto!important;
+    width: 90%!important;
+  }
+  .howdowedoit{
+    ul.bullets-blue { 
+      padding: 0px 5% 0px 60px;
+    }
+  }
+  .our-offering p {  padding-top: 7%;  }
+  ///////////
+  //projects
+  //////////
+  .projects-page .container-title {
+    margin-top: 0px;
+    border-top: 0;
+    h2{  font-size: 2em;  }
+  }
+  .more-projects .container-title h2 {  font-size: 2em;  }
+  #projects-page.carousel{
+    .carousel-inner {
+      position: static;
+      border-bottom: 0;
+      background-size: 100%!important;
+      width: 100%!important;
+      min-height: 307px;
+      height: auto;
+      .item {
+        margin:auto;
+        .more {  min-width: 130px;  }
+        .macbook {
+          height: auto;
+          display: block;
+          margin: auto;
+          margin-top: 8%;
+          margin-bottom: 17%;
+          width: 64%!important;
+        }
+        .carousel-caption {
+          height: auto;
+          margin: auto;
+          min-height: 100px;
+          position: static;
+          width: 90%;
+          ul.bullets-blue {
+            margin-bottom: 30px;
+            li { 
+              font-size: 0.9em;
+              line-height: 1.5em;
+              padding: 0px 0px 3px;
+              width: 142%;
+            }
+          }
+        }
+        p {
+          font-size: 0.9em;
+          line-height: 1.5em;
+        }
+      }
+    }
+    .carousel-control {
+      bottom: 3%;
+      top: auto;
+      .left {  left: 10%;  }
+      .right {  right: 10%;  }
+    }
+  }
+  .more-projects ul {
+    margin: auto;
+    width: 100%;
+    li {
+      float: none;
+      margin: auto;
+      margin-bottom: 15%;
+      width: 85%;
+      .project-info p { 
+        font-size: 0.9em;
+        margin: 5px 0px 10px;
+      }
+    }
+  }
+  .projects-page .container-title h2 , .more-projects .container-title h2 {  height: auto;  }
+  .more-projects ul li .project-info {  height: auto !important;  }
+  //project show
+  .project-page{
+    .container-title {  border-top: 0;  }
+    .carousel{
+      .carousel-inner {
+        position: relative;
+        border-bottom: 0;
+        background-size: 100%!important;
+        width: 100%!important;
+        min-height: 100px;
+        height: auto;
+        z-index: 999!important;
+        .item .macbook {
+          height: auto!important;
+          display: block;
+          margin: auto;
+          margin-top: 8%!important;
+          margin-bottom: 17%!important;
+          width: 64%!important;
+        }
+      }
+      .carousel-control {
+        top: 47% !important;
+        z-index: 0!important;
+      }
+      .right {  right: 4%!important;  }
+      .left {  left: 4%!important;  }
+    }
+    .carousel-caption {
+      margin: auto;
+      width: 90%;
+      h4 {
+        font-size: 1.3em;
+        margin: 0px;
+        padding: 5% 2% 0%;
+      }
+      p {
+        font-size: 0.9em;
+        font-weight: 700;
+        line-height: 1.5em;
+        margin: 2% 2% 7%;
+      }
+    }
+    .more {
+      position: relative;
+      margin: auto;
+      left: 1px;
+      right: 1px;
+      top: -0.7em;
+    }
+  }
+  .more-info{
+    ul.box-dashed.three{
+      width: 100%;
+      li{
+        width: 100%;
+        border: none;
+        background: none;
+        float: none;
+        margin: auto;
+        h3, p{
+          display: block;
+          font-size: 1.1em;
+          height: auto;
+          text-align: center;
+          vertical-align: middle;
+          width: auto;
+          a{
+            color: #316BAF!important;
+            text-decoration: none;
+          }
+        }
+      }
+    }
+  }
+  //////////
+  //footer
+  /////////
+  footer{
+    .container-contact {
+      float: none;
+      width: 100%;
+    }
+    .footer-subscribe .email {
+      width: 70%;
+      padding: 5px 10px;
+      position: static;
+      top: 4px;
+      left: 1px;
+      right: 1px;
+      margin: auto;
+      font-size: 1.2em;
+      display: block;
+    }
+    .footer-subscribe .btn-subscribe {
+      position: static;
+      margin-top: 12px;
+    }
+    .footer-subscribe p { 
+      font-size: 1.2em;
+      left: auto;
+      margin: auto;
+      position: relative;
+      top: 1em !important;
+      width: 100%;
+    }
+    .footer-subscribe {  padding-bottom: 20px;  }
+    .footer-subscribe label {
+      border: 1px dashed;
+      padding: 0px 30px;
+      display: inline-block;
+      margin-bottom: 25px;
+    }
+    .social .container ul li {  font-size: 0;  }
     ul.footer-contact:before {
       content:"Contact Us";
       font-size: 4.5em;
@@ -313,226 +400,27 @@
       display: inline-block;
       width: auto;
     }
-    ul.footer-contact li { 
-      float: none;
-      font-size: 1.2em!important;
-      line-height: 1.4em;
-      margin: auto auto 5%;
+    ul.footer-contact {
       text-align: center;
-      width: 70%;
-    }
-    ul.footer-contact li i { 
-      display: block;
-      font-size: 1.4em!important;
-      line-height: 20px;
-      margin: auto!important;
-    }
-    ul.footer-contact li.footer-contact-email { 
-      margin-right: auto;
-    }
-    .footer-subscribe {
-      height: 65%;
-      padding-top: 7%;
-      padding-bottom: 11%;
-      padding-left: 0;
-    }
-    .footer-subscribe .email { 
-      left: 0%;
-      padding: 10px 24px;
-      position: relative;
-      top: 5em;
-      width: 70%;
-    }
-    .footer-subscribe p { 
-      font-size: 14px;
-      left: auto;
-      margin: auto;
-      position: relative;
-      top: -6em;
-      width: 81%;
-    }
-    .footer-subscribe label {
-      border: 1px dashed;
-      padding: 0px 30px;
-    }
-    .footer-subscribe .btn-subscribe {
-      top: 3em;
-      left: 0;
-      width: 149px;
-    }
-    .social .container ul li.sh, .social .container ul li.fb {
-      font-size: 0px!important;
-      color: transparent;
-    }
-  }
-}
-/* tablet (portrait) ----------- */
-@media (max-width : 640px)
-and (orientation : portrait){
-  header nav ul li a {
-    font-size: 12px;
-  }
-  header nav ul li a:hover:after,
-  header nav ul li a.active:after,
-  header nav ul li a:hover:before,
-  header nav ul li a.active:before{
-    top:12%;
-  }
-
-  header a.lang {
-    font-size: 10px;
-    right: 5%;
-    top: 5%;
-  }
-  .introduction p {
-    margin: auto;
-  }
-
-  #cases.carousel { 
-    margin: 0px;
-  }
-  #cases .carousel-caption {
-    padding: 5px 5px 30px;
-  }
-  .carousel-caption p { 
-    font-size: 12px;
-  }
-  .carousel-caption h4 { 
-    font-size: 15px;
-  }
-  .carousel .more {
-      left: 1px!important;
-      right: 1px!important;
-      font-size: 2.2em!important;
-      width: 44%;
-      margin:auto;
-      text-align: center;
-  }
-  .technologies ul li, .tools ul li {
-    margin: 7px;
-  }
-  .technologies ul, .tools ul { 
-    margin-left: 7px;
-  }
-  .news .news-item {
-    width: 100%;
-    margin-bottom: 10%;
-  }
-  .news .news-item .more {
-    font-size: 2.2em;
-    left: 1px!important;
-    right: 1px!important;
-    margin: auto;
-    display: inline-block;
-    width: 130px;
-    text-align: center;
-  }
-
-  footer {
-    ul.footer-contact li{ 
-      font-size: 1.2em;
-      i{
-        margin-left: 10px;
-        font-size: 1.4em!important;
-      }
-    }
-  }
-}
-/* tablet (landscape) ----------- */
-@media (min-width : 600px) and (max-width : 1020px){
-  .introduction p {
-    font-size: 14px;
-    line-height: 20px;
-    right: 1%;
-    width: 30%;
-  }
-
-  .technologies ul, .tools ul {
-    margin: auto;
-    width: 80%;
-    li {
-      margin: 10px;
-      width: 44%!important;
-    }
-  }
-
-  .news ul { 
-    margin-left: 0px;
-  }
-
-  .news .news-item {
-    margin-left: 2%;
-    margin-bottom: 5%;
-    min-height: 100%;
-    padding: 2%;
-    width: 31%;
-  }
-
-  .services{
-    ul.box-dashed{
-      li{
-        width:auto;
-      }
-    }
-  }
-
-  .howdowedoit, .our-offering{
-    float:none;
-    width:100%;
-    border:none;
-    
-    .container-title{
-      border-top:2px dashed #B8B8B8;
-    }
-  }
-  .carousel .more {
-      left: 1px!important;
-      right: 1px!important;
-      font-size: 2.2em!important;
-      width: 44%;
-      margin:auto;
-      text-align: center;
-  }
-  .news .news-item .more {
-    font-size: 2.2em;
-    left: 1px!important;
-    right: 1px!important;
-    margin: auto;
-    display: inline-block;
-    width: 130px;
-    text-align: center;
-  }
-
-  footer {
-    .container-contact ul.footer-contact::before {
-      font-size: 4.5em;
-      line-height: 135%;
-      display: inline-block;
       width: auto;
       margin: auto;
-      padding: 0.5% 10%;
+      float: left;
+      line-height: 40px;
+      padding-top: 31px;
     }
-    .container-contact ul.footer-contact li{
-      width: 51%;
-      font-size: 1.2em;
-      i{
-        margin-left: 10px;
-        font-size: 1.4em!important;
-      }
+    ul.footer-contact li {
+      width: 70%;
+      display: inline-block;
+      line-height: 1.4em;
+      text-align: center;
+      margin: auto;
+      float: none;
     }
-    .footer-subscribe p {
-      top: -15em!important;
+    ul.footer-contact li i {
+      display: block;
+      line-height: 1.4em;
+      margin: 5px auto!important;
     }
-  }
-}
-@media (min-width : 600px) and (max-width : 1024px){
-  .container-contact ul.footer-contact::before {
-    font-size: 4.5em;
-    line-height: 135%;
-    display: inline-block;
-    width: auto;
-    margin: auto;
-    padding: 0.5% 10%;
   }
 }
 /* iPads (landscape) ----------- */
@@ -727,7 +615,6 @@ and (orientation : portrait){
   }
   .container-title {
     border-top: none;
-    margin-top: 0;
   }
   .services ul.box-dashed li{
     h3, p{
@@ -786,8 +673,7 @@ and (orientation : portrait){
   .our-offering p {
     padding-top: 7%;
   }
-  // projects
-  .projects-page .container-title h2, .more-projects .container-title h2 {  margin-bottom: 2em;  }
+  //end service
 }
 // galaxy s3
 @media (-webkit-device-pixel-ratio: 2){
@@ -891,489 +777,4 @@ and (orientation : portrait){
   .projects-page .container-title, .more-projects .container-title{  border-top:0!important;  }
   .more-projects ul li {  width: 80%!important;  }
   .more-projects ul li img {  width: 100%;  }
-}
-
-/* ----------------------------
-:: PORTFOLIO
----------------------------- */
-
-// responsive projects page
-@media (max-width : 940px){
-  #projects-page.carousel{
-    .carousel-inner{
-      height:auto;
-      width:85%;
-      margin:0 auto;
-      background-position:center 10px;
-      
-      .item{
-        margin:0;
-
-        .macbook{
-          height: 300px;
-          margin: 30px auto 0;
-          padding:0 0 0 6px;
-          width:346px;
-        }
-        .carousel-caption{
-          position:static;
-          background:#fff;
-          border:#494647 solid 1px;
-          width:100%;
-          min-height:238px;
-          
-          h4{
-            padding:29px 20px 2px;
-          }
-
-          p, ul{
-            margin-left:20px;
-            margin-right:20px;
-          }
-
-          ul{
-            margin-bottom:20px;
-          }
-          
-        }
-
-        .more{
-          position:relative;
-          bottom:27px;
-          margin:0 auto;
-        }
-      }
-    }
-
-    a.carousel-control.left{
-      top: auto;
-      bottom: 42px;
-      left: 16%;
-    }
-
-    a.carousel-control.right{
-      top: auto;
-      bottom: 42px;
-      right: 16%;
-    }
-  }
-}
-@media (max-width : 630px){
-  #projects-page.carousel{
-    .carousel-inner{
-      background:url(asset_path("macbook-mobile.png", image)) no-repeat center 0;
-      
-      .item{
-        .macbook{
-          margin:12px auto 0;
-          width:208px;
-          height:180px;
-        }
-      }
-    }
-  }
-}
-// responsive more projects
-@media (max-width : 837px){
-  .more-projects{
-    ul{
-      margin-left:-20px;
-      width:auto;
-
-      li{
-        float:none;
-        display:inline-block;
-        margin:0 0 20px 20px;
-        width:47%;
-
-        img{
-          display:block;
-          border:#000 solid 1px;
-        }
-      }
-    }
-  }
-}
-@media (max-width : 599px){
-  .more-projects{
-    ul{
-      li{
-        width:265px;
-      }
-    }
-  }
-}
-// projects mobile
-@media (min-width:0) and (max-width:480px){
-  .projects-page .container-title { 
-    margin-top: 0px;
-    h2{  font-size: 2em;  }
-  }
-  .more-projects .container-title h2 { 
-    font-size: 2em;
-  }
-  .more-projects ul li { 
-    margin: auto auto 15%;
-    width: 85%;
-  }
-  #projects-page.carousel .carousel-inner {
-    border-bottom: 2px dashed #B3C4D9;
-    background-size: 100%;
-  }
-  #projects-page.carousel .carousel-inner .item .macbook { 
-    height: auto;
-    display: block;
-    margin: auto;
-    margin-top: 4%;
-    margin-bottom: 17%;
-    width: 67%;
-  }
-  #projects-page.carousel a.carousel-control.left {  left: 10%;  }
-  #projects-page.carousel a.carousel-control.right {  right: 10%;  }
-  #projects-page.carousel .carousel-inner .item .carousel-caption ul {  margin-bottom: 30px;  }
-  .more-projects ul { 
-    margin: auto;
-    width: 100%;
-    li { 
-      margin: auto;
-      margin-bottom: 15%;
-      width: 85%;
-      .project-info p { 
-        font-size: 0.9em;
-        margin: 5px 0px 10px;
-      }
-    }
-  }
-  #projects-page.carousel .carousel-inner .item .carousel-caption {
-    height: auto;
-    min-height: 100px;
-  }
-  .carousel-caption p {
-    font-size: 0.9em;
-    line-height: 1.5em;
-  }
-  .carousel-caption ul.bullets-blue li { 
-    font-size: 0.9em;
-    line-height: 1.5em;
-    padding: 0px 0px 3px;
-    width: 142%;
-  }
-}
-//end projects mobile
-// end portfolio
-// service
-// media query htc
-@media (min-width:0) and (max-width:320px){
-  header h1 img{
-    width: 80%;
-  }
-  .introduction h2 {
-    font-size: 1.5em;
-    line-height: 1.3em;
-    margin: 7% 0px;
-  }
-  .introduction p {
-    float: none !important;
-    font-size: 1em;
-    line-height: 1.4em;
-    margin: auto;
-    min-height: 0px;
-    position: static !important;
-    width: 80%;
-  }
-  .container-title h2 {
-    font-size: 2em;
-    line-height: 1em;
-  }
-  .container-title h2::after {
-    bottom: 63%;
-  }
-  .carousel .more {
-    font-size: 2em !important;
-    padding: 0px 7px 2px;
-  }
-  .technologies ul li, .tools ul li {
-    margin: auto!important;
-    width: 100%!important;
-  }
-  .circle {  border: 0.3em solid #A60563;  }
-  .news{  margin-top: 3%  }
-  .news .news-item {
-    margin-bottom: 15%!important;
-    width: 85%!important;
-  }
-  //projects
-  .projects-page .container-title h2 , .more-projects .container-title h2 {  height: auto;  }
-  .more-projects ul li .project-info {  height: auto !important;  }
-  .more-projects ul li {  width: 85% !important;  }
-  footer{
-    .container-contact { 
-      float: none;
-      width: 100%;
-    }
-    .footer-subscribe .email {
-      width: 70%;
-      padding: 5px 10px;
-      position: static;
-      top: 4px;
-      left: 1px;
-      right: 1px;
-      margin: auto;
-      font-size: 1.2em;
-    }
-    .footer-subscribe .btn-subscribe {
-      position: static;
-      margin-top: 12px;
-    }
-    .footer-subscribe p { 
-      font-size: 1.2em;
-      left: auto;
-      margin: auto;
-      position: relative;
-      top: 1em !important;
-      width: 100%;
-    }
-    .footer-subscribe {  padding-bottom: 20px;  }
-    .footer-subscribe label {
-      border: 1px dashed;
-      padding: 0px 30px;
-      display: inline-block;
-      margin-bottom: 25px;
-    }
-    .social .container ul li {  font-size: 0;  }
-    ul.footer-contact:before {
-      content:"Contact Us";
-      font-size: 4.5em;
-      color: white;
-      font-weight: 700;
-      vertical-align: middle;
-      font-family: 'Amatic SC', cursive;
-      line-height: 68px;
-      margin-left: -4px;
-      border: 1px dashed;
-      padding: 0.5% 10%;
-      margin-bottom: 24px;
-      display: inline-block;
-      width: auto;
-    }
-    ul.footer-contact {
-      text-align: center;
-      width: auto;
-      margin: auto;
-      float: left;
-      line-height: 40px;
-      padding-top: 31px;
-    }
-    ul.footer-contact li {
-      width: 70%;
-      display: inline-block;
-      line-height: 1.4em;
-      text-align: center;
-      margin: auto;
-      float: none;
-    }
-    ul.footer-contact li i {
-      display: block;
-      line-height: 1.4em;
-      margin: 5px auto!important;
-    }
-  }
-}
-@media (max-width: 767px){
-  .content .services {
-    .container-title { 
-      margin-top: 0px;
-    }
-    ul.box-dashed {
-      margin: auto!important;
-      li { 
-        margin: 10% auto!important;
-        width: 80%!important;
-        height: auto!important;
-        float: none;
-        display: block;
-      }
-    }
-  }
-  .container-title {
-    border-top: none;
-  }
-  .services ul.box-dashed li{
-    h3{
-      text-align: center;
-    }
-    h3, p{
-      display: block;
-      margin: 7% auto;
-    }
-    p{
-      margin: 7%;
-    }
-  }
-  section {
-    margin-bottom: 10%;
-  }
-  .process{
-    .container-title {
-      margin-top: 0;
-      h2{
-        top: 0;
-      }
-    }
-    ul{
-      border-top: 2px solid #B3C4D9;
-      width: 90%;
-      padding-top: 10%;
-      margin: auto;
-      li{
-          border-bottom: 2px solid #B3C4D9;
-          margin: auto;
-          padding: 10% 0px;
-        i{
-          margin:auto;
-          background-size: 500%;
-          height: 2.5em!important;
-          width: 2.5em!important;
-        }
-        i.icon-planning { 
-          background-position: 33% 33%;
-        }
-        i.icon-coding { 
-          background-position: 60% 32%;
-        }
-        i.icon-codereview { 
-          background-position: 89% 33%;
-        }
-        i.icon-quality_assurance { 
-          background-position: 9% 75%;
-        }
-        i.icon-deployment { 
-          background-position: 34% 75%;
-        }
-        i.icon-maintenance { 
-          background-position: 60% 75%;
-        }
-        h3{
-          font-size: 1.2em;
-        }
-        p{
-          width: 100%;
-        }
-        span {
-          font-size: 1.5em;
-          font-weight: 700;
-        }
-      }
-    }
-  }
-  .howdowedoit, .our-offering { 
-    border: none;
-    float: none;
-    margin: auto;
-    width: 90%;
-  }
-  .howdowedoit{
-    ul.bullets-blue { 
-      padding: 0px 5% 0px 60px;
-    }
-  }
-  .our-offering p {
-    padding-top: 7%;
-  }
-  //end service
-}
-
-
-/* ----------------------------
-:: PROJECT
----------------------------- */
-
-// tablet
-@media (max-width : 768px){
-  #project-page.carousel{ 
-    a.carousel-control.left {
-      top: 43%;
-      bottom: auto;
-      left: 7%;
-    }
-
-    a.carousel-control.right {
-      top: 43%;
-      bottom: auto;
-      right: 7%;
-    }
-  }
-
-  .more-info{
-    ul.box-dashed{
-      margin:0;
-      padding:0;
-      text-align:center;
-
-      li{
-        float:none;
-        display:inline-block;
-        vertical-align:top;
-        width:30%;
-        margin:0 8px;
-      }
-    }
-  }
-
-  //project show
-  .project-page{
-    .carousel-caption {
-      margin: auto;
-      width: 90%;
-      h4 {
-        font-size: 1.3em;
-        margin: 0px;
-        padding: 5% 2% 0%;
-      }
-      p {
-        font-size: 0.9em;
-        font-weight: 700;
-        line-height: 1.5em;
-        margin: 2% 2% 7%;
-      }
-    }
-    a.more {
-      position: relative;
-      margin: auto;
-      left: 1px;
-      right: 1px;
-      top: -0.7em;
-    }
-  }
-  .more-info{
-    ul.box-dashed.three li h3, ul.box-dashed.three li p{
-      display: block;
-      margin: auto;
-      text-align: center;
-      vertical-align: middle;
-      width: 100%;
-    }
-    ul.box-dashed li h3{
-      color: #316BAF;
-      line-height: 1.3em;
-      font-size: 1.1em;
-    }
-  }
-  #project-page.carousel .carousel-inner {
-    background-size: 100%;
-    min-height: 189px;
-    width: 100%;
-    z-index: 999;
-  }
-  #project-page.carousel .carousel-inner .item .macbook {
-    margin-top: 7.2%;
-    width: 66%;
-    height: auto!important;
-  }
-  #project-page.carousel a.carousel-control {
-    bottom: 35%!important;
-    z-index: 0;
-  }
-  #project-page.carousel a.carousel-control.right {  right: 4%;  }
-  #project-page.carousel a.carousel-control.left {  left: 4%;  }
 }
