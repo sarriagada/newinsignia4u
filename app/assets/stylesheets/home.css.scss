@@ -400,7 +400,7 @@ section{
 		
 		.icon-calendar {
 			float: left;
-			font-size: 22px;
+			font-size: 15px;
 			line-height: 18px;
 			margin-right: 5px;
 			background: none;
@@ -788,7 +788,7 @@ footer{
 
 			i {
 				display: inline;
-				font-size: 27px;
+				font-size: 20px;
 				line-height: 4px;
 				margin-right: 1px;
 			}
@@ -804,7 +804,6 @@ footer{
 		}
 
 		.icon-envelope-alt {
-			font-size: 20px;
 			margin-right: 5px;
 		}
 	}
@@ -894,10 +893,11 @@ footer{
 							height: 40px;
 							margin: 0 6px;
 							position: relative;
-							top: -5px;
+							padding-top:5px;
+							top: -4px;
 							width: 40px;
 							color:#fff;
-							font-size:30px;
+							font-size:25px;
 							@include border-radius(20px);
 						}
 					}
@@ -906,8 +906,7 @@ footer{
 				li.sh{
 					a{
 						i{
-							background:#00a7a9 url(asset-path("sprite.png", image)) no-repeat -344px 9px;
-							top:4px;
+							background:#00a7a9;
 							@include box-shadow(0 0 1px #00A7A9);
 						}
 					}
@@ -1362,4 +1361,115 @@ header{
 		}
 	}
 	header nav span, header nav i { display: none; }
+}
+
+@font-face {
+	font-family: 'icomoon';
+	src:url('fonts/icomoon.eot');
+	src:url('fonts/icomoon.eot?#iefix') format('embedded-opentype'),
+		url('fonts/icomoon.svg#icomoon') format('svg'),
+		url('fonts/icomoon.woff') format('woff'),
+		url('fonts/icomoon.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+/* Use the following CSS code if you want to use data attributes for inserting your icons */
+[data-icon]:before {
+	font-family: 'icomoon';
+	content: attr(data-icon);
+	speak: none;
+	font-weight: normal;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+}
+
+/* Use the following CSS code if you want to have a class per icon */
+/*
+Instead of a list of all class selectors,
+you can use the generic selector below, but it's slower:
+[class*="icon-"]:before {
+*/
+.icon-envelope-alt:before, .icon-top:before, .icon-titleright:before, .icon-titleleft:before, .icon-cursor:before, .icon-phone:before, .icon-map-marker:before, .icon-deploy:before, .icon-qa:before, .icon-slideshare:before, .icon-github:before, .icon-undo:before, .icon-twitter:before, .icon-linkedin:before, .icon-facebook:before, .icon-list-ol:before, .icon-eye-open:before, .icon-mobile:before, .icon-wrench:before, .icon-arrow-right:before, .icon-diamond:before, .icon-site-map:before, .icon-users:before, .icon-tech:before, .icon-calendar:before {
+	font-family: 'icomoon';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+}
+.icon-envelope-alt:before {
+	content: "\f0e0";
+}
+.icon-top:before {
+	content: "\e000";
+}
+.icon-titleright:before {
+	content: "\e002";
+}
+.icon-titleleft:before {
+	content: "\e001";
+}
+.icon-cursor:before {
+	content: "\e003";
+}
+.icon-phone:before {
+	content: "\f095";
+}
+.icon-map-marker:before {
+	content: "\f041";
+}
+.icon-deploy:before {
+	content: "\e004";
+}
+.icon-qa:before {
+	content: "\e005";
+}
+.icon-slideshare:before {
+	content: "\f06e";
+}
+.icon-github:before {
+	content: "\f0cb";
+}
+.icon-undo:before {
+	content: "\f0e2";
+}
+.icon-twitter:before {
+	content: "\f099";
+}
+.icon-linkedin:before {
+	content: "\f0e1";
+}
+.icon-facebook:before {
+	content: "\f09a";
+}
+.icon-list-ol:before {
+	content: "\e007";
+}
+.icon-eye-open:before {
+	content: "\f061";
+}
+.icon-mobile:before {
+	content: "\f10b";
+}
+.icon-wrench:before {
+	content: "\f0ad";
+}
+.icon-arrow-right:before {
+	content: "\e006";
+}
+.icon-diamond:before {
+	content: "\e008";
+}
+.icon-site-map:before {
+	content: "\e009";
+}
+.icon-users:before {
+	content: "\e00a";
+}
+.icon-tech:before {
+	content: "\e00b";
+}
+.icon-calendar:before {
+	content: "\e00c";
 }
