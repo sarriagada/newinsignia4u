@@ -6,7 +6,7 @@ a{
 	text-decoration: none;
 }
 
-header i, .content i{
+header i{
 	background: url(asset-path("sprite.png", image)) no-repeat 0 0;
 }
 
@@ -507,43 +507,9 @@ section{
 
 			i{
 				float:right;
-				margin:54px 7% 0 0;
-			}
-
-			i.icon-planning{
-				width:63px;
-				height:53px;
-				background-position:-105px -64px;
-			}
-
-			i.icon-coding{
-				width:69px;
-				height:53px;
-				background-position:-178px -64px;
-			}
-
-			i.icon-codereview{
-				width:80px;
-				height:54px;
-				background-position:-259px -62px;
-			}
-
-			i.icon-quality_assurance{
-				width:65px;
-				height:54px;
-				background-position:-33px -129px;
-			}
-
-			i.icon-deployment{
-				width:66px;
-				height:59px;
-				background-position:-104px -126px;
-			}
-
-			i.icon-maintenance{
-				width:58px;
-				height:58px;
-				background-position:-185px -128px;
+				margin:54px 8% 0 0;
+				font-size: 4em;
+				color: #F10993;
 			}
 		}
 	}
