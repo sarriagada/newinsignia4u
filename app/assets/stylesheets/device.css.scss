@@ -291,7 +291,7 @@
   }
 }
 // general mobile style
-@media screen and (min-device-width:0px) and (max-device-width: 767px), (-webkit-device-pixel-ratio: 2){
+@media screen and (min-width:0px) and (max-width: 767px), (-webkit-device-pixel-ratio: 2){
   //header
   header h1 img{
     width: 80%;
