@@ -157,14 +157,12 @@ ul.box-dashed.three{
 		margin-left: 35px;
 	}
 }
-
 ul.box-dashed.four{
 
 	li{
 		width: 218px;
 	}
 }
-
 .circle{
 	@include border-radius(39px);
 	background:#f20892;
@@ -173,93 +171,38 @@ ul.box-dashed.four{
 	width:78px;
 	margin:19px auto 10px;
 	margin-bottom: 7px;
-	
-	i.ico-rails{
-		background-position: 0 0;
-	    display: block;
-	    height: 34px;
-	    margin: 15px auto 0;
-	    width: 40px;
-	}
-
-	i.ico-php{
-		background-position: -44px 0;
+	i{
+		color: white;
+		font-size: 3em;
+		line-height: 1.6em;
+		background: none;
 		display: block;
+	}
+	i.ico-php{
 		height: 22px;
-		margin: 21px auto 0;
+		margin: auto;
 		width: 48px;
-	}
-
-	i.ico-frontend{
-		background-position: -97px 0;
-	    display: block;
-	    height: 34px;
-	    margin: 13px auto 0;
-	    width: 48px;
-	}
-
-	i.ico-mobile{
-		background-position: -147px 0;
-	    display: block;
-	    height: 43px;
-	    margin: 8px auto 0;
-	    width: 31px;
-	}
-
-	i.ico-agile{
-		background-position: -185px 0;
-	    display: block;
-	    height: 38px;
-	    margin: 12px auto 0;
-	    width: 36px;
-	}
-
-	i.ico-git{
-		background-position: -225px 0;
-	    display: block;
-	    height: 39px;
-	    margin: 10px auto 0;
-	    width: 48px;
-	}
-
-	i.ico-driven{
-		background-position: -277px 0;
-	    display: block;
-	    height: 41px;
-	    margin: 8px auto 0;
-	    width: 25px;
-	}
-
-	i.ico-pair{
-		background-position: -311px 0;
-	    display: block;
-	    height: 43px;
-	    margin: 16px auto 0;
-	    width: 35px;
+		font-weight: bold;
+		font-style: normal;
+		font-size: 1.6em;
+		line-height: 2.8em;
 	}
 }
-
 .circle.blue{
 	background:#316baf;
 	border:#224a79 solid 5px;
 }
-
-
-
 section{
 	font-size:15px;
 	margin-bottom:70px;
 }
-
 .content{
 	a{
 		color:#316baf;
 		text-decoration:underline;
 	}
 }
-
 // content home style
-
 .container-title{
 	border-top: 2px dashed #B8B8B8;
 	margin-top: 90px;
@@ -888,7 +831,7 @@ footer{
 					text-transform:uppercase;
 
 					a{
-
+						line-height: 44px;
 						i{
 							display:inline-block;
 							height: 40px;
@@ -906,8 +849,7 @@ footer{
 				li.sh{
 					a{
 						i{
-							background:#00a7a9 url(asset-path("sprite.png", image)) no-repeat -344px 9px;
-							top:4px;
+							background:#00a7a9;
 							@include box-shadow(0 0 1px #00A7A9);
 						}
 					}
