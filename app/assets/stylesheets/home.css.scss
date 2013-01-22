@@ -6,7 +6,7 @@ a{
 	text-decoration: none;
 }
 
-header i, .content i{
+header i{
 	background: url(asset-path("sprite.png", image)) no-repeat 0 0;
 }
 
@@ -157,14 +157,12 @@ ul.box-dashed.three{
 		margin-left: 35px;
 	}
 }
-
 ul.box-dashed.four{
 
 	li{
 		width: 218px;
 	}
 }
-
 .circle{
 	@include border-radius(39px);
 	background:#f20892;
@@ -173,93 +171,38 @@ ul.box-dashed.four{
 	width:78px;
 	margin:19px auto 10px;
 	margin-bottom: 7px;
-	
-	i.ico-rails{
-		background-position: 0 0;
-	    display: block;
-	    height: 34px;
-	    margin: 15px auto 0;
-	    width: 40px;
-	}
-
-	i.ico-php{
-		background-position: -44px 0;
+	i{
+		color: white;
+		font-size: 3em;
+		line-height: 1.6em;
+		background: none;
 		display: block;
+	}
+	i.ico-php{
 		height: 22px;
-		margin: 21px auto 0;
+		margin: auto;
 		width: 48px;
-	}
-
-	i.ico-frontend{
-		background-position: -97px 0;
-	    display: block;
-	    height: 34px;
-	    margin: 13px auto 0;
-	    width: 48px;
-	}
-
-	i.ico-mobile{
-		background-position: -147px 0;
-	    display: block;
-	    height: 43px;
-	    margin: 8px auto 0;
-	    width: 31px;
-	}
-
-	i.ico-agile{
-		background-position: -185px 0;
-	    display: block;
-	    height: 38px;
-	    margin: 12px auto 0;
-	    width: 36px;
-	}
-
-	i.ico-git{
-		background-position: -225px 0;
-	    display: block;
-	    height: 39px;
-	    margin: 10px auto 0;
-	    width: 48px;
-	}
-
-	i.ico-driven{
-		background-position: -277px 0;
-	    display: block;
-	    height: 41px;
-	    margin: 8px auto 0;
-	    width: 25px;
-	}
-
-	i.ico-pair{
-		background-position: -311px 0;
-	    display: block;
-	    height: 43px;
-	    margin: 16px auto 0;
-	    width: 35px;
+		font-weight: bold;
+		font-style: normal;
+		font-size: 1.6em;
+		line-height: 2.8em;
 	}
 }
-
 .circle.blue{
 	background:#316baf;
 	border:#224a79 solid 5px;
 }
-
-
-
 section{
 	font-size:15px;
 	margin-bottom:70px;
 }
-
 .content{
 	a{
 		color:#316baf;
 		text-decoration:underline;
 	}
 }
-
 // content home style
-
 .container-title{
 	border-top: 2px dashed #B8B8B8;
 	margin-top: 90px;
@@ -564,43 +507,9 @@ section{
 
 			i{
 				float:right;
-				margin:54px 7% 0 0;
-			}
-
-			i.icon-planning{
-				width:63px;
-				height:53px;
-				background-position:-105px -64px;
-			}
-
-			i.icon-coding{
-				width:69px;
-				height:53px;
-				background-position:-178px -64px;
-			}
-
-			i.icon-codereview{
-				width:80px;
-				height:54px;
-				background-position:-259px -62px;
-			}
-
-			i.icon-quality_assurance{
-				width:65px;
-				height:54px;
-				background-position:-33px -129px;
-			}
-
-			i.icon-deployment{
-				width:66px;
-				height:59px;
-				background-position:-104px -126px;
-			}
-
-			i.icon-maintenance{
-				width:58px;
-				height:58px;
-				background-position:-185px -128px;
+				margin:54px 8% 0 0;
+				font-size: 4em;
+				color: #F10993;
 			}
 		}
 	}
@@ -887,7 +796,7 @@ footer{
 					text-transform:uppercase;
 
 					a{
-
+						line-height: 44px;
 						i{
 							display:inline-block;
 							height: 40px;
@@ -1289,7 +1198,7 @@ header{
 
 	nav ul li a {
 		font-size: 0.8em!important;
-		line-height: 2.2em;
+		line-height: 55px;
 		vertical-align: middle;
 	}
 
