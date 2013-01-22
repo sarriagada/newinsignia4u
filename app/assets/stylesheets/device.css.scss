@@ -702,9 +702,9 @@
   .more-projects ul {  width: 100%;  }
   .more-info{
     ul.box-dashed.three {
-      margin-left: 0;
-      padding-left: 0;
       margin: auto;
+      margin-left: 0!important;
+      padding-left: 0!important;
       li {
         width: 248px;
         margin-left: 1%;
