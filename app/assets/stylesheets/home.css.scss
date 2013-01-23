@@ -56,20 +56,15 @@ header{
 			width:242px;
 		}
 	}
-	a.lang{
-		background: #326bb0;
-		border: 1px solid #1a3757;
-		@include border-radius(4px);
-		color: white;
-		font-size:11px;
-		font-weight: bold;
-		height: 25px;
-		line-height: 23px;
-		position: absolute;
-		right: 11%;
+	a.lang {
+		float: right;
+		right: 5%;
+		top:-2.3em!important;
+		position: relative;
+		color: #F10993;
+		text-decoration: underline;
 		text-transform: uppercase;
-		top: 51px;
-		width: 128px;
+		font-size: 0.9em;
 	}
 	nav{
 		background: #383435;
@@ -1027,106 +1022,3 @@ a.more{
 	}
 }
 //end slider
-
-//style toTop
-/* iPads (portrait) ----------- */
-@media (max-width : 1024px)
-and (orientation : portrait){
-}
-#toTop{
-	z-index:9999;
-}
-//style menu
-header{
-	nav {
-		position: relative;
-		-webkit-transition:all 0.4s ease;
-	}
-	nav ul{
-		clear:both;
-		display: none;
-		margin: auto;
-	}
-	nav ul li{
-		display: block;
-		text-align: center;
-		font-size: 1.5em;
-	}
-	nav ul li a {
-		font-size: 0.8em!important;
-		line-height: 55px;
-		vertical-align: middle;
-	}
-	nav span, nav i {
-		font-family: 'Enriqueta', cursive;
-		position: absolute;
-		right: 0.4em;
-		display: inline-block;
-		border: 1px solid #383435;
-		padding: 0 4px;
-		font-weight: bold;
-		border-radius: 0.2em;
-		background:none;
-		color: #383435;
-		z-index: 999;
-	}
-	nav i {
-		top: 0.4em;
-		color: #f10993;
-		font-size: 1.5em!important;
-	}
-	nav span{
-		font-size: 1.2em!important;
-		display: none;
-		border-radius: 0 0 0.2em 0.2em;
-		background: #383435;
-		padding: 1% 2%;
-		color: #f10993;
-	}
-	.container {
-		height: auto;
-		position: relative;
-		padding-bottom: 30px;
-		background: white;
-	}
-	a.lang {
-		position: relative;
-		margin: auto;
-		right: 1px;
-		left: 1px;
-		background: none;
-		color: #f10993;
-		border: none;
-		font-size: 0.8em!important;
-		font-weight: normal;
-		top: 1.3em!important;
-		float: none;
-		text-decoration: underline;
-	}
-}
-.content{
-	border-top: 2px solid;
-}
-//menu style
-@media (min-device-width: 768px){
-	.content{
-		border-top: 0;
-	}
-	header nav{
-		ul{ 
-		 	display: block;
-			li {
-				margin: auto;
-				display: inline-block;
-				line-height: 1.5em;
-				font-size: 1em;
-				a {
-					font-size: 1em!important;
-					line-height: 3.4em;
-					vertical-align: middle;
-				}
-			}
-		}
-	}
-	header nav span, header nav i { display: none; }
-}
