@@ -27,7 +27,7 @@
 			$('#'+settings.containerHoverID, this).stop().animate({'opacity': 0 }, settings.inDelay, settings.easingType);
 			return false;
 		})
-		.prepend('<span id="'+settings.containerHoverID+'"></span>')
+		.prepend('<span id="'+settings.containerHoverID+'"><i class="icon-top"></i></span>')
 		.hover(function() {
 				$(containerHoverIDHash, this).stop().animate({
 					'opacity': 1
