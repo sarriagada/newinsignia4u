@@ -1,5 +1,5 @@
 //menu style
-@media (min-device-width: 768px){
+@media (min-width: 768px){
   .content{
     border-top: 0;
   }
@@ -21,8 +21,8 @@
   }
   header nav span, header nav i { display: none; }
 }
-/* iPads (landscape) ----------- */
-@media (max-device-width: 1024px) and (orientation: landscape) {
+/*iPads (landscape) ----------- */
+@media (max-width: 1024px){
   header a.lang {
     float: right;
     right: 5%;
@@ -31,17 +31,12 @@
   .introduction{
     p{  min-height: 0;  }
   }
-  ul.box-dashed {  margin-left: 0;  }
   .news-item {
     min-height: 0;
-    height: auto!important;
-    .more{
-      width: 130px!important;
-    }
   }
 }
 /* iPads (portrait) and galaxy s3----------- */
-@media (max-device-width: 768px) and (orientation: portrait) , (-webkit-device-pixel-ratio: 2){
+@media (max-width: 940px), (-webkit-device-pixel-ratio: 2){
   // content style
   header nav ul {
     padding-left: 0px;
