@@ -1,25 +1,42 @@
 //menu style
-@media (min-width: 768px),(-webkit-device-pixel-ratio: 2){
-  .content{
-    border-top: 0;
-  }
-  header nav{
-    ul{ 
+@media (max-width: 767px){
+  header{
+    nav {
+      position: relative;
+      -webkit-transition:all 0.4s ease;
+    }
+    nav ul{
+      clear:both;
+      display: none;
+      margin: auto;
+    }
+    nav ul li{
       display: block;
-      li {
-        margin: auto;
-        display: inline-block;
-        line-height: 1.5em;
-        font-size: 1em;
-        a {
-          font-size: 1em!important;
-          line-height: 3.4em;
-          vertical-align: middle;
-        }
-      }
+      text-align: center;
+    }
+    nav span, nav i {
+      position: absolute;
+      right: 0.8em;
+      display: inline-block;
+      border: 1px solid #383435;
+      padding: 0 4px;
+      font-size: 1.5em;
+      border-radius: 0.2em;
+      background:none;
+      color: #383435;
+      z-index: 999;
+    }
+    nav i {
+      top: 0.8em;
+    }
+    nav span{
+      display: none;
+      border-radius: 0 0 0.2em 0.2em;
+      background: #383435;
+      padding: 1% 2%;
+      color: #f10993;
     }
   }
-  header nav span, header nav i { display: none; }
 }
 /*iPads (landscape) ----------- */
 @media (max-width: 1024px){
@@ -684,9 +701,13 @@
         margin-bottom: 25px;
       }
     }
-    .social .container ul li {
-      font-size: 0px!important;
-      color: black;
+    .social .container ul{
+      margin-top: 0.8em;
+      display: block;
+      li {
+        font-size: 0px!important;
+        color: black;
+      }
     }
     ul.footer-contact:before {
       content:"Contact Us";
