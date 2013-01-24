@@ -8,18 +8,17 @@
 	$.fn.UItoTop = function(options) {
 
  		var defaults = {
-    			text: 'To Top',
     			min: 200,
     			inDelay:600,
     			outDelay:400,
-      			containerID: 'toTop',
+      		containerID: 'toTop',
     			containerHoverID: 'toTopHover',
     			scrollSpeed: 1200,
     			easingType: 'linear'
- 		    },
-            settings = $.extend(defaults, options),
-            containerIDhash = '#' + settings.containerID,
-            containerHoverIDHash = '#'+settings.containerHoverID;
+ 		},
+    settings = $.extend(defaults, options),
+    containerIDhash = '#' + settings.containerID,
+    containerHoverIDHash = '#'+settings.containerHoverID;
 		
 		$('body').append('<a href="#" id="'+settings.containerID+'">'+settings.text+'</a>');
 		$(containerIDhash).hide().on('click.UItoTop',function(){
@@ -27,7 +26,7 @@
 			$('#'+settings.containerHoverID, this).stop().animate({'opacity': 0 }, settings.inDelay, settings.easingType);
 			return false;
 		})
-		.prepend('<span id="'+settings.containerHoverID+'"></span>')
+		.prepend('<span id="'+settings.containerHoverID+'"><i class="icon-top"></i></span>')
 		.hover(function() {
 				$(containerHoverIDHash, this).stop().animate({
 					'opacity': 1
