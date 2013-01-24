@@ -1,5 +1,5 @@
 //menu style
-@media (min-width: 768px){
+@media (min-width: 768px),(-webkit-device-pixel-ratio: 2){
   .content{
     border-top: 0;
   }
@@ -171,7 +171,7 @@
       font-size: 14px;
       margin-left: -8px;
       position: relative;
-      top: -17em!important;
+      top: -20em!important;
       width: 35%;
       left: 58%;
     }
@@ -252,6 +252,7 @@
     border: none;
     float: none;
     margin: auto;
+    margin-bottom: 20px;
     width: 90%;
   }
   .howdowedoit{
@@ -650,35 +651,38 @@
       float: none;
       width: 100%;
     }
-    .footer-subscribe .email {
-      width: 70%;
-      padding: 5px 10px;
-      position: static;
-      top: 4px;
-      left: 1px;
-      right: 1px;
-      margin: auto;
-      font-size: 1.2em;
-      display: block;
-    }
-    .footer-subscribe .btn-subscribe {
-      position: static;
-      margin-top: 12px;
-    }
-    .footer-subscribe p { 
-      font-size: 1.2em;
-      left: auto;
-      margin: auto;
-      position: relative;
-      top: 1em !important;
-      width: 100%;
-    }
-    .footer-subscribe {  padding-bottom: 20px;  }
-    .footer-subscribe label {
-      border: 1px dashed;
-      padding: 0px 30px;
-      display: inline-block;
-      margin-bottom: 25px;
+    .footer-subscribe {
+      padding-bottom: 20px;
+      padding-left: 0px;
+      .email {
+        width: 70%;
+        padding: 5px 10px;
+        position: static;
+        top: 4px;
+        left: 1px;
+        right: 1px;
+        margin: auto;
+        font-size: 1.2em;
+        display: block;
+      }
+      .btn-subscribe {
+        position: static;
+        margin-top: 12px;
+      }
+      p { 
+        font-size: 1.2em;
+        left: auto;
+        margin: auto;
+        position: relative;
+        top: 1em !important;
+        width: 100%;
+      }
+      label {
+        border: 1px dashed;
+        padding: 0px 30px;
+        display: inline-block;
+        margin-bottom: 25px;
+      }
     }
     .social .container ul li {
       font-size: 0px!important;
@@ -776,50 +780,6 @@
     text-align: center;
   }
   .ribbon .ribbon-right, .ribbon .ribbon-left {  display: none;  }
-  footer{
-    .container-contact{  width: 100%;  }
-    ul.footer-contact {
-      margin: auto!important;
-      width: 100%;
-    }
-    ul.footer-contact li { 
-      float: none;
-      font-size: 1.2em!important;
-      line-height: 1.4em;
-      margin: auto auto 5%;
-      text-align: center;
-      width: 70%;
-      display: block;
-    }
-    .footer-subscribe .email { 
-      left: 0%;
-      padding: 10px 24px;
-      position: relative;
-      top: 5em;
-      width: 70%;
-    }
-    .footer-subscribe p { 
-      font-size: 14px;
-      left: 11%;
-      margin: 12px 0px 10px -8px;
-      position: relative;
-      top: -11em!important;
-      width: 81%;
-    }
-    .footer-subscribe label {
-      border: 1px dashed;
-      padding: 0px 30px;
-    }
-    .footer-subscribe .btn-subscribe {
-      top: 3em;
-      left: 0;
-      width: 149px;
-    }
-    .social .container ul li.sh, .social .container ul li.fb {
-      font-size: 0px!important;
-      color: transparent;
-    }
-  }
   // projects
   .projects-page .container-title, .more-projects .container-title{  border-top:0!important;  }
   .more-projects ul li {  width: 80%!important;  }
