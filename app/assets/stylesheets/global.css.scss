@@ -1,0 +1,317 @@
+// Place all the styles related to the home controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+a{
+	text-decoration: none;
+}
+
+ul{
+	margin-top:0;
+	margin-bottom:0;
+	padding:0;
+	li{
+		list-style:none;
+		position:relative;
+	}
+}
+
+body{
+	font-family: 'Enriqueta', cursive;
+	background:url(asset-path("background-pattern.gif", image)) repeat 0 0;
+}
+
+ul.bullets-blue{
+	padding:0 40px 0 60px;
+	li{
+		line-height:23px;
+		padding:0 0 23px;
+		color:#373435;
+		.icon-arrow-right{
+			color: #316BAF;
+			font-size: 1.2em;
+			float: left;
+			margin-left: -1em;
+		}
+	}
+}
+
+.container, .container-contact, nav ul, .content {  @include outer-container;  }
+
+ul.box-dashed{
+	margin-left: -20px;
+	overflow:hidden;
+	li{
+		@include border-radius(10px);
+		background: repeat 0 0 rgba(255, 255, 255, 0.4);
+		border: #373435 dashed 1px;
+		float:left;
+		margin:12px 0 12px 20px;
+	}
+}
+
+ul.box-dashed.two{
+	li{
+		width: 460px;
+	}
+}
+
+ul.box-dashed.three{
+	margin-left: -35px;
+	padding-left: 7%;
+	li{
+		width: 248px;
+		margin-left: 35px;
+	}
+}
+
+ul.box-dashed.four{
+	li{
+		width: 218px;
+	}
+}
+
+.circle{
+	@include border-radius(39px);
+	background:#f20892;
+	border:#a60563 solid 5px;
+	height:78px;
+	width:78px;
+	margin:19px auto 10px;
+	margin-bottom: 7px;
+	i{
+		color: white;
+		font-size: 3em;
+		line-height: 1.6em;
+		background: none;
+		display: block;
+	}
+	i.ico-php{
+		height: 22px;
+		margin: auto;
+		width: 48px;
+		font-weight: bold;
+		font-style: normal;
+		font-size: 1.6em;
+		line-height: 2.8em;
+	}
+}
+
+.circle.blue{
+	background:#316baf;
+	border:#224a79 solid 5px;
+}
+
+section{
+	font-size:15px;
+	margin-bottom:70px;
+}
+
+.content{
+	a{
+		color:#316baf;
+		text-decoration:underline;
+	}
+}
+
+.container-title{
+	border-top: 2px dashed #B8B8B8;
+	margin-top: 90px;
+	width: 100%;
+	text-align:center;
+	clear:both;
+	h2{
+		background: url(asset-path("background-pattern.gif", image));
+		position: relative;
+		top: -36px;
+		color: #343233;
+		font-size: 60px;
+		line-height:60px;
+		margin: auto;
+		display:inline-block;
+		font-family:'Amatic SC', Arial;
+		span{
+			font-weight:400;
+		}
+	}
+	h2:before{
+		content: url("/assets/arrow-left.gif");
+		display: inline-block;
+		width: 30px;
+	}
+	h2:after{
+		content: url("/assets/arrow-right.gif");
+		display: inline-block;
+		width:30px;
+	}
+}
+
+a.more{
+	background:#E50892;
+	border: 2px solid #A60563;
+	border-radius: 5px 5px 5px 5px;
+	bottom: -21px;
+	color: white;
+	font-family: 'Amatic SC',cursive;
+	font-size: 34px;
+	font-weight: bold;
+	height: 47px;
+	left: 42%;
+	line-height: 40px;
+	padding: 0 20px 2px 17px;
+	position: absolute;
+	width: 130px;
+	display:block;
+	text-decoration:none;
+}
+
+/* ----------------------------
+:: SLIDER
+---------------------------- */
+.carousel {
+	position: relative;
+	margin-bottom: 20px;
+	line-height: 1;
+  	.carousel-inner {
+		position: relative;
+		width: 100%;
+		overflow: hidden;
+		padding: 0 0 20px;
+	  	.item {
+	  		position: relative;
+	  		display: none;
+	  		-webkit-transition: 0.6s ease-in-out left;
+	     	   -moz-transition: 0.6s ease-in-out left;
+	             -o-transition: 0.6s ease-in-out left;
+	                transition: 0.6s ease-in-out left;
+	  		img {
+				width: auto\9;
+				height: auto;
+				max-width: 100%;
+				vertical-align: middle;
+				border: 0;
+				-ms-interpolation-mode: bicubic;
+				display: block;
+				line-height: 1;
+			}
+		}
+		.active, .next, .prev{
+			display:block;
+		}
+		.active {
+		  left: 0;
+		}
+		.next, .prev{
+			position: absolute;
+			top: 0;
+			width: 100%;
+		}
+		.next, .active.right{
+			left: 100%;
+		}
+		.prev, .active.left{
+			left: -100%;
+		}
+		.next.left, .prev.right {
+		  	left: 0;
+		}
+	}
+	.carousel-control {
+		text-decoration: none;
+		background: #222;
+		position: absolute;
+		bottom: 0;
+		left: 15px;
+		width: 45px;
+		height: 45px;
+		margin-top: -20px;
+		font-size: 60px;
+		font-weight: 100;
+		line-height: 30px;
+		color: #ffffff;
+		text-align: center;
+		-webkit-border-radius: 23px;
+		-moz-border-radius: 23px;
+		border-radius: 23px;
+		z-index:999;
+		i{
+			font-size: 0.5em;
+			text-align: center;
+			position: relative;
+			top: -0.15em;
+			left: -0.05em;
+		}
+	}
+	.carousel-control.right {
+	  right: 15px;
+	  left: auto;
+		i{  left: 0.05em;  }
+	}
+}
+
+.carousel-caption {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	padding: 15px;
+	background: rgba(255, 255, 255, 0.9);
+	h4, p {
+	  line-height: 20px;
+	  color: #373435;
+	}
+	h4 {
+	  margin: 0 0 5px;
+	  font-size:20px;
+	}
+	p {
+	  margin-bottom: 0;
+	  font-size:14px;
+	}
+	ul.bullets-blue{
+		padding:0 40px 0 30px;
+		li{
+			line-height:23px;
+			padding:0 0 3px;
+			.icon-arrow-right{
+				color: #316BAF;
+				font-size: 1.2em;
+				float: left;
+				margin-left: -1em;
+			}
+		}
+	}
+}
+
+.carousel.carousel-fade{
+	.item{
+		-webkit-transition: opacity 2s ease-in-out;
+		-moz-transition: opacity 2s ease-in-out;
+		-ms-transition: opacity 2s ease-in-out;
+		-o-transition: opacity 2s ease-in-out;
+		transition: opacity 2s ease-in-out;
+	}
+	.active.left, .active.right{
+		left: 0;
+		z-index: 2;
+		opacity: 0;
+		filter: alpha(opacity=0);
+	}
+	.next, .prev{
+		left: 0;
+		z-index: 1;
+	}
+	.carousel-control{
+		z-index:3;
+	}
+}
+//end slider
+
+//style toTop
+#toTop{
+	z-index:9999;
+}
+
+.content{
+	border-top: 2px solid;
+}

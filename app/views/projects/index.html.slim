@@ -6,7 +6,13 @@ section.projects-page
 			.carousel-inner
 				.active.item
 					.macbook
-						= image_tag(asset_path("slider/craftfoxes_medium.jpg"))
+						picture alt=""
+							source src=asset_path("slider/craftfoxes_medium.jpg")
+							source src=asset_path("slider/craftfoxes_medium.jpg") media="(min-width:440px)"
+							source src=asset_path("slider/craftfoxes_medium.jpg") media="(min-width:600px)"
+
+							noscript
+								img src=asset_path("slider/craftfoxes_medium.jpg") alt=""
 
 					.carousel-caption.equal4
 						h4 
@@ -29,7 +35,13 @@ section.projects-page
 
 				.item
 					.macbook
-						= image_tag(asset_path("slider/tablehopping_medium.jpg"))
+						picture alt=""
+							source src=asset_path("slider/tablehopping_medium.jpg")
+							source src=asset_path("slider/tablehopping_medium.jpg") media="(min-width:440px)"
+							source src=asset_path("slider/tablehopping_medium.jpg") media="(min-width:600px)"
+
+							noscript
+								img src=asset_path("slider/tablehopping_medium.jpg") alt=""
 
 					.carousel-caption.equal4
 						h4 
@@ -41,7 +53,13 @@ section.projects-page
 
 				.item
 					.macbook
-						= image_tag(asset_path("slider/area17_medium.jpg"))
+						picture alt=""
+							source src=asset_path("slider/area17_medium.jpg")
+							source src=asset_path("slider/area17_medium.jpg") media="(min-width:440px)"
+							source src=asset_path("slider/area17_medium.jpg") media="(min-width:600px)"
+
+							noscript
+								img src=asset_path("slider/area17_medium.jpg") alt=""
 
 					.carousel-caption.equal4
 						h4 
@@ -63,28 +81,56 @@ section.more-projects
 
 	ul
 		li
-			= image_tag(asset_path("tablehopping.jpg"))
+			picture alt=""
+				source src=asset_path("tablehopping.jpg")
+				source src=asset_path("tablehopping.jpg") media="(min-width:440px)"
+				source src=asset_path("tablehopping.jpg") media="(min-width:600px)"
+
+				noscript
+					img src=asset_path("tablehopping.jpg") alt=""
+
 			.project-info.equal
 				h3 
 					a href="#{project_path(1)}" Table Hopping NY
 				p TableHoppingNY is a community around gourmet events in New York City.
 
 		li
-			= image_tag(asset_path("lostanfaun.jpg"))
+			picture alt=""
+				source src=asset_path("lostanfaun.jpg")
+				source src=asset_path("lostanfaun.jpg") media="(min-width:440px)"
+				source src=asset_path("lostanfaun.jpg") media="(min-width:600px)"
+
+				noscript
+					img src=asset_path("lostanfaun.jpg") alt=""
+
 			.project-info.equal
 				h3 
 					a href="#{project_path(1)}" Los Tanfaun
 				p Los Tanfaun is a lost and found application to connect people in Buenos Aires city.
 
 		li
-			= image_tag(asset_path("area17.jpg"))
+			picture alt=""
+				source src=asset_path("area17.jpg")
+				source src=asset_path("area17.jpg") media="(min-width:440px)"
+				source src=asset_path("area17.jpg") media="(min-width:600px)"
+
+				noscript
+					img src=asset_path("area17.jpg") alt=""
+
 			.project-info.equal2
 				h3 
 					a href="#{project_path(1)}" Area 17
 				p We currently offer backend development services to Area17 using Ruby on Rails.
 
 		li
-			= image_tag(asset_path("lostanfaun.jpg"))
+			picture alt=""
+				source src=asset_path("lostanfaun.jpg")
+				source src=asset_path("lostanfaun.jpg") media="(min-width:440px)"
+				source src=asset_path("lostanfaun.jpg") media="(min-width:600px)"
+
+				noscript
+					img src=asset_path("lostanfaun.jpg") alt=""
+
 			.project-info.equal2
 				h3 
 					a href="#{project_path(1)}" Los Tanfaun

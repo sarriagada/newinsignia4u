@@ -6,22 +6,38 @@ section.project-page
 			.carousel-inner
 				.active.item
 					.macbook
-						= image_tag(asset_path("slider/craftfoxes_medium.jpg"))
+						picture alt=""
+							source src=asset_path("slider/craftfoxes_medium.jpg")
+							source src=asset_path("slider/craftfoxes_medium.jpg") media="(min-width:440px)"
+							source src=asset_path("slider/craftfoxes_medium.jpg") media="(min-width:600px)"
 
-
+							noscript
+								img src=asset_path("slider/craftfoxes_medium.jpg") alt=""
 
 				.item
 					.macbook
-						= image_tag(asset_path("slider/tablehopping_medium.jpg"))
+						picture alt=""
+							source src=asset_path("slider/tablehopping_medium.jpg")
+							source src=asset_path("slider/tablehopping_medium.jpg") media="(min-width:440px)"
+							source src=asset_path("slider/tablehopping_medium.jpg") media="(min-width:600px)"
+
+							noscript
+								img src=asset_path("slider/tablehopping_medium.jpg") alt=""
 
 				.item
 					.macbook
-						= image_tag(asset_path("slider/area17_medium.jpg"))
+						picture alt=""
+							source src=asset_path("slider/area17_medium.jpg")
+							source src=asset_path("slider/area17_medium.jpg") media="(min-width:440px)"
+							source src=asset_path("slider/area17_medium.jpg") media="(min-width:600px)"
+
+							noscript
+								img src=asset_path("slider/area17_medium.jpg") alt=""
 
 			/! Carousel nav
-			a.carousel-control.left data-slide="prev" href="#projects-page"
+			a.carousel-control.left data-slide="prev" href="#project-page"
 				i.icon-titleleft
-			a.carousel-control.right data-slide="next" href="#projects-page"
+			a.carousel-control.right data-slide="next" href="#project-page"
 				i.icon-titleright
 
 	.carousel-caption

@@ -10,14 +10,20 @@
  *
  *= require_self
  */
+ @import url(http://fonts.googleapis.com/css?family=Amatic+SC:400,700);
+ @import url(http://fonts.googleapis.com/css?family=Enriqueta:400,700);
  @import "normalize";
  @import "bourbon";
  @import "grid-settings";
  @import "neat";
  @import "font";
  @import "ui.totop";
- @import url(http://fonts.googleapis.com/css?family=Amatic+SC:400,700);
- @import url(http://fonts.googleapis.com/css?family=Enriqueta:400,700);
+ @import "global";
+ @import "header";
+ @import "footer";
  @import "home";
- @import "device";
+ @import "services";
+ @import "projects";
+ @import "tablet";
+ @import "mobile";
 

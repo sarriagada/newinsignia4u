@@ -1,0 +1,329 @@
+/* iPads (portrait) and galaxy s3----------- */
+@media (min-width: 768px) and (max-width: 939px){
+  header nav ul {
+    padding-left: 0px;
+  }
+
+  header a.lang {
+    right: 5%;
+  }
+
+  .ribbon-border .ribbon {
+    padding: 10px 100px;
+  }
+
+  .container-title {
+    border-top: 2px dashed rgb(184, 184, 184)!important;
+
+    h2 {
+      position: relative;
+      top: -0.6em;
+      font-size: 60px;
+      line-height: 60px;
+      display: inline-block;
+    }
+  }
+
+  .introduction{
+    h2{
+      font-size: 42px;
+      margin:50 0;
+    }
+
+    #IntroCarousel{
+      .carousel.slide, .carousel-inner > .item > img, .carousel-inner{
+        float: none!important;
+        position: static!important;
+        margin: auto;
+      }
+    }
+
+    p{
+      float: none!important;
+      position: static!important;
+      margin: auto;
+      width: 80%;
+      min-height: 0;
+    }
+  }
+
+  .technologies ul , .tools ul {
+    margin-left: 0!important;
+
+    li{
+      margin-left: 3.5%!important;
+      margin-bottom: 3.5%;
+      width: 44%!important;
+
+      h3{
+        width: 100%!important;
+        margin: auto;
+        display: block!important;
+      }
+    }
+  }
+
+  .news-item {
+    width: 87%!important;
+    height: auto!important;
+    margin-bottom: 4%!important;
+    margin-left: 8%!important;
+    margin-right: 0px!important;
+    padding-right: 4%!important;
+
+    .more{
+      font-size: 2.2em;
+      left: 1px!important;
+      right: 1px!important;
+      margin: auto;
+      display: inline-block;
+      width: 140px!important;
+      text-align: center;
+    }
+  }
+
+  .more-projects ul li {
+    display: inline-block;
+    float: none;
+    margin: 0px 0px 20px 20px;
+    width: 44%!important;
+  }
+
+  .certify {
+    position:relative;
+    top: 3em;
+  }
+
+  footer{
+    background: #19375A;
+    overflow: hidden;
+
+    .container-contact{
+      float: left;
+      width: 50%;
+    }
+
+    form{
+      float: right;
+      width: 49%;
+    }
+
+    ul.footer-contact:before {
+      content:"Contact Us";
+      font-size: 4.5em;
+      color: white;
+      font-weight: 700;
+      vertical-align: middle;
+      font-family: 'Amatic SC', cursive;
+      line-height: 68px;
+      margin-left: -4px;
+      border: 1px dashed;
+      padding: 0.5% 10%;
+      margin-bottom: 24px;
+      display: inline-block;
+      width: auto;
+    }
+
+    ul.footer-contact {
+      text-align: center;
+      width: auto;
+      margin: auto;
+      float: left;
+      line-height: 40px;
+      padding: 30px 0;
+    }
+
+    ul.footer-contact li {
+      width: 70%;
+      display: inline-block;
+      line-height: 20px;
+      text-align: center;
+      margin: auto;
+      float: none;
+    }
+
+    ul.footer-contact li i {
+      display: block;
+      margin: 5px auto;
+    }
+
+    .footer-subscribe .email {
+      width: 55%;
+      display:block;
+    }
+
+    .footer-subscribe p {
+      margin-top: 12px;
+      font-size: 14px;
+    }
+
+    .footer-subscribe label {
+      border: 1px dashed;
+      padding: 0px 30px;
+    }
+
+    .footer-subscribe .btn-subscribe {
+      clear: both;
+    }
+  }
+
+  //services
+  .content .services {
+    .container-title { 
+      margin-top: 2em!important;
+      border-top: none!important;
+    }
+
+    ul.box-dashed.two {
+      margin: auto!important;
+
+      li { 
+        margin: auto!important;
+        margin: 5% auto!important;
+        width: 90%!important;
+        height: auto!important;
+        float: none!important;
+        display: block!important;
+      }
+    }
+  }
+
+  .services ul.box-dashed li{
+    h3, p{
+      display: block;
+    }
+
+    h3{
+      margin: 0!important;
+      margin-left: 3%!important;
+      margin-top: 7%!important;
+      width: auto;
+    }
+
+    p{
+      margin: 7%;
+      margin-top: 0;
+    }
+  }
+
+  section {
+    margin-bottom: 10%;
+  }
+
+  .process{
+    ul{
+      border-top: 0px;
+      width: 90%;
+      margin: auto;
+
+      li{
+        border-bottom: 1px solid #B3C4D9;
+        margin: auto;
+        padding: 10% 0px;
+
+        h3{
+          font-size: 1.5em;
+        }
+
+        p{
+          width: 90%;
+        }
+
+        i{
+          margin: auto;
+          height: auto!important;
+          width: auto!important;
+          font-size: 2.2em;
+        }
+
+        span {
+          font-size: 1.5em;
+          font-weight: 700;
+        }
+      }
+    }
+  }
+
+  .howdowedoit, .our-offering {
+    border: none;
+    float: none;
+    margin: auto;
+    margin-bottom: 20px;
+    width: 90%;
+  }
+
+  .howdowedoit{
+    ul.bullets-blue {
+      padding: 5% 5% 0px 60px;
+    }
+  }
+
+  .our-offering p {
+    padding-top: 7%;
+  }
+  //end service
+
+  //projects
+  #projects-page.carousel .carousel-inner {
+    width: 100%;
+    height: auto;
+    background-position: 50% 0%;
+
+    .item {
+      margin: 0;
+      width: 100%;
+    }
+
+    .macbook {
+      margin: 5.2% auto auto 28.4%
+    }
+
+    .carousel-caption {
+      width: 80%!important;
+      position: relative!important;
+      top: 0!important;
+      left: 0!important;
+      margin: 10% auto auto!important;
+      background: white!important;
+      border: black solid 1px!important;
+      padding: 3%!important;
+    }
+
+    .more {
+      left: 0!important;
+      bottom: -4%!important;
+      right: 0;
+      margin: auto;
+    }
+
+    .carousel-control {
+      bottom: 12%!important;
+      top: auto!important;
+
+      .left {
+        left: 20%!important;
+      }
+
+      .right {
+        right: 20%!important;
+      }
+    }
+  }
+
+  .more-projects ul {
+    width: 100%;
+  }
+
+  .more-info{
+    ul.box-dashed.three {
+      margin: auto;
+      margin-left: 0!important;
+      padding-left: 0!important;
+
+      li {
+        width: 248px;
+        margin-left: 1%;
+      }
+    }
+  }
+}

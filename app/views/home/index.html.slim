@@ -1,23 +1,44 @@
 section.introduction
 	h2
-		| At
+		| At 
 		strong Insignia
-		| we build highly interactive web applications using
+		|  we build highly interactive web applications using 
 		strong agile methodologies
-		| and
-		strong cutting edge technologies.
+		|  and 
+		strong cutting edge technologies
+		| .
 
 	#IntroCarousel.carousel.slide
 		.carousel-inner
 			.active.item
-				= image_tag(asset_path("macbook-tablehopping.png"))
+				picture alt=""
+					source src=asset_path("macbook-tablehopping.png")
+					source src=asset_path("macbook-tablehopping.png") media="(min-width:440px)"
+					source src=asset_path("macbook-tablehopping.png") media="(min-width:600px)"
+
+					noscript
+						img src=asset_path("macbook-tablehopping.png") alt=""
+
 			.item
-				= image_tag(asset_path("ipad.png"))
+				picture alt=""
+					source src=asset_path("ipad.png")
+					source src=asset_path("ipad.png") media="(min-width:440px)"
+					source src=asset_path("ipad.png") media="(min-width:600px)"
+
+					noscript
+						img src=asset_path("ipad.png") alt=""
+
 			.item
-				= image_tag(asset_path("cel.png"))
+				picture alt=""
+					source src=asset_path("cel.png")
+					source src=asset_path("cel.png") media="(min-width:440px)"
+					source src=asset_path("cel.png") media="(min-width:600px)"
+
+					noscript
+						img src=asset_path("cel.png") alt=""
 
 	p
-		| We specialize in backend development with
+		| We specialize in backend development with 
 		mark Ruby on Rails
 		|  and other web based technologies and, thanks to partnerships with different studios, we are able to carry out projects all the way, including consulting, design, and frontend development services.
 
@@ -28,7 +49,14 @@ section.projects
 		#cases.carousel.slide.carousel-fade
 			.carousel-inner
 				.active.item
-					= image_tag(asset_path("slider/craftfoxes.jpg"))
+					picture alt=""
+						source src=asset_path("slider/craftfoxes-480.jpg")
+						source src=asset_path("slider/craftfoxes-650.jpg") media="(min-width:440px)"
+						source src=asset_path("slider/craftfoxes.jpg") media="(min-width:769px)"
+
+						noscript
+							img src=asset_path("slider/craftfoxes.jpg") alt=""
+
 					.carousel-caption
 						h4 Craftfoxes.com
 						p
@@ -36,7 +64,15 @@ section.projects
 
 						a.more href="www.craftfoxes.com" Visit Site
 				.item
-					= image_tag(asset_path("slider/tablehopping.jpg"))
+
+					picture alt=""
+						source src=asset_path("slider/tablehopping-480.jpg")
+						source src=asset_path("slider/tablehopping-650.jpg") media="(min-width:440px)"
+						source src=asset_path("slider/tablehopping.jpg") media="(min-width:769px)"
+
+						noscript
+							img src=asset_path("slider/tablehopping.jpg") alt=""
+
 					.carousel-caption
 						h4 Table Hopping NY
 						p
@@ -44,7 +80,14 @@ section.projects
 
 						a.more href="www.tablehopping.com" Visit Site
 				.item
-					= image_tag(asset_path("slider/area17.jpg"))
+					picture alt=""
+						source src=asset_path("slider/area17-480.jpg")
+						source src=asset_path("slider/area17-650.jpg") media="(min-width:440px)"
+						source src=asset_path("slider/area17.jpg") media="(min-width:769px)"
+
+						noscript
+							img src=asset_path("slider/area17.jpg") alt=""
+
 					.carousel-caption
 						h4 Area 17
 						p
