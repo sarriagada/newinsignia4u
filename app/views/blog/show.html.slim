@@ -1,0 +1,117 @@
+section.project-page
+	.container-title
+		h2 TableHopping NY
+
+	#project-page.carousel.slide.carousel-fade
+			.carousel-inner
+				.active.item
+					.macbook
+						picture alt=""
+							source src=asset_path("slider/craftfoxes_medium.jpg")
+							source src=asset_path("slider/craftfoxes_medium.jpg") media="(min-width:440px)"
+							source src=asset_path("slider/craftfoxes_medium.jpg") media="(min-width:600px)"
+
+							noscript
+								img src=asset_path("slider/craftfoxes_medium.jpg") alt=""
+
+				.item
+					.macbook
+						picture alt=""
+							source src=asset_path("slider/tablehopping_medium.jpg")
+							source src=asset_path("slider/tablehopping_medium.jpg") media="(min-width:440px)"
+							source src=asset_path("slider/tablehopping_medium.jpg") media="(min-width:600px)"
+
+							noscript
+								img src=asset_path("slider/tablehopping_medium.jpg") alt=""
+
+				.item
+					.macbook
+						picture alt=""
+							source src=asset_path("slider/area17_medium.jpg")
+							source src=asset_path("slider/area17_medium.jpg") media="(min-width:440px)"
+							source src=asset_path("slider/area17_medium.jpg") media="(min-width:600px)"
+
+							noscript
+								img src=asset_path("slider/area17_medium.jpg") alt=""
+
+			/! Carousel nav
+			a.carousel-control.left data-slide="prev" href="#project-page"
+				i.icon-titleleft
+			a.carousel-control.right data-slide="next" href="#project-page"
+				i.icon-titleright
+
+	.carousel-caption
+		h4 
+			a href="#{project_path(1)}" TablehoppingNY.com
+		p
+			| TableHoppingNY is NYC’s culinary life served to you on a platter! It’s a community around gourmet events in New York City.
+
+		p
+			| TableHoppingNY is the app that solves the classic New York dining dilemmas:
+
+		ul.bullets-blue
+			li
+				i.icon-bullet-blue
+				| What’s a good Happy Hour in Soho?
+			li
+				i.icon-bullet-blue
+				| I always walk by that place, but can’t remember the name.
+			li
+				i.icon-bullet-blue
+				| What’s going on in the city this week?
+
+			li
+				i.icon-bullet-blue
+				| What are some cool new places to try?
+			li
+				i.icon-bullet-blue
+				| What was the name of that great place we went to last month?
+
+		p
+			| TableHoppingNY is currently a community around gourmet events in New York City.
+
+		p
+			| The app allows the user to interact and to discover all the gourmet happenings in the city, new places, meet new people, and dine out with friends.
+
+		p
+			| In this project we developed the whole backend for the application using Ruby on Rails 3.2, specs were written using RSpec and using Spec Requests.
+
+		p
+			| We have also done the front end implementation converting the designs to its equivalent HTML +CSS and the whole Javascript implementation.
+			
+	a.more href="http://www.craftfoxes.com" Visit Site
+
+section.more-info
+	.container-title
+		h2 More Info
+
+	ul.box-dashed.three
+		li.equal4
+			.circle.blue
+				i.icon-calendar
+
+			h3 Duration
+			p
+				| January 16, 2012 to
+				br
+				| December 17, 2012
+
+		li.equal4
+			.circle.blue
+				i.icon-tech
+
+			h3 Technologies
+			p
+				| Front-end development:
+				br
+				| HTML. CSS and Javascript Ruby on Rails
+
+		li.equal4
+			.circle.blue
+				i.icon-wrench
+
+			h3 Tools
+			p 
+				| Version control system:
+				br
+				| GIT, SVN and others. Agile methodologies Behaviour Driven Development

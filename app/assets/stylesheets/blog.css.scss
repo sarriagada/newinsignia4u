@@ -1,0 +1,18 @@
+// Place all the styles related to the blog controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.blog{
+  article{
+    border-top: #a7a6a6 solid 1px;
+  }
+
+  .comment, .author{
+    color: #f20892;
+  }
+
+  .comment{
+    float: right;
+  }
+
+}

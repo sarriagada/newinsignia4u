@@ -41,6 +41,7 @@ ul.bullets-blue{
 ul.box-dashed{
 	margin-left: -20px;
 	overflow:hidden;
+
 	li{
 		@include border-radius(10px);
 		background: repeat 0 0 rgba(255, 255, 255, 0.4);
@@ -59,6 +60,7 @@ ul.box-dashed.two{
 ul.box-dashed.three{
 	margin-left: -35px;
 	padding-left: 7%;
+
 	li{
 		width: 248px;
 		margin-left: 35px;
@@ -79,6 +81,7 @@ ul.box-dashed.four{
 	width:78px;
 	margin:19px auto 10px;
 	margin-bottom: 7px;
+
 	i{
 		color: white;
 		font-size: 3em;
@@ -86,6 +89,7 @@ ul.box-dashed.four{
 		background: none;
 		display: block;
 	}
+
 	i.ico-php{
 		height: 22px;
 		margin: auto;
@@ -120,6 +124,7 @@ section{
 	width: 100%;
 	text-align:center;
 	clear:both;
+
 	h2{
 		background: url(asset-path("background-pattern.gif", image));
 		position: relative;
@@ -130,15 +135,18 @@ section{
 		margin: auto;
 		display:inline-block;
 		font-family:'Amatic SC', Arial;
+
 		span{
 			font-weight:400;
 		}
 	}
+
 	h2:before{
 		content: url("/assets/arrow-left.gif");
 		display: inline-block;
 		width: 30px;
 	}
+
 	h2:after{
 		content: url("/assets/arrow-right.gif");
 		display: inline-block;
@@ -165,6 +173,28 @@ a.more{
 	text-decoration:none;
 }
 
+.column-left{
+	float: left;
+	width: 637px;
+}
+
+/* ----------------------------
+:: BUTTONS
+---------------------------- */
+.btn, .content .btn{
+	background:#E50892;
+	border: 2px solid #A60563;
+	border-radius: 5px 5px 5px 5px;
+	color: #fff;
+	font-family: 'Amatic SC',cursive;
+	font-size: 34px;
+	font-weight: bold;
+	height: 47px;
+	line-height: 40px;
+	padding:0 15px;
+	text-decoration: none;
+}
+
 /* ----------------------------
 :: SLIDER
 ---------------------------- */
@@ -173,19 +203,22 @@ a.more{
 	margin-bottom: 20px;
 	line-height: 1;
 	overflow:hidden;
-  	.carousel-inner {
+
+	.carousel-inner {
 		position: relative;
 		width: 100%;
 		overflow: hidden;
 		padding: 0 0 20px;
-	  	.item {
-	  		position: relative;
-	  		display: none;
-	  		-webkit-transition: 0.6s ease-in-out left;
-	     	   -moz-transition: 0.6s ease-in-out left;
-	             -o-transition: 0.6s ease-in-out left;
-	                transition: 0.6s ease-in-out left;
-	  		img {
+
+		.item {
+			position: relative;
+			display: none;
+			-webkit-transition: 0.6s ease-in-out left;
+			   -moz-transition: 0.6s ease-in-out left;
+			     -o-transition: 0.6s ease-in-out left;
+			        transition: 0.6s ease-in-out left;
+			
+			img {
 				width: auto\9;
 				height: auto;
 				max-width: 100%;
@@ -196,27 +229,34 @@ a.more{
 				line-height: 1;
 			}
 		}
+
 		.active, .next, .prev{
 			display:block;
 		}
+
 		.active {
-		  left: 0;
+			left: 0;
 		}
+
 		.next, .prev{
 			position: absolute;
 			top: 0;
 			width: 100%;
 		}
+
 		.next, .active.right{
 			left: 100%;
 		}
+
 		.prev, .active.left{
 			left: -100%;
 		}
+
 		.next.left, .prev.right {
-		  	left: 0;
+			left: 0;
 		}
 	}
+
 	.carousel-control {
 		text-decoration: none;
 		background: #222;
@@ -235,6 +275,7 @@ a.more{
 		-moz-border-radius: 23px;
 		border-radius: 23px;
 		z-index:999;
+
 		i{
 			font-size: 0.5em;
 			text-align: center;
@@ -243,10 +284,14 @@ a.more{
 			left: -0.05em;
 		}
 	}
+
 	.carousel-control.right {
-	  right: 15px;
-	  left: auto;
-		i{  left: 0.05em;  }
+		right: 15px;
+		left: auto;
+
+		i{
+			left: 0.05em;
+		}
 	}
 }
 
@@ -257,23 +302,29 @@ a.more{
 	left: 0;
 	padding: 15px;
 	background: rgba(255, 255, 255, 0.9);
+
 	h4, p {
-	  line-height: 20px;
-	  color: #373435;
+		line-height: 20px;
+		color: #373435;
 	}
+
 	h4 {
-	  margin: 0 0 5px;
-	  font-size:20px;
+		margin: 0 0 5px;
+		font-size:20px;
 	}
+
 	p {
-	  margin-bottom: 0;
-	  font-size:14px;
+		margin-bottom: 0;
+		font-size:14px;
 	}
+
 	ul.bullets-blue{
 		padding:0 40px 0 30px;
+
 		li{
 			line-height:23px;
 			padding:0 0 3px;
+
 			.icon-arrow-right{
 				color: #316BAF;
 				font-size: 1.2em;
@@ -292,16 +343,19 @@ a.more{
 		-o-transition: opacity 2s ease-in-out;
 		transition: opacity 2s ease-in-out;
 	}
+
 	.active.left, .active.right{
 		left: 0;
 		z-index: 2;
 		opacity: 0;
 		filter: alpha(opacity=0);
 	}
+
 	.next, .prev{
 		left: 0;
 		z-index: 1;
 	}
+
 	.carousel-control{
 		z-index:3;
 	}
