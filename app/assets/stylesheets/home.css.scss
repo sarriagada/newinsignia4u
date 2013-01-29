@@ -17,6 +17,7 @@
 		padding: 0px 50px;
 		font-family: 'Amatic SC', cursive;
 		letter-spacing: 1px;
+		min-height: 100px;
 
 		strong{
 			color:#f10993;
@@ -24,15 +25,12 @@
 	}
 
 	p{
-		float: right;
-		position: absolute;
-		bottom: 72px;
-		left: 480px;
 		font-size: 18px;
 		line-height: 27px;
 		width: 40%;
 		min-height: 200px;
 		font-family: 'Enriqueta', serif;
+
 		mark{
 			background: #F10993;
 			color: white;
@@ -202,10 +200,18 @@
 			}
 		}
 	}
+
+	p{
+		float: right;
+		position: absolute;
+		bottom: 72px;
+		left: 480px;
+	}
 }
 
 #cases.carousel{
 	margin:0 7% 39px;
+	min-height: 419px;
 	.carousel-inner {
 		.item {
 			border:#c2b7bb solid 1px;

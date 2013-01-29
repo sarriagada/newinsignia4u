@@ -11,7 +11,6 @@ gem "heroku", "~> 2.33.5"
 
 group :development, :test do
   gem 'sqlite3'
-  gem 'therubyracer'
 end
 
 group :production do
