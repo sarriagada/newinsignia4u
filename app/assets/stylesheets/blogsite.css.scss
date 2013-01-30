@@ -1,0 +1,99 @@
+// Place all the styles related to the blog controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.blog{
+  .container-title{
+    margin-bottom: -20px;
+
+    h2{
+      font-size: 92px;
+      line-height: 92px;
+      top: -66px;
+    }
+  }
+
+  article{
+    border-top: #a7a6a6 solid 1px;
+    clear:both;
+  }
+
+  .comment, .author{
+    color: #f20892;
+  }
+
+  .comment{
+    float: right;
+    font-size: 18px;
+  }
+
+  .author{
+    padding: 11px 0 11px 2px;
+  }
+
+  img{
+    width: 100%;
+    border: #000 solid 1px;
+  }
+
+  h3{
+    color: #316baf;
+    font-size: 26px;
+    font-weight: 300;
+    margin: 34px 0 17px;
+    
+    a{
+      color: #316baf;
+    }
+  }
+
+  .read-more{
+    color: #f20892;
+    text-decoration: none;
+    line-height: 15px;
+    margin-bottom: 35px;
+    display: block;
+    
+    span{
+      font-size: 22px;
+      font-family: arial;
+      position: relative;
+      right: -4px;
+      top: 4px;
+    }
+  }
+
+  .tags{
+    overflow: hidden;
+    margin:35px 0 60px;
+
+    a{
+      @include border-radius(5px);
+      color: #a7a6a6;
+      border: #a7a6a6 dashed 1px;
+      display:block;
+      float: left;
+      margin:0 10px 0 0;
+      padding: 0 10px 2px;
+      font-size: 14px;
+      text-decoration: none;
+    }
+  }
+
+  aside{
+    float: right;
+    width: 242px;
+
+    .search{
+      @include border-radius(5px);
+      @include box-shadow(1px 1px 2px #999);
+      border: #a59c9f solid 1px;
+      height: 18px;
+      line-height: 18px;
+      padding:14px 18px;
+      font-size: 16px;
+      width: 206px;
+
+    }
+  }
+}

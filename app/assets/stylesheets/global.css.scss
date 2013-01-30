@@ -16,6 +16,15 @@ ul{
 	}
 }
 
+.content p{
+	font-size: 14px;
+	color: #373435;
+}
+
+img{
+	max-width: 100%;
+}
+
 body{
 	font-family: 'Enriqueta', cursive;
 	background:url(asset-path("background-pattern.gif", image)) repeat 0 0;
@@ -176,6 +185,7 @@ a.more{
 .column-left{
 	float: left;
 	width: 637px;
+	padding-bottom: 50px;
 }
 
 /* ----------------------------

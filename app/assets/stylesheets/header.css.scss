@@ -57,6 +57,7 @@ nav{
 			display: inline-block;
 			line-height: 1.5em;
 			font-size: 1em;
+			padding: 0 6px;
 
 			a{
 				font-size: 1em!important;
@@ -77,14 +78,14 @@ nav{
 				width: 22px;
 				position: absolute;
 				top: 9%;
-				left:-2px;
+				left:0;
 			}
 
 			a:hover:after, a.active:after{
 				vertical-align: middle;
 				content: url("/assets/arrow-right.png");
 				display: inline-block;
-				width: 15px;
+				width: 22px;
 				position: absolute;
 				top: 9%;
 			}

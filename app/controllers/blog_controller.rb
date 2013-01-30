@@ -1,4 +1,5 @@
 class BlogController < ApplicationController
+
   def index
 
   end
@@ -6,4 +7,5 @@ class BlogController < ApplicationController
   def show
 
   end
+
 end
