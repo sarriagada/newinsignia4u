@@ -130,7 +130,6 @@ nav{
 
 				a{
 					width: auto;
-					font-weight:bold;
 					line-height:55px;
 					position:relative;
 				}
@@ -150,7 +149,7 @@ nav{
 		}
 
 		span, i{
-			font-family: 'Enriqueta', cursive;
+			font-family: $font-primary;
 			position: absolute;
 			right: 0.4em;
 			display: inline-block;

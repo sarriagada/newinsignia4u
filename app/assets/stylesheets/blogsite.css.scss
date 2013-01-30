@@ -25,6 +25,13 @@
   .comment{
     float: right;
     font-size: 18px;
+    padding: 8px 0 0;
+    
+    .icon-comment{
+      margin: 0px 0 0 5px;
+      position: relative;
+      top: 3px;
+    }
   }
 
   .author{
@@ -41,26 +48,14 @@
     font-size: 26px;
     font-weight: 300;
     margin: 34px 0 17px;
-    
+
     a{
       color: #316baf;
     }
   }
 
   .read-more{
-    color: #f20892;
-    text-decoration: none;
-    line-height: 15px;
     margin-bottom: 35px;
-    display: block;
-    
-    span{
-      font-size: 22px;
-      font-family: arial;
-      position: relative;
-      right: -4px;
-      top: 4px;
-    }
   }
 
   .tags{
@@ -90,10 +85,54 @@
       border: #a59c9f solid 1px;
       height: 18px;
       line-height: 18px;
-      padding:14px 18px;
+      padding:12px 18px;
       font-size: 16px;
-      width: 206px;
-
+      width: 203px;
     }
+
+    .subscribe-link{
+      font-family: $font-secondary;
+      font-size: 32px;
+      color: #000;
+      text-decoration: none;
+      width: 208px;
+      margin: 35px auto 40px;
+      display: block;
+      white-space: nowrap;
+
+      .icon-rss{
+        color: #F20892;
+        font-size: 25px;
+        margin: 0 0 0 17px;
+      }
+    }
+
+    .circle{
+      display: inline-block;
+      font-size: 10px;
+      height: 45px;
+      width: 45px;
+      border-width: 2px;
+      margin: 0 20px 0 0;
+    }
+  }
+}
+
+.list-categories{
+  padding: 0 0 20px;
+
+  li{
+    padding: 1px 15px;
+  }
+
+  a{
+    color: #a7a6a6;
+    display:block;
+    line-height: 28px;
+    font-weight: bold;
+  }
+
+  a:hover{
+    color: #316baf;
   }
 }

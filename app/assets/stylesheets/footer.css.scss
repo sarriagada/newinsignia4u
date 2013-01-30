@@ -3,155 +3,154 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 footer{
-	background: rgba(24, 52, 85, 0.9);
-	border-top:#3469af solid 4px;
-	color:#6390d4;
-	text-align:center;
-	font-weight:700;
+  background: rgba(24, 52, 85, 0.9);
+  border-top:#3469af solid 4px;
+  color:#6390d4;
+  text-align:center;
 }
 
 .footer-contact{
-	font-size:12px;
-	min-height: 112px;
-	line-height: 96px;
-	overflow: auto;
+  font-size:12px;
+  min-height: 112px;
+  line-height: 96px;
+  overflow: auto;
 
-	li{
-		font-size: 14px;
-		display: inline-block;
-		text-align: left;
-		width: auto;
-		margin-right: 25px;
+  li{
+    font-size: 14px;
+    display: inline-block;
+    text-align: left;
+    width: auto;
+    margin-right: 25px;
 
-		i {
-			font-size: 28px;
-			margin-right: 8px;
-			position: relative;
-			top: 8px;
-		}
+    i{
+      font-size: 28px;
+      margin-right: 8px;
+      position: relative;
+      top: 8px;
+    }
 
-		a{
-			color:#6390d4;
-			text-decoration:underline;
-		}
-	}
+    a{
+      color:#6390d4;
+      text-decoration:underline;
+    }
+  }
 
-	li.footer-contact-email{
-		margin-right: 0;
-	}
+  li.footer-contact-email{
+    margin-right: 0;
+  }
 
-	.icon-envelope-alt {
-		font-size: 20px;
-		top: 3px;
-	}
+  .icon-envelope-alt {
+    font-size: 20px;
+    top: 3px;
+  }
 }
 
 .footer-subscribe{
-	background: #19375a;
-	font-size:12px;
-	height: auto;
-	min-height: 193px;
-	margin: 0;
-	padding-top: 37px;
-	border-top: 1px solid #132742;
-	position: relative;
-	text-align: center;
+  background: #19375a;
+  font-size:12px;
+  height: auto;
+  min-height: 193px;
+  margin: 0;
+  padding-top: 37px;
+  border-top: 1px solid #132742;
+  position: relative;
+  text-align: center;
 
-	label {
-		font-size: 60px;
-		color: white;
-		font-weight: 700;
-		vertical-align: middle;
-		font-family: 'Amatic SC', cursive;
-		line-height: 68px;
-	}
+  label {
+    font-size: 60px;
+    color: white;
+    font-weight: 700;
+    vertical-align: middle;
+    font-family: $font-secondary;
+    line-height: 68px;
+  }
 
-	input {
-		@include border-radius(6px);
-		@include box-shadow( 2px 2px 16px -5px black );
-		line-height: normal;
-		height: 42px;
-		margin: 0 10px;
-		font-size:16px;
-	}
+  input {
+    @include border-radius(6px);
+    @include box-shadow( 2px 2px 16px -5px black );
+    line-height: normal;
+    height: 42px;
+    margin: 0 10px;
+    font-size:16px;
+  }
 
-	.email{
-		width: 430px;
-		padding: 8px 24px;
-		position: relative;
-		top: 4px;
-		left: 18px;
-	}
+  .email{
+    width: 430px;
+    padding: 8px 24px;
+    position: relative;
+    top: 4px;
+    left: 18px;
+  }
 
-	.btn-subscribe{
-		height: 47px;
-		font-size: 34px;
-		position:relative;
-		top: 12px;
-		left: 17px;
-	}
+  .btn-subscribe{
+    height: 47px;
+    font-size: 34px;
+    position:relative;
+    top: 12px;
+    left: 17px;
+  }
 
-	p{
-		margin: 0;
-		margin-top: 12px;
-		font-size: 14px;
-		position: absolute;
-		width: 100%;
-	}
+  p{
+    margin: 0;
+    margin-top: 12px;
+    font-size: 14px;
+    position: absolute;
+    width: 100%;
+  }
 }
 
 .social{
-	background:#000;
-	color:#747474;
-	height:75px;
-	font-family: 'Amatic SC', cursive;
-	float: left;
-	width:100%;
+  background:#000;
+  color:#747474;
+  height:75px;
+  font-family: $font-secondary;
+  float: left;
+  width:100%;
 
-	.container{
-		text-align:center;
-	}
+  .container{
+    text-align:center;
+  }
 }
 
 .social-list{
-	display:inline-block;
-	padding: 9px 0 0;
-	color:#747474;
-	font-size:44px;
+  display:inline-block;
+  padding: 9px 0 0;
+  color:#747474;
+  font-size:44px;
 }
 
 .social-link{
-	line-height: 44px;
+  line-height: 44px;
 }
 
 .icon-slideshare, .icon-github, .icon-twitter, .icon-facebook{
-	display:inline-block;
-	height: 40px;
-	margin: 0 6px;
-	position: relative;
-	top: -4px;
-	width: 40px;
-	color:#fff;
-	font-size:25px;
-	@include border-radius(20px);
+  @include border-radius(20px);
+  display:inline-block;
+  height: 40px;
+  margin: 0 6px;
+  position: relative;
+  top: -4px;
+  width: 40px;
+  color:#fff;
+  font-size:25px;
 }
 
 .icon-slideshare{
-	background:#00a7a9;
-	@include box-shadow(0 0 1px #00A7A9);
+  @include box-shadow(0 0 1px #00A7A9);
+  background:#00a7a9;
 }
 
 .icon-github{
-	background:#387ebe;
-	@include box-shadow(0 0 1px #387EBE);
+  @include box-shadow(0 0 1px #387EBE);
+  background:#387ebe;
 }
 
 .icon-twitter{
-	background:#2daae1;
-	@include box-shadow(0 0 1px #2DAAE1);
+  @include box-shadow(0 0 1px #2DAAE1);
+  background:#2daae1;
 }
 
 .icon-facebook{
-	background:#3b5998;
-	@include box-shadow(0 0 1px #3B5998);
+  @include box-shadow(0 0 1px #3B5998);
+  background:#3b5998;
 }

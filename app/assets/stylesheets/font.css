@@ -25,7 +25,7 @@ Instead of a list of all class selectors,
 you can use the generic selector below, but it's slower:
 [class*="icon-"]:before {
 */
-.icon-list:before, .icon-envelope-alt:before, .icon-top:before, .icon-titleright:before, .icon-titleleft:before, .icon-cursor:before, .icon-phone:before, .icon-map-marker:before, .icon-deploy:before, .icon-qa:before, .icon-slideshare:before, .icon-github:before, .icon-undo:before, .icon-twitter:before, .icon-linkedin:before, .icon-facebook:before, .icon-list-ol:before, .icon-eye-open:before, .icon-mobile:before, .icon-wrench:before, .icon-arrow-right:before, .icon-diamond:before, .icon-site-map:before, .icon-users:before, .icon-tech:before, .icon-calendar:before {
+.icon-smiley:before, .icon-search:before, .icon-rss:before, .icon-list:before, .icon-envelope-alt:before, .icon-top:before, .icon-titleright:before, .icon-titleleft:before, .icon-cursor:before, .icon-phone:before, .icon-map-marker:before, .icon-deploy:before, .icon-qa:before, .icon-slideshare:before, .icon-github:before, .icon-undo:before, .icon-twitter:before, .icon-linkedin:before, .icon-facebook:before, .icon-list-ol:before, .icon-eye-open:before, .icon-mobile:before, .icon-wrench:before, .icon-arrow-right:before, .icon-diamond:before, .icon-site-map:before, .icon-users:before, .icon-tech:before, .icon-calendar:before, .icon-comment:before {
 	font-family: 'icomoon';
 	speak: none;
 	font-style: normal;
@@ -33,81 +33,93 @@ you can use the generic selector below, but it's slower:
 	line-height: 1;
 	-webkit-font-smoothing: antialiased;
 }
-.icon-list:before {
+.icon-smiley:before {
+	content: "\e000";
+}
+.icon-search:before {
 	content: "\e001";
 }
-.icon-envelope-alt:before {
-	content: "\e002";
+.icon-rss:before {
+	content: "\f09e";
 }
-.icon-top:before {
+.icon-list:before {
 	content: "\e003";
 }
-.icon-titleright:before {
+.icon-envelope-alt:before {
+	content: "\f0e0";
+}
+.icon-top:before {
 	content: "\e004";
 }
-.icon-titleleft:before {
+.icon-titleright:before {
 	content: "\e005";
 }
-.icon-cursor:before {
+.icon-titleleft:before {
 	content: "\e006";
 }
-.icon-phone:before {
+.icon-cursor:before {
 	content: "\e007";
 }
+.icon-phone:before {
+	content: "\f095";
+}
 .icon-map-marker:before {
-	content: "\e008";
+	content: "\f041";
 }
 .icon-deploy:before {
-	content: "\e009";
+	content: "\e008";
 }
 .icon-qa:before {
-	content: "\e00a";
+	content: "\e009";
 }
 .icon-slideshare:before {
-	content: "\e00b";
+	content: "\e00a";
 }
 .icon-github:before {
-	content: "\e00c";
+	content: "\e00b";
 }
 .icon-undo:before {
-	content: "\e00d";
+	content: "\f0e2";
 }
 .icon-twitter:before {
-	content: "\e00e";
+	content: "\f099";
 }
 .icon-linkedin:before {
-	content: "\e00f";
+	content: "\f0e1";
 }
 .icon-facebook:before {
-	content: "\e010";
+	content: "\f09a";
 }
 .icon-list-ol:before {
-	content: "\e011";
+	content: "\f0cb";
 }
 .icon-eye-open:before {
-	content: "\e012";
+	content: "\f06e";
 }
 .icon-mobile:before {
-	content: "\e013";
+	content: "\f10b";
 }
 .icon-wrench:before {
-	content: "\e014";
+	content: "\f0ad";
 }
 .icon-arrow-right:before {
-	content: "\e015";
+	content: "\f061";
 }
 .icon-diamond:before {
-	content: "\e016";
+	content: "\e00c";
 }
 .icon-site-map:before {
-	content: "\e017";
+	content: "\e00d";
 }
 .icon-users:before {
-	content: "\e018";
+	content: "\e00e";
 }
 .icon-tech:before {
-	content: "\e019";
+	content: "\e00f";
 }
 .icon-calendar:before {
-	content: "\e01a";
+	content: "\e010";
+}
+.icon-comment:before {
+	content: "\e002";
 }
