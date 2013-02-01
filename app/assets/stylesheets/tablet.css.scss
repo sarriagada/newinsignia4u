@@ -1,4 +1,3 @@
-/* iPads (portrait) and galaxy s3----------- */
 @media (min-width: 768px) and (max-width: 939px){
   header nav ul {
     padding-left: 0px;
@@ -339,6 +338,34 @@
         width: 248px;
         margin-left: 1%;
       }
+    }
+  }
+
+  .blog{
+    aside{
+      float:none;
+      width: 724px;
+      margin: 0 auto;
+
+      .icon-search, .search, .subscribe-link, .box.categories{
+        display: none;
+      }
+
+      .box{
+        float: left;
+        width: 350px;
+        margin: 0 0 50px;
+      }
+
+      .rails-tip{
+        float: right;
+      }
+    }
+
+    .column{
+      float:none;
+      width:724px;
+      margin: 0 auto;
     }
   }
 }

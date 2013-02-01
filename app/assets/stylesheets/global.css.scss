@@ -229,7 +229,11 @@ a.more{
   text-decoration:none;
 }
 
-.column-left{
+aside{
+  float:right;
+}
+
+.column{
   float: left;
   width: 637px;
   padding-bottom: 50px;
