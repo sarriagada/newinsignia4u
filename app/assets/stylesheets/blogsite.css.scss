@@ -2,6 +2,10 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+.nav-blog{
+  display: none;
+}
+
 .blog{
   .container-title{
     margin-bottom: -20px;
@@ -96,7 +100,6 @@
   h3{
     color: #316baf;
     font-size: 26px;
-    font-weight: 300;
     margin: 34px 0 17px;
 
     a{

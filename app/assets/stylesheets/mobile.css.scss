@@ -1,6 +1,9 @@
-// general mobile style
 @media (max-width: 767px){
-  //header
+
+
+/* ----------------------------
+:: header
+---------------------------- */
   header{
     a.lang {
       float: none;
@@ -57,7 +60,10 @@
     color: #f10993;
   }
 
-  //home
+
+/* ----------------------------
+:: HOME
+---------------------------- */
   .introduction h2 {
     font-size: 1.5em;
     line-height: 1.3em;

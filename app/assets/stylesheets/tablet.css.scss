@@ -1,4 +1,8 @@
 @media (min-width: 768px) and (max-width: 939px){
+
+/* ----------------------------
+:: header
+---------------------------- */
   header nav ul {
     padding-left: 0px;
   }
@@ -7,10 +11,10 @@
     right: 5%;
   }
 
-  .ribbon-border .ribbon {
-    padding: 10px 100px;
-  }
 
+/* ----------------------------
+:: GLOBAL
+---------------------------- */
   .container-title {
     border-top: 2px dashed rgb(184, 184, 184)!important;
 
@@ -23,6 +27,14 @@
     }
   }
 
+  section {
+    margin-bottom: 10%;
+  }
+
+
+/* ----------------------------
+:: HOME
+---------------------------- */
   .introduction{
     h2{
       font-size: 42px;
@@ -101,6 +113,14 @@
     top: 3em;
   }
 
+  .ribbon-border .ribbon {
+    padding: 10px 100px;
+  }
+
+
+/* ----------------------------
+:: FOOTER
+---------------------------- */
   footer{
     background: #19375A;
     overflow: hidden;
@@ -180,8 +200,12 @@
       margin: 20px auto;
     }
   }
+//end footer
 
-  //services
+
+/* ----------------------------
+:: SERVICES
+---------------------------- */
   .content .services {
     .container-title { 
       margin-top: 2em!important;
@@ -218,10 +242,6 @@
       margin: 7%;
       margin-top: 0;
     }
-  }
-
-  section {
-    margin-bottom: 10%;
   }
 
   .process{
@@ -275,9 +295,12 @@
   .our-offering p {
     padding-top: 7%;
   }
-  //end service
+//end service
 
-  //projects
+
+/* ----------------------------
+:: PROJECT
+---------------------------- */
   #projects-page.carousel .carousel-inner {
     width: 100%;
     height: auto;
@@ -341,6 +364,10 @@
     }
   }
 
+
+/* ----------------------------
+:: BLOG
+---------------------------- */
   .blog{
     aside{
       float:none;
@@ -353,8 +380,17 @@
 
       .box{
         float: left;
-        width: 350px;
+        width: 345px;
         margin: 0 0 50px;
+        padding: 20px 40px;
+        
+        h2{
+          text-align: left;
+        }
+      }
+
+      .circle{
+        text-align: center;
       }
 
       .rails-tip{
@@ -368,4 +404,39 @@
       margin: 0 auto;
     }
   }
+
+  .nav-blog{
+    background: #316baf;
+    display: block;
+    border-top: #fff solid 1px;
+    border-bottom: #373435 solid 1px;
+
+    ul{
+      li{
+        display: inline-block;
+        padding: 0 57px;
+      }
+    }
+
+    a{
+      color: #fff;
+      display:inline-block;
+      line-height: 55px;
+    }
+
+    .icon-rss{
+      position: relative;
+      top: 5px;
+      margin-left: 15px;
+      font-size: 24px;
+    }
+
+    .icon-search{
+      font-size: 20px;
+      position: relative;
+      margin-left: 17px;
+      top: 4px;
+    }
+  }
+
 }
