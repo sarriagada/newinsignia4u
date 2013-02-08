@@ -1,4 +1,4 @@
-@media (min-width: 768px) and (max-width: 939px){
+@media (max-width: 939px){
 
 /* ----------------------------
 :: header
@@ -16,7 +16,7 @@
 :: GLOBAL
 ---------------------------- */
   .container-title {
-    border-top: 2px dashed rgb(184, 184, 184)!important;
+    display:block;
 
     h2 {
       position: relative;
@@ -31,6 +31,14 @@
     margin-bottom: 10%;
   }
 
+  ul.box-dashed.four{
+    li{
+      margin-left: 3.4%;
+      margin-bottom: 2%;
+      width: 45%;
+    }
+  }
+
 
 /* ----------------------------
 :: HOME
@@ -38,13 +46,13 @@
   .introduction{
     h2{
       font-size: 42px;
-      margin:50 0;
+      margin:50px 0;
     }
 
-    #IntroCarousel{
+    #intro{
       .carousel.slide, .carousel-inner > .item > img, .carousel-inner{
-        float: none!important;
-        position: static!important;
+        float: none;
+        position: static;
         margin: auto;
       }
 
@@ -55,48 +63,43 @@
       img{
         display: inline-block;
       }
-    }
 
-    p{
-      float: none!important;
-      position: static!important;
-      margin: auto;
-      width: 80%;
-      min-height: 0;
-    }
-  }
-
-  .technologies ul , .tools ul {
-    margin-left: 0!important;
-
-    li{
-      margin-left: 3.5%!important;
-      margin-bottom: 3.5%;
-      width: 44%!important;
-
-      h3{
-        width: 100%!important;
+      p{
+        text-align: center;
+        float: none;
+        position: static;
         margin: auto;
-        display: block!important;
+        width: 80%;
+        min-height: 0;
       }
     }
   }
 
+  .technologies ul , .tools ul {
+    margin-left: 0;
+
+    h3{
+      width: 100%;
+      margin: auto;
+      display: block;
+    }
+  }
+
   .news-item {
-    width: 87%!important;
-    height: auto!important;
-    margin-bottom: 4%!important;
-    margin-left: 8%!important;
-    margin-right: 0px!important;
-    padding-right: 4%!important;
+    width: 87%;
+    height: auto;
+    margin-bottom: 4%;
+    margin-left: 8%;
+    margin-right: 0px;
+    padding-right: 4%;
 
     .more{
       font-size: 2.2em;
-      left: 1px!important;
-      right: 1px!important;
+      left: 1px;
+      right: 1px;
       margin: auto;
       display: inline-block;
-      width: 140px!important;
+      width: 140px;
       text-align: center;
     }
   }
@@ -105,7 +108,7 @@
     display: inline-block;
     float: none;
     margin: 0px 0px 20px 20px;
-    width: 44%!important;
+    width: 44%;
   }
 
   .certify {
@@ -208,20 +211,20 @@
 ---------------------------- */
   .content .services {
     .container-title { 
-      margin-top: 2em!important;
-      border-top: none!important;
+      margin-top: 2em;
+      border-top: none;
     }
 
     ul.box-dashed.two {
-      margin: auto!important;
+      margin: auto;
 
       li { 
-        margin: auto!important;
-        margin: 5% auto!important;
-        width: 90%!important;
-        height: auto!important;
-        float: none!important;
-        display: block!important;
+        margin: auto;
+        margin: 5% auto;
+        width: 90%;
+        height: auto;
+        float: none;
+        display: block;
       }
     }
   }
@@ -232,9 +235,9 @@
     }
 
     h3{
-      margin: 0!important;
-      margin-left: 3%!important;
-      margin-top: 7%!important;
+      margin: 0;
+      margin-left: 3%;
+      margin-top: 7%;
       width: auto;
     }
 
@@ -265,8 +268,8 @@
 
         i{
           margin: auto;
-          height: auto!important;
-          width: auto!important;
+          height: auto;
+          width: auto;
           font-size: 2.2em;
         }
 
@@ -316,33 +319,33 @@
     }
 
     .carousel-caption {
-      width: 80%!important;
-      position: relative!important;
-      top: 0!important;
-      left: 0!important;
-      margin: 10% auto auto!important;
-      background: white!important;
-      border: black solid 1px!important;
-      padding: 3%!important;
+      width: 80%;
+      position: relative;
+      top: 0;
+      left: 0;
+      margin: 10% auto auto;
+      background: white;
+      border: black solid 1px;
+      padding: 3%;
     }
 
     .more {
-      left: 0!important;
-      bottom: -4%!important;
+      left: 0;
+      bottom: -4%;
       right: 0;
       margin: auto;
     }
 
     .carousel-control {
-      bottom: 12%!important;
-      top: auto!important;
+      bottom: 12%;
+      top: auto;
 
       .left {
-        left: 20%!important;
+        left: 20%;
       }
 
       .right {
-        right: 20%!important;
+        right: 20%;
       }
     }
   }
@@ -354,8 +357,8 @@
   .more-info{
     ul.box-dashed.three {
       margin: auto;
-      margin-left: 0!important;
-      padding-left: 0!important;
+      margin-left: 0;
+      padding-left: 0;
 
       li {
         width: 248px;
@@ -409,12 +412,13 @@
     background: #316baf;
     display: block;
     border-top: #fff solid 1px;
-    border-bottom: #373435 solid 1px;
+    border-bottom: #fff solid 1px;
 
     ul{
       li{
         display: inline-block;
-        padding: 0 57px;
+        padding: 0 52px;
+        position: relative
       }
     }
 
@@ -422,6 +426,13 @@
       color: #fff;
       display:inline-block;
       line-height: 51px;
+      padding: 0 5px;
+      outline: 0;
+    }
+
+    .btn-search{
+      position: relative;
+      left: 22px;
     }
 
     .icon-rss{
@@ -441,20 +452,59 @@
     .nav-categories{
       font-size: 20px;
       font-weight: normal;
+      position: relative;
     }
 
     .icon-chevron-down{
       font-size: 14px;
       margin: 0 0 0 11px;
     }
+
+    .arrow{
+      background: url(asset-path("arrow-blue-top.png", image)) no-repeat 0 0;
+      width: 24px;
+      height:13px;
+      position: absolute;
+      display: none;
+      bottom: -1px;
+      left: 103px;
+    }
+
+    form{
+      display: none;
+      position: absolute;
+      top: 6px;
+      right: 0;
+
+      .icon-search{
+        color: #F20892;
+        position: absolute;
+        right: 13px;
+        font-size: 22px;
+        top: 7px;
+      }
+
+      .search{
+        @include border-radius(5px);
+        border: #a59c9f solid 1px;
+        height: 21px;
+        line-height: 21px;
+        padding: 10px 35px 10px 18px;
+        font-size: 16px;
+        width: 186px;
+      }
+    }
   }
 
   .nav-blog-categories{
     background: #295991;
+    position: relative;
+    margin-bottom: 140px;
+    overflow: visible ;
 
     ul{
       overflow: hidden;
-      padding:12px 0 15px 5%;
+      padding:17px 0 20px 5%;
 
       li{
         float: left;
@@ -472,6 +522,28 @@
 
       a:hover{
 
+      }
+    }
+
+    a.close{
+      @include border-radius(0 0 5px 5px);
+      color: #fff;
+      background: #295991;
+      position: absolute;
+      display: block;
+      height: 30px;
+      padding: 0 16px 0 18px;
+      border: #fff solid 1px;
+      border-top: none;
+      text-decoration: none;
+      left: 43%;
+
+      span{
+        font-family: arial;
+        font-size: 22px;
+        line-height: 23px;
+        margin: 0 0 0 15px;
+        position: relative;
       }
     }
   }

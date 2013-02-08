@@ -49,47 +49,44 @@ nav{
   position: relative;
 
   ul{
-
     display: block;
 
     li{
       margin: auto;
       display: inline-block;
       line-height: 1.5em;
-      font-size: 1em;
       padding: 0 6px;
-
-      a{
-        font-size: 1em!important;
-        line-height: 3.4em;
-        vertical-align: middle;
-        color:#fff;
-        display:inline-block;
-        height:55px;
-        text-transform:uppercase;
-        padding: 0 16px;
-        font-weight:bold;
-      }
-
-      a:hover:before, a.active:before{
-        vertical-align: middle;
-        content: url("/assets/arrow-left.png");
-        display: inline-block;
-        width: 22px;
-        position: absolute;
-        top: 9%;
-        left:0;
-      }
-
-      a:hover:after, a.active:after{
-        vertical-align: middle;
-        content: url("/assets/arrow-right.png");
-        display: inline-block;
-        width: 22px;
-        position: absolute;
-        top: 9%;
-      }
     }
+  }
+
+  a{
+    line-height: 3.4em;
+    vertical-align: middle;
+    color:#fff;
+    display:inline-block;
+    height:55px;
+    text-transform:uppercase;
+    padding: 0 16px;
+    font-weight:bold;
+  }
+
+  a:hover:before, a.active:before{
+    vertical-align: middle;
+    content: url("/assets/arrow-left.png");
+    display: inline-block;
+    width: 22px;
+    position: absolute;
+    top: 9%;
+    left:0;
+  }
+
+  a:hover:after, a.active:after{
+    vertical-align: middle;
+    content: url("/assets/arrow-right.png");
+    display: inline-block;
+    width: 22px;
+    position: absolute;
+    top: 9%;
   }
 
   span, i{
@@ -126,7 +123,6 @@ nav{
       li{
         display: block;
         text-align: center;
-        font-size: 1.5em;
 
         a{
           width: auto;
@@ -143,7 +139,7 @@ nav{
 
   nav{
     a{
-      font-size: 0.8em!important;
+      font-size: 1.3em;
       line-height: 55px;
       vertical-align: middle;
     }
@@ -165,7 +161,7 @@ nav{
     i{
       top: 0.4em;
       color: #f10993;
-      font-size: 1.5em!important;
+      font-size: 1.5em;
     }
 
     span{

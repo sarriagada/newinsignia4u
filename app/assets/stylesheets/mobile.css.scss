@@ -1,16 +1,83 @@
 @media (max-width: 767px){
 
+  section{
+    margin-bottom: 50px;
+  }
+
+  .container-title{
+    width: 90%;
+    margin: auto;
+
+    h2{
+      margin: 45px 0 8px;
+      min-height: 58px;
+      position: static;
+
+    }
+
+    h2::before{
+      position: absolute;
+      left: 0px;
+    }
+
+    h2::after{
+      position: absolute;
+      right: 0px;
+    }
+  }
+
+  .carousel-inner{
+    margin: auto;
+    width: 90%;
+  }
+
+  .carousel .more{
+    left: 1px;
+    right: 1px;
+    font-size: 35px;
+    margin:auto;
+    text-align: center;
+  }
+
+  ul.box-dashed{
+    margin: auto
+  }
+
+  .circle{
+    border: 0.3em solid #A60563;
+  }
+
+  .carousel{
+    .carousel-control{
+      i{
+        font-size: 26px;
+        left: -2px;
+        top: -6px;
+      }
+    }
+  }
 
 /* ----------------------------
 :: header
 ---------------------------- */
   header{
+    border-bottom: #5f5d5e solid 2px;
+    padding-bottom: 19px;
+
+    .container{
+      height: auto;
+    }
+
+    h1{
+      margin: 65px auto 0;
+    }
+
     a.lang {
       float: none;
       right: 1%;
       left: 1%;
       margin: auto;
-      top:0.5em!important;
+      top:0.5em;
       position: static;
     }
 
@@ -19,29 +86,55 @@
     }
   }
 
-  nav {
+  nav{
     position: relative;
     -webkit-transition:all 0.4s ease;
-  }
+    background: none;
+    
+    #menu-btn{
+      color: #F20892;
+    }
 
-  nav ul{
-    clear:both;
-    display: none;
-    margin: auto;
-  }
+    ul{
+      clear:both;
+      display: none;
+      margin: auto;
+      padding: 25px 0;
+      background: #383435;
+      position:relative;
+      z-index: 9999;
 
-  nav ul li{
-    display: block;
-    text-align: center;
+      li{
+        display: block;
+        text-align: center;
+      }
+    }
+
+    a{
+      height: 45px;
+      line-height: 45px;
+    }
+
+    a:hover:before, a.active:before{
+      content: url("/assets/arrow-left.png");
+      top: 8%;
+      left:-20px;
+    }
+
+    a:hover:after, a.active:after{
+      content: url("/assets/arrow-right.png");
+      top: 8%;
+      right:-20px;
+    }
   }
 
   nav span, nav i {
     position: absolute;
-    right: 0.8em;
+    right: 13px;
     display: inline-block;
     border: 1px solid #383435;
     padding: 0 4px;
-    font-size: 1.5em;
+    font-size: 1.3em;
     border-radius: 0.2em;
     background:none;
     color: #383435;
@@ -56,90 +149,66 @@
     display: none;
     border-radius: 0 0 0.2em 0.2em;
     background: #383435;
-    padding: 1% 2%;
+    padding: 0px 9px 3px;
     color: #f10993;
+    font-family: arial;
+    bottom: -27px;
   }
-
 
 /* ----------------------------
 :: HOME
 ---------------------------- */
-  .introduction h2 {
-    font-size: 1.5em;
-    line-height: 1.3em;
-    margin: 7% 0px;
+  .introduction{
+    h2{
+      font-size: 2.3em;
+      line-height: 39px;
+      margin: 39px 0px;
+      padding: 0 11%;
+    }
+
+    p{
+      float: none;
+      font-size: 1.1em;
+      line-height: 1.6em;
+      margin: auto;
+      min-height: 0px;
+      position: static;
+      width: 73%;
+      text-align: center;
+    }
   }
 
-  .introduction p {
-    float: none !important;
-    font-size: 1em;
-    line-height: 1.4em;
+  #intro{
+    .carousel-inner{
+      padding-bottom: 40px;
+    }
+  }
+
+  .projects{
+    .container-title{
+      h2{
+        font-size: 44px;
+      }
+    }
+  }
+
+  #cases.carousel{
     margin: auto;
-    min-height: 0px;
-    position: static !important;
-    width: 80%;
+
+    .carousel-caption{
+      padding:25px 15px 30px;
+      min-height: 230px;
+      position: static;
+    }
   }
 
-  .container-title {
-    width: 90%;
-    margin: auto;
-  }
-
-  .container-title h2 {
-    margin: auto;
-    padding: 0;
-    min-height: 100px;
-    top: 29px;
-    width: 100%;
-    font-size: 2em!important;
-    line-height: 1em;
-  }
-
-  .container-title h2::before { 
-    position: absolute;
-    left: 0px;
-  }
-
-  .container-title h2::after { 
-    position: absolute;
-    bottom: 63%;
-    right: 0px;
-  }
-
-  .carousel-inner { 
-    margin: auto;
-    width: 90%;
-  }
-
-  #cases.carousel {
-    margin: auto!important;
-  }
-
-  .carousel-caption{
-    height: auto;
-    min-height: 200px;
-    padding: 0px 0px 7%!important;
-  }
-
-  .carousel .more {
-    left: 1px!important;
-    right: 1px!important;
-    font-size: 2em !important;
-    margin:auto;
-    text-align: center;
-  }
-
-  ul.box-dashed {
-    margin: auto!important
-  }
-
-  .technologies ul li, .tools ul li {
-    float: none!important;
+  .technologies ul li, .tools ul li{
+    float: none;
     background: none;
     border: none;
-    margin: auto!important;
-    height: auto!important;
-    width: 100%!important;
+    margin: auto;
+    height: auto;
+    width: 100%;
     display: block;
 
     h3{
@@ -150,26 +219,29 @@
     }
   }
 
-  .circle {
-    border: 0.3em solid #A60563;
-  }
-
   .news{
+
+    .container-title{
+      h2{
+        margin-bottom: 15px;
+      }
+    }
+
     ul{
-      margin: auto!important
+      margin: auto
     }
 
     .news-item {
-      margin: auto!important;
-      margin-bottom: 15%!important;
-      padding: 7%!important;
-      width: 85%!important;
-      float: none!important;
+      margin: auto;
+      margin-bottom: 15%;
+      padding: 7%;
+      width: 85%;
+      float: none;
 
-      .more { 
+      .more {
         font-size: 2.2em;
-        left: 1px!important;
-        right: 1px!important;
+        left: 1px;
+        right: 1px;
         margin: auto;
         display: inline-block;
         width: 130px;
@@ -178,24 +250,29 @@
     }
   }
 
-  .ribbon .ribbon-right, .ribbon .ribbon-left {
+  .certify{
+    margin-left: 23px;
+    margin-right: 23px;
+  }
+
+  .ribbon .ribbon-right, .ribbon .ribbon-left{
     display: none;
   }
 
   //services
-  .content .services {
-    .container-title { 
+  .services{
+    .container-title{
       border-top: none;
-      margin-top: 0px!important;
+      margin-top: 0px;
     }
 
-    ul.box-dashed {
-      margin: auto!important;
+    ul.box-dashed{
+      margin: auto;
 
-      li { 
-        margin: 10% auto!important;
-        width: 80%!important;
-        height: auto!important;
+      li {
+        margin: 10% auto;
+        width: 80%;
+        height: auto;
         float: none;
         display: block;
       }
@@ -207,11 +284,11 @@
 
     h3, p{
       display: block;
-      margin: auto!important;
+      margin: auto;
     }
 
     h3{
-      margin-bottom: 5%!important;
+      margin-bottom: 5%;
       text-align: center;
     }
   }
@@ -239,8 +316,8 @@
 
         i{
           margin: auto;
-          height: auto!important;
-          width: auto!important;
+          height: auto;
+          width: auto;
           font-size: 1.6em;
         }
 
@@ -253,7 +330,7 @@
         }
 
         span {
-          font-size: 1.2em!important;
+          font-size: 1.2em;
           font-weight: 700;
         }
       }
@@ -263,8 +340,8 @@
   .howdowedoit, .our-offering {
     border: none;
     float: none;
-    margin: auto!important;
-    width: 90%!important;
+    margin: auto;
+    width: 90%;
   }
 
   .howdowedoit{
@@ -282,23 +359,23 @@
   //////////
   .projects-page .container-title {
     margin-top: 0px;
-    border-top: 0!important;
+    border-top: 0;
 
     h2{
       font-size: 2em;
     }
   }
 
-  .more-projects .container-title h2 {
+  .more-projects .container-title h2{
     font-size: 2em;
   }
 
   #projects-page.carousel{
     .carousel-inner {
       position: static;
-      border-bottom: 0!important;
-      background-size: 100%!important;
-      width: 100%!important;
+      border-bottom: 0;
+      background-size: 100%;
+      width: 100%;
       min-height: 307px;
       height: auto;
 
@@ -315,7 +392,7 @@
           margin: auto;
           margin-top: 8%;
           margin-bottom: 17%;
-          width: 64%!important;
+          width: 64%;
         }
 
         .carousel-caption {
@@ -363,11 +440,11 @@
     width: 100%;
 
     li {
-      display: block!important;
-      float: none!important;
+      display: block;
+      float: none;
       margin: auto;
-      margin-bottom: 15%!important;
-      width: 85%!important;
+      margin-bottom: 15%;
+      width: 85%;
 
       .project-info p { 
         font-size: 0.9em;
@@ -376,55 +453,73 @@
     }
   }
 
-  .projects-page .container-title h2 , .more-projects .container-title h2 {
+  .projects-page .container-title h2 , .more-projects .container-title h2{
     height: auto;
   }
 
-  .more-projects ul li .project-info {  height: auto !important;  }
+  .more-projects ul li .project-info{
+    height: auto;
+  }
+
   //project show
   .project-page{
-    .container-title {  border-top: 0!important;  }
+    .container-title{
+      border-top: 0;
+    }
+
     .carousel{
-      .carousel-inner {
+      .carousel-inner{
         position: relative;
         border-bottom: 0;
-        background-size: 100%!important;
-        width: 100%!important;
+        background-size: 100%;
+        width: 100%;
         min-height: 100px;
         height: auto;
-        z-index: 999!important;
-        .item .macbook {
-          height: auto!important;
+        z-index: 999;
+
+        .item .macbook{
+          height: auto;
           display: block;
           margin: auto;
-          margin-top: 8%!important;
-          margin-bottom: 17%!important;
-          width: 64%!important;
+          margin-top: 8%;
+          margin-bottom: 17%;
+          width: 64%;
         }
       }
-      .carousel-control {
-        top: 47% !important;
-        z-index: 0!important;
+
+      .carousel-control{
+        top: 47%;
+        z-index: 0;
       }
-      .right {  right: 4%!important;  }
-      .left {  left: 4%!important;  }
+
+      .right{
+        right: 4%;
+      }
+
+      .left{
+        left: 4%;
+      }
     }
-    .carousel-caption {
+
+    .carousel-caption{
       margin: auto;
       width: 90%;
-      h4 {
+
+      h4{
         font-size: 1.3em;
         margin: 0px;
         padding: 5% 2% 0%;
       }
-      p {
+
+      p{
         font-size: 0.9em;
         font-weight: 700;
         line-height: 1.5em;
         margin: 2% 2% 7%;
       }
     }
-    .more {
+
+    .more{
       position: relative;
       margin: auto;
       left: 1px;
@@ -432,15 +527,18 @@
       top: -0.7em;
     }
   }
+
   .more-info{
     ul.box-dashed.three{
       width: 100%;
+
       li{
         width: 100%;
         border: none;
         background: none;
         float: none;
         margin: auto;
+
         h3, p{
           display: block;
           font-size: 1.1em;
@@ -448,14 +546,16 @@
           text-align: center;
           vertical-align: middle;
           width: auto;
+
           a{
-            color: #316BAF!important;
+            color: #316BAF;
             text-decoration: none;
           }
         }
       }
     }
   }
+
   //////////
   //footer
   /////////
@@ -464,9 +564,11 @@
       float: none;
       width: 100%;
     }
+
     .footer-subscribe {
       padding-bottom: 20px;
       padding-left: 0px;
+
       .email {
         width: 70%;
         padding: 5px 10px;
@@ -478,18 +580,19 @@
         font-size: 1.2em;
         display: block;
       }
+
       .btn-subscribe {
         position: static;
         margin-top: 12px;
       }
-      p { 
+
+      p {
         font-size: 1.2em;
         left: auto;
-        margin: auto;
-        position: relative;
-        top: 1em !important;
         width: 100%;
+        margin: 0 auto 15px;
       }
+
       label {
         border: 1px dashed;
         padding: 0px 30px;
@@ -497,14 +600,17 @@
         margin-bottom: 25px;
       }
     }
+
     .social .container ul{
       margin-top: 0.8em;
       display: block;
+
       li {
-        font-size: 0px!important;
-        color: black;
+        font-size: 0px;
+        color: #000;
       }
     }
+
     ul.footer-contact:before {
       content:"Contact Us";
       font-size: 4.5em;
@@ -520,6 +626,7 @@
       display: inline-block;
       width: auto;
     }
+
     ul.footer-contact {
       text-align: center;
       width: auto;
@@ -528,7 +635,8 @@
       line-height: 40px;
       padding-top: 31px;
     }
-    ul.footer-contact li {
+
+    ul.footer-contact li{
       width: 70%;
       display: inline-block;
       line-height: 1.4em;
@@ -536,72 +644,17 @@
       margin: auto;
       float: none;
     }
-    ul.footer-contact li i {
+
+    ul.footer-contact li i{
       display: block;
       line-height: 1.4em;
-      margin: 5px auto!important;
+      margin: 5px auto;
     }
   }
-}
 
-// galaxy s3
-/*
-@media (-webkit-device-pixel-ratio: 2){
-  .introduction h2{  font-size: 2em;  }
-  .container-title {
-    h2 {
-      top:0;
-      margin-top: 1em;
-      font-size: 3em;
-    }
-  }
-  ul.box-dashed.four li {
-    background: none;
-    border: 0px;
-    display: block;
-    float: none !important;
-    margin: auto;
-    width: 100%;
-    height: 130px;
-  }
-  .technologies ul li, .tools ul li {
-    background: transparent;
+  footer form{
     float: none;
-    height: auto!important;
-    width: 100%!important;
-    margin: auto!important;
-    border: none;
-    h3{
-      height: auto;
-      width: 80%;
-      display: block;
-      margin: auto;
-    }
+    width: auto;
   }
-  .news ul {
-    margin: auto;
-    margin-top: 1em;
-  }
-  .news .news-item {
-    float: none;
-    margin: auto auto 15%!important;
-    padding: 5%;
-    width: 80%!important;
-    height: auto!important;
-  }
-  .news .news-item .more {
-    font-size: 2.2em;
-    left: 1px!important;
-    right: 1px!important;
-    margin: auto;
-    display: inline-block;
-    width: 130px;
-    text-align: center;
-  }
-  .ribbon .ribbon-right, .ribbon .ribbon-left {  display: none;  }
-  // projects
-  .projects-page .container-title, .more-projects .container-title{  border-top:0!important;  }
-  .more-projects ul li {  width: 80%!important;  }
-  .more-projects ul li img {  width: 100%;  }
+
 }
-*/

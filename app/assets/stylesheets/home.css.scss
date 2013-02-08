@@ -45,19 +45,20 @@
 
   ul{
     margin-top: 7px;
+  }
 
-    li{
-      height:184px;
-      text-align:center;
-      h3{
-        display:table-cell;
-        font-size:14px;
-        height:50px;
-        line-height:21px;
-        padding:0 22px;
-        vertical-align:middle;
-        width:216px;
-      }
+  li{
+    height:184px;
+    text-align:center;
+
+    h3{
+      display:table-cell;
+      font-size:14px;
+      height:50px;
+      line-height:21px;
+      padding:0 22px;
+      vertical-align:middle;
+      width:216px;
     }
   }
 }
@@ -142,11 +143,11 @@
 
     .more {
       @include border-radius(5px);
-      @include box-shadow( 2px 2px 16px -5px black );
+      @include box-shadow(2px 2px 16px -5px #000);
       background: #E50892;
       border: 2px solid #A60563;
       bottom: -21px;
-      color: white;
+      color: #fff;
       font-family: $font-secondary;
       font-weight: bold;
       font-size: 34px;
@@ -163,7 +164,7 @@
 
 .certify{
   border:#19375a solid 1px;
-  margin: 2em 45px 133px;
+  margin: 2em 47px 133px;
   clear:both;
 
   .ribbon {
@@ -209,7 +210,7 @@
 /* ----------------------------
 :: SLIDER
 ---------------------------- */
-#IntroCarousel.carousel{
+#intro.carousel{
   .carousel-inner {
     .item {
       img {
@@ -228,28 +229,27 @@
 
 #cases.carousel{
   margin:0 7% 39px;
-  min-height: 419px;
 
   .carousel-inner {
     .item {
       border:#c2b7bb solid 1px;
-
-      .carousel-caption {
-        position: absolute;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        padding: 15px 15px 30px;
-        background: rgba(255, 255, 255, 0.9);
-        border:#000 solid 1px;
-        text-align: left;
-        min-height:auto;
-      }
-
-      img{
-        width:100%;
-      }
     }
+  }
+
+  .carousel-caption {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 15px 15px 30px;
+    background: rgba(255, 255, 255, 0.9);
+    border:#000 solid 1px;
+    text-align: left;
+    min-height:auto;
+  }
+
+  img{
+    width:100%;
   }
 }
 //end slider

@@ -27,6 +27,7 @@ body{
   font-family: $font-primary;
   background: url(asset-path("background-pattern.gif", image)) repeat 0 0;
   font-weight:bold;
+  font-size: 100%;
 }
 
 .content{
@@ -380,7 +381,7 @@ aside{
   }
 
   ul.bullets-blue{
-    padding:0 40px 0 30px;
+    padding:0 40px 0 18px;
 
     li{
       line-height:23px;

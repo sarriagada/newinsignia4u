@@ -7,14 +7,20 @@
           i.icon-rss
 
       li
-        a.nav-categories href="#"
+        a.nav-categories href="javascript:void(0)"
           | CATEGORIES
           i.icon-chevron-down
 
+        .arrow
+
       li
-        a.btn-search href=""
+        a.btn-search href="javascript:void(0)"
           | SEARCH
           i.icon-search
+
+        form
+          i.icon-search
+          input.search type="search" placeholder="Search..."
 
 section.blog
   .nav-blog-categories
@@ -102,12 +108,18 @@ section.blog
 
       li
         a href="" Web
+
+    a.close href="javascript:void(0)"
+      | CERRAR
+      span x
+
   .container-title
     h2 Our Blog
 
   aside
     i.icon-search
-    input.search type="search" placeholder="Search..."
+    form
+      input.search type="search" placeholder="Search..."
 
     a.subscribe-link href=""
       | Subscribe to our RSS
@@ -119,6 +131,7 @@ section.blog
           i.icon-smiley
 
         | tip del día
+
       p
         a href="" Viewport Resizer
         |  es una herramienta muy útil durante el desarrollo de sitios web usando Responsive Web Design, para cambiar el tamaño del viewport rápidamente desde el mismo browser.
