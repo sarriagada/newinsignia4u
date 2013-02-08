@@ -16,7 +16,8 @@
 :: GLOBAL
 ---------------------------- */
   .container-title {
-    display:block;
+    margin: 90px 3% 0;
+    width: auto;
 
     h2 {
       position: relative;
@@ -33,9 +34,8 @@
 
   ul.box-dashed.four{
     li{
-      margin-left: 3.4%;
-      margin-bottom: 2%;
-      width: 45%;
+      margin: 0 10px 20px;
+      width: 47%;
     }
   }
 
@@ -76,7 +76,8 @@
   }
 
   .technologies ul , .tools ul {
-    margin-left: 0;
+    margin: 0 auto;
+    width: 672px;
 
     h3{
       width: 100%;
@@ -85,22 +86,24 @@
     }
   }
 
-  .news-item {
-    width: 87%;
-    height: auto;
-    margin-bottom: 4%;
-    margin-left: 8%;
-    margin-right: 0px;
-    padding-right: 4%;
+  .news{
+    .news-item {
+      width: 87%;
+      height: auto;
+      margin-bottom: 4%;
+      margin-left: 8%;
+      margin-right: 0px;
+      padding-right: 4%;
 
-    .more{
-      font-size: 2.2em;
-      left: 1px;
-      right: 1px;
-      margin: auto;
-      display: inline-block;
-      width: 140px;
-      text-align: center;
+      .more{
+        font-size: 2.2em;
+        left: 1px;
+        right: 1px;
+        margin: auto;
+        display: inline-block;
+        width: 140px;
+        text-align: center;
+      }
     }
   }
 
