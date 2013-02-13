@@ -1,0 +1,96 @@
+@media (max-width: 939px){
+
+/* ----------------------------
+:: SERVICES
+---------------------------- */
+  .content .services {
+    .container-title { 
+      margin-top: 2em;
+      border-top: none;
+    }
+
+    ul.box-dashed.two {
+      margin: auto;
+
+      li { 
+        margin: auto;
+        margin: 5% auto;
+        width: 90%;
+        height: auto;
+        float: none;
+        display: block;
+      }
+    }
+  }
+
+  .services ul.box-dashed li{
+    h3, p{
+      display: block;
+    }
+
+    h3{
+      margin: 0;
+      margin-left: 3%;
+      margin-top: 7%;
+      width: auto;
+    }
+
+    p{
+      margin: 7%;
+      margin-top: 0;
+    }
+  }
+
+  .process{
+    ul{
+      border-top: 0px;
+      width: 90%;
+      margin: auto;
+
+      li{
+        border-bottom: 1px solid #B3C4D9;
+        margin: auto;
+        padding: 10% 0px;
+
+        h3{
+          font-size: 1.5em;
+        }
+
+        p{
+          width: 90%;
+        }
+
+        i{
+          margin: auto;
+          height: auto;
+          width: auto;
+          font-size: 2.2em;
+        }
+
+        span {
+          font-size: 1.5em;
+          font-weight: 700;
+        }
+      }
+    }
+  }
+
+  .howdowedoit, .our-offering {
+    border: none;
+    float: none;
+    margin: auto;
+    margin-bottom: 20px;
+    width: 90%;
+  }
+
+  .howdowedoit{
+    ul.bullets-blue {
+      padding: 5% 5% 0px 60px;
+    }
+  }
+
+  .our-offering p {
+    padding-top: 7%;
+  }
+
+}

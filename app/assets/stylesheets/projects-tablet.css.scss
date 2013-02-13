@@ -1,0 +1,70 @@
+@media (max-width: 939px){
+
+/* ----------------------------
+:: PROJECT
+---------------------------- */
+  #projects-page.carousel .carousel-inner,
+  #project-page.carousel .carousel-inner{
+    width: 100%;
+    height: auto;
+    background-position: 50% 0%;
+
+    .item {
+      margin: 0;
+      width: 100%;
+    }
+
+    .macbook {
+      margin: 5.2% auto auto 28.4%
+    }
+
+    .carousel-caption {
+      width: 80%;
+      position: relative;
+      top: 0;
+      left: 0;
+      margin: 10% auto auto;
+      background: white;
+      border: black solid 1px;
+      padding: 3%;
+    }
+
+    .more {
+      left: 0;
+      bottom: -4%;
+      right: 0;
+      margin: auto;
+    }
+
+    .carousel-control {
+      bottom: 12%;
+      top: auto;
+
+      .left {
+        left: 20%;
+      }
+
+      .right {
+        right: 20%;
+      }
+    }
+  }
+
+  .more-projects ul {
+    width: 100%;
+  }
+
+  .more-info{
+    ul.box-dashed.three {
+      margin: auto;
+      margin-left: 0;
+      padding-left: 0;
+
+      li {
+        width: 248px;
+        margin-left: 1%;
+      }
+    }
+  }
+
+}

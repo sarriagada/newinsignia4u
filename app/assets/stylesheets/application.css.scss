@@ -12,18 +12,38 @@
  */
  @import url(http://fonts.googleapis.com/css?family=Amatic+SC:400,700);
  @import url(http://fonts.googleapis.com/css?family=Enriqueta:400,700);
+
  @import "normalize";
  @import "bourbon";
  @import "grid-settings";
  @import "neat";
  @import "font";
  @import "ui.totop";
+
  @import "global";
+ @import "global-tablet";
+ @import "global-mobile";
+
  @import "header";
+ @import "header-tablet";
+ @import "header-mobile";
+
  @import "footer";
+ @import "footer-tablet";
+ @import "footer-mobile";
+
  @import "home";
+ @import "home-tablet";
+ @import "home-mobile";
+
  @import "services";
+ @import "services-tablet";
+ @import "services-mobile";
+
  @import "projects";
+ @import "projects-tablet";
+ @import "projects-mobile";
+
  @import "blogsite";
- @import "tablet";
- @import "mobile";
+ @import "blogsite-tablet";
+ @import "blogsite-mobile";

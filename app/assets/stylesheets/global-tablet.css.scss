@@ -1,0 +1,27 @@
+@media (max-width: 939px){
+
+  section{
+    margin-bottom: 10%;
+  }
+
+  .container-title{
+    margin: 90px 3% 0;
+    width: auto;
+
+    h2{
+      position: relative;
+      top: -0.6em;
+      font-size: 60px;
+      line-height: 60px;
+      display: inline-block;
+    }
+  }
+
+  ul.box-dashed.four{
+    li{
+      margin: 0 10px 20px;
+      width: 47%;
+    }
+  }
+
+}

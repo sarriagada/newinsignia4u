@@ -28,7 +28,7 @@ header{
   .lang {
     float: right;
     right: 5%;
-    top: -40px !important;
+    top: -40px;
     position: relative;
     color: #F10993;
     text-decoration: underline;
@@ -40,10 +40,6 @@ header{
 /* ----------------------------
 :: MENU
 ---------------------------- */
-.content{
-  border-top: 0;
-}
-
 nav{
   background: #383435;
   position: relative;
@@ -54,20 +50,17 @@ nav{
     li{
       margin: auto;
       display: inline-block;
-      line-height: 1.5em;
       padding: 0 6px;
     }
   }
 
   a{
-    line-height: 3.4em;
-    vertical-align: middle;
     color:#fff;
-    display:inline-block;
     height:55px;
     text-transform:uppercase;
+    line-height: 55px;
     padding: 0 16px;
-    font-weight:bold;
+    vertical-align: middle;
   }
 
   a:hover:before, a.active:before{
@@ -91,86 +84,5 @@ nav{
 
   span, i{
     display: none;
-  }
-}
-
-@media (max-width: 767px){
-  .lang {
-    text-transform: uppercase;
-    position: relative;
-    margin: auto;
-    right: 1px;
-    left: 1px;
-    background: none;
-    color: #f10993;
-    border: none;
-    font-size: 0.8em;
-    font-weight: normal;
-    top: 1.3em;
-    text-decoration: underline;
-  }
-
-  nav{
-    -webkit-transition:all 0.4s ease;
-
-    ul{
-      text-align:center;
-      padding-left: 20px;
-      clear:both;
-      display: none;
-      margin: auto;
-
-      li{
-        display: block;
-        text-align: center;
-
-        a{
-          width: auto;
-          line-height:55px;
-          position:relative;
-        }
-      }
-    }
-  }
-
-  nav span, nav i{
-    display: none;
-  }
-
-  nav{
-    a{
-      font-size: 1.3em;
-      line-height: 55px;
-      vertical-align: middle;
-    }
-
-    span, i{
-      font-family: $font-primary;
-      position: absolute;
-      right: 0.4em;
-      display: inline-block;
-      border: 1px solid #383435;
-      padding: 0 4px;
-      font-weight: bold;
-      border-radius: 0.2em;
-      background:none;
-      color: #383435;
-      z-index: 999;
-    }
-
-    i{
-      top: 0.4em;
-      color: #f10993;
-      font-size: 1.5em;
-    }
-
-    span{
-      font-size: 1.2em!important;
-      display: none;
-      border-radius: 0 0 0.2em 0.2em;
-      background: #383435;
-      padding: 1% 2%;
-      color: #f10993;
-    }
   }
 }
