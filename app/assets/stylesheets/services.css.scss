@@ -54,16 +54,20 @@
 
       i{
         float:right;
-        margin:54px 8% 0 0;
+        margin:40px 8% 0 0;
         font-size: 4em;
         color: #F10993;
       }
+    }
+
+    li.last{
+      border-bottom: none;
     }
   }
 }
 
 .howdowedoit, .our-offering{
-  float:left;
+  float: left;
 
   .container-title{
     border:none;
@@ -76,16 +80,14 @@
   float: left;
   width: 50%;
 
-  ul.bullets-blue{
+  .bullets-blue{
     padding:0 40px 0 30px;
 
     li{
-      line-height:23px;
-      padding:0 0 3px;
 
       .icon-arrow-right {
         color: #316BAF;
-        font-size: 2em;
+        font-size: 22px;
         float: left;
         margin-left: -1em;
       }
@@ -100,5 +102,6 @@
     line-height:27px;
     margin: 0 0 10px;
     padding: 9px 10px 10px 25px;
+    font-size: 15px;
   }
 }

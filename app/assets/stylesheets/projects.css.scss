@@ -29,7 +29,7 @@
 
     li{
       width:399px;
-      float:left;
+      float: left;
       margin:10px;
 
       img{
@@ -43,7 +43,7 @@
         background: repeat 0 0 rgba(255, 255, 255, 0.4);
         border: #7e7c7d dashed 1px;
         border-top:0;
-        text-align:left;
+        text-align: left;
         padding:25px 18px 22px;
         font-size:14px;
 
@@ -152,35 +152,35 @@
           color:#316baf;
         }
       }
+    }
 
-      .carousel-caption{
-        background:url(asset_path("background-pattern.gif", image)) repeat 0 0;
-        left:384px;
-        width:430px;
-        padding:0;
-        top:-51px;
-        position:absolute;
-        border:0;
+    .carousel-caption{
+      background:url(asset_path("background-pattern.gif", image)) repeat 0 0;
+      left:384px;
+      width:430px;
+      padding:0;
+      top:-51px;
+      position:absolute;
+      border:0;
 
-        p, ul{
-          color:#7e7c7d;
-          margin-left:0;
-          margin-right:0;
-        }
-
-        p{
-          margin:0 0 22px;
-        }
-
-        ul{
-          font-size:14px;
-        }
+      p, ul{
+        color:#7e7c7d;
+        margin-left:0;
+        margin-right:0;
       }
 
-      .more{
-        left: 386px;
-        bottom: -6px;
+      p{
+        margin:0 0 22px;
       }
+
+      ul{
+        font-size:14px;
+      }
+    }
+
+    .more{
+      left: 386px;
+      bottom: -6px;
     }
   }
 

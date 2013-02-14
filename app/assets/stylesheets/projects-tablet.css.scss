@@ -3,64 +3,74 @@
 /* ----------------------------
 :: PROJECT
 ---------------------------- */
-  #projects-page.carousel .carousel-inner,
-  #project-page.carousel .carousel-inner{
-    width: 100%;
-    height: auto;
-    background-position: 50% 0%;
-
-    .item {
-      margin: 0;
+  #projects-page.carousel{
+    .carousel-inner{
       width: 100%;
+      height: auto;
+      background-position: 50% 0%;
+      padding: 0 0 23px;
+
+      .item{
+        margin: 0;
+        width: 100%;
+      }
+
+      .macbook{
+        margin: 5.2% auto auto 28.4%
+      }
+
+      .carousel-caption{
+        width: 80%;
+        position: relative;
+        top: 0;
+        left: 0;
+        margin: 10% auto auto;
+        background: white;
+        border: black solid 1px;
+        padding: 3%;
+      }
+
+      .more{
+        left: 0;
+        bottom: -4%;
+        right: 0;
+        margin: auto;
+      }
     }
 
-    .macbook {
-      margin: 5.2% auto auto 28.4%
-    }
-
-    .carousel-caption {
-      width: 80%;
-      position: relative;
-      top: 0;
-      left: 0;
-      margin: 10% auto auto;
-      background: white;
-      border: black solid 1px;
-      padding: 3%;
-    }
-
-    .more {
-      left: 0;
-      bottom: -4%;
-      right: 0;
-      margin: auto;
-    }
-
-    .carousel-control {
-      bottom: 12%;
+    .carousel-control{
+      bottom: 2px;
       top: auto;
+    }
 
-      .left {
-        left: 20%;
-      }
+    .carousel-control.left{
+      left: 15%;
+    }
 
-      .right {
-        right: 20%;
-      }
+    .carousel-control.right{
+      right: 15%;
     }
   }
 
-  .more-projects ul {
-    width: 100%;
+  .more-projects{
+    ul{
+      width: 100%;
+      
+      li{
+        display: inline-block;
+        float: none;
+        width: 44%;
+      }
+    }
   }
 
   .more-info{
-    ul.box-dashed.three {
+    ul.box-dashed.three{
       margin: auto;
       margin-left: 0;
       padding-left: 0;
 
-      li {
+      li{
         width: 248px;
         margin-left: 1%;
       }

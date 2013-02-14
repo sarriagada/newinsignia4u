@@ -47,13 +47,16 @@
   }
 
   .news{
+    ul{
+      margin: 0;
+    }
+
     .news-item {
-      width: 87%;
+      width: 83%;
       height: auto;
-      margin-bottom: 4%;
-      margin-left: 8%;
-      margin-right: 0px;
-      padding-right: 4%;
+      margin:0 auto 50px;
+      float: none;
+      padding: 47px 60px 0;
 
       .more{
         font-size: 2.2em;
@@ -65,13 +68,6 @@
         text-align: center;
       }
     }
-  }
-
-  .more-projects ul li {
-    display: inline-block;
-    float: none;
-    margin: 0px 0px 20px 20px;
-    width: 44%;
   }
 
   .certify {

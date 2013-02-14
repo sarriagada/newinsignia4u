@@ -10,6 +10,7 @@
 
       h2{
         font-size: 40px;
+        margin: 45px 0 30px;
       }
     }
   }
@@ -18,8 +19,9 @@
     font-size: 50px;
   }
 
-  #projects-page.carousel{
-    .carousel-inner {
+  #projects-page.carousel,
+  #project-page.carousel{
+    .carousel-inner{
       position: static;
       border-bottom: 0;
       background-size: 100%;
@@ -29,60 +31,60 @@
 
       .item {
         margin:auto;
+      }
 
-        .more {
+      .more {
           min-width: 130px;
         }
 
-        .macbook {
-          height: auto;
-          display: block;
-          margin: auto;
-          margin-top: 8%;
-          margin-bottom: 17%;
-          width: 64%;
-        }
+      .macbook {
+        height: auto;
+        display: block;
+        margin: auto;
+        margin-top: 8%;
+        margin-bottom: 17%;
+        width: 64%;
+      }
 
-        .carousel-caption {
-          height: auto;
-          margin: auto;
-          min-height: 100px;
-          position: static;
-          width: 90%;
-          border: #000 solid 1px;
-          background: #fff;
-          padding: 10px;
+      .carousel-caption {
+        height: auto;
+        margin: auto;
+        min-height: 100px;
+        position: static;
+        width: 84%;
+        border: #000 solid 1px;
+        background: #fff;
+        padding: 25px 20px;
 
-          ul.bullets-blue {
-            margin-bottom: 30px;
-            padding-right: 0;
+        ul.bullets-blue {
+          margin-bottom: 30px;
+          padding-right: 0;
 
-            li {
-              font-size: 0.9em;
-              line-height: 1.5em;
-              padding: 0px 0px 3px;
-            }
+          li {
+            font-size: 0.9em;
+            line-height: 1.5em;
+            padding: 0px 0px 3px;
           }
         }
+      }
 
-        p {
-          font-size: 0.9em;
-          line-height: 1.5em;
-        }
+      p {
+        font-size: 0.9em;
+        line-height: 1.5em;
       }
     }
 
-    .carousel-control {
+    .carousel-control{
       bottom: auto;
       top: 85px;
       height: 35px;
       width: 35px;
 
-      .left {
+      .left{
         left: 10%;
       }
 
-      .right {
+      .right{
         right: 10%;
       }
 
@@ -93,7 +95,20 @@
     }
   }
 
-  .more-projects ul {
+  #projects-page.carousel{
+    .carousel-control{
+      bottom: 6px;
+      top: auto;
+    }
+  }
+
+  #project-page.carousel{
+    .carousel-inner{
+      min-height: auto;
+    }
+  }
+
+  .more-projects ul{
     margin: auto;
     width: 100%;
 
