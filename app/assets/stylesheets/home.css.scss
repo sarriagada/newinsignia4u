@@ -27,7 +27,6 @@
   p{
     font-size: 18px;
     line-height: 27px;
-    width: 41%;
     min-height: 200px;
     font-family: $font-primary;
     margin: 0;
@@ -222,11 +221,12 @@
     }
   }
 
-  p{
+  .carousel-caption{
     float: right;
     position: absolute;
     bottom: 72px;
     left: 480px;
+    background: none;
   }
 }
 

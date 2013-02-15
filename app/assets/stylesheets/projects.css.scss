@@ -75,7 +75,7 @@
     background:#fff;
     border:#494647 solid 1px;
     min-height:238px;
-    margin: 0 60px;
+    margin: 0 8%;
     padding-bottom:45px;
 
     h4{
@@ -114,10 +114,9 @@
   ul.box-dashed{
     li{
       text-align: center;
-      min-height: 230px;
+      min-height: 230px !important;
 
       h3{
-        font-weight: normal;
         color: #316baf;
         text-transform: uppercase;
         font-size: 15px;
@@ -143,8 +142,15 @@
     width:880px;
     height:307px;
 
+    .macbook{
+      height: 263px;
+      margin: 0;
+      padding: 51px 0 0;
+      width: 346px;
+    }
+
     .item{
-      margin:51px 0 0 100px;
+      margin:0 0 0 100px;
 
       h4{
         padding:0;
@@ -159,9 +165,10 @@
       left:384px;
       width:430px;
       padding:0;
-      top:-51px;
+      top:-2px;
       position:absolute;
       border:0;
+      height: 255px;
 
       p, ul{
         color:#7e7c7d;
@@ -180,7 +187,7 @@
 
     .more{
       left: 386px;
-      bottom: -6px;
+      bottom: 10px;
     }
   }
 
@@ -198,6 +205,8 @@
 }
 
 #project-page.carousel{
+  margin-bottom: 0;
+
   .carousel-inner{
     background:url(asset_path("macbook.png", image)) no-repeat 0 10px;
     height:auto;
@@ -207,43 +216,32 @@
 
     .item{
       margin:0;
+    }
 
-      .macbook{
-        height: 263px;
-        margin: 51px auto 0;
-        padding:0 0 0 6px;
-        width:346px;
-      }
+    .macbook{
+      height: 263px;
+      margin: 51px auto 0;
+      padding: 0 0 0 7px;
+      width: 346px;
+    }
 
-      .more{
-        position:relative;
-        bottom:27px;
-        margin:0 auto;
-      }
+    .more{
+      position: relative;
+      bottom: 27px;
+      margin: 0 auto;
     }
   }
 
-  a.carousel-control.left{
+  .carousel-control{
     top: 40%;
     bottom: auto;
+  }
+
+  .carousel-control.left{
     left: 1%;
   }
 
-  a.carousel-control.right{
-    top: 40%;
-    bottom: auto;
-    right: 1%;
-  }
-
-  a.carousel-control.left{
-    top: 40%;
-    bottom: auto;
-    left: 1%;
-  }
-
-  a.carousel-control.right{
-    top: 40%;
-    bottom: auto;
+  .carousel-control.right{
     right: 1%;
   }
 }

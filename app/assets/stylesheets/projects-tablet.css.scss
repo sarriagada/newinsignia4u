@@ -16,7 +16,10 @@
       }
 
       .macbook{
-        margin: 5.2% auto auto 28.4%
+        height: 263px;
+        margin: 40px auto 0;
+        padding: 0 0 0 7px;
+        width: 346px;
       }
 
       .carousel-caption{
@@ -24,7 +27,7 @@
         position: relative;
         top: 0;
         left: 0;
-        margin: 10% auto auto;
+        margin: 10px auto auto;
         background: white;
         border: black solid 1px;
         padding: 3%;
@@ -52,6 +55,16 @@
     }
   }
 
+  #project-page.carousel{
+    .carousel-control.left{
+      left: 17%;
+    }
+
+    .carousel-control.right{
+      right: 17%;
+    }
+  }
+
   .more-projects{
     ul{
       width: 100%;
@@ -60,19 +73,27 @@
         display: inline-block;
         float: none;
         width: 44%;
+        
+        img{
+          width: 100%;
+        }
       }
     }
   }
 
   .more-info{
+    .container-title{
+      margin-top: 77px;
+    }
+
     ul.box-dashed.three{
-      margin: auto;
-      margin-left: 0;
-      padding-left: 0;
+      margin: 0 auto;
+      padding: 0;
+      width: 745px;
 
       li{
-        width: 248px;
-        margin-left: 1%;
+        margin: 0 9px 18px;
+        width: 230px;
       }
     }
   }

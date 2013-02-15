@@ -258,19 +258,19 @@ aside{
 /* ----------------------------
 :: SLIDER
 ---------------------------- */
-.carousel {
+.carousel{
   position: relative;
   margin-bottom: 20px;
   line-height: 1;
   overflow:hidden;
 
-  .carousel-inner {
+  .carousel-inner{
     position: relative;
     width: 100%;
     overflow: hidden;
     padding: 0 0 20px;
 
-    .item {
+    .item{
       position: relative;
       display: none;
       -webkit-transition: 0.6s ease-in-out left;
@@ -278,7 +278,7 @@ aside{
            -o-transition: 0.6s ease-in-out left;
               transition: 0.6s ease-in-out left;
 
-      .img {
+      .img{
         width: auto\9;
         height: auto;
         max-width: 100%;
@@ -312,12 +312,13 @@ aside{
       left: -100%;
     }
 
-    .next.left, .prev.right {
+    .next.left, .prev.right{
       left: 0;
     }
   }
 
-  .carousel-control {
+  .carousel-control{
+    @include border-radius(23px);
     text-decoration: none;
     background: #222;
     position: absolute;
@@ -331,21 +332,18 @@ aside{
     line-height: 30px;
     color: #ffffff;
     text-align: center;
-    -webkit-border-radius: 23px;
-    -moz-border-radius: 23px;
-    border-radius: 23px;
     z-index:999;
 
     i{
-      font-size: 0.5em;
+      font-size: 22px;
       text-align: center;
       position: relative;
-      top: -0.15em;
+      top: -7px;
       left: -0.05em;
     }
   }
 
-  .carousel-control.right {
+  .carousel-control.right{
     right: 15px;
     left: auto;
 
@@ -355,7 +353,7 @@ aside{
   }
 }
 
-.carousel-caption {
+.carousel-caption{
   position: absolute;
   right: 0;
   bottom: 0;
