@@ -177,8 +177,8 @@ section{
   border-top: 2px dashed #B8B8B8;
   margin-top: 90px;
   width: 100%;
-  text-align:center;
-  clear:both;
+  text-align: center;
+  clear: both;
 
   h2{
     background: url(asset-path("background-pattern.gif", image));
@@ -186,13 +186,13 @@ section{
     top: -36px;
     color: #343233;
     font-size: 60px;
-    line-height:60px;
+    line-height: 60px;
     margin: auto;
-    display:inline-block;
+    display: inline-block;
     font-family: $font-secondary;
 
     span{
-      font-weight:400;
+      font-weight: 400;
     }
   }
 
@@ -205,7 +205,7 @@ section{
   h2:after{
     content: url("/assets/arrow-right.gif");
     display: inline-block;
-    width:30px;
+    width: 30px;
   }
 }
 
@@ -214,7 +214,7 @@ a.more{
   border: 2px solid #A60563;
   border-radius: 5px 5px 5px 5px;
   bottom: -21px;
-  color: white;
+  color: #fff;
   font-family: $font-secondary;
   font-size: 34px;
   font-weight: bold;
@@ -224,12 +224,12 @@ a.more{
   padding: 0 20px 2px 17px;
   position: absolute;
   width: 130px;
-  display:block;
-  text-decoration:none;
+  display: block;
+  text-decoration: none;
 }
 
 aside{
-  float:right;
+  float: right;
 }
 
 .column{
@@ -242,7 +242,7 @@ aside{
 :: BUTTONS
 ---------------------------- */
 .btn, .content .btn{
-  background:#E50892;
+  background: #E50892;
   border: 2px solid #A60563;
   border-radius: 5px 5px 5px 5px;
   color: #fff;
@@ -251,7 +251,7 @@ aside{
   font-weight: bold;
   height: 47px;
   line-height: 40px;
-  padding:0 15px;
+  padding: 0 15px;
   text-decoration: none;
 }
 
@@ -262,7 +262,7 @@ aside{
   position: relative;
   margin-bottom: 20px;
   line-height: 1;
-  overflow:hidden;
+  overflow: hidden;
 
   .carousel-inner{
     position: relative;
@@ -291,7 +291,7 @@ aside{
     }
 
     .active, .next, .prev{
-      display:block;
+      display: block;
     }
 
     .active {
@@ -422,4 +422,27 @@ aside{
 
 #toTop{
   z-index:9999;
+}
+
+/* ----------------------------
+:: FORM
+---------------------------- */
+form{
+  margin: 30px 0;
+  overflow: hidden;
+
+  .f-text input, textarea{
+    @include border-radius(5px);
+    display: block;
+    border: #999 solid 1px;
+    padding: 12px 10px 12px 65px;
+    font-size: 15px;
+    width: 100%;
+    margin: 30px 0;
+  }
+
+  textarea{
+    resize: none;
+    height: 202px;
+  }
 }

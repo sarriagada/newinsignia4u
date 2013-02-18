@@ -85,19 +85,19 @@
     margin-top: 15px;
   }
 
-  .news-item {
+  .news-item{
     background: white;
     width: 300px;
     min-height: 335px;
     height: auto;
     border: 1px solid #C2B7BB;
-    padding: 33px 42px 42px;;
+    padding: 33px 42px 42px;
     float: left;
     margin-left: 20px;
     margin-bottom: 147px;
     position: relative;
 
-    .icon-calendar {
+    .icon-calendar{
       float: left;
       font-size: 15px;
       line-height: 18px;
@@ -110,8 +110,8 @@
       margin-bottom: 21px;
     }
 
-    .published-at, .title, .description{  
-      font-size: 13px;  
+    .published-at, .title, .description{
+      font-size: 13px;
     }
 
     h3{
@@ -135,13 +135,13 @@
       color: #e80892;
     }
 
-    .description {
+    .description{
       height: auto;
       margin-bottom: 15px;
       line-height: 20px;
     }
 
-    .more {
+    .more{
       @include border-radius(5px);
       @include box-shadow(2px 2px 16px -5px #000);
       background: #E50892;
@@ -167,7 +167,7 @@
   margin: 2em 47px 133px;
   clear:both;
 
-  .ribbon {
+  .ribbon{
     @include box-shadow( 0 4px 10px #777 );
     font-size: 14px;
     width: 100%;
@@ -213,9 +213,9 @@
 #intro.carousel{
   margin: 0;
 
-  .carousel-inner {
-    .item {
-      img {
+  .carousel-inner{
+    .item{
+      img{
         max-height:297px;
       }
     }
@@ -233,13 +233,13 @@
 #cases.carousel{
   margin:0 7% 39px;
 
-  .carousel-inner {
-    .item {
+  .carousel-inner{
+    .item{
       border:#c2b7bb solid 1px;
     }
   }
 
-  .carousel-caption {
+  .carousel-caption{
     position: absolute;
     right: 0;
     bottom: 0;

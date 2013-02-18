@@ -9,11 +9,15 @@
       margin:50px 0;
     }
 
-    #intro{
+    #intro.carousel{
       .carousel.slide, .carousel-inner > .item > img, .carousel-inner{
         float: none;
         position: static;
         margin: auto;
+      }
+
+      .carousel-caption{
+        position: static;
       }
 
       .item{

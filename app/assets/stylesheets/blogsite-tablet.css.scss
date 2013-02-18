@@ -38,12 +38,13 @@
   }
 
   .nav-blog{
-    background: #316baf;
     display: block;
     border-top: #fff solid 1px;
     border-bottom: #fff solid 1px;
 
     ul{
+      background: #316baf;
+
       li{
         display: inline-block;
         padding: 0 52px;
@@ -126,12 +127,13 @@
   }
 
   .nav-blog-categories{
-    background: #295991;
     position: relative;
     margin-bottom: 140px;
-    overflow: visible ;
+    overflow: visible;
+    padding-bottom: 30px;
 
     ul{
+      background: #295991;
       overflow: hidden;
       padding:17px 0 20px 5%;
 
