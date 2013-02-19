@@ -109,4 +109,8 @@ $(document).ready(function() {
         $('.nav-blog form').fadeIn(200)
     });
 
+    $("input, textarea").on('focus blur', function(){
+        $(this).next().toggleClass('focus');
+    })
+
 });

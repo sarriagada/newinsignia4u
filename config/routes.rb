@@ -5,6 +5,7 @@ Insignia::Application.routes.draw do
   resources :projects
   resources :blog
   resources :contact
+  resources :staff
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

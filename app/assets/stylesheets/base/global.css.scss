@@ -1,0 +1,243 @@
+// Place all the styles related to the home controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+a{
+  text-decoration: none;
+}
+
+ul{
+  margin-top:0;
+  margin-bottom:0;
+  padding:0;
+
+  li{
+    list-style:none;
+    position:relative;
+  }
+}
+
+img{
+  max-width: 100%;
+}
+
+$font-primary: 'Enriqueta', cursive;
+$font-secondary: 'Amatic SC',cursive;
+
+body{
+  font-family: $font-primary;
+  background: url(asset-path("background-pattern.gif", image)) repeat 0 0;
+  font-weight:bold;
+  font-size: 100%;
+}
+
+.box{
+  @include border-radius(10px);
+  background: rgba(0,0,0,.03);
+  margin-bottom: 30px;
+  padding: 20px;
+
+  h2{
+    font-family: $font-secondary;
+    font-size: 44px;
+    line-height: 44px;
+    color: #373435;
+    text-align: center;
+    margin: 0 0 25px;
+  }
+}
+
+ul.bullets-blue{
+  padding:0 40px 0 60px;
+
+  li{
+    line-height:23px;
+    padding:0 0 23px;
+    color:#373435;
+
+    .icon-arrow-right{
+      color: #316BAF;
+      font-size: 1.2em;
+      float: left;
+      margin-left: -1em;
+    }
+  }
+}
+
+.container, .container-contact, nav ul, .content {  @include outer-container;  }
+
+ul.box-dashed{
+  margin-left: -20px;
+  overflow:hidden;
+
+  li{
+    @include border-radius(10px);
+    background: repeat 0 0 rgba(255, 255, 255, 0.4);
+    border: #817f7f dashed 1px;
+    float:left;
+    margin:12px 0 12px 20px;
+  }
+}
+
+ul.box-dashed.two{
+  li{
+    width: 460px;
+  }
+}
+
+ul.box-dashed.three{
+  margin-left: -35px;
+  padding-left: 7%;
+
+  li{
+  width: 248px;
+  margin-left: 35px;
+  }
+}
+
+ul.box-dashed.four{
+  li{
+    width: 218px;
+  }
+}
+
+.circle{
+  @include border-radius(39px);
+  background:#f20892;
+  border:#a60563 solid 5px;
+  height:78px;
+  width:78px;
+  margin:19px auto 10px;
+  margin-bottom: 7px;
+
+  i{
+    color: white;
+    font-size: 3em;
+    line-height: 1.6em;
+    background: none;
+    display: block;
+  }
+
+  .ico-php{
+    height: 22px;
+    margin: auto;
+    width: 48px;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 1.6em;
+    line-height: 2.8em;
+  }
+
+  .icon-smiley{
+    line-height: 1.8em;
+    font-size: 26px;
+  }
+
+}
+
+.circle.blue{
+  background:#316baf;
+  border:#224a79 solid 5px;
+}
+
+section{
+  font-size:15px;
+  margin-bottom:70px;
+}
+
+.content{
+  p{
+    font-size: 14px;
+    line-height:20px;
+    color: #373435;
+  }
+
+  a{
+    color:#316baf;
+    text-decoration:underline;
+  }
+
+  a.bottom-link{
+    color: #f20892;
+    text-decoration: none;
+    line-height: 15px;
+    display: block;
+
+    span{
+      font-size: 22px;
+      font-family: arial;
+      position: relative;
+      right: -4px;
+      top: 4px;
+    }
+  }
+}
+
+.container-title{
+  border-top: 2px dashed #B8B8B8;
+  margin-top: 90px;
+  width: 100%;
+  text-align: center;
+  clear: both;
+
+  h2{
+    background: url(asset-path("background-pattern.gif", image));
+    position: relative;
+    top: -36px;
+    color: #343233;
+    font-size: 60px;
+    line-height: 60px;
+    margin: auto;
+    display: inline-block;
+    font-family: $font-secondary;
+
+    span{
+      font-weight: 400;
+    }
+  }
+
+  h2:before{
+    content: url("/assets/arrow-left.gif");
+    display: inline-block;
+    width: 30px;
+  }
+
+  h2:after{
+    content: url("/assets/arrow-right.gif");
+    display: inline-block;
+    width: 30px;
+  }
+}
+
+a.more{
+  background:#E50892;
+  border: 2px solid #A60563;
+  border-radius: 5px 5px 5px 5px;
+  bottom: -21px;
+  color: #fff;
+  font-family: $font-secondary;
+  font-size: 34px;
+  font-weight: bold;
+  height: 47px;
+  left: 42%;
+  line-height: 40px;
+  padding: 0 20px 2px 17px;
+  position: absolute;
+  width: 130px;
+  display: block;
+  text-decoration: none;
+}
+
+aside{
+  float: right;
+}
+
+.column{
+  float: left;
+  width: 637px;
+  padding-bottom: 50px;
+}
+
+#toTop{
+  z-index:9999;
+}

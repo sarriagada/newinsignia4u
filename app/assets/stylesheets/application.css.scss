@@ -13,41 +13,49 @@
  @import url(http://fonts.googleapis.com/css?family=Amatic+SC:400,700);
  @import url(http://fonts.googleapis.com/css?family=Enriqueta:400,700);
 
- @import "normalize";
+ @import "base/normalize";
  @import "bourbon";
- @import "grid-settings";
+ @import "base/grid-settings";
  @import "neat";
- @import "font";
- @import "ui.totop";
+ @import "base/font";
 
- @import "global";
- @import "global-tablet";
- @import "global-mobile";
+ @import "base/global";
+ @import "base/global-tablet";
+ @import "base/global-mobile";
 
- @import "header";
- @import "header-tablet";
- @import "header-mobile";
+ @import "base/ui.totop";
+ @import "base/carousel";
+ @import "base/form";
+ @import "base/button";
 
- @import "footer";
- @import "footer-tablet";
- @import "footer-mobile";
+ @import "header/header";
+ @import "header/header-tablet";
+ @import "header/header-mobile";
 
- @import "home";
- @import "home-tablet";
- @import "home-mobile";
+ @import "footer/footer";
+ @import "footer/footer-tablet";
+ @import "footer/footer-mobile";
 
- @import "services";
- @import "services-tablet";
- @import "services-mobile";
+ @import "home/home";
+ @import "home/home-tablet";
+ @import "home/home-mobile";
 
- @import "projects";
- @import "projects-tablet";
- @import "projects-mobile";
+ @import "services/services";
+ @import "services/services-tablet";
+ @import "services/services-mobile";
 
- @import "blogsite";
- @import "blogsite-tablet";
- @import "blogsite-mobile";
- 
- @import "contact";
- @import "contact-tablet";
- @import "contact-mobile";
+ @import "projects/projects";
+ @import "projects/projects-tablet";
+ @import "projects/projects-mobile";
+
+ @import "contact/contact";
+ @import "contact/contact-tablet";
+ @import "contact/contact-mobile";
+
+ @import "blog/blogsite";
+ @import "blog/blogsite-tablet";
+ @import "blog/blogsite-mobile";
+
+ @import "staff/staff";
+ @import "staff/staff-tablet";
+ @import "staff/staff-mobile";

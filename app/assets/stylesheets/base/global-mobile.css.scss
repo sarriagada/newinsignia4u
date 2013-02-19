@@ -1,0 +1,55 @@
+@media (max-width: 767px){
+
+  .container-title{
+    width: 90%;
+    margin: auto;
+
+    h2{
+      margin: 45px 0 8px;
+      min-height: 58px;
+      position: static;
+
+    }
+
+
+  }
+
+  ul.box-dashed{
+    margin: auto
+  }
+
+  ul.box-dashed.four{
+    li{
+      margin: 20px auto;
+      width: 100%;
+    }
+  }
+
+  .circle{
+    border: 0.3em solid #A60563;
+  }
+
+  .carousel{
+    .carousel-control{
+      i{
+        font-size: 26px;
+        left: -2px;
+        top: -6px;
+      }
+    }
+  }
+
+  .carousel-inner{
+    margin: auto;
+    width: 90%;
+  }
+
+  .carousel .more{
+    left: 1px;
+    right: 1px;
+    font-size: 35px;
+    margin:auto;
+    text-align: center;
+  }
+
+}
