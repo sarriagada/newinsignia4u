@@ -35,7 +35,7 @@ body{
   @include border-radius(10px);
   background: rgba(0,0,0,.03);
   margin-bottom: 30px;
-  padding: 20px;
+  padding: 15px;
 
   h2{
     font-family: $font-secondary;
@@ -45,14 +45,26 @@ body{
     text-align: center;
     margin: 0 0 25px;
   }
+
+  h3{
+    color: #f10791;
+    font-size: 54px;
+    line-height: 54px;
+    margin: 15px 0;
+    font-family: $font-secondary;
+  }
+}
+
+.aside{
+  .box{
+    padding:20px;
+  }
 }
 
 ul.bullets-blue{
-  padding:0 40px 0 60px;
-
   li{
-    line-height:23px;
-    padding:0 0 23px;
+    padding-left:27px;
+    margin: 6px 0;
     color:#373435;
 
     .icon-arrow-right{
@@ -62,9 +74,28 @@ ul.bullets-blue{
       margin-left: -1em;
     }
   }
+
+  li:before{
+    font-family: 'icomoon';
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    content: "\f061";
+
+    color: #316BAF;
+    font-size: 25px;
+    float: left;
+    margin-left: -27px;
+  }
 }
 
-.container, .container-contact, nav ul, .content {  @include outer-container;  }
+.container,
+.container-contact,
+nav ul, .content{
+  @include outer-container;
+}
 
 ul.box-dashed{
   margin-left: -20px;
@@ -74,7 +105,7 @@ ul.box-dashed{
     @include border-radius(10px);
     background: repeat 0 0 rgba(255, 255, 255, 0.4);
     border: #817f7f dashed 1px;
-    float:left;
+    float: left;
     margin:12px 0 12px 20px;
   }
 }
@@ -146,10 +177,19 @@ section{
 }
 
 .content{
-  p{
+  ul{
+    li{
+    }
+  }
+
+  li, p{
     font-size: 14px;
     line-height:20px;
     color: #373435;
+  }
+
+  p{
+    margin: 0 0 20px;
   }
 
   a{
@@ -207,6 +247,60 @@ section{
     display: inline-block;
     width: 30px;
   }
+}
+
+.twocols{
+  overflow: hidden;
+
+  section{
+    float: left;
+    margin-top: 30px;
+    padding-bottom: 40px;
+
+    .container-title{
+      border: medium none;
+      margin-top: 0;
+      margin-bottom: 30px;
+
+      h3{
+        background: url(asset-path("background-pattern.gif", image));
+        color: #343233;
+        font-size: 54px;
+        line-height: 60px;
+        margin: auto;
+        display: inline-block;
+        font-family: $font-secondary;
+
+        span{
+          font-weight: 400;
+        }
+      }
+
+      h3:before{
+        content: url("/assets/arrow-left.gif");
+        display: inline-block;
+        width: 30px;
+      }
+
+      h3:after{
+        content: url("/assets/arrow-right.gif");
+        display: inline-block;
+        width: 30px;
+      }
+    }
+  }
+
+  .firstcol{
+    border-right: 2px dashed #B8B8B8;
+    width: 49%;
+    padding-right: 20px;
+  }
+
+  .secondcol{
+    width: 50%;
+    padding-left: 30px;
+  }
+
 }
 
 a.more{
