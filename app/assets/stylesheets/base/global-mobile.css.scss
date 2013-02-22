@@ -1,17 +1,17 @@
 @media (max-width: 767px){
 
+  .content p {
+    font-size: 13px;
+  }
+
   .container-title{
-    width: 90%;
     margin: auto;
 
     h2{
       margin: 45px 0 8px;
       min-height: 58px;
       position: static;
-
     }
-
-
   }
 
   ul.box-dashed{
@@ -27,6 +27,19 @@
 
   .circle{
     border: 0.3em solid #A60563;
+  }
+
+  .twocols{
+    section{
+      .container-title{
+        border-top: none;
+        
+        h3{
+          font-size: 40px;
+          line-height: 40px;
+        }
+      }
+    }
   }
 
   .carousel{

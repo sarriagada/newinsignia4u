@@ -14,3 +14,20 @@
     }
   }
 }
+
+.mission-vision{
+  overflow: hidden;
+
+  .box{
+    text-align: center;
+    width: 49%;
+  }
+
+  .first{
+    float: left;
+  }
+
+  .second{
+    float: right;
+  }
+}

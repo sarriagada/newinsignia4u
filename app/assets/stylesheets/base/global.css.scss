@@ -2,6 +2,9 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+$font-primary: 'Enriqueta', cursive;
+$font-secondary: 'Amatic SC',cursive;
+
 a{
   text-decoration: none;
 }
@@ -21,8 +24,19 @@ img{
   max-width: 100%;
 }
 
-$font-primary: 'Enriqueta', cursive;
-$font-secondary: 'Amatic SC',cursive;
+.img-circle{
+  @include border-radius(40px);
+  padding: 5px;
+  background: #fff;
+  border: #333 dashed 1px;
+  width: 80px;
+  height: 80px;
+}
+
+h2, h3, h4{
+  font-family: $font-secondary;
+  margin: 0;
+}
 
 body{
   font-family: $font-primary;
@@ -38,7 +52,6 @@ body{
   padding: 15px;
 
   h2{
-    font-family: $font-secondary;
     font-size: 44px;
     line-height: 44px;
     color: #373435;
@@ -51,7 +64,37 @@ body{
     font-size: 54px;
     line-height: 54px;
     margin: 15px 0;
-    font-family: $font-secondary;
+  }
+
+  h4{
+    font-size: 34px;
+    line-height: 34px;
+    color: #f21a9a;
+    margin: 5px 0;
+  }
+}
+
+.list-with-photos{
+  overflow: hidden;
+  margin: 15px 0 0;
+
+  li{
+    float: left;
+    position: relative;
+    padding: 0 0 0 90px;
+    margin: 5px 15px;
+    width: 273px;
+    min-height: 160px;
+  }
+
+  .img-circle{
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  p{
+    font-weight: normal;
   }
 }
 
@@ -61,7 +104,7 @@ body{
   }
 }
 
-ul.bullets-blue{
+.bullets-blue{
   li{
     padding-left:27px;
     margin: 6px 0;
@@ -251,11 +294,13 @@ section{
 
 .twocols{
   overflow: hidden;
+  margin-bottom: 30px;
 
   section{
     float: left;
     margin-top: 30px;
     padding-bottom: 40px;
+    margin-bottom: 0;
 
     .container-title{
       border: medium none;
@@ -266,7 +311,7 @@ section{
         background: url(asset-path("background-pattern.gif", image));
         color: #343233;
         font-size: 54px;
-        line-height: 60px;
+        line-height: 54px;
         margin: auto;
         display: inline-block;
         font-family: $font-secondary;
