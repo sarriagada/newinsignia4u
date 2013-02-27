@@ -50,6 +50,7 @@
         h3{
           font-size:20px;
           margin:0;
+          font-family: $font-primary;
 
           a{
             color:#316baf;
@@ -101,16 +102,6 @@
 }
 
 .more-info{
-  .container-title{
-    h2:after {
-      content: url("/assets/arrow-right-blue.png");
-    }
-
-    h2:before {
-      content: url("/assets/arrow-left-blue.png");
-    }
-  }
-
   ul.box-dashed{
     li{
       text-align: center;

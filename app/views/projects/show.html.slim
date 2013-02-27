@@ -1,117 +1,102 @@
 section.project-page
-	.container-title
-		h2 TableHopping NY
+  .container-title
+    h2 TableHopping NY
 
-	#project-page.carousel.slide.carousel-fade
-			.carousel-inner
-				.active.item
-					.macbook
-						picture alt=""
-							source src=asset_path("slider/craftfoxes_medium.jpg")
-							source src=asset_path("slider/craftfoxes_medium.jpg") media="(min-width:440px)"
-							source src=asset_path("slider/craftfoxes_medium.jpg") media="(min-width:600px)"
+  #project-page.carousel.slide.carousel-fade
+      .carousel-inner
+        .active.item
+          .macbook
+            figure title="" data-media600=asset_path("slider/craftfoxes_medium.jpg") data-media440=asset_path("slider/craftfoxes_medium.jpg") data-media=asset_path("slider/craftfoxes_medium.jpg")
+              img alt="" src=asset_path("slider/craftfoxes_medium.jpg")
 
-							noscript
-								img src=asset_path("slider/craftfoxes_medium.jpg") alt=""
+              noscript
+                img src=asset_path("slider/craftfoxes_medium.jpg") alt=""
 
-				.item
-					.macbook
-						picture alt=""
-							source src=asset_path("slider/tablehopping_medium.jpg")
-							source src=asset_path("slider/tablehopping_medium.jpg") media="(min-width:440px)"
-							source src=asset_path("slider/tablehopping_medium.jpg") media="(min-width:600px)"
+        .item
+          .macbook
+            figure title="" data-media600=asset_path("slider/tablehopping_medium.jpg") data-media440=asset_path("slider/tablehopping_medium.jpg") data-media=asset_path("slider/tablehopping_medium.jpg")
+              img alt="" src=asset_path("slider/tablehopping_medium.jpg")
 
-							noscript
-								img src=asset_path("slider/tablehopping_medium.jpg") alt=""
+              noscript
+                img src=asset_path("slider/tablehopping_medium.jpg") alt=""
 
-				.item
-					.macbook
-						picture alt=""
-							source src=asset_path("slider/area17_medium.jpg")
-							source src=asset_path("slider/area17_medium.jpg") media="(min-width:440px)"
-							source src=asset_path("slider/area17_medium.jpg") media="(min-width:600px)"
+        .item
+          .macbook
+            figure title="" data-media600=asset_path("slider/area17_medium.jpg") data-media440=asset_path("slider/area17_medium.jpg") data-media=asset_path("slider/area17_medium.jpg")
 
-							noscript
-								img src=asset_path("slider/area17_medium.jpg") alt=""
+              img alt="" src=asset_path("slider/area17_medium.jpg")
 
-			/! Carousel nav
-			a.carousel-control.left data-slide="prev" href="#project-page"
-				i.icon-titleleft
-			a.carousel-control.right data-slide="next" href="#project-page"
-				i.icon-titleright
+              noscript
+                img src=asset_path("slider/area17_medium.jpg") alt=""
 
-	.carousel-caption
-		h4 
-			a href="#{project_path(1)}" TablehoppingNY.com
-		p
-			| TableHoppingNY is NYC’s culinary life served to you on a platter! It’s a community around gourmet events in New York City.
+      /! Carousel nav
+      a.carousel-control.left data-slide="prev" href="#project-page"
+        i.icon-titleleft
+      a.carousel-control.right data-slide="next" href="#project-page"
+        i.icon-titleright
 
-		p
-			| TableHoppingNY is the app that solves the classic New York dining dilemmas:
+  .carousel-caption
+    h4
+      a href="#{project_path(1)}" TablehoppingNY.com
+    p
+      | TableHoppingNY is NYC’s culinary life served to you on a platter! It’s a community around gourmet events in New York City.
 
-		ul.bullets-blue
-			li
-				i.icon-arrow-right
-				| What’s a good Happy Hour in Soho?
-			li
-				i.icon-arrow-right
-				| I always walk by that place, but can’t remember the name.
-			li
-				i.icon-arrow-right
-				| What’s going on in the city this week?
+    p
+      | TableHoppingNY is the app that solves the classic New York dining dilemmas:
 
-			li
-				i.icon-arrow-right
-				| What are some cool new places to try?
-			li
-				i.icon-arrow-right
-				| What was the name of that great place we went to last month?
+    ul.bullets-blue
+      li What’s a good Happy Hour in Soho?
+      li I always walk by that place, but can’t remember the name.
+      li What’s going on in the city this week?
 
-		p
-			| TableHoppingNY is currently a community around gourmet events in New York City.
+      li What are some cool new places to try?
+      li What was the name of that great place we went to last month?
 
-		p
-			| The app allows the user to interact and to discover all the gourmet happenings in the city, new places, meet new people, and dine out with friends.
+    p
+      | TableHoppingNY is currently a community around gourmet events in New York City.
 
-		p
-			| In this project we developed the whole backend for the application using Ruby on Rails 3.2, specs were written using RSpec and using Spec Requests.
+    p
+      | The app allows the user to interact and to discover all the gourmet happenings in the city, new places, meet new people, and dine out with friends.
 
-		p
-			| We have also done the front end implementation converting the designs to its equivalent HTML +CSS and the whole Javascript implementation.
-			
-	a.more href="http://www.craftfoxes.com" Visit Site
+    p
+      | In this project we developed the whole backend for the application using Ruby on Rails 3.2, specs were written using RSpec and using Spec Requests.
+
+    p
+      | We have also done the front end implementation converting the designs to its equivalent HTML +CSS and the whole Javascript implementation.
+
+  a.more href="http://www.craftfoxes.com" Visit Site
 
 section.more-info
-	.container-title
-		h2 More Info
+  .container-title
+    h2.blue More Info
 
-	ul.box-dashed.three
-		li.equal4
-			.circle.blue
-				i.icon-calendar
+  ul.box-dashed.three
+    li.equal4
+      .circle.blue
+        i.icon-calendar
 
-			h3 Duration
-			p
-				| January 16, 2012 to
-				br
-				| December 17, 2012
+      h3 Duration
+      p
+        | January 16, 2012 to
+        br
+        | December 17, 2012
 
-		li.equal4
-			.circle.blue
-				i.icon-tech
+    li.equal4
+      .circle.blue
+        i.icon-tech
 
-			h3 Technologies
-			p
-				| Front-end development:
-				br
-				| HTML. CSS and Javascript Ruby on Rails
+      h3 Technologies
+      p
+        | Front-end development:
+        br
+        | HTML. CSS and Javascript Ruby on Rails
 
-		li.equal4
-			.circle.blue
-				i.icon-wrench
+    li.equal4
+      .circle.blue
+        i.icon-wrench
 
-			h3 Tools
-			p 
-				| Version control system:
-				br
-				| GIT, SVN and others. Agile methodologies Behaviour Driven Development
+      h3 Tools
+      p
+        | Version control system:
+        br
+        | GIT, SVN and others. Agile methodologies Behaviour Driven Development

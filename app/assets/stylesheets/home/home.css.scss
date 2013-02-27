@@ -10,8 +10,7 @@
   position:relative;
 
   h2{
-    font-size: 50px;
-    line-height:50px;
+    @include titlesize(50);
     text-align: center;
     margin:76px 0;
     padding: 0px 50px;
@@ -25,7 +24,7 @@
   }
 
   p{
-    font-size: 18px;
+    font-size: em(18);
     line-height: 27px;
     min-height: 200px;
     font-family: $font-primary;
@@ -52,29 +51,14 @@
     text-align:center;
 
     h3{
-      display:table-cell;
-      font-size:14px;
-      height:50px;
-      line-height:21px;
-      padding:0 22px;
-      vertical-align:middle;
-      width:216px;
-    }
-  }
-}
-
-.tools{
-  .container-title{
-    h2:after {
-      content: url("/assets/arrow-right-blue.png");
-      display: inline-block;
-      width: 30px;
-    }
-
-    h2:before {
-      content: url("/assets/arrow-left-blue.png");
-      display: inline-block;
-      width: 30px;
+      display: table-cell;
+      font-size: em(16);
+      height: 50px;
+      line-height: 21px;
+      padding: 0 22px;
+      vertical-align: middle;
+      width: 216px;
+      font-family: $font-primary;
     }
   }
 }
@@ -99,7 +83,7 @@
 
     .icon-calendar{
       float: left;
-      font-size: 15px;
+      font-size: em(15);
       line-height: 18px;
       margin-right: 5px;
       background: none;
@@ -111,14 +95,15 @@
     }
 
     .published-at, .title, .description{
-      font-size: 13px;
+      font-size: em(13);
     }
 
     h3{
-      font-size: 20px;
+      font-size: em(20);
       margin-bottom: 17px;
-      line-height:22px;
-      margin-top:0;
+      line-height: 22px;
+      margin-top: 0;
+      font-family: $font-primary;
     }
 
     .title {
@@ -150,7 +135,7 @@
       color: #fff;
       font-family: $font-secondary;
       font-weight: bold;
-      font-size: 34px;
+      font-size: em(34);
       height: 47px;
       line-height: 40px;
       left: 84px;
@@ -169,7 +154,7 @@
 
   .ribbon{
     @include box-shadow( 0 4px 10px #777 );
-    font-size: 14px;
+    font-size: em(14);
     width: 100%;
     position: relative;
     background: rgba(46, 99, 163, 0.9);

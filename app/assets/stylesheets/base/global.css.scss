@@ -2,9 +2,39 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+/* ----------------------------
+:: Variable
+---------------------------- */
 $font-primary: 'Enriqueta', cursive;
 $font-secondary: 'Amatic SC',cursive;
 
+$color-one: #373435; /* dark gray - text */
+$color-two: #F10993; /* pink */
+$color-three: #316baf; /* blue */
+$color-four: #383435; /* dark gray - background nav*/
+
+
+/* ----------------------------
+:: Mixins
+---------------------------- */
+@mixin titlesize($tsize){
+  font-size: em($tsize);
+  line-height: ($tsize)px
+}
+
+@mixin ico($ico){
+  font-family: 'icomoon';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  content: $ico;
+}
+
+/* ----------------------------
+:: Base
+---------------------------- */
 a{
   text-decoration: none;
 }
@@ -24,6 +54,64 @@ img{
   max-width: 100%;
 }
 
+h2, h3, h4{
+  margin: 0;
+}
+
+body{
+  font-family: $font-primary;
+  background: url(asset-path("background-pattern.gif", image)) repeat 0 0;
+  font-weight: bold;
+  color: $color-one;
+}
+
+section{
+  font-size:15px;
+  margin-bottom:70px;
+}
+
+.content{
+  li, p{
+    font-size: 14px;
+    line-height:20px;
+    color: #373435;
+  }
+
+  p{
+    margin: 0 0 20px;
+  }
+
+  a{
+    color:#316baf;
+    text-decoration:underline;
+  }
+}
+
+/* ----------------------------
+:: global
+---------------------------- */
+.container,
+.container-contact,
+nav ul, .content{
+  @include outer-container;
+}
+
+.bullets-blue{
+  li{
+    padding-left:27px;
+    margin: 6px 0;
+    color:#373435;
+  }
+
+  li:before{
+    @include ico("\f061");
+    color: #316BAF;
+    font-size: em(25);
+    float: left;
+    margin-left: -27px;
+  }
+}
+
 .img-circle{
   @include border-radius(40px);
   padding: 5px;
@@ -33,16 +121,10 @@ img{
   height: 80px;
 }
 
-h2, h3, h4{
-  font-family: $font-secondary;
-  margin: 0;
-}
-
-body{
-  font-family: $font-primary;
-  background: url(asset-path("background-pattern.gif", image)) repeat 0 0;
-  font-weight:bold;
-  font-size: 100%;
+.container-title, .box{
+  h2, h3, h4{
+    font-family: $font-secondary;
+  }
 }
 
 .box{
@@ -52,8 +134,7 @@ body{
   padding: 15px;
 
   h2{
-    font-size: 44px;
-    line-height: 44px;
+    @include titlesize(44);
     color: #373435;
     text-align: center;
     margin: 0 0 25px;
@@ -61,14 +142,12 @@ body{
 
   h3{
     color: #f10791;
-    font-size: 54px;
-    line-height: 54px;
+    @include titlesize(54);
     margin: 15px 0;
   }
 
   h4{
-    font-size: 34px;
-    line-height: 34px;
+    @include titlesize(34);
     color: #f21a9a;
     margin: 5px 0;
   }
@@ -104,43 +183,7 @@ body{
   }
 }
 
-.bullets-blue{
-  li{
-    padding-left:27px;
-    margin: 6px 0;
-    color:#373435;
-
-    .icon-arrow-right{
-      color: #316BAF;
-      font-size: 1.2em;
-      float: left;
-      margin-left: -1em;
-    }
-  }
-
-  li:before{
-    font-family: 'icomoon';
-    speak: none;
-    font-style: normal;
-    font-weight: normal;
-    line-height: 1;
-    -webkit-font-smoothing: antialiased;
-    content: "\f061";
-
-    color: #316BAF;
-    font-size: 25px;
-    float: left;
-    margin-left: -27px;
-  }
-}
-
-.container,
-.container-contact,
-nav ul, .content{
-  @include outer-container;
-}
-
-ul.box-dashed{
+.box-dashed{
   margin-left: -20px;
   overflow:hidden;
 
@@ -153,13 +196,13 @@ ul.box-dashed{
   }
 }
 
-ul.box-dashed.two{
+.box-dashed.two{
   li{
     width: 460px;
   }
 }
 
-ul.box-dashed.three{
+.box-dashed.three{
   margin-left: -35px;
   padding-left: 7%;
 
@@ -169,7 +212,7 @@ ul.box-dashed.three{
   }
 }
 
-ul.box-dashed.four{
+.box-dashed.four{
   li{
     width: 218px;
   }
@@ -192,6 +235,11 @@ ul.box-dashed.four{
     display: block;
   }
 
+  .icon-diamond{
+    font-size: em(43);
+    line-height: 2em;
+  }
+
   .ico-php{
     height: 22px;
     margin: auto;
@@ -199,7 +247,31 @@ ul.box-dashed.four{
     font-weight: bold;
     font-style: normal;
     font-size: 1.6em;
-    line-height: 2.8em;
+    line-height: 3em;
+  }
+
+  .icon-tech, .icon-mobile{
+    line-height: 1.7em;
+  }
+
+  .icon-undo{
+    font-size: em(40);
+    line-height: 2em;
+  }
+
+  .icon-site-map{
+    font-size: 55px;
+    line-height: 1.3em;
+  }
+
+  .icon-cursor{
+    font-size: em(40);
+    line-height: 2em;
+  }
+
+  .icon-users{
+    line-height: 2.3em;
+    font-size: em(35);
   }
 
   .icon-smiley{
@@ -214,48 +286,6 @@ ul.box-dashed.four{
   border:#224a79 solid 5px;
 }
 
-section{
-  font-size:15px;
-  margin-bottom:70px;
-}
-
-.content{
-  ul{
-    li{
-    }
-  }
-
-  li, p{
-    font-size: 14px;
-    line-height:20px;
-    color: #373435;
-  }
-
-  p{
-    margin: 0 0 20px;
-  }
-
-  a{
-    color:#316baf;
-    text-decoration:underline;
-  }
-
-  a.bottom-link{
-    color: #f20892;
-    text-decoration: none;
-    line-height: 15px;
-    display: block;
-
-    span{
-      font-size: 22px;
-      font-family: arial;
-      position: relative;
-      right: -4px;
-      top: 4px;
-    }
-  }
-}
-
 .container-title{
   border-top: 2px dashed #B8B8B8;
   margin-top: 90px;
@@ -268,7 +298,7 @@ section{
     position: relative;
     top: -36px;
     color: #343233;
-    font-size: 60px;
+    font-size: em(60);
     line-height: 60px;
     margin: auto;
     display: inline-block;
@@ -279,16 +309,12 @@ section{
     }
   }
 
-  h2:before{
-    content: url("/assets/arrow-left.gif");
-    display: inline-block;
-    width: 30px;
-  }
+}
 
-  h2:after{
-    content: url("/assets/arrow-right.gif");
-    display: inline-block;
-    width: 30px;
+.container-title.big{
+  h2{
+    font-size: em(92);
+    line-height: 92px;
   }
 }
 
@@ -320,18 +346,6 @@ section{
           font-weight: 400;
         }
       }
-
-      h3:before{
-        content: url("/assets/arrow-left.gif");
-        display: inline-block;
-        width: 30px;
-      }
-
-      h3:after{
-        content: url("/assets/arrow-right.gif");
-        display: inline-block;
-        width: 30px;
-      }
     }
   }
 
@@ -346,6 +360,27 @@ section{
     padding-left: 30px;
   }
 
+}
+
+.container-title{
+  h2:before, h3:before, h2:after, h3:after{
+    display: inline-block;
+    width: 30px;
+    font-size: em(8);
+    color: $color-two;
+  }
+
+  h2:before, h3:before{
+    @include ico("\e009");
+  }
+
+  h2:after, h3:after{
+    @include ico("\e008");
+  }
+
+  h2.blue:after, h2.blue:before, h3.blue:after, h3.blue:before{
+    color: $color-three;
+  }
 }
 
 a.more{
@@ -365,6 +400,21 @@ a.more{
   width: 130px;
   display: block;
   text-decoration: none;
+}
+
+a.bottom-link{
+  color: #f20892;
+  text-decoration: none;
+  line-height: 15px;
+  display: block;
+
+  span{
+    font-size: 22px;
+    font-family: arial;
+    position: relative;
+    right: -4px;
+    top: 4px;
+  }
 }
 
 aside{

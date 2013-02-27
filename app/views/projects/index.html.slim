@@ -1,137 +1,122 @@
 section.projects-page
-	.container-title
-		h2 Highlighted Projects
+  .container-title
+    h2 Highlighted Projects
 
-	#projects-page.carousel.slide.carousel-fade
-			.carousel-inner
-				.active.item
-					.macbook
-						picture alt=""
-							source src=asset_path("slider/craftfoxes_medium.jpg")
-							source src=asset_path("slider/craftfoxes_medium.jpg") media="(min-width:440px)"
-							source src=asset_path("slider/craftfoxes_medium.jpg") media="(min-width:600px)"
+  #projects-page.carousel.slide.carousel-fade
+      .carousel-inner
+        .active.item
+          .macbook
+            figure title="" data-media600=asset_path("slider/craftfoxes_medium.jpg") data-media440=asset_path("slider/craftfoxes_medium.jpg") data-media=asset_path("slider/craftfoxes_medium.jpg")
+              img alt="" src=asset_path("slider/craftfoxes_medium.jpg")
 
-							noscript
-								img src=asset_path("slider/craftfoxes_medium.jpg") alt=""
+              noscript
+                img src=asset_path("slider/craftfoxes_medium.jpg") alt=""
 
-					.carousel-caption.equal4
-						h4 
-							a href="#{project_path(1)}" Craftfoxes.com
-						p
-							| A social network and marketplace for crafty people who love knitting, scrapbooking, paper projects, baking, jewelry, sewing, vintage finds, home decor & more!
+          .carousel-caption.equal4
+            h4 
+              a href="#{project_path(1)}" Craftfoxes.com
+            p
+              | A social network and marketplace for crafty people who love knitting, scrapbooking, paper projects, baking, jewelry, sewing, vintage finds, home decor & more!
 
-						ul.bullets-blue
-							li
-								i.icon-arrow-right
-								| Frontend and Backend development with Ruby on Rails
-							li
-								i.icon-arrow-right
-								| Social Network integrated with Google Maps API
-							li
-								i.icon-arrow-right
-								| Built for American Overloaded Inc.
+            ul.bullets-blue
+              li Frontend and Backend development with Ruby on Rails
+              li Social Network integrated with Google Maps API
+              li Built for American Overloaded Inc.
 
-					a.more href="http://www.craftfoxes.com" Visit Site
+          a.more href="http://www.craftfoxes.com" Visit Site
 
-				.item
-					.macbook
-						picture alt=""
-							source src=asset_path("slider/tablehopping_medium.jpg")
-							source src=asset_path("slider/tablehopping_medium.jpg") media="(min-width:440px)"
-							source src=asset_path("slider/tablehopping_medium.jpg") media="(min-width:600px)"
+        .item
+          .macbook
+            figure title="" data-media600=asset_path("slider/tablehopping_medium.jpg") data-media440=asset_path("slider/tablehopping_medium.jpg") data-media=asset_path("slider/tablehopping_medium.jpg")
+              img alt="" src=asset_path("slider/tablehopping_medium.jpg")
 
-							noscript
-								img src=asset_path("slider/tablehopping_medium.jpg") alt=""
+              noscript
+                img src=asset_path("slider/tablehopping_medium.jpg") alt=""
 
-					.carousel-caption.equal4
-						h4 
-							a href="#{project_path(1)}" Table Hopping NY
-						p
-							| TableHoppingNY is NYC’s culinary life served to you on a platter! It’s a community around gourmet events in New York City.
+          .carousel-caption.equal4
+            h4 
+              a href="#{project_path(1)}" Table Hopping NY
+            p
+              | TableHoppingNY is NYC’s culinary life served to you on a platter! It’s a community around gourmet events in New York City.
 
-					a.more href="http://www.tablehopping.com" Visit Site
+          a.more href="http://www.tablehopping.com" Visit Site
 
-				.item
-					.macbook
-						picture alt=""
-							source src=asset_path("slider/area17_medium.jpg")
-							source src=asset_path("slider/area17_medium.jpg") media="(min-width:440px)"
-							source src=asset_path("slider/area17_medium.jpg") media="(min-width:600px)"
+        .item
+          .macbook
+            figure title="" data-media600=asset_path("slider/area17_medium.jpg") data-media440=asset_path("slider/area17_medium.jpg") data-media=asset_path("slider/area17_medium.jpg")
 
-							noscript
-								img src=asset_path("slider/area17_medium.jpg") alt=""
+              img alt="" src=asset_path("slider/area17_medium.jpg")
 
-					.carousel-caption.equal4
-						h4 
-							a href="#{project_path(1)}" Area 17
-						p
-							| We have a long term relationship with AREA17 providing them with backend development services for most of their Ruby on Rails projects. For more than 5 year we have worked together developing successfull projects.
+              noscript
+                img src=asset_path("slider/area17_medium.jpg") alt=""
 
-					a.more href="www.area17.com" Visit Site
+          .carousel-caption.equal4
+            h4 
+              a href="#{project_path(1)}" Area 17
+            p
+              | We have a long term relationship with AREA17 providing them with backend development services for most of their Ruby on Rails projects. For more than 5 year we have worked together developing successfull projects.
 
-			/! Carousel nav
-			a.carousel-control.left data-slide="prev" href="#projects-page"
-				i.icon-titleleft
-			a.carousel-control.right data-slide="next" href="#projects-page"
-				i.icon-titleright
+          a.more href="www.area17.com" Visit Site
+
+      /! Carousel nav
+      a.carousel-control.left data-slide="prev" href="#projects-page"
+        i.icon-titleleft
+      a.carousel-control.right data-slide="next" href="#projects-page"
+        i.icon-titleright
 
 section.more-projects
-	.container-title
-		h2 More Projects
+  .container-title
+    h2 More Projects
 
-	ul
-		li
-			picture alt=""
-				source src=asset_path("tablehopping.jpg")
-				source src=asset_path("tablehopping.jpg") media="(min-width:440px)"
-				source src=asset_path("tablehopping.jpg") media="(min-width:600px)"
+  ul
+    li
+      figure title="" data-media600=asset_path("tablehopping.jpg") data-media440=asset_path("tablehopping.jpg") data-media=asset_path("tablehopping.jpg")
 
-				noscript
-					img src=asset_path("tablehopping.jpg") alt=""
+        img alt="" src=asset_path("tablehopping.jpg")
 
-			.project-info.equal
-				h3 
-					a href="#{project_path(1)}" Table Hopping NY
-				p TableHoppingNY is a community around gourmet events in New York City.
+        noscript
+          img src=asset_path("tablehopping.jpg") alt=""
 
-		li
-			picture alt=""
-				source src=asset_path("lostanfaun.jpg")
-				source src=asset_path("lostanfaun.jpg") media="(min-width:440px)"
-				source src=asset_path("lostanfaun.jpg") media="(min-width:600px)"
+      .project-info.equal
+        h3 
+          a href="#{project_path(1)}" Table Hopping NY
+        p TableHoppingNY is a community around gourmet events in New York City.
 
-				noscript
-					img src=asset_path("lostanfaun.jpg") alt=""
+    li
+      figure title="" data-media600=asset_path("lostanfaun.jpg") data-media440=asset_path("lostanfaun.jpg") data-media=asset_path("lostanfaun.jpg")
 
-			.project-info.equal
-				h3 
-					a href="#{project_path(1)}" Los Tanfaun
-				p Los Tanfaun is a lost and found application to connect people in Buenos Aires city.
+        img alt="" src=asset_path("lostanfaun.jpg")
 
-		li
-			picture alt=""
-				source src=asset_path("area17.jpg")
-				source src=asset_path("area17.jpg") media="(min-width:440px)"
-				source src=asset_path("area17.jpg") media="(min-width:600px)"
+        noscript
+          img src=asset_path("lostanfaun.jpg") alt=""
 
-				noscript
-					img src=asset_path("area17.jpg") alt=""
+      .project-info.equal
+        h3 
+          a href="#{project_path(1)}" Los Tanfaun
+        p Los Tanfaun is a lost and found application to connect people in Buenos Aires city.
 
-			.project-info.equal2
-				h3 
-					a href="#{project_path(1)}" Area 17
-				p We currently offer backend development services to Area17 using Ruby on Rails.
+    li
+      figure title="" data-media600=asset_path("area17.jpg") data-media440=asset_path("area17.jpg") data-media=asset_path("area17.jpg")
 
-		li
-			picture alt=""
-				source src=asset_path("lostanfaun.jpg")
-				source src=asset_path("lostanfaun.jpg") media="(min-width:440px)"
-				source src=asset_path("lostanfaun.jpg") media="(min-width:600px)"
+        img alt="" src=asset_path("area17.jpg")
 
-				noscript
-					img src=asset_path("lostanfaun.jpg") alt=""
+        noscript
+          img src=asset_path("area17.jpg") alt=""
 
-			.project-info.equal2
-				h3 
-					a href="#{project_path(1)}" Los Tanfaun
-				p Los Tanfaun is a lost and found application to connect people in Buenos Aires city.
+      .project-info.equal2
+        h3 
+          a href="#{project_path(1)}" Area 17
+        p We currently offer backend development services to Area17 using Ruby on Rails.
+
+    li
+      figure title="" data-media600=asset_path("lostanfaun.jpg") data-media440=asset_path("lostanfaun.jpg") data-media=asset_path("lostanfaun.jpg")
+
+        img alt="" src=asset_path("lostanfaun.jpg")
+
+        noscript
+          img src=asset_path("lostanfaun.jpg") alt=""
+
+      .project-info.equal2
+        h3 
+          a href="#{project_path(1)}" Los Tanfaun
+        p Los Tanfaun is a lost and found application to connect people in Buenos Aires city.

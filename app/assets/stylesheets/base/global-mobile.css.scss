@@ -1,6 +1,9 @@
 @media (max-width: 767px){
 
-  .content p {
+  section{
+    margin: 0 25px 10%;
+  }
+  .content p{
     font-size: 13px;
     line-height: 23px;
     margin-bottom: 20px;
@@ -79,5 +82,4 @@
     margin:auto;
     text-align: center;
   }
-
 }

@@ -44,9 +44,9 @@ section.contact-info
         a href="mailto:info@insignia4u.com" info@insignia4u.com
 
   .map
-    picture alt=""
-      source src=asset_path("map-mobile.png")
-      source src=asset_path("map.png") media="(min-width:700px)"
+    figure title="" data-media600=asset_path("map.png") data-media440=asset_path("map.png") data-media=asset_path("map-mobile.png")
+
+      img alt="" src=asset_path("map-mobile.png")
 
       noscript
         img src=asset_path("map.png") alt=""

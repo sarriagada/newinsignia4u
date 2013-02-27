@@ -20,7 +20,7 @@
       }
     }
 
-    .lang {
+    .lang{
       float: none;
       position: static;
       background: none;
@@ -59,20 +59,20 @@
       vertical-align: middle;
     }
 
+    a:hover:before, a.active:before, a:hover:after, a.active:after{
+      top: 20%;
+    }
+
     a:hover:before, a.active:before{
-      content: url("/assets/arrow-left.png");
-      top: -4px;
       left:-20px;
     }
 
     a:hover:after, a.active:after{
-      content: url("/assets/arrow-right.png");
-      top: -4px;
       right:-20px;
     }
   }
 
-  nav span, nav #menu-btn {
+  nav span, nav #menu-btn{
     position: absolute;
     padding: 0 4px;
     border-radius: 0.2em;

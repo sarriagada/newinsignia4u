@@ -22,7 +22,7 @@
 
 $(document).ready(function() {
 
-    $('picture').picture();
+    $('picture, figure').picture();
 
     window.addEventListener('load', function(){
         setTimeout(scrollTo, 0, 0, 1);

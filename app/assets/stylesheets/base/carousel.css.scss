@@ -117,6 +117,7 @@
   h4 {
     margin: 0 0 5px;
     font-size:20px;
+    font-family: $font-primary;
   }
 
   p {
@@ -125,19 +126,16 @@
   }
 
   ul.bullets-blue{
-    padding:0 40px 0 18px;
+    padding:0 30px 0 22px;
 
     li{
       line-height:23px;
       padding:0 0 3px;
       font-size: 14px;
+    }
 
-      .icon-arrow-right{
-        color: #316BAF;
-        font-size: 1.2em;
-        float: left;
-        margin-left: -1em;
-      }
+    li:before{
+      margin-left: -22px;
     }
   }
 }

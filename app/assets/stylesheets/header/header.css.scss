@@ -33,7 +33,7 @@ header{
     color: #F10993;
     text-decoration: underline;
     text-transform: uppercase;
-    font-size: 0.9em;
+    font-size: em(14);
   }
 }
 
@@ -61,25 +61,25 @@ nav{
     line-height: 55px;
     padding: 0 16px;
     vertical-align: middle;
+    font-size: em(16);
   }
 
-  a:hover:before, a.active:before{
+  a:hover:after, a.active:after, a:hover:before, a.active:before{
     vertical-align: middle;
-    content: url("/assets/arrow-left.png");
     display: inline-block;
     width: 22px;
     position: absolute;
-    top: 9%;
-    left:0;
+    top: 38%;
+    color: $color-two;
   }
 
   a:hover:after, a.active:after{
-    vertical-align: middle;
-    content: url("/assets/arrow-right.png");
-    display: inline-block;
-    width: 22px;
-    position: absolute;
-    top: 9%;
+    @include ico("\e008");
+  }
+
+  a:hover:before, a.active:before{
+    @include ico("\e009");
+    left:0;
   }
 
   span, i{
