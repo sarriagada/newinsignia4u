@@ -19,7 +19,7 @@ $color-four: #383435; /* dark gray - background nav*/
 ---------------------------- */
 @mixin titlesize($tsize){
   font-size: em($tsize);
-  line-height: ($tsize)px
+  line-height: ($tsize+2)px;
 }
 
 @mixin ico($ico){
