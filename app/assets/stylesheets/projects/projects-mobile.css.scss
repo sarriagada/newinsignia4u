@@ -4,7 +4,7 @@
 :: PROJECTS
 ---------------------------- */
   .projects-page{
-    .container-title {
+    .container-title{
       margin-top: 0px;
       border-top: 0;
 
@@ -224,8 +224,27 @@
 }
 
 @media (max-width: 599px){
+  .projects-page{
+    .container-title{
+      h2{
+        font-size: 38px;
+      }
+    }
+  }
+
+  .more-projects{
+    ul{
+      li{
+        width: 100%;
+      }
+    }
+  }
 
   #projects-page.carousel{
+    width: 118%;
+    overflow: visible;
+    left: -24px;
+
     .carousel-inner{
       background:url(asset_path("macbook-mobile.png", image)) no-repeat 0 10px;
       position: relative;
